@@ -60,7 +60,7 @@
 {% if d.quiet_sectors or d.filtered_out %}
 <section class="quiet">
   {% if d.quiet_sectors %}<b>Nothing thesis-moving today:</b> {{ d.quiet_sectors | join(', ') }}.{% endif %}
-  {% if d.filtered_out %} Filtered out: {{ d.filtered_out }}{% endif %}
+  {% if d.filtered_out %} Filtered out: {{ d.filtered_out | replace('Filtered out:', '') | trim }}{% endif %}
 </section>
 {% endif %}
 
