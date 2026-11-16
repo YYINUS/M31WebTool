@@ -1,0 +1,322 @@
+{
+  "week_label": "Nov 13 – 16, 2026",
+  "status": "week in progress",
+  "coverage_warning": "No critique, rebuttal, failed replication or retraction turned up this week, so this issue shows no pushback on any claim; PubPeer and arXiv \"Comment on\" listings were not checked.",
+  "cards": [
+    {
+      "id": "galileo",
+      "nav": "UAP OBSERVATORY",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "UAP · NEWS REPORT · NOV 13",
+      "claim": "The Galileo Project plans a roughly $1.5M radar-plus-telescope observatory in Ithaca, New York, to track and identify aerial objects.",
+      "people": "Avi Loeb (Harvard; described as chair of the UAP Science Advisory Council); backer Adam Weitsman (entrepreneur, affiliation not in source)",
+      "links": [
+        {
+          "label": "IBTimes UK report ↗",
+          "url": "https://www.ibtimes.co.uk/avi-loeb-ufo-telescope-project-ithaca-1832101"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "A plan, not data.",
+      "stage_note": "This is an announced observatory, not a result. A Nov 5 announcement said work would start this month and finish in about a year; no discoveries have been claimed.",
+      "impact_heading": "IF IT WORKS, HOW BIG A DEAL?",
+      "impact": "MEDIUM",
+      "impact_text": "It would be the project's fourth observatory and its first to combine continuous radar with a large optical telescope. Calibrated, multi-sensor data is what the UAP field lacks.",
+      "details": [
+        {
+          "heading": "What the plan says",
+          "text": "Radar would find targets and point a 0.7 m PlaneWave CDK700 telescope at them, with AI support and spectra. Readings would be checked against known flight activity. The site is a property once owned by Carl Sagan."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "The headline's \"prove UFOs are foreign black projects\" framing is not supported by the article, which treats that only as a hypothesis to investigate."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "Published calibration, a false-positive rate measured against known aircraft and satellites, and open data."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Avi Loeb",
+          "role": "Galileo Project lead"
+        }
+      ],
+      "todo": "No action now. Watch for a commissioning or instrument paper.",
+      "rule_label": "Trigger",
+      "rule_text": "A first commissioning or instrument paper with radar–optical cross-matching appears; only then consider supporting an independent data audit.",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "IBTimes UK: Avi Loeb UFO telescope project in Ithaca ↗",
+        "url": "https://www.ibtimes.co.uk/avi-loeb-ufo-telescope-project-ithaca-1832101"
+      }
+    },
+    {
+      "id": "vgrav",
+      "nav": "MOND SIMS",
+      "label": "PENDING",
+      "label_detail": "READ FIRST",
+      "meta": "MOND / MODIFIED GRAVITY · ZENODO CODE PACKAGE · NOV 15",
+      "claim": "A code package fits dark matter halos and six modified-gravity models to both the Milky Way's rotation curve and its vertical gravity.",
+      "people": "Robert Monjo (CUNEF University; Universidad de Chile); A. E. Sasi (affiliation not in source); paper listed as \"in preparation\"",
+      "links": [
+        {
+          "label": "Zenodo record v2.0.0 ↗",
+          "url": "https://zenodo.org/records/24250765"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Not rated yet: only code and method seen.",
+      "stage_note": "Only the software (version 2.0.0) and method description exist. The accompanying paper isn't out, so the results are unknown.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "MEDIUM",
+      "impact_text": "Requiring one model to fit both the radial and the vertical gravity is a harder test than fitting a rotation curve alone.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "The planned method: NFW and Einasto halos, QUMOND, STVG, Verlinde's emergent gravity, f(R), refracted gravity and hyperconical modified gravity (HMG), fitted to 152 model-independent rotation-curve points and 44 vertical-potential measurements from Wang et al. (2026). Four sets of 100 random baryonic-mass draws, compared by BIC; QUMOND, STVG and refracted gravity solved with full field equations."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Which model wins; how much the baryonic-mass assumptions drive the answer; whether either author developed one of the models tested (not stated in the source)."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "The paper shared publicly with the full ranking, the result holding across all four baryonic sets, and someone outside the group rerunning the code."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "If HMG or another niche model wins only under one baryonic set, the result is fragile. If MOND-type models fit the radial data but fail the vertical data, that counts against them."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Robert Monjo",
+          "role": "Lead author and code maintainer"
+        }
+      ],
+      "todo": "Wait for the paper; when it appears, have a reviewer rerun the 29.2 MB package before any contact.",
+      "rule_label": "Trigger",
+      "rule_text": "The paper appears on arXiv with a BIC table.",
+      "needs_owner": false,
+      "compare_text": "Recent wide-binary tests report no MOND signal, including forward modelling of 3D orbits (arXiv 2603.11015) and high-precision C3PO radial velocities (arXiv 2512.19652).",
+      "compare_link": {
+        "label": "arXiv: A Quality Framework for Testing Gravity with Wide Binaries: No Evidence for MOND ↗",
+        "url": "https://arxiv.org/html/2602.24035"
+      },
+      "primary_link": {
+        "label": "Zenodo: vgrav reproducibility package ↗",
+        "url": "https://zenodo.org/records/24250765"
+      }
+    },
+    {
+      "id": "ccctl",
+      "nav": "CCC+TL",
+      "label": "PENDING",
+      "label_detail": "PRESS RELEASE ONLY",
+      "meta": "MODIFIED COSMOLOGY · PRESS RELEASE · NOV 13",
+      "claim": "A new galaxy study is said to support CCC+TL, a cosmology with no dark matter or dark energy and a universe 26.7 billion years old.",
+      "people": "Rajendra Gupta (adjunct professor of physics, University of Ottawa) and a postdoctoral researcher (name not in source)",
+      "links": [
+        {
+          "label": "SciTechDaily article ↗",
+          "url": "https://scitechdaily.com/a-universe-without-dark-matter-radical-new-model-challenges-modern-cosmology/"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Not rated yet: we only saw a press release.",
+      "stage_note": "The full page wouldn't load; details come from the search excerpt. Paper title, venue and DOI not seen.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "It would remove dark matter and dark energy, but the model's age for the universe is about twice the standard value.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "The release says the galaxy study is one of a series of CCC+TL tests run in 2025–26. What was tested and how well it fits are unknown."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "Matching the cosmic microwave background power spectrum, Big Bang element abundances and the ages of the oldest stars at the same time, not one dataset at a time."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "A clear conflict with the microwave background or with stellar ages. A reader comment says galaxy sizes conflict with the model, but that is not a published critique."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Rajendra Gupta",
+          "role": "Originator of CCC+TL"
+        }
+      ],
+      "todo": "Ignore for now.",
+      "rule_label": "Decide",
+      "rule_text": "Revisit only if the underlying paper is peer-reviewed and tests the microwave background.",
+      "needs_owner": false,
+      "compare_text": "Planck 2018 cosmological parameters give an age of about 13.8 billion years.",
+      "compare_link": {
+        "label": "arXiv:1807.06209 ↗",
+        "url": "https://arxiv.org/abs/1807.06209"
+      },
+      "primary_link": {
+        "label": "SciTechDaily: A universe without dark matter ↗",
+        "url": "https://scitechdaily.com/a-universe-without-dark-matter-radical-new-model-challenges-modern-cosmology/"
+      }
+    },
+    {
+      "id": "darkenergy",
+      "nav": "DARK ENERGY",
+      "label": "PENDING",
+      "label_detail": "PRESS RELEASE ONLY",
+      "meta": "VACUUM / DARK ENERGY · PRESS RELEASE · NOV 13",
+      "claim": "A reading of DESI data allows two cosmic histories, one in which effective dark energy had negative density in the distant past, depending on today's matter density.",
+      "people": "Authors not in source",
+      "links": [
+        {
+          "label": "ScienceDaily release ↗",
+          "url": "https://www.sciencedaily.com/releases/2026/11/261111005901.htm"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Not rated yet: we only saw a press release.",
+      "stage_note": "The paper has not been seen. The release itself says the findings \"do not yet establish that dark energy changes over time.\"",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "As context: a dark energy that changes over time would change the mainstream picture that vacuum-energy claims are judged against.",
+      "details": [
+        {
+          "heading": "Still unknown",
+          "text": "The paper, its authors and whether DESI's own collaboration analyses support the reading."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "The release's own caveat: the result does not establish evolving dark energy."
+        }
+      ],
+      "follow": [],
+      "todo": "Identify the paper; until then keep constant dark energy (Λ) as the benchmark for vacuum claims.",
+      "rule_label": "Trigger",
+      "rule_text": "The paper is identified and DESI's own collaboration analyses support a dark energy that changes over time.",
+      "needs_owner": false,
+      "compare_text": "Constant dark energy (Λ) remains the benchmark for vacuum-energy claims.",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "ScienceDaily: dark energy sign flip ↗",
+        "url": "https://www.sciencedaily.com/releases/2026/11/261111005901.htm"
+      }
+    },
+    {
+      "id": "oobe",
+      "nav": "OBE EEG",
+      "label": "CONTEXT",
+      "label_detail": "READ FIRST",
+      "meta": "CONSCIOUSNESS SCIENCE · NEWS COVERAGE · NOV 14",
+      "claim": "Out-of-body and other unusual bodily experiences come with brain activity that mixes features of sleep and waking.",
+      "people": "Teresa Campillo-Ferrer (Radboud University) and colleagues, Consciousness and Cognition",
+      "links": [
+        {
+          "label": "DOI 10.1016/j.concog.2026.104002 ↗",
+          "url": "https://doi.org/10.1016/j.concog.2026.104002"
+        }
+      ],
+      "stage": 3,
+      "stage_headline": "Stage 3 of 5: tested against a control.",
+      "stage_note": "Based on news coverage: recordings during reported experiences were compared with participants' own sleep and meditation recordings. No independent replication or preregistration reported; the paper predates the window (exact date unconfirmed).",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "It offers an ordinary brain mechanism that any claim of accurate perception during out-of-body experiences has to rule out.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "35 participants wore EEG caps; 20 reported 36 experiences, 10 involving being outside or above the body, marked with a set left-right eye-movement signal. Delta and theta dropped and beta and gamma rose, mainly over the temporal lobes."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Whether the whole brain was in an in-between state or different regions were asleep and awake at once."
+        },
+        {
+          "heading": "Would weaken it",
+          "text": "The same EEG pattern showing up equally often without any reported experience."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Teresa Campillo-Ferrer",
+          "role": "Lead author, Radboud University"
+        }
+      ],
+      "todo": "Read the paper and file it as the comparison point for any out-of-body-experience proposal; a July 2026 bioRxiv preprint on brain-signal complexity during these experiences was seen in search but not opened.",
+      "rule_label": "Decide",
+      "rule_text": "Any OBE or veridical-perception proposal we consider must address this sleep–wake mixing mechanism.",
+      "needs_owner": true,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "Consciousness and Cognition: Campillo-Ferrer et al. ↗",
+        "url": "https://doi.org/10.1016/j.concog.2026.104002"
+      }
+    },
+    {
+      "id": "euclid",
+      "nav": "EUCLID LENSES",
+      "label": "BENCHMARK",
+      "label_detail": "",
+      "meta": "GRAVITATIONAL LENSING · UNIVERSITY NEWS · NOV 15",
+      "claim": "Euclid has found about 15,000 candidate strong gravitational lenses in a single, uniformly analysed catalogue, more than all earlier collections combined.",
+      "people": "UBC researchers including Srivastava (first name not in source)",
+      "links": [
+        {
+          "label": "Phys.org story ↗",
+          "url": "https://phys.org/news/2026-11-dark-matterhunting-satellite-euclid-reveals.html"
+        }
+      ],
+      "stage": 2,
+      "stage_headline": "Stage 2 of 5: uses data, but no comparison group.",
+      "stage_note": "These are observed candidates, not yet confirmed lenses. The page wouldn't load and the catalogue paper is not yet identified.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "Any MOND-type theory has to explain lensing without dark matter; a large uniform catalogue makes it much harder to pick only the systems that suit a theory.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "About 15,000 strong-lens candidates analysed uniformly."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "The catalogue paper, confirmation rates and the analysis details."
+        }
+      ],
+      "follow": [],
+      "todo": "Find the catalogue paper next week.",
+      "rule_label": "Decide",
+      "rule_text": "Any MOND or emergent-gravity proposal we consider must say how it handles strong lensing statistics.",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "Phys.org: Euclid reveals strong lens candidates ↗",
+        "url": "https://phys.org/news/2026-11-dark-matterhunting-satellite-euclid-reveals.html"
+      }
+    }
+  ],
+  "left_out": "Left out: Nov 12 arXiv items just outside the window (Sheikh et al. ATA Anti-Solar Point survey arXiv:2611.17376, no signals; Yuan et al. giant dark matter core in UGCA 320 arXiv:2611.15528, worth reading next week; Roldan et al. magnonic Casimir theory arXiv:2611.14809), earlier-November items (Wittmann review, SETI game-theory paper, Quanta cold-fusion feature, Breakthrough Listen retrospective), the Anchorage \"jellyfish\" UAP video with no sensor data or official analysis, and unrelated pulsar, lensing and black-hole preprints.",
+  "searched_note": "This was a partial scan: arXiv listings could not be opened, searches ran out, and PubPeer, OSF Registries, PsyArXiv, the Journal of Parapsychology, the Journal of Scientific Exploration, ARPA-E and NASA technical reports were not checked. Nothing new turned up for psi, LENR, technosignatures, zero-point physics or physics.gen-ph, and Retraction Watch's Nov 14 Weekend Reads had nothing relevant.",
+  "start": "2026-11-13",
+  "end": "2026-11-19",
+  "generated": "2026-11-16"
+}

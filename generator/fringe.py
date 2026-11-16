@@ -18,6 +18,16 @@ TOPICS = "MOND and modified gravity, psi and parapsychology, LENR and fusion in 
 science, technosignatures and SETI, UAP, zero-point and vacuum physics, and speculative physics (arXiv \
 physics.gen-ph)"
 
+LISTINGS = [
+    "https://arxiv.org/list/physics.gen-ph/recent",
+    "https://arxiv.org/list/astro-ph.CO/recent",
+    "https://arxiv.org/list/astro-ph.GA/recent",
+    "https://arxiv.org/list/nucl-ex/recent",
+    "https://osf.io/preprints/psyarxiv/discover?q=parapsychology",
+    "https://pubpeer.com/recent",
+    "https://retractionwatch.com/",
+]
+
 SYSTEM = f"""You are the editor of the Fringe Foundation Weekly Signal, a decision-first scan for a \
 foundation that funds rigorous work on anomalous and frontier claims. Topics: {TOPICS}.
 
@@ -57,8 +67,9 @@ def research_task(start: dt.date, end: dt.date, today: dt.date) -> str:
 %Y}{" (week in progress: cover up to today)" if end > today else ""}.
 
 Work method:
-1. For each topic ({TOPICS}) search for papers, preprints, reports and serious journalism dated in the \
-window. Run several searches per topic and check arXiv listings for the window's dates.
+1. Open these listing pages first with web_fetch (they are allowed to be fetched directly) and scan \
+them for in-window items: {", ".join(LISTINGS)}. Then, for each topic ({TOPICS}), search for papers, \
+preprints, reports and serious journalism dated in the window. Run several searches per topic.
 2. Separately search for critiques: rebuttals, comment papers, failed replications, retractions and \
 corrections touching these topics.
 3. Open each candidate to confirm the date, authors, affiliations, venue and what it actually reports. \
