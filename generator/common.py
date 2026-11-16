@@ -12,10 +12,12 @@ import anthropic
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-5-5")
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
 
-WEB_TOOLS = [
-    {"type": "web_search_20260209", "name": "web_search", "max_uses": 30},
-    {"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": 20},
-]
+
+def web_tools(searches: int, fetches: int) -> list[dict]:
+    return [
+        {"type": "web_search_20260209", "name": "web_search", "max_uses": searches},
+        {"type": "web_fetch_20260209", "name": "web_fetch", "max_uses": fetches},
+    ]
 
 
 def log(msg: str) -> None:
@@ -43,11 +45,11 @@ def _text(msg) -> str:
     return "".join(b.text for b in msg.content if b.type == "text")
 
 
-def research(system: str, task: str, effort: str = "high") -> str:
+def research(system: str, task: str, effort: str = "high", searches: int = 30, fetches: int = 20) -> str:
     """Let Claude search and read the web, and return its research notes (plain text with URLs)."""
     c = client()
     messages = [{"role": "user", "content": task}]
-    searches = 0
+    calls = 0
     for turn in range(8):
         msg = _stream(
             c,
@@ -55,13 +57,11 @@ def research(system: str, task: str, effort: str = "high") -> str:
             system=system,
             thinking={"type": "adaptive"},
             output_config={"effort": effort},
-            tools=WEB_TOOLS,
+            tools=web_tools(searches, fetches),
             messages=messages,
         )
-        searches += sum(
-            1 for b in msg.content if b.type == "server_tool_use"
-        )
-        log(f"research turn {turn + 1}: stop={msg.stop_reason}, tool calls so far={searches}")
+        calls += sum(1 for b in msg.content if b.type == "server_tool_use")
+        log(f"research turn {turn + 1}: stop={msg.stop_reason}, tool calls so far={calls}")
         if msg.stop_reason == "refusal":
             sys.exit(f"Research request was declined: {msg.stop_details}")
         if msg.stop_reason == "pause_turn":

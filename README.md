@@ -55,7 +55,7 @@ python -m generator.build && python -m http.server -d site 8000
 
 ## Cost
 
-Each report runs one research pass (up to 30 searches and 20 page fetches) and one formatting pass. Check *Usage* in the Claude Console after the first few runs to see what a typical issue costs.
+Each report runs one research pass (Daily: up to 30 searches and 20 page fetches; Fringe: 60 and 40, since it covers more topics plus a critique sweep) and one formatting pass. Check *Usage* in the Claude Console after the first few runs to see what a typical issue costs.
 
 ## Editing reports
 

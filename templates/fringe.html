@@ -113,7 +113,7 @@
 </div>
 
 <footer class="foot">
-  {% if d.left_out %}<div>Left out: {{ d.left_out }}</div>{% endif %}
+  {% if d.left_out %}<div>Left out: {{ d.left_out | replace('Left out:', '') | trim }}</div>{% endif %}
   {% if d.searched_note %}<div>{{ d.searched_note }}</div>{% endif %}
   <div>Every card links to its source. Items we could not verify were left out. Researched and drafted with Claude; check primary sources before acting.</div>
   <nav class="issues" aria-label="Other issues">
