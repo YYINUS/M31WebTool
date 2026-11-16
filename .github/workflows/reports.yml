@@ -1,0 +1,111 @@
+name: Generate and publish reports
+
+on:
+  schedule:
+    - cron: "41 11 * * 1-5"   # Daily Brief: weekdays 11:41 UTC (6:41 am ET in winter)
+    - cron: "17 13 * * 5"     # Fringe Weekly: Fridays 13:17 UTC, covers Sat–Fri
+  workflow_dispatch:
+    inputs:
+      report:
+        description: "Which report to generate"
+        type: choice
+        options: [daily, fringe, both, none]
+        default: daily
+      date:
+        description: "Daily: date YYYY-MM-DD (blank = today)"
+        required: false
+      fringe_start:
+        description: "Fringe: window start YYYY-MM-DD (blank = 6 days before end)"
+        required: false
+      fringe_end:
+        description: "Fringe: window end YYYY-MM-DD (blank = today)"
+        required: false
+  push:
+    branches: [main]
+    paths: ["data/**", "templates/**", "static/**", "generator/build.py"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: reports
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Decide what to generate
+        id: plan
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          REPORT: ${{ inputs.report }}
+        run: |
+          r="none"
+          if [ "$EVENT" = "schedule" ]; then
+            if [ "$SCHEDULE" = "17 13 * * 5" ]; then r="fringe"; else r="daily"; fi
+          elif [ "$EVENT" = "workflow_dispatch" ]; then
+            r="$REPORT"
+          fi
+          echo "report=$r" >> "$GITHUB_OUTPUT"
+
+      - name: Generate Daily Brief
+        if: steps.plan.outputs.report == 'daily' || steps.plan.outputs.report == 'both'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DAY: ${{ inputs.date }}
+        run: python -m generator.daily $DAY
+
+      - name: Generate Fringe Weekly
+        if: steps.plan.outputs.report == 'fringe' || steps.plan.outputs.report == 'both'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          START: ${{ inputs.fringe_start }}
+          END: ${{ inputs.fringe_end }}
+        run: |
+          if [ -n "$START$END" ]; then
+            python -m generator.fringe $START $END
+          else
+            python -m generator.fringe
+          fi
+
+      - name: Commit new issue data
+        if: steps.plan.outputs.report != 'none'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "Add ${{ steps.plan.outputs.report }} report $(date -u +%F)"
+            git push
+          fi
+
+      - name: Build site
+        run: python -m generator.build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M31 Daily Brief · {{ d.date_label }}</title>
+<meta name="description" content="{{ d.headline }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ root }}static/daily.css">
+</head>
+<body>
+<div class="page">
+
+<header class="masthead">
+  <div class="kicker">
+    <span><a href="{{ root }}index.html" class="home">M31 Capital</a> · Daily Brief</span>
+    <span>{{ d.date_label }} · {{ d.read_time }}</span>
+  </div>
+  <h1>{{ d.headline }}</h1>
+  <p class="dek">{{ d.dek }}</p>
+  <div class="sectors">Your sectors: {{ d.sections | map(attribute='name') | join(' · ') }}</div>
+</header>
+
+{% if d.asks %}
+<section class="asks">
+  <div class="asks-title">Today's asks</div>
+  <ol>
+    {% for a in d.asks %}<li><b>{{ a.verb }}:</b> {{ a.text }}</li>{% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+{% for s in d.sections %}
+<section class="sector">
+  <div class="sector-head">
+    <h2>{{ s.name }}</h2>
+    <span>{{ s.thesis }}</span>
+  </div>
+  {% for it in s['items'] %}
+  <article class="item">
+    <span class="sig sig-{{ it.significance | lower }}">{{ it.significance }}{% if it.flag %} · {{ it.flag }}{% endif %}</span>
+    <h3>{{ it.title }}</h3>
+    <p><b>Why it matters:</b> {{ it.why }}</p>
+    <p><b>What to watch:</b> {{ it.watch }}</p>
+    {% if it.sources %}
+    <span class="src">Source{% if it.sources|length > 1 %}s{% endif %}:
+      {% for src in it.sources %}<a href="{{ src.url }}" rel="noopener">{{ src.label }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+      {% if it.source_note %} ({{ it.source_note }}){% endif %}</span>
+    {% endif %}
+  </article>
+  {% endfor %}
+  {% if s.also_noted %}
+  <p class="also"><b>Also noted:</b> {{ s.also_noted | join(' · ') }}</p>
+  {% endif %}
+</section>
+{% endfor %}
+
+{% if d.quiet_sectors or d.filtered_out %}
+<section class="quiet">
+  {% if d.quiet_sectors %}<b>Nothing thesis-moving today:</b> {{ d.quiet_sectors | join(', ') }}.{% endif %}
+  {% if d.filtered_out %} Filtered out: {{ d.filtered_out }}{% endif %}
+</section>
+{% endif %}
+
+<footer class="foot">
+  <nav class="issues" aria-label="Other issues">
+    {% if prev %}<a href="{{ prev.href }}">← {{ prev.label }}</a>{% else %}<span></span>{% endif %}
+    <a href="{{ root }}index.html#daily-archive">All issues</a>
+    {% if next %}<a href="{{ next.href }}">{{ next.label }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+  <div class="dash"><span>Go deeper: full analysis and open questions</span>
+  <a href="https://m31-dashboard.vercel.app/news">Open dashboard →</a></div>
+  <div class="gen">Researched and drafted with Claude from the sources linked above. Check primary sources before acting.</div>
+</footer>
+
+</div>
+</body>
+</html>

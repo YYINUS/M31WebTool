@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fringe Foundation Weekly · {{ d.week_label }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ root }}static/fringe.css">
+</head>
+<body>
+<div id="top">
+
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="{{ root }}index.html">
+      <span class="logo"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6"></circle><path d="M8 2v12M2 8h12"></path></svg></span>
+      <span class="mono strong">FRINGE FOUNDATION · WEEKLY SIGNAL</span>
+    </a>
+    <div class="mono muted">{{ d.week_label }} · {{ d.status }}</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+{% if d.coverage_warning %}
+<div class="warn" role="note"><span class="pill pill-fix">NOTE</span><span>{{ d.coverage_warning }}</span></div>
+{% endif %}
+
+<nav class="jump" aria-label="Jump to a card">
+  {% for row in nav_rows %}
+  <div class="jump-row">
+    {% for g in row %}
+    <div class="jump-group">
+      <span class="jump-label c-{{ g.label | lower }}">{{ g.label }}</span>
+      {% for c in g.cards %}<a class="chip chip-{{ g.label | lower }}" href="#c-{{ c.id }}">{{ c.nav }}</a>{% endfor %}
+      {% if not g.cards %}<span class="none">None this week</span>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  <div class="legend">
+    <div class="legend-text">
+      <span><strong>Evidence stages (the 5-part bar on each card):</strong> 1 an idea, not yet tested · 2 uses data, but no comparison group · 3 tested against a control · 4 repeated by another team · 5 repeated by another team with the plan registered in advance. Higher means stronger evidence, not more likely to be true.</span>
+      <span><strong>What the labels mean:</strong> {{ legend }}</span>
+    </div>
+    <button type="button" class="btn" id="toggle-all">Open all follow-ups</button>
+  </div>
+</nav>
+
+<div class="grid">
+{% for c in d.cards %}
+<article id="c-{{ c.id }}" class="card" aria-labelledby="h-{{ c.id }}">
+  <div class="tags">
+    <span class="nav-tag mono">{{ c.nav }}</span>
+    <span class="pill pill-{{ c.label | lower }}">{{ c.label }}{% if c.label_detail %} · {{ c.label_detail }}{% endif %}</span>
+    <span class="mono muted small">{{ c.meta }}</span>
+  </div>
+  <h2 id="h-{{ c.id }}">{{ c.claim }}</h2>
+  <div class="people">{{ c.people }}{% for l in c.links %} · <a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% endfor %}</div>
+
+  <div class="two">
+    <div class="box">
+      <div class="eyebrow">HOW STRONG IS THE EVIDENCE?</div>
+      {% if c.stage > 0 %}
+      <div class="stages" role="img" aria-label="Stage {{ c.stage }} of 5">{% for i in range(1, 6) %}<div class="{{ 'on' if i <= c.stage else '' }}"></div>{% endfor %}</div>
+      {% endif %}
+      <div class="box-text"><strong>{{ c.stage_headline }}</strong> {{ c.stage_note }}</div>
+    </div>
+    <div class="box">
+      <div class="eyebrow">{{ c.impact_heading }}</div>
+      {% if c.impact %}
+      {% set n = {'HIGH': 3, 'MEDIUM': 2, 'LOW': 1}[c.impact] %}
+      <div class="impact" role="img" aria-label="Impact {{ c.impact | lower }}"><div class="impact-bars">{% for i in range(1, 4) %}<div class="{{ 'on' if i <= n else '' }}"></div>{% endfor %}</div><span>{{ c.impact }}</span></div>
+      {% endif %}
+      <div class="box-text">{{ c.impact_text }}</div>
+    </div>
+  </div>
+
+  {% if c.details %}
+  <div class="details">
+    {% for x in c.details %}<div><div class="dh">{{ x.heading }}</div><div class="dt">{{ x.text }}</div></div>{% endfor %}
+  </div>
+  {% endif %}
+
+  <details class="follow" id="f-{{ c.id }}">
+    <summary class="btn">Follow up: who and what <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 4l4 4 4-4"></path></svg></summary>
+    <div class="follow-body">
+      {% if c.follow %}
+      <div><div class="eyebrow">WHO TO FOLLOW</div>
+        <div class="people-list">{% for p in c.follow %}<div><strong>{{ p.name }}</strong> <span class="muted">· {{ p.role }}</span></div>{% endfor %}</div>
+      </div>
+      {% endif %}
+      {% if c.todo %}
+      <div><div class="eyebrow c-{{ c.label | lower }}">WHAT TO DO</div>
+        <div>{{ c.todo }}</div>
+        {% if c.rule_label and c.rule_text %}<div class="body2 mt"><strong>{{ c.rule_label }}:</strong> {{ c.rule_text }}</div>{% endif %}
+        {% if c.needs_owner %}<div class="muted mt">Owner [OWNER] · Due [DATE]</div>{% endif %}
+      </div>
+      {% endif %}
+      {% if c.compare_text %}
+      <div><div class="eyebrow">COMPARE WITH</div>
+        <div class="body2">{{ c.compare_text }}{% if c.compare_link.url %} <a href="{{ c.compare_link.url }}" rel="noopener">{{ c.compare_link.label or 'Source ↗' }}</a>{% endif %}</div>
+      </div>
+      {% endif %}
+      {% if c.primary_link.url %}<a class="primary" href="{{ c.primary_link.url }}" rel="noopener">{{ c.primary_link.label }}</a>{% endif %}
+    </div>
+  </details>
+  <a class="back small" href="#top">Back to labels</a>
+</article>
+{% endfor %}
+</div>
+
+<footer class="foot">
+  {% if d.left_out %}<div>Left out: {{ d.left_out }}</div>{% endif %}
+  {% if d.searched_note %}<div>{{ d.searched_note }}</div>{% endif %}
+  <div>Every card links to its source. Items we could not verify were left out. Researched and drafted with Claude; check primary sources before acting.</div>
+  <nav class="issues" aria-label="Other issues">
+    {% if prev %}<a href="{{ prev.href }}">← {{ prev.label }}</a>{% else %}<span></span>{% endif %}
+    <a href="{{ root }}index.html#fringe-archive">Earlier weeks</a>
+    {% if next %}<a href="{{ next.href }}">{{ next.label }} →</a>{% else %}<span></span>{% endif %}
+  </nav>
+</footer>
+</main>
+</div>
+<script>
+(function () {
+  var all = document.querySelectorAll('details.follow');
+  var btn = document.getElementById('toggle-all');
+  function sync() {
+    var open = Array.prototype.every.call(all, function (d) { return d.open; });
+    btn.textContent = open ? 'Close all follow-ups' : 'Open all follow-ups';
+    return open;
+  }
+  btn.addEventListener('click', function () {
+    var open = !sync();
+    all.forEach(function (d) { d.open = open; });
+    sync();
+  });
+  all.forEach(function (d) { d.addEventListener('toggle', sync); });
+  if (location.hash) { var t = document.querySelector(location.hash); if (t) { var f = t.querySelector('details'); if (f) f.open = true; } }
+})();
+</script>
+</body>
+</html>
