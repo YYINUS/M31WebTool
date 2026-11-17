@@ -50,17 +50,15 @@ jobs:
         run: echo "report=${REPORT:-none}" >> "$GITHUB_OUTPUT"
 
       # The GP brief: collect → draft → checks → GP review → revise (max 3).
-      # Drafts, reviews and the partner copy with "What next" actions stay in
-      # the runner's temp folder and are never committed or uploaded; only
-      # public.json is published, with actions encrypted (BRIEF_PASSPHRASE) or
-      # dropped. Logs print summaries only.
+      # Only public.json (the brief with its "What next" actions) is published;
+      # drafts, reviews and the quality report stay in the runner's temp folder.
+      # Logs print summaries only (portfolio queries are company names).
       - name: Generate Daily Brief
         id: daily
         if: steps.plan.outputs.report == 'daily' || steps.plan.outputs.report == 'both'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PORTFOLIO_JSON: ${{ secrets.PORTFOLIO_JSON }}
-          BRIEF_PASSPHRASE: ${{ secrets.BRIEF_PASSPHRASE }}
           DAY: ${{ inputs.date }}
           FORCE: ${{ inputs.publish_hold }}
         run: |

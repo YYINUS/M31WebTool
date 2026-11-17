@@ -29,11 +29,9 @@ data/fringe/          one Fringe issue per week (+ notes/ with the research note
 This repository and its site are **public**.
 
 - **The portfolio list and its internal context never go in the repo.** They live in the `PORTFOLIO_JSON` Actions secret and are sent only to the Anthropic API in the writer prompt.
-- **"What next" actions are published only encrypted.** With the `BRIEF_PASSPHRASE` secret set, the actions are encrypted (AES-256-GCM, key from the passphrase via PBKDF2-SHA256, 600,000 rounds) into `public.json`. On the page, the **What next** button asks for the password and decrypts in the browser; the passphrase is remembered for the browser session. Without the secret, actions are dropped. Use a long random passphrase: the ciphertext is public, so a weak one could be guessed offline. Share it with partners only.
-- Drafts, GP reviews, the readable partner copy and the quality report stay in the runner's temp folder. None of them is committed or uploaded as an artifact, because artifacts of a public repo are downloadable.
+- **"What next" actions are published** with each brief, collapsed behind the What next button, as in the approved partner copy. Drafts, GP reviews and the quality report stay in the runner's temp folder and are never committed or uploaded.
 - **Logs print summaries only**, because Actions logs on a public repo are public: no query text (portfolio queries are company names), no check-failure text, no model output.
-- The published brief still contains the **Portfolio** section (news on M31 companies), as in the shareable copy (`brief-share.html`) of the approved design. If holdings must not be public, keep the repo and Pages private instead (Pages for a private repo needs a paid GitHub plan).
-- The partner copy with actions belongs behind the dashboard login, as described in the original handoff (`/brief`, admin role only).
+- The published brief names M31 companies (Portfolio section and What next). If that should not be public, keep the repo and Pages private instead (Pages for a private repo needs a paid GitHub plan).
 
 ## Setup (one time)
 
@@ -42,7 +40,6 @@ In the repo under **Settings → Secrets and variables → Actions → New repos
 | Secret | Value |
 |---|---|
 | `ANTHROPIC_API_KEY` | Claude API key |
-| `BRIEF_PASSPHRASE` | The partners' passphrase that unlocks "What next" on the site. Changing it does not re-lock older issues, which keep the passphrase they were built with. |
 | `PORTFOLIO_JSON` | The portfolio as one JSON array: `[{"name": "...", "aliases": ["..."], "sectorId": "ai", "context": "..."}]`. Update it whenever the portfolio tracker changes. Without it the brief runs with an empty Portfolio section. |
 
 Optional variables or secrets: `GP_BRIEF_MODEL` (default `claude-sonnet-5-5`), `GP_BRIEF_JUDGE_MODEL` (default: same as the writer), `NEWSAPI_KEY`, `USE_GDELT=1`.

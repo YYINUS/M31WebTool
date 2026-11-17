@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Render every published brief (data/daily/<date>.json, written by run.mjs as
-// public.json) into the static site, in the approved design, with no actions.
+// public.json) into the static site, in the approved design, with "What next".
 //
 //   node gp-brief/render-site.mjs <data dir> <out dir>
 import fs from 'node:fs';
@@ -25,7 +25,7 @@ files.forEach((f, i) => {
   const older = files[i + 1]?.slice(0, 10);
   const newer = files[i - 1]?.slice(0, 10);
   const html = renderHTML(brief, {
-    actions: false,
+    actions: true,
     readMinutes: brief.meta?.readMinutes,
     nav: {
       home: '../index.html',

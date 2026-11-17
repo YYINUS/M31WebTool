@@ -15,6 +15,7 @@
       "title": "SpaceX catches a Starship upper stage for the first time",
       "brief": "After 22.5 hours in orbit, the Ship was caught by the launch tower on Saturday; the booster missed its catch and splashed down. The next flight will try to catch both stages.",
       "impact": "A recoverable upper stage is the piece that makes Starship cheap enough for Starlink V3 and orbital data centers. The stock is still below its IPO price, so the catch has not been priced in yet.",
+      "action": "Confirm with the fund manager whether the first sale tranche was executed, and set the plan for the remaining shares before the Dec 8 lockup expiry adds supply.",
       "sources": [
         {
           "id": "p1",
@@ -35,6 +36,7 @@
       "title": "Anduril and HD Hyundai unveil an unmanned warship for the US Navy",
       "brief": "The jointly built autonomous surface vessel was shown at HD Hyundai's Ulsan shipyard. It starts sea trials in Korea and moves to the US in early 2027 for testing.",
       "impact": "Pairing with Korea's largest shipbuilder gives Anduril hulls at scale without building its own yard first, and positions it for the Navy's push toward unmanned fleets.",
+      "action": "Ask Anduril how a Democratic Congress's defense budget plans affect Navy unmanned-ship funding, and whether timing of its next round has moved.",
       "sources": [
         {
           "id": "p2",
@@ -120,6 +122,7 @@
       "brief": "A final rule limits remote access to advanced AI chips through data centers abroad and requires licenses for AI exports to Indonesia, Malaysia, Singapore, Brazil and Thailand.",
       "impact": "Renting US chips in Southeast Asia, the main workaround, now needs a license. Decentralized and confidential-compute networks with nodes in those countries take on new compliance risk.",
       "next": "Effective date and rule text still to publish; lawmakers are pushing for tighter controls.",
+      "action": "Ask Super Protocol and Gensyn whether any nodes or planned deployments sit in the five listed countries, before Super Protocol's term sheet is signed.",
       "sources": [
         {
           "id": "m2",
@@ -128,7 +131,8 @@
           "publishedAt": "2026-11-16T18:00:00Z",
           "title": "After Jensen Huang's resignation, US Commerce finalises AI export rule"
         }
-      ]
+      ],
+      "actionWho": "Gensyn · Super Protocol"
     },
     {
       "sectorId": "money",
@@ -140,6 +144,7 @@
       "brief": "The OCC's final rule sets reserve, redemption, audit and reporting requirements for the stablecoin issuers it supervises. The Fed is consulting on its own version.",
       "impact": "Stablecoin issuance now has a federal rulebook and a start date, which favors banks already under the OCC and makes non-bank issuers look riskier to partners.",
       "next": "Rule takes effect Jan 18, 2027; Fed proposals still out for comment.",
+      "action": "Ask Erebor how the OCC rule changes its stablecoin product timeline and whether it helps the story for its large raise.",
       "sources": [
         {
           "id": "r2",
@@ -148,7 +153,8 @@
           "publishedAt": "2026-11-15T09:00:00Z",
           "title": "OCC final rule moves US stablecoin law into implementation"
         }
-      ]
+      ],
+      "actionWho": "Erebor Bank"
     },
     {
       "sectorId": "defi",
@@ -182,6 +188,7 @@
       "title": "ChatGPT gets a wallet so AI agents can pay; Shopify adopts an agent rulebook",
       "brief": "OpenAI's ChatGPT Wallet lets agents buy for users with Face ID approval, built with Visa, Mastercard and Amex. Separately, Shopify switched on Sierra's Poppy protocol, which tells agents what stores allow.",
       "impact": "Agent payments now run on card networks, inside the largest AI app. Startups selling agent-payment rails need a distribution partner, not just a product.",
+      "action": "Send Aizel the Wallet and Poppy launches and ask where AgentPay fits; a standards or card-network partnership may be its fastest route to a first paying customer.",
       "sources": [
         {
           "id": "n1",
@@ -190,7 +197,8 @@
           "publishedAt": "2026-11-16T22:00:00Z",
           "title": "OpenAI launches ChatGPT Wallet so agents can buy for users; Sierra's Poppy protocol adopted by Shopify"
         }
-      ]
+      ],
+      "actionWho": "Aizel Network"
     },
     {
       "sectorId": "ai",
@@ -298,6 +306,7 @@
       "title": "Nvidia reports tomorrow, its first results since Huang quit",
       "brief": "Shares are down about 13% since Thursday and the Nasdaq fell 2.5% today. Wall Street expects about $109B in revenue; Nvidia's board says it is not bringing Huang back.",
       "impact": "Guidance, not the quarter, is the test: any sign customers are pausing orders would hit every AI valuation, and the reaction lands two days before Anthropic starts trading.",
+      "action": "Ask Perplexity whether Nvidia's round is still on after the CEO change and get an expected close date before we write the year-end letter.",
       "sources": [
         {
           "id": "m3",
@@ -313,7 +322,8 @@
           "publishedAt": "2026-11-16T21:04:00Z",
           "title": "Stock market today: Dow and S&P 500 drop, Nasdaq sinks over 2% as Nvidia leads AI trade lower, Anthropic IPO looms"
         }
-      ]
+      ],
+      "actionWho": "Perplexity"
     },
     {
       "sectorId": "ai",
@@ -402,21 +412,5 @@
     "readMinutes": 6.2,
     "poolSize": 16,
     "source": "approved reference issue (gp-brief/out/2026-11-16)"
-  },
-  "locked": {
-    "v": 1,
-    "n": 6,
-    "ids": [
-      "s-portfolio-1",
-      "s-portfolio-2",
-      "s-regulation-1",
-      "s-regulation-2",
-      "s-tech-1",
-      "s-macro-1"
-    ],
-    "iter": 600000,
-    "salt": "P4BG20OxfrIFVKZPMQV05g==",
-    "iv": "TGrIc2D6VfV2Tunp",
-    "ct": "FmwOkEs1pFKJhxtsIlIVc/PMlMZPt4r2WRCapQio2oh1VsMJIuQedQwgZwPv2gEbpEIhPXOVIEoDFDaXqD8YVHAsx9NrqxP9rBZeawrtFj8uCM35x7hsh8NkHIGEDwnHCRnHvBhOw7a9UDPF9MbN3mqxbcTVCsQjUq/UjjYvpmLNcB2ZGzF+R11CTxwOtu+tBpDfYE1fQp2PbQVmX5FshLKM1T7z0gP0jkPwysHtOIypDhCk6PxzlHTlP9f60XJ7PcZel65HdXgffS7xu4qSeY0OYojHes0225/r7MNXmU0jYfZalUzagdkKt1WC834tIZerd9B3y3BWDcDUIzr091N0rD7U28V3OI3l7EERbwWVGIW894f0MgD2HxL6q9G5yN9QnIHRamtjVSz+y3tG2ZAnyfKHrzdzmdXz0aG/uPGMkqStfM4lPk/WB0oj514jibg1HyhIu77s8RC271Km6WP8Wo/U7RQQo0WrqD9vrXEVRNmk2xu3WiK8hnSZ2Q8Ium4DUpIhk0V3reOfPzi82sa7jeWorEEw2AODRprEMu0Tvs1JqcBDCPSKQ0XAaEUTCbVXTUKt0eofKGVYB/5P3WJmDr2Yc0iG17Y+DLQlJ81oTCekR+tAtkL5V/BpnZFKTQ91/vzMOcUROw8GlV1nGRBDYhB1hOQTM4YrJhAUN5dZFoM6/2LJQqIY3LxGrAhslzFhNAIZ920/uKQgg2YUDIhQWUJ+tQOx29tkLxj98uvPUfbOfDzl7iXo8nvaGWKzPjKbE623kw1nKOUECeG6nNyqTa+V8TMEiQPQZlkphQg+lSPLTPWTka99OzlhUT7dR2sbM0lH2C/fDQabfPeHwQOLun7UmUl7SY0qYfkVSAJxCTXbYtZmM2UC5wjzpzUt985481W36RKQP9FaIjJDqUrs6qy9lCV8DyAGdb/fH4KKTzDh8fqzIsIMH5RZ0bNhDOLKP0GfMOliyEL1RN/CETRXTC6zDbKeEJMXcKvqci/OZSqQwMa66Rs/pHFhMmxIAdwJgUJYK9F85uRQ0TM6rbmw2CXr0AQkBPuX7EU9IDVliPJ1aG7Gb/uEoy1t6H+aE2TyyxkB1o1aPu3SnzLIyCQvBBPSDvIh0lXVC+PpX1ulmjhkyZqNw9MbyIMu1V3kU8K414LWJqiWDaVlOWBygzsa0F/k+By3Jhxqghroy4utTiKvxlJrmuwwtg4rCY1p8mDe8nqroW+oPZV8gSWYitz/f/ta61ODW1VOtaBvDjRTajMWpanw9k5+g6FkC9PlVyLqaQiBkX5kvi6nxcMo5cvLivPq6KlYToXjAUWUBBGst2EX4ZZIpRqDpqsYJkeIvCE5rGWRzGk74QBPR3Oiu67ufK+10wWcQQ8PBwSkPTdKPkjpBb6rFQ0CAjTyzGWnAUg0TGqzGgqemkCppoVLREQ5snR9BMnqJyTayiIXMd5OvCNz5j19B0pBDRGjCE72uTVCcUf+VuOzdo7op0eb7DDNOpnizcvPzAEP0qaJUruvk5S9HEvLYMASSeWYK6iSO9dBCRo4AZ7cogQYf/KnOUIazbBvK+PBq5LkgHNR+G3vqcdvpLBwa6A44YlldUhQt8jOb4b8twzEZ8UaZnwjoj0="
   }
 }
