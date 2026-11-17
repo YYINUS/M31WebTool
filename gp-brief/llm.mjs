@@ -8,9 +8,9 @@ const JUDGE_MODEL = process.env.GP_BRIEF_JUDGE_MODEL || MODEL;
 
 export const hasLLM = () => Boolean(process.env.ANTHROPIC_API_KEY);
 
-// Faster, cheaper defaults: medium thinking effort (Sonnet 5.5's default is high).
-// Raise with GP_BRIEF_EFFORT / GP_BRIEF_JUDGE_EFFORT = high if quality drops.
-const EFFORT = process.env.GP_BRIEF_EFFORT || 'medium';
+// Thinking effort: high (Sonnet 5.5's default) — quality first. A first live run
+// at medium was held by the GP review on all three drafts.
+const EFFORT = process.env.GP_BRIEF_EFFORT || 'high';
 const JUDGE_EFFORT = process.env.GP_BRIEF_JUDGE_EFFORT || EFFORT;
 
 // `user` is a string, or { cached, rest }: `cached` (the news pool) is the same

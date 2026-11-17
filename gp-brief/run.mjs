@@ -40,6 +40,21 @@ const file = (name) => path.join(work, name);
 const log = (...m) => console.error('[gp-brief]', ...m);
 const need = (name, what) => { log(`MANUAL MODE — waiting for ${what}: ${file(name)}`); process.exit(3); };
 
+const FAIL_TYPES = [
+  ['not in the news pool', 'cites unknown item'], ['stories (max', 'too many stories'], ['stories (min', 'too few stories'],
+  ['not an M31 portfolio company', 'non-portfolio company'], ['needs a GP next step', 'missing action'], ['not a concrete step', 'vague action'],
+  ['prints tracker data', 'tracker data in action'], ['repeats the brief', 'impact repeats brief'], ['what happens next', 'missing next'],
+  ['unknown sector', 'unknown sector'], ['unknown thesis', 'unknown thesis'], ['verdict must be', 'bad verdict'], ['chars (max', 'too long'],
+  ['sentences (max', 'too many sentences'], ['confidence not labeled', 'no confidence'], ['no source', 'no source'], ['h old', 'stale source'],
+  ['used twice', 'item used twice'], ['duplicate stories', 'duplicate story'], ['Top 3', 'top 3'], ['Widely covered', 'missed widely covered event'],
+  ['next steps outside', 'too many actions'], ['jargon', 'jargon'], ['Read time', 'read time'], ['quiet', 'missing quiet line'],
+];
+const failureTypes = (fails) => {
+  const n = {};
+  for (const f of fails) { const t = (FAIL_TYPES.find(([k]) => f.includes(k)) || [, 'other'])[1]; n[t] = (n[t] || 0) + 1; }
+  return Object.entries(n).map(([t, c]) => `${t} ×${c}`).join(', ');
+};
+
 async function main() {
   // 1 — COLLECT (the brief's "Updated" time is when its news was gathered)
   // (when collect-cli.mjs ran as its own step, its time is in collected-at.txt)
@@ -83,6 +98,9 @@ async function main() {
 
     const decision = decide(checks, judge);
     log(`draft ${r}: GP-value ${decision.weighted} → ${decision.pass ? 'PASS' : 'FAIL (' + decision.reasons.join('; ') + ')'}`);
+    // Diagnostics safe for public logs: failure TYPES (no text) and the judge's numeric scores.
+    if (checks.fails.length) log(`draft ${r}: check failures by type: ${failureTypes(checks.fails)}`);
+    if (judge?.scores) log(`draft ${r}: GP scores ${Object.entries(judge.scores).map(([k, v]) => `${k} ${v}`).join(', ')} · open tomorrow: ${judge.openTomorrow ? 'yes' : 'no'}`);
     rounds.push({ round: r, brief, checks, judge, decision });
     if (decision.pass) break;
   }

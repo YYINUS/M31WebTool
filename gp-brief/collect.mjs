@@ -117,6 +117,21 @@ function sameEvent(a, b) {
   return n >= 3 && n / Math.min(a.size, b.size || 1) >= 0.5;
 }
 
+// POOL SIZE — a live run collected ~1,200 items; handed all of them, the writer
+// filled every section to its maximum (26 stories, 9-minute read) and the GP
+// review held it. Keep every portfolio item, each sector's best-covered stories,
+// then the most widely covered of the rest, up to GP_BRIEF_MAX_POOL (400).
+function trimPool(items, max = Number(process.env.GP_BRIEF_MAX_POOL || 400), perSector = 10) {
+  if (items.length <= max) return items;
+  const rank = (a, b) => (b.outlets - a.outlets) || (Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+  const keep = new Set(items.filter((it) => it.sectorId === 'portfolio'));
+  const bySector = new Map();
+  for (const it of items) if (!keep.has(it)) (bySector.get(it.sectorId) || bySector.set(it.sectorId, []).get(it.sectorId)).push(it);
+  for (const list of bySector.values()) list.sort(rank).slice(0, perSector).forEach((it) => keep.add(it));
+  for (const it of [...items].sort(rank)) { if (keep.size >= max) break; keep.add(it); }
+  return items.filter((it) => keep.has(it));
+}
+
 // Search windows match the freshness gates in checks.mjs: Portfolio and Frontier
 // 7 days; everything else 48h, or 84h on Mondays to cover the weekend.
 const LONG_WINDOW = new Set(['portfolio', 'frontier']);
@@ -149,8 +164,9 @@ export async function collect({ sectors = Object.keys(QUERIES), hours = new Date
   fresh.sort((a, b) => b.outlets - a.outlets);
   fresh.forEach((it, i) => { it.id = `n${i + 1}`; });
   for (const it of fresh) { it.eventId = it.eventOf.id; delete it.eventOf; }
-  log(`collect: ${out.length} raw → ${fresh.length} fresh unique items (${failures.length} source failures)`);
+  const pool = trimPool(fresh);
+  log(`collect: ${out.length} raw → ${fresh.length} fresh unique items → pool of ${pool.length} (${failures.length} source failures)`);
   // Query text is not logged: portfolio queries are company names, and CI logs are public.
   if (failures.length) log('  source failures by type: ' + Object.entries(failures.reduce((a, f) => { const k = f.split(':')[0] + ' ' + (f.match(/\b(\d{3})\b/)?.[1] || 'error'); a[k] = (a[k] || 0) + 1; return a; }, {})).map(([k, n]) => `${k} ×${n}`).join(', '));
-  return { items: fresh, failures };
+  return { items: pool, failures };
 }

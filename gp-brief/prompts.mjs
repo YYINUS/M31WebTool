@@ -56,6 +56,9 @@ SECTION RULES
 - BELLWETHERS (sectorId hint "bellwether") are big companies M31 does not own but whose news moves its sectors; treat their major news like macro.
 - Merge items about the same event into one story with several itemIds. Never use an item twice.
 
+LENGTH
+- Aim for about 15 stories in total and a 5–6 minute read, like the approved reference issue. The section ranges are limits, not targets: fill a section only with stories that earn their slot, and leave the rest out.
+
 FIRST SCREEN
 - headline: the most important development for M31, ≤ 85 chars, a statement.
 - bottomLine: ≤ 2 sentences on the day as a whole. Say plainly what happened ("plans", "launched", "reached orbit"); no slang like "shipped".
