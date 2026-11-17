@@ -1,0 +1,242 @@
+{
+  "date_label": "Tue, Nov 17",
+  "read_time": "2-min read",
+  "headline": "US now requires export licenses for overseas compute serving Chinese companies, reshaping AI infrastructure",
+  "dek": "A new Commerce rule issued Monday licenses remote access to advanced chips worldwide and adds license requirements for five fast-growing data center markets. Chip stocks fell 4.6% ahead of Nvidia's results tonight.",
+  "asks": [
+    {
+      "verb": "Research",
+      "text": "portfolio and pipeline exposure to the remote-access rule, including whether \"digitally-linked infrastructure\" covers decentralized GPU networks"
+    },
+    {
+      "verb": "Decide",
+      "text": "whether AI infrastructure term sheets under negotiation should add export-control representations and customer-checking requirements"
+    },
+    {
+      "verb": "Discuss",
+      "text": "what Nvidia's results, the reported Anthropic IPO and a priced-in December hike mean for AI round pricing and crypto underwriting"
+    },
+    {
+      "verb": "Research",
+      "text": "which of our biotech companies fit Lilly's and J&J's current acquisition patterns"
+    }
+  ],
+  "sections": [
+    {
+      "name": "AI Systems",
+      "thesis": "Compute access is now a licensed, know-your-customer business, and US hyperscalers hold the advantage.",
+      "items": [
+        {
+          "significance": "MAJOR",
+          "flag": "",
+          "title": "BIS interim final rule requires licenses for overseas data centers giving Chinese companies large-scale compute access",
+          "why": "data centers must now know their customers' ultimate owners, the US-headquartered exemption favors US hyperscalers in Malaysia, Singapore and Brazil, and \"linked data centers\" explicitly includes digitally-linked infrastructure that could reach decentralized GPU networks.",
+          "watch": "Federal Register publication, which agency leads enforcement, and the 60-day comment window.",
+          "sources": [
+            {
+              "label": "BIS",
+              "url": "https://media.bis.gov/media/documents/rin-0694-ak50.pdf"
+            },
+            {
+              "label": "Bloomberg",
+              "url": "https://www.bloomberg.com/news/articles/2026-11-16/us-moves-to-limit-remote-access-to-advanced-ai-chips"
+            },
+            {
+              "label": "Inside Trade",
+              "url": "https://insidetrade.com/daily-news/bis-issues-remote-access-chip-controls-rescinds-ai-diffusion-rule"
+            },
+            {
+              "label": "Reuters via Korea Times",
+              "url": "https://www.koreatimes.co.kr/world/20261117/wall-street-slumps-on-ai-jitters-ahead-of-nvidia-results-anthropic-ipo"
+            }
+          ],
+          "source_note": "Threshold is 12M aggregate TPP (about 760 H100s per a third-party estimate); new license requirement for Indonesia, Malaysia, Singapore, Thailand and Brazil; rescinds the AI Diffusion Rule. Decentralized-network reading is our interpretation, not legal advice."
+        },
+        {
+          "significance": "MAJOR",
+          "flag": "UNCONFIRMED",
+          "title": "Anthropic IPO reportedly expected later this week",
+          "why": "alongside Nvidia's results, it would set the public-market price for frontier AI labs.",
+          "watch": "filing details, size and pricing.",
+          "sources": [
+            {
+              "label": "Reuters via Korea Times",
+              "url": "https://www.koreatimes.co.kr/world/20261117/wall-street-slumps-on-ai-jitters-ahead-of-nvidia-results-anthropic-ipo"
+            }
+          ],
+          "source_note": "single mention in one Reuters markets story; no terms seen"
+        },
+        {
+          "significance": "MODERATE",
+          "flag": "",
+          "title": "Noeri, founded by Stanford's Yejin Choi and Carlos Guestrin, raises $110M led by Menlo Ventures",
+          "why": "money is flowing into the layer that makes cheaper models do the job of frontier models, with the pitch built on cost per task rather than model size.",
+          "watch": "customer data on cost per task versus frontier models.",
+          "sources": [
+            {
+              "label": "TNW",
+              "url": "https://thenextweb.com/news/noeri-110m-stanford-yejin-choi-carlos-guestrin-menlo-nvidia"
+            }
+          ],
+          "source_note": "cites company and Bloomberg; valuation not disclosed"
+        }
+      ],
+      "also_noted": [
+        "Nvidia reports Q3 after the close today, its first under interim CEO Colette Kress; analysts expect about $109.1B in revenue (Reuters).",
+        "Monday: Nvidia -4.2%, CoreWeave -6.2%, Nebius -7.5%; Nasdaq -2.3% and in correction.",
+        "Nvidia launched Nemotron for Science plus an open chemistry dataset of about 50K questions (company release)."
+      ]
+    },
+    {
+      "name": "Crypto & Digital Assets",
+      "thesis": "Bitcoin is trading as a risk asset in the AI sell-off while a sanctioned economy opens retail access.",
+      "items": [
+        {
+          "significance": "MODERATE",
+          "flag": "",
+          "title": "Bank of Russia opens BTC, ETH and USDT to non-qualified retail investors from Nov 17",
+          "why": "a large sanctioned economy now has regulated retail access with USDT as the only listed stablecoin, raising compliance questions for USDT-exposed businesses under the GENIUS Act.",
+          "watch": "purchase volumes and responses from Tether and US or EU regulators.",
+          "sources": [
+            {
+              "label": "CoinDesk",
+              "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
+            },
+            {
+              "label": "Yahoo Finance",
+              "url": "https://finance.yahoo.com/markets/crypto/articles/6-reasons-bitcoin-could-see-095000244.html"
+            }
+          ],
+          "source_note": "secondhand; Bank of Russia text not reviewed"
+        },
+        {
+          "significance": "MODERATE",
+          "flag": "",
+          "title": "Bitcoin near $65K, down about 13–14% on the week, as Strategy faces an estimated $2.8B in MSCI index selling",
+          "why": "bitcoin is moving with AI stocks rather than hedging them, and Strategy's Nov 30 MSCI removal tests the crypto-treasury company model.",
+          "watch": "Fed minutes Nov 18 and the Nov 30 MSCI rebalance.",
+          "sources": [
+            {
+              "label": "Bitcoin Magazine",
+              "url": "https://bitcoinmagazine.com/markets/bitcoin-price-holds-near-65000-nvidia"
+            },
+            {
+              "label": "Cryptonomist",
+              "url": "https://en.cryptonomist.ch/2026/11/16/bitcoin-price-faces-1b-november-etf-outflows-november-16-2026/"
+            }
+          ],
+          "source_note": "$2.8B selling figure is a JPMorgan estimate"
+        }
+      ],
+      "also_noted": [
+        "Spot Bitcoin ETFs: seven straight days of outflows, about $2.1B in November (Cryptonomist).",
+        "Markets price a 93.7% chance of a December Fed rate hike (Reuters, CME FedWatch).",
+        "Bullish and CoinShares report earnings Nov 18."
+      ]
+    },
+    {
+      "name": "Healthcare & Life Sciences",
+      "thesis": "Big pharma keeps buying early, paying up for assets before human trials.",
+      "items": [
+        {
+          "significance": "MODERATE",
+          "flag": "UNCONFIRMED",
+          "title": "Lilly to buy preclinical blood cancer biotech Calytrix Bio for up to $1.5B, its 14th acquisition of 2026",
+          "why": "paying up to $1.5B for a preclinical antibody supports early-exit planning for preclinical biotechs.",
+          "watch": "deal terms and whether other pharmas follow with preclinical buys.",
+          "sources": [
+            {
+              "label": "Endpoints News",
+              "url": "https://endpoints.news/lillys-14th-acquisition-of-the-year-is-a-little-known-blood-cancer-biotech/"
+            }
+          ],
+          "source_note": "single source, paywalled; seen in search snippet"
+        },
+        {
+          "significance": "MODERATE",
+          "flag": "",
+          "title": "J&J to acquire eye disease company Ollin Biosciences for $2.2B upfront plus up to $1.1B in milestones",
+          "why": "large-pharma demand for clinical-stage ophthalmology assets remains steady.",
+          "watch": "closing timeline and other ophthalmology deals.",
+          "sources": [
+            {
+              "label": "The Pharma Letter",
+              "url": "https://www.thepharmaletter.com/biotech-news/j-j-to-acquire-ollin-biosciences"
+            }
+          ],
+          "source_note": "company announcement via trade press; full page not accessed"
+        }
+      ],
+      "also_noted": [
+        "FDA approved Novartis's Cosentyx for polymyalgia rheumatica, first anti-IL-17 for the condition (company release).",
+        "Remedy Robotics raised a $62M Series B led by DCVC for intravascular robotics (single source, funding database)."
+      ]
+    },
+    {
+      "name": "Deep Tech",
+      "thesis": "Quantum is being sold as a supercomputer add-on; the value is in the integration software.",
+      "items": [
+        {
+          "significance": "MODERATE",
+          "flag": "UNVERIFIED",
+          "title": "IBM, Fermilab and Nvidia push quantum-HPC integration at SC26",
+          "why": "near-term value sits in software connecting quantum processors to existing supercomputer workflows, not qubit counts alone.",
+          "watch": "general availability of quantum job scheduling in Slurm, due late November.",
+          "sources": [
+            {
+              "label": "IBM Research",
+              "url": "https://research.ibm.com/blog/sc26"
+            },
+            {
+              "label": "CASRAI",
+              "url": "https://casrai.org/news/fermilab-ibm-nvidia-quantum-hpc-codesign-platform-sc26-2026"
+            }
+          ],
+          "source_note": "company claims; IBM says Nighthawk r2 runs up to 100K samples/sec, 25x Heron"
+        }
+      ],
+      "also_noted": [
+        "Silex Microsystems to invest $131.4M in its first US MEMS factory in Mountain Top, Pennsylvania.",
+        "TSMC stock down 9.7% in three days despite record October revenue of about NT$587B."
+      ]
+    },
+    {
+      "name": "Robotics & Autonomy",
+      "thesis": "Factory-built robotaxis are reaching paid driverless service.",
+      "items": [
+        {
+          "significance": "MODERATE",
+          "flag": "UNVERIFIED",
+          "title": "Pony.ai and Toyota launch fully driverless paid rides in mass-produced bZ4X robotaxis in Guangzhou",
+          "why": "a global carmaker's assembly-line vehicle now carries paying passengers with no driver, moving robotaxis past retrofits.",
+          "watch": "fleet count, new cities and cost per vehicle.",
+          "sources": [
+            {
+              "label": "PR Newswire via Manila Times",
+              "url": "https://www.manilatimes.net/2026/11/16/tmt-newswire/pr-newswire/ponyai-and-toyota-launch-fully-driverless-commercial-services-with-gen-7-bz4x-robotaxi/2470480"
+            }
+          ],
+          "source_note": "company source; no fleet size or unit economics disclosed"
+        }
+      ],
+      "also_noted": []
+    }
+  ],
+  "quiet_sectors": [
+    "Energy & Grid: nothing confirmed in window; FERC open meeting Nov 19 (agenda paywalled). Coverage was limited.",
+    "Frontier Physics: nothing in window. Coverage was limited.",
+    "Food & Agriculture: USDA NIFA opened a $121.1M research facilities call; Zya raised a $15M Series A (date unverified). Coverage was limited."
+  ],
+  "filtered_out": "Filtered out the false \"Nov 17 blackout\" rumor, daily token price moves, token unlocks, humanoid demos, AI listicles, viral AI stories and an unconfirmed California v. OpenAI headline.",
+  "date": "2026-11-17",
+  "sectors": [
+    "Crypto & Digital Assets",
+    "AI Systems",
+    "Healthcare & Life Sciences",
+    "Robotics & Autonomy",
+    "Energy & Grid",
+    "Deep Tech",
+    "Frontier Physics",
+    "Food & Agriculture"
+  ]
+}
