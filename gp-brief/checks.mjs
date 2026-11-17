@@ -30,6 +30,10 @@ const JARGON = [
 ];
 
 export const TALK_OF_DAY = 5; // outlets covering an event before it must appear
+// ...but only the most widely covered events: a live pool of ~1,200 items has
+// dozens of events at 5+ outlets, and requiring all of them forced 20+ stories
+// (the GP review then marked the brief down for length). The top N must appear.
+export const TALK_OF_DAY_TOP = 6;
 
 export const LIMITS = {
   headline: 90, bottomLine: 320, numbers: 0, next: 120, action: 220, otherActions: 4,
@@ -64,6 +68,7 @@ export function hydrate(brief, items) {
   const out = structuredClone(brief);
   for (const p of PURPOSES) for (const st of out[p.key] || []) st.sources = src(st.itemIds);
   for (const d of out.deals || []) d.sources = src(d.itemIds);
+  for (const w of out.weekAhead || []) w.sources = src(w.itemIds);
   for (const n of out.numbers || []) n.sources = src(n.itemIds);
   return { brief: out, missing };
 }
@@ -83,7 +88,9 @@ const ACTION_LEAK = [/\b\d(\.\d+)?\s?[×x]\b/i, /\bmark(ed|s)? (up|down|to|at)\b
 export const actionsOf = (b) => allStories(b).filter((s) => s.action).map((s) => s.action);
 export const readMinutes = (b) => words([briefText(b), ...actionsOf(b), ...allStories(b).map((s) => s.next || '')].join('\n')) / 220;
 
-export function runChecks(brief, items) {
+// opts.weekly: the Friday edition — every section may use news up to a week
+// old, the read may run longer, and "weekAhead" must be dated and sourced.
+export function runChecks(brief, items, opts = {}) {
   const fails = [];
   const warns = [];
   const { brief: hydrated, missing } = hydrate(brief, items);
@@ -91,7 +98,7 @@ export function runChecks(brief, items) {
   // Ages are measured from the brief's morning publish time (~7am ET).
   const ref = Date.parse(date) + DAY / 2;
   const isMonday = new Date(ref).getUTCDay() === 1;
-  const newsHours = isMonday ? LIMITS.mondayStaleHours : LIMITS.staleHours;
+  const newsHours = opts.weekly ? 192 : isMonday ? LIMITS.mondayStaleHours : LIMITS.staleHours;
   const ageOf = (so) => (ref - Date.parse(so.publishedAt)) / 3600000;
 
   if (missing.length) fails.push(`Cites item ids that are not in the news pool: ${[...new Set(missing)].join(', ')}`);
@@ -123,7 +130,7 @@ export function runChecks(brief, items) {
       if (q) warns.push(`${p.label} quiet — "${q}"`);
       else fails.push(`${p.label} has no stories and no ${p.key}Quiet line`);
     }
-    const maxAge = p.staleHours || newsHours;
+    const maxAge = Math.max(p.staleHours || 0, newsHours);
     list.forEach((st, i) => {
       const tag = `${p.label} #${i + 1} "${(st.title || '').slice(0, 34)}…"`;
       if (p.key === 'portfolio') {
@@ -201,11 +208,18 @@ export function runChecks(brief, items) {
   // Grouped by event (collect.mjs sets eventId): one cited article covers the whole event.
   const citedEvents = new Set(items.filter((it) => cited.has(it.id)).map((it) => it.eventId || it.id));
   const missedEvents = new Map();
+  const events = new Map();
   for (const it of items) {
     const ev = it.eventId || it.id;
-    if ((it.outlets || 1) >= TALK_OF_DAY && !citedEvents.has(ev) && !missedEvents.has(ev)) missedEvents.set(ev, it);
+    if ((it.outlets || 1) >= TALK_OF_DAY && (!events.has(ev) || events.get(ev).outlets < it.outlets)) events.set(ev, it);
   }
+  const topEvents = [...events.entries()].sort((a, b) => b[1].outlets - a[1].outlets).slice(0, TALK_OF_DAY_TOP);
+  for (const [ev, it] of topEvents) if (!citedEvents.has(ev)) missedEvents.set(ev, it);
   for (const it of missedEvents.values()) fails.push(`Widely covered (${it.outlets} outlets) but not in the brief: ${it.id} "${(it.title || '').slice(0, 60)}"`);
+
+  const total = allStories(brief).length;
+  const maxStories = opts.weekly ? 22 : 18;
+  if (total > maxStories) fails.push(`${total} stories in total (max ${maxStories}) — keep the ones that earn their slot`);
 
   if (otherActions > LIMITS.otherActions) fails.push(`${otherActions} next steps outside Portfolio (max ${LIMITS.otherActions}) — keep only the ones a GP should act on`);
 
@@ -213,7 +227,20 @@ export function runChecks(brief, items) {
   for (const re of JARGON) { const m = text.match(re); if (m) fails.push(`Internal jargon or tracker data: "${m[0]}"`); }
 
   const mins = readMinutes(brief);
-  if (mins > LIMITS.readMinutes) fails.push(`Read time ${mins.toFixed(1)} min (max ${LIMITS.readMinutes})`);
+  const maxRead = opts.weekly ? 12 : LIMITS.readMinutes;
+  if (mins > maxRead) fails.push(`Read time ${mins.toFixed(1)} min (max ${maxRead})`);
+
+  if (opts.weekly) {
+    const wa = hydrated.weekAhead || [];
+    if (wa.length > 6) fails.push(`Week ahead: ${wa.length} entries (max 6)`);
+    wa.forEach((w, i) => {
+      const tag = `Week ahead #${i + 1}`;
+      if (!w.when || !w.what) fails.push(`${tag}: needs "when" and "what"`);
+      if ((w.what || '').length > 90) fails.push(`${tag}: what is ${w.what.length} chars (max 90)`);
+      if ((w.why || '').length > 140) fails.push(`${tag}: why is ${w.why.length} chars (max 140)`);
+      if (!w.sources?.length) fails.push(`${tag}: no source`);
+    });
+  }
 
   const count = Object.fromEntries(PURPOSES.map((p) => [p.key, (brief[p.key] || []).length]));
   return {

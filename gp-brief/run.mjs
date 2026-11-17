@@ -16,7 +16,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { collect } from './collect.mjs';
-import { DRAFT_SYSTEM, JUDGE_SYSTEM, REVISE_USER, draftUser, judgeUser } from './prompts.mjs';
+import { DRAFT_SYSTEM as DAILY_DRAFT, JUDGE_SYSTEM as DAILY_JUDGE, WEEKLY_ADDENDUM, WEEKLY_JUDGE_ADDENDUM, REVISE_USER, draftUser, judgeUser } from './prompts.mjs';
 import { askJSON, hasLLM, itemsForPrompt } from './llm.mjs';
 import { runChecks, decide } from './checks.mjs';
 import { renderHTML, renderQualityReport } from './render-html.mjs';
@@ -32,6 +32,10 @@ const date = args.date || new Date().toISOString().slice(0, 10);
 const work = path.resolve(args.work || path.join('gp-brief', 'out', date));
 const maxRounds = Number(args['max-rounds'] || 3);
 const manual = !hasLLM();
+// --weekly: the Friday edition (same pipeline, weekly prompts and checks).
+const weekly = Boolean(args.weekly);
+const DRAFT_SYSTEM = weekly ? DAILY_DRAFT + WEEKLY_ADDENDUM : DAILY_DRAFT;
+const JUDGE_SYSTEM = weekly ? DAILY_JUDGE + WEEKLY_JUDGE_ADDENDUM : DAILY_JUDGE;
 fs.mkdirSync(work, { recursive: true });
 
 const readJSON = (f) => JSON.parse(fs.readFileSync(f, 'utf8'));
@@ -47,7 +51,7 @@ const FAIL_TYPES = [
   ['unknown sector', 'unknown sector'], ['unknown thesis', 'unknown thesis'], ['verdict must be', 'bad verdict'], ['chars (max', 'too long'],
   ['sentences (max', 'too many sentences'], ['confidence not labeled', 'no confidence'], ['no source', 'no source'], ['h old', 'stale source'],
   ['used twice', 'item used twice'], ['duplicate stories', 'duplicate story'], ['Top 3', 'top 3'], ['Widely covered', 'missed widely covered event'],
-  ['next steps outside', 'too many actions'], ['jargon', 'jargon'], ['Read time', 'read time'], ['quiet', 'missing quiet line'],
+  ['next steps outside', 'too many actions'], ['stories in total', 'too many stories in total'], ['jargon', 'jargon'], ['Read time', 'read time'], ['quiet', 'missing quiet line'],
 ];
 const failureTypes = (fails) => {
   const n = {};
@@ -85,7 +89,7 @@ async function main() {
     brief.date = brief.date || date;
     writeJSON(bf, brief);
 
-    const checks = runChecks(brief, items);
+    const checks = runChecks(brief, items, { weekly });
     writeJSON(file(`checks.r${r}.json`), { fails: checks.fails, warns: checks.warns, stats: checks.stats });
     log(`draft ${r}: ${checks.stats.stories} stories (P${checks.stats.portfolio} Th${checks.stats.thesis} R${checks.stats.regulation} T${checks.stats.tech} M${checks.stats.macro} F${checks.stats.frontier}) + ${checks.stats.deals} deals · ${checks.stats.readMinutes} min · ${checks.fails.length} check failures`);
 
@@ -109,13 +113,13 @@ async function main() {
   const best = rounds.find((x) => x.decision.pass) || [...rounds].sort((a, b) => b.decision.weighted - a.decision.weighted)[0];
   const final = { pass: best.decision.pass, weighted: best.decision.weighted, rounds: rounds.length, round: best.round };
   const opts = { quality: final, readMinutes: best.checks.stats.readMinutes, poolSize: items.length };
-  fs.writeFileSync(file('brief.html'), renderHTML(best.checks.hydrated, { ...opts, fullDigestUrl: args['digest-url'] }));            // partners only
-  fs.writeFileSync(file('brief-share.html'), renderHTML(best.checks.hydrated, { ...opts, fullDigestUrl: args['digest-url'], actions: false })); // safe to forward
+  fs.writeFileSync(file('brief.html'), renderHTML(best.checks.hydrated, { ...opts, weekly, fullDigestUrl: args['digest-url'] }));            // partners only
+  fs.writeFileSync(file('brief-share.html'), renderHTML(best.checks.hydrated, { ...opts, weekly, fullDigestUrl: args['digest-url'], actions: false })); // safe to forward
   fs.writeFileSync(file('slack.txt'), renderSlack(best.checks.hydrated, { ...opts, briefUrl: args['brief-url'] }));
   fs.writeFileSync(file('quality-report.html'), renderQualityReport(best.brief, rounds, final));
   writeJSON(file('result.json'), { date, ...final, reasons: best.decision.reasons, stats: best.checks.stats });
   // The only file that may be published: the hydrated brief with every "What next" action removed.
-  writeJSON(file('public.json'), publicBrief(best.checks.hydrated, { date, generatedAt: collectedAt, ...final, readMinutes: best.checks.stats.readMinutes, poolSize: items.length }));
+  writeJSON(file('public.json'), publicBrief(best.checks.hydrated, { date, edition: weekly ? 'weekly' : 'daily', generatedAt: collectedAt, ...final, readMinutes: best.checks.stats.readMinutes, poolSize: items.length }));
 
   // 5 — RELEASE or HOLD. Delivery is lib/slack.ts postToSlack(): slack.txt to
   // the partners' channel on RELEASE, to the reviewer on HOLD.

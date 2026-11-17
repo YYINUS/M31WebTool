@@ -77,7 +77,11 @@ jobs:
         if: steps.need.outputs.run == 'true'
         env:
           PORTFOLIO_JSON: ${{ secrets.PORTFOLIO_JSON }}
-        run: node gp-brief/collect-cli.mjs "$RUNNER_TEMP/gp-brief"
+          D: ${{ steps.need.outputs.day }}
+        run: |
+          node gp-brief/collect-cli.mjs "$RUNNER_TEMP/gp-brief"
+          # Keep everything collected in the day's raw feed (the site's Raw Feed tab).
+          node gp-brief/feed-merge.mjs "$RUNNER_TEMP/gp-brief/feed.json" "data/feed/$D.json"
 
       - name: Write and review the brief
         id: daily

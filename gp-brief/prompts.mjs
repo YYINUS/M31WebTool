@@ -56,8 +56,10 @@ SECTION RULES
 - BELLWETHERS (sectorId hint "bellwether") are big companies M31 does not own but whose news moves its sectors; treat their major news like macro.
 - Merge items about the same event into one story with several itemIds. Never use an item twice.
 
-LENGTH
-- Aim for about 15 stories in total and a 5–6 minute read, like the approved reference issue. The section ranges are limits, not targets: fill a section only with stories that earn their slot, and leave the rest out.
+LENGTH (checked automatically — a draft over these limits fails)
+- AT MOST 18 stories in total; about 15 is right, like the approved reference issue (5–6 minute read). The section ranges are limits, not targets: fill a section only with stories that earn their slot.
+- Hard character limits: title ≤ 85 · brief ≤ 220 · impact ≤ 220 · next ≤ 110 · action ≤ 200 · deal text ≤ 160 · headline ≤ 85 · bottomLine ≤ 300. Count before you answer; cut words, not facts.
+- TALK OF THE DAY applies to the ~6 most widely covered events in the pool (highest [N outlets]); those must appear. Other well-covered events are optional.
 
 FIRST SCREEN
 - headline: the most important development for M31, ≤ 85 chars, a statement.
@@ -138,3 +140,22 @@ ${hardFails.length ? hardFails.map((f) => '- ' + f).join('\n') : '- none'}
 
 GP REVIEW:
 ${JSON.stringify(judge, null, 2)}`;
+
+// ── Weekly edition (Fridays) ───────────────────────────────────────────────
+// Same sections, rules and look as the daily brief, for the week as a whole,
+// plus "Week ahead": dated things to watch next week.
+export const WEEKLY_ADDENDUM = `
+
+THIS IS THE WEEKLY EDITION. It replaces nothing above except what follows.
+- Partners read it on Friday afternoon or over the weekend: what mattered this week (Monday–Friday) and what to watch next week. News items may be up to 7 days old in every section.
+- headline: the story of the week. bottomLine: the week in at most two sentences.
+- topRank 1–3 marks the three most important stories OF THE WEEK.
+- Prefer the week's most consequential developments over the latest ones. Merge a storyline that ran over several days into one story and say how it moved during the week.
+- AT MOST 22 stories in total; about 18 is right (a 7–8 minute read). The same character limits apply.
+- WEEK AHEAD: add "weekAhead", 3–6 entries for next week, most important first: votes, rulings, deadlines, earnings, launches, data releases and events that matter to M31's companies or sectors. Each: { "when": "Tue Nov 24" (only a date the items state; never invent one), "what": "≤ 90 chars", "why": "≤ 140 chars, what it would change for M31", "sectorId", "itemIds" }. If the items name fewer than 3 dated events, list only those.
+
+Add to the JSON: "weekAhead": [{"when": "...", "what": "...", "why": "...", "sectorId": "money", "itemIds": ["n12"]}]`;
+
+export const WEEKLY_JUDGE_ADDENDUM = `
+
+THIS IS THE WEEKLY EDITION, read on Friday afternoon. Judge whether it tells a GP what mattered this week (not just today) and what to watch next week. COVERAGE is against the whole week's pool. "weekAhead" entries must be dated, sourced and relevant; a vague or undated entry lowers IMPACT.`;

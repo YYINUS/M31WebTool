@@ -121,7 +121,7 @@ function sameEvent(a, b) {
 // filled every section to its maximum (26 stories, 9-minute read) and the GP
 // review held it. Keep every portfolio item, each sector's best-covered stories,
 // then the most widely covered of the rest, up to GP_BRIEF_MAX_POOL (400).
-function trimPool(items, max = Number(process.env.GP_BRIEF_MAX_POOL || 400), perSector = 10) {
+export function trimPool(items, max = Number(process.env.GP_BRIEF_MAX_POOL || 400), perSector = 10) {
   if (items.length <= max) return items;
   const rank = (a, b) => (b.outlets - a.outlets) || (Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
   const keep = new Set(items.filter((it) => it.sectorId === 'portfolio'));
@@ -135,7 +135,7 @@ function trimPool(items, max = Number(process.env.GP_BRIEF_MAX_POOL || 400), per
 // Search windows match the freshness gates in checks.mjs: Portfolio and Frontier
 // 7 days; everything else 48h, or 84h on Mondays to cover the weekend.
 const LONG_WINDOW = new Set(['portfolio', 'frontier']);
-export async function collect({ sectors = Object.keys(QUERIES), hours = new Date().getUTCDay() === 1 ? 84 : 48, longHours = 168, log = console.error } = {}) {
+export async function collect({ sectors = Object.keys(QUERIES), hours = new Date().getUTCDay() === 1 ? 84 : 48, longHours = 168, maxPool, log = console.error } = {}) {
   const hoursFor = (key) => (LONG_WINDOW.has(key) ? longHours : hours);
   const cutoffFor = (key) => Date.now() - hoursFor(key) * 3600 * 1000;
   const out = [];
@@ -164,9 +164,10 @@ export async function collect({ sectors = Object.keys(QUERIES), hours = new Date
   fresh.sort((a, b) => b.outlets - a.outlets);
   fresh.forEach((it, i) => { it.id = `n${i + 1}`; });
   for (const it of fresh) { it.eventId = it.eventOf.id; delete it.eventOf; }
-  const pool = trimPool(fresh);
+  const pool = trimPool(fresh, maxPool);
   log(`collect: ${out.length} raw → ${fresh.length} fresh unique items → pool of ${pool.length} (${failures.length} source failures)`);
   // Query text is not logged: portfolio queries are company names, and CI logs are public.
   if (failures.length) log('  source failures by type: ' + Object.entries(failures.reduce((a, f) => { const k = f.split(':')[0] + ' ' + (f.match(/\b(\d{3})\b/)?.[1] || 'error'); a[k] = (a[k] || 0) + 1; return a; }, {})).map(([k, n]) => `${k} ×${n}`).join(', '));
-  return { items: pool, failures };
+  // `all`: everything fresh, for the raw feed; `items`: the trimmed pool for the writer.
+  return { items: pool, all: fresh, failures };
 }
