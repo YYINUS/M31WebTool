@@ -134,7 +134,7 @@ function actionsBlock(brief) {
 // ciphertext (brief.locked, see public.mjs) and are decrypted in the browser
 // with the partners' passphrase. Without the passphrase nothing is readable.
 function lockedToggle(id) {
-  return `<details class="act" style="margin:10px 0 0;"><summary class="actbtn">What next</summary><div data-act="${id}" style="margin:8px 0 0;padding:9px 12px;background:#fff7e6;border-left:3px solid #b45309;border-radius:2px;font-family:${SANS};font-size:14px;line-height:1.5;color:${MUTED};">Locked for partners. <a href="#whatnext" style="color:${INK};font-weight:600;">Unlock at the top</a> with the partner passphrase.</div></details>`;
+  return `<details class="act" style="margin:10px 0 0;"><summary class="actbtn">What next</summary><div data-act="${id}" style="margin:8px 0 0;padding:9px 12px;background:#fff7e6;border-left:3px solid #b45309;border-radius:2px;font-family:${SANS};font-size:14px;line-height:1.5;color:${MUTED};">Locked. <a href="#whatnext" style="color:${INK};font-weight:600;">Type the password at the top</a> to see it.</div></details>`;
 }
 
 function lockedActionsBlock(locked) {
@@ -143,12 +143,12 @@ function lockedActionsBlock(locked) {
   <details class="act" id="whatnext" style="margin:16px 0 0;"><summary class="actbtn">What next &middot; ${locked.n} actions</summary>
     <div id="whatnext-body" style="margin:10px 0 0;padding:14px 16px;border:1.5px solid #b45309;border-radius:6px;background:#fffdf7;font-family:${SANS};font-size:14px;line-height:1.5;color:${BODY};">
       <form id="unlock" style="margin:0;">
-        <label for="pass" style="display:block;font-weight:600;color:${INK};margin-bottom:6px;">Partner passphrase</label>
+        <label for="pass" style="display:block;font-weight:600;color:${INK};margin-bottom:6px;">Password</label>
         <div style="display:flex;gap:8px;flex-wrap:wrap;">
           <input id="pass" type="password" autocomplete="current-password" required style="flex:1 1 220px;min-height:40px;padding:0 10px;border:1.5px solid #d4d4d4;border-radius:3px;font:inherit;">
           <button type="submit" style="min-height:40px;padding:0 14px;border:1.5px solid #b45309;border-radius:3px;background:#fff7e6;color:#92400e;font:inherit;font-weight:600;cursor:pointer;">Unlock</button>
         </div>
-        <p id="unlock-msg" role="status" style="margin:8px 0 0;font-size:13px;color:${FAINT};">Next steps are encrypted on this public page. Partners can unlock them here.</p>
+        <p id="unlock-msg" role="status" style="margin:8px 0 0;font-size:13px;color:${FAINT};">Type the password to see the next steps.</p>
       </form>
     </div>
   </details>
@@ -175,11 +175,11 @@ const UNLOCK_JS = `(function () {
   }
   async function attempt(pass, quiet) {
     try { show(await open(pass)); try { sessionStorage.setItem('m31-brief-pass', pass); } catch (e) {} return true; }
-    catch (e) { if (!quiet) msg.textContent = 'That passphrase did not unlock this brief.'; msg.style.color = '#991b1b'; return false; }
+    catch (e) { if (!quiet) msg.textContent = 'That password did not unlock this brief.'; msg.style.color = '#991b1b'; return false; }
   }
   form.addEventListener('submit', function (e) { e.preventDefault(); attempt(document.getElementById('pass').value, false); });
   var saved = null; try { saved = sessionStorage.getItem('m31-brief-pass'); } catch (e) {}
-  if (saved) attempt(saved, true).then(function (ok) { if (!ok) { msg.style.color = '${FAINT}'; msg.textContent = 'Next steps are encrypted on this public page. Partners can unlock them here.'; } });
+  if (saved) attempt(saved, true).then(function (ok) { if (!ok) { msg.style.color = '${FAINT}'; msg.textContent = 'Type the password to see the next steps.'; } });
 })();`;
 
 function storyBlock(st, purpose, i, lockedIds) {
