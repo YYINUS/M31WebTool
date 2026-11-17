@@ -62,7 +62,8 @@ LENGTH (checked automatically — a draft over these limits fails)
 - TALK OF THE DAY applies to the ~6 most widely covered events in the pool (highest [N outlets]); those must appear. Other well-covered events are optional.
 
 FIRST SCREEN
-- headline: the most important development for M31, ≤ 85 chars, a statement.
+- headline: the most important development for M31, ≤ 85 chars, a statement. It and the Top 3 must be news from the last 24 hours (Portfolio and Frontier may use older items in their sections, not on the first screen) — never lead with a story that is days old while today's market-moving news sits lower.
+- Skip filler: routine price moves ("ticker blips"), minor deals and generic sector news do not earn a slot; leave a section short rather than pad it.
 - bottomLine: ≤ 2 sentences on the day as a whole. Say plainly what happened ("plans", "launched", "reached orbit"); no slang like "shipped".
 
 FUNDING (inside Tech & Funding): up to 6 deals, most notable first, not already covered as stories.
@@ -113,6 +114,7 @@ Also check:
 - MISSED: items in the pool you'd be annoyed not to see — above all, portfolio news. Up to 3 ids with one-line reasons. An important miss caps COVERAGE at 3.
 - FILLER: stories that are in the brief only to reach a count.
 - WEAK IMPACTS: quote any "impact" that restates the brief or has no view.
+- NEXT STEPS draw on M31's internal notes on each company (open questions, raises, unlocks, deadlines), which you do not see. Do not mark a step as invented because its premise is not in the pool; judge only whether it is concrete, useful and fits the news.
 - NEXT STEPS: would you actually do each portfolio next step today? Quote any that are vague, obvious or wrong under weakImpacts; a useless next step caps IMPACT at 3.
 - OPEN TEST: based on this issue, would you open tomorrow's? yes / no.
 
