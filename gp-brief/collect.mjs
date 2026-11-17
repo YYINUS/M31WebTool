@@ -11,6 +11,7 @@
 //   { id, sectorId, query, title, source, url, publishedAt, summary }
 
 import { QUERIES, RESULTS_PER_QUERY } from './queries.mjs';
+import { FEEDS, FEED_NAMES } from './feeds.mjs';
 
 const DAY_MS = 24 * 3600 * 1000;
 const UA = { 'User-Agent': 'M31-GP-Brief/1.0' };
@@ -73,6 +74,27 @@ async function gdelt(query, hours, limit = RESULTS_PER_QUERY) {
   });
 }
 
+// Publisher feeds (feeds.mjs): RSS or Atom, with a real summary per item.
+const strip = (h) => String(h || '').replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+  .replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;|&#8217;|&rsquo;/g, "'")
+  .replace(/&#8216;|&lsquo;/g, "'").replace(/&#822[01];|&[lr]dquo;/g, '"').replace(/&#8211;|&ndash;/g, '–').replace(/&#8212;|&mdash;/g, '—')
+  .replace(/&nbsp;|&#160;/g, ' ').replace(/&#\d+;/g, '').replace(/\s+/g, ' ').trim();
+async function publisherFeed(url) {
+  const res = await fetch(url, { headers: UA, signal: AbortSignal.timeout(15000) });
+  if (!res.ok) throw new Error(`feed ${res.status}`);
+  const xml = await res.text();
+  const host = new URL(url).hostname.replace(/^(www|feeds|news)\./, '');
+  const channel = strip((xml.match(/<channel>[\s\S]*?<title[^>]*>([\s\S]*?)<\/title>/) || xml.match(/<feed[\s\S]*?<title[^>]*>([\s\S]*?)<\/title>/) || [])[1]) || host;
+  return (xml.match(/<item[\s>][\s\S]*?<\/item>|<entry[\s>][\s\S]*?<\/entry>/g) || []).map((it) => {
+    const get = (n) => { const m = it.match(new RegExp(`<${n}[^>]*>([\\s\\S]*?)</${n}>`)); return m ? m[1] : ''; };
+    const link = strip(get('link')) || (it.match(/<link[^>]*href="([^"]+)"/) || [])[1] || '';
+    const t = Date.parse(strip(get('pubDate') || get('published') || get('updated') || get('dc:date')));
+    return { title: strip(get('title')), source: FEED_NAMES[host] || channel.split(/\s[-|–:]\s/)[0].slice(0, 40), url: link,
+      publishedAt: Number.isFinite(t) ? new Date(t).toISOString() : '',
+      summary: strip(get('description') || get('summary') || get('content:encoded') || get('content')).slice(0, 300) };
+  });
+}
+
 // Near-duplicate key: first 8 meaningful words of the title.
 const STOP = new Set(['the', 'a', 'an', 'of', 'to', 'in', 'on', 'for', 'and', 'with', 'as', 'at', 'by', 'is', 'its']);
 export const titleKey = (t) => (t || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w && !STOP.has(w)).slice(0, 8).join(' ');
@@ -128,7 +150,9 @@ function sameEvent(a, b) {
 // then the most widely covered of the rest, up to GP_BRIEF_MAX_POOL (400).
 export function trimPool(items, max = Number(process.env.GP_BRIEF_MAX_POOL || 400), perSector = 10) {
   if (items.length <= max) return items;
-  const rank = (a, b) => (b.outlets - a.outlets) || (Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
+  // Items with a real summary count as one extra outlet: the writer can say more about them.
+  const score = (it) => it.outlets + (it.summary ? 1 : 0);
+  const rank = (a, b) => (score(b) - score(a)) || (Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
   const keep = new Set(items.filter((it) => it.sectorId === 'portfolio'));
   const bySector = new Map();
   for (const it of items) if (!keep.has(it)) (bySector.get(it.sectorId) || bySector.set(it.sectorId, []).get(it.sectorId)).push(it);
@@ -151,6 +175,14 @@ export async function collect({ sectors = Object.keys(QUERIES), hours = new Date
   for (const sectorId of sectors) for (const query of QUERIES[sectorId] || []) jobs.push({ sectorId, query });
   const lanes = Number(process.env.GP_BRIEF_COLLECT_LANES || 4);
   let next = 0;
+  // Publisher feeds first: when a story also comes from Google News, the version with a summary is kept.
+  await Promise.all(Object.entries(FEEDS).filter(([k]) => sectors.includes(k) || k === 'macro' || k === 'regulation').flatMap(([sectorId, urls]) => urls.map(async (url) => {
+    try {
+      for (const it of await publisherFeed(url)) out.push({ ...it, sectorId, query: 'feed', via: 'feed' });
+    } catch (e) {
+      failures.push(`feed:${url}: ${e.message}`);
+    }
+  })));
   await Promise.all(Array.from({ length: lanes }, async () => {
     while (next < jobs.length) {
       const { sectorId, query } = jobs[next++];
