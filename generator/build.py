@@ -17,6 +17,7 @@ import re
 import shutil
 import subprocess
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -24,6 +25,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA, SITE = ROOT / "data", ROOT / "site"
 # Absolute site URL (e.g. https://owner.github.io/repo/) so links in the inbox version work from email.
 SITE_URL = os.environ.get("SITE_URL", "")
+# The repository whose workflows write new editions (for the Refresh buttons).
+REPO = os.environ.get("GITHUB_REPOSITORY", "YYINUS/M31WebTool")
+ET = ZoneInfo("America/New_York")
 
 # Daily Brief sections, in reading order, with the renderer's colors (gp-brief/render-html.mjs).
 PURPOSES = [
@@ -53,6 +57,14 @@ LABEL_PHRASE = {
 }
 
 env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=select_autoescape(["html"]))
+
+
+def as_of(iso: str | None) -> str:
+    """'Tue, Nov 17 · 6:41 AM ET' from an ISO timestamp, or ''."""
+    if not iso:
+        return ""
+    t = dt.datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(ET)
+    return f"{t:%a, %b} {t.day} · {t:%I}".replace(" 0", " ").replace("· 0", "· ") + f":{t:%M} {t:%p} ET"
 
 
 def long_date(iso: str) -> str:
@@ -98,6 +110,7 @@ def daily_summary(it: dict) -> dict:
         "headline": d["headline"], "bottom_line": d["bottomLine"], "tops": tops,
         "stories": count, "deals": len(d.get("deals") or []),
         "minutes": max(1, round((d.get("meta") or {}).get("readMinutes") or 5)),
+        "as_of": as_of((d.get("meta") or {}).get("generatedAt")),
     }
 
 
@@ -178,14 +191,17 @@ def build_fringe() -> list[dict]:
         prev, nxt = neighbours(fringe, i, "week_label")
         rows, legend = fringe_nav(d)
         summary = fringe_summary(d)
-        html = t.render(d=d, root="../", prev=prev, next=nxt, nav_rows=rows, legend=legend, slug=it["slug"], summary=summary)
+        refresh = {"runs": f"https://api.github.com/repos/{REPO}/actions/workflows/fringe.yml/runs?per_page=1",
+                   "url": f"https://github.com/{REPO}/actions/workflows/fringe.yml"}
+        html = t.render(d=d, root="../", prev=prev, next=nxt, nav_rows=rows, legend=legend, slug=it["slug"],
+                        summary=summary, as_of=as_of(d.get("generated_at")), refresh=refresh)
         write(SITE / "fringe" / f"{it['slug']}.html", html)
         if i == 0:
             write(SITE / "fringe" / "index.html", html)
         full_url = f"{SITE_URL}fringe/{it['slug']}.html" if SITE_URL else f"{it['slug']}.html"
         email = env.get_template("fringe_email.html").render(d=d, full_url=full_url, **fringe_email(d))
         write(SITE / "fringe" / f"{it['slug']}-email.html", email)
-        out.append({"slug": it["slug"], "d": d, **summary})
+        out.append({"slug": it["slug"], "d": d, "as_of": as_of(d.get("generated_at")), **summary})
     write(SITE / "fringe" / "coverage.html", env.get_template("coverage.html").render())
     return out
 

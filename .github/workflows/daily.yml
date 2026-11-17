@@ -1,0 +1,28 @@
+name: Daily Brief
+
+on:
+  schedule:
+    - cron: "41 11 * * 1-5"   # weekdays 11:41 UTC (6:41 am ET in winter)
+  # "Run workflow" here is what the brief's Refresh button points to.
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Date YYYY-MM-DD (blank = today)"
+        required: false
+      publish_hold:
+        description: "Publish even if the GP review holds the brief"
+        type: boolean
+        default: false
+
+jobs:
+  run:
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/reports.yml
+    with:
+      report: daily
+      date: ${{ inputs.date || '' }}
+      publish_hold: ${{ inputs.publish_hold || false }}
+    secrets: inherit

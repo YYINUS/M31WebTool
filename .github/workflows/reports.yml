@@ -1,29 +1,15 @@
-name: Generate and publish reports
+name: Build and publish
 
 on:
-  schedule:
-    - cron: "41 11 * * 1-5"   # Daily Brief: weekdays 11:41 UTC (6:41 am ET in winter)
-    - cron: "17 13 * * 5"     # Fringe Weekly: Fridays 13:17 UTC, covers Sat–Fri
-  workflow_dispatch:
+  # Called by daily.yml and fringe.yml (schedule + "Run workflow" / Refresh buttons).
+  workflow_call:
     inputs:
-      report:
-        description: "Which report to generate"
-        type: choice
-        options: [daily, fringe, both, none]
-        default: daily
-      date:
-        description: "Daily: date YYYY-MM-DD (blank = today)"
-        required: false
-      publish_hold:
-        description: "Daily: publish even if the GP review holds the brief"
-        type: boolean
-        default: false
-      fringe_start:
-        description: "Fringe: window start YYYY-MM-DD (blank = 6 days before end)"
-        required: false
-      fringe_end:
-        description: "Fringe: window end YYYY-MM-DD (blank = today)"
-        required: false
+      report: { type: string, required: true }        # daily | fringe | none
+      date: { type: string, required: false, default: "" }
+      publish_hold: { type: boolean, required: false, default: false }
+      fringe_start: { type: string, required: false, default: "" }
+      fringe_end: { type: string, required: false, default: "" }
+  # A push to main that changes content or design rebuilds the site without calling the API.
   push:
     branches: [main]
     paths: ["data/**", "templates/**", "static/**", "generator/build.py", "gp-brief/**"]
@@ -33,14 +19,14 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: reports
-  cancel-in-progress: false
-
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    # One generation at a time, so two runs never race to push to main.
+    concurrency:
+      group: reports-generate
+      cancel-in-progress: false
     outputs:
       held: ${{ steps.daily.outputs.held }}
     steps:
@@ -60,28 +46,21 @@ jobs:
       - name: Decide what to generate
         id: plan
         env:
-          EVENT: ${{ github.event_name }}
-          SCHEDULE: ${{ github.event.schedule }}
           REPORT: ${{ inputs.report }}
-        run: |
-          r="none"
-          if [ "$EVENT" = "schedule" ]; then
-            if [ "$SCHEDULE" = "17 13 * * 5" ]; then r="fringe"; else r="daily"; fi
-          elif [ "$EVENT" = "workflow_dispatch" ]; then
-            r="$REPORT"
-          fi
-          echo "report=$r" >> "$GITHUB_OUTPUT"
+        run: echo "report=${REPORT:-none}" >> "$GITHUB_OUTPUT"
 
       # The GP brief: collect → draft → checks → GP review → revise (max 3).
       # Drafts, reviews and the partner copy with "What next" actions stay in
       # the runner's temp folder and are never committed or uploaded; only
-      # public.json (no actions) is published. Logs print summaries only.
+      # public.json is published, with actions encrypted (BRIEF_PASSPHRASE) or
+      # dropped. Logs print summaries only.
       - name: Generate Daily Brief
         id: daily
         if: steps.plan.outputs.report == 'daily' || steps.plan.outputs.report == 'both'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PORTFOLIO_JSON: ${{ secrets.PORTFOLIO_JSON }}
+          BRIEF_PASSPHRASE: ${{ secrets.BRIEF_PASSPHRASE }}
           DAY: ${{ inputs.date }}
           FORCE: ${{ inputs.publish_hold }}
         run: |
@@ -93,7 +72,7 @@ jobs:
             cp "$W/public.json" "data/daily/$D.json"
             echo "Published the $D brief ($status)."
           else
-            echo "::warning::The $D brief was HELD by the GP review and not published. Rerun with publish_hold to publish it anyway."
+            echo "::warning::The $D brief was HELD by the GP review and not published. Run the Daily Brief workflow again with publish_hold ticked to publish it anyway."
             echo "held=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -118,6 +97,7 @@ jobs:
           git add data
           if ! git diff --cached --quiet; then
             git commit -m "Add ${{ steps.plan.outputs.report }} report $(date -u +%F)"
+            git pull --rebase --quiet origin "${GITHUB_REF_NAME}"
             git push
           fi
 
@@ -147,5 +127,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "::error::Today's Daily Brief did not pass the GP review after 3 drafts, so it was not published. Rerun with publish_hold to publish it anyway."
+          echo "::error::Today's Daily Brief did not pass the GP review after 3 drafts, so it was not published. Run the Daily Brief workflow again with publish_hold ticked to publish it anyway."
           exit 1

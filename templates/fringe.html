@@ -18,13 +18,16 @@
     <a class="word" href="{{ root }}index.html">Fringe Foundation</a>
     <div class="kick">Weekly Signal <span>·</span> Frontier claims, screened</div>
   </div>
-  <div class="mast-right">{{ d.week_label }}<br>{{ d.status | capitalize }}</div>
+  <div class="mast-right">{% if as_of %}Updated {{ as_of }}{% else %}{{ d.week_label }}{% endif %}<br>{{ d.status | capitalize }}</div>
 </header>
 
 <main class="sheet">
 
 <div class="intro">
-  <div class="label muted">The Weekly Signal &nbsp;·&nbsp; {{ d.week_label }}</div>
+  <div class="intro-top">
+    <div class="label muted">The Weekly Signal &nbsp;·&nbsp; {{ d.week_label }}{% if as_of %} &nbsp;·&nbsp; <span class="asof">Updated {{ as_of }}</span>{% endif %}</div>
+    <span class="refresh" data-report="fringe" data-runs="{{ refresh.runs }}" data-run-url="{{ refresh.url }}"></span>
+  </div>
   <h1>{{ summary.headline }}</h1>
   <p>{{ summary.dek }}</p>
 </div>
@@ -148,5 +151,6 @@
   if (location.hash) { var t = document.querySelector(location.hash); if (t) { var f = t.querySelector('details'); if (f) f.open = true; } }
 })();
 </script>
+<script src="{{ root }}static/refresh.js" defer></script>
 </body>
 </html>

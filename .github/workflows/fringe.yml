@@ -1,0 +1,27 @@
+name: Fringe Weekly
+
+on:
+  schedule:
+    - cron: "17 13 * * 5"     # Fridays 13:17 UTC, covers Sat–Fri
+  # "Run workflow" here is what the issue's Refresh button points to.
+  workflow_dispatch:
+    inputs:
+      fringe_start:
+        description: "Window start YYYY-MM-DD (blank = 6 days before end)"
+        required: false
+      fringe_end:
+        description: "Window end YYYY-MM-DD (blank = today)"
+        required: false
+
+jobs:
+  run:
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/reports.yml
+    with:
+      report: fringe
+      fringe_start: ${{ inputs.fringe_start || '' }}
+      fringe_end: ${{ inputs.fringe_end || '' }}
+    secrets: inherit

@@ -33,7 +33,7 @@
   <section class="feature" aria-labelledby="daily-h">
     <div class="feature-head">
       <div class="label">The Daily Brief <span class="muted">&nbsp;·&nbsp; {{ b.long_date }}</span></div>
-      <span class="label muted">Top 3 in 30 sec · full {{ b.minutes }} min</span>
+      <span class="label muted">{% if b.as_of %}Updated {{ b.as_of }}{% else %}Top 3 in 30 sec · full {{ b.minutes }} min{% endif %}</span>
     </div>
     <h2 id="daily-h"><a href="daily/{{ b.slug }}.html">{{ b.headline }}</a></h2>
     <p class="dek">{{ b.bottom_line }}</p>
@@ -62,7 +62,7 @@
   <section class="feature" aria-labelledby="fringe-h">
     <div class="feature-head">
       <div class="label">Fringe Foundation · Weekly Signal <span class="muted">&nbsp;·&nbsp; {{ f.d.week_label }}</span></div>
-      <span class="label muted">{{ f.d.status }}</span>
+      <span class="label muted">{% if f.as_of %}Updated {{ f.as_of }}{% else %}{{ f.d.status }}{% endif %}</span>
     </div>
     <h2 id="fringe-h"><a href="fringe/{{ f.slug }}.html">{{ f.headline }}</a></h2>
     <p class="dek">{{ f.dek }}</p>

@@ -41,7 +41,8 @@ const log = (...m) => console.error('[gp-brief]', ...m);
 const need = (name, what) => { log(`MANUAL MODE — waiting for ${what}: ${file(name)}`); process.exit(3); };
 
 async function main() {
-  // 1 — COLLECT
+  // 1 — COLLECT (the brief's "Updated" time is when its news was gathered)
+  const collectedAt = new Date().toISOString();
   let items;
   if (args.items) items = readJSON(path.resolve(args.items));
   else if (fs.existsSync(file('items.json'))) items = readJSON(file('items.json'));
@@ -94,7 +95,7 @@ async function main() {
   fs.writeFileSync(file('quality-report.html'), renderQualityReport(best.brief, rounds, final));
   writeJSON(file('result.json'), { date, ...final, reasons: best.decision.reasons, stats: best.checks.stats });
   // The only file that may be published: the hydrated brief with every "What next" action removed.
-  writeJSON(file('public.json'), publicBrief(best.checks.hydrated, { date, ...final, readMinutes: best.checks.stats.readMinutes, poolSize: items.length }));
+  writeJSON(file('public.json'), publicBrief(best.checks.hydrated, { date, generatedAt: collectedAt, ...final, readMinutes: best.checks.stats.readMinutes, poolSize: items.length }));
 
   // 5 — RELEASE or HOLD. Delivery is lib/slack.ts postToSlack(): slack.txt to
   // the partners' channel on RELEASE, to the reviewer on HOLD.

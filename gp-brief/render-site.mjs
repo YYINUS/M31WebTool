@@ -10,6 +10,13 @@ import { renderHTML } from './render-html.mjs';
 const [dataDir, outDir] = process.argv.slice(2);
 fs.mkdirSync(outDir, { recursive: true });
 const files = fs.readdirSync(dataDir).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f)).sort().reverse();
+// The repository whose workflows write new editions (for the Refresh button).
+const REPO = process.env.GITHUB_REPOSITORY || 'YYINUS/M31WebTool';
+const refresh = {
+  runsApi: `https://api.github.com/repos/${REPO}/actions/workflows/daily.yml/runs?per_page=1`,
+  runUrl: `https://github.com/${REPO}/actions/workflows/daily.yml`,
+  script: '../static/refresh.js',
+};
 const label = (d) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' });
 
 files.forEach((f, i) => {
@@ -25,6 +32,7 @@ files.forEach((f, i) => {
       archive: '../index.html#daily-archive',
       prev: older && { href: `${older}.html`, label: label(older) },
       next: newer && { href: `${newer}.html`, label: label(newer) },
+      refresh,
     },
   });
   fs.writeFileSync(path.join(outDir, `${date}.html`), html);

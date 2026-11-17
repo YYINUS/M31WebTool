@@ -82,7 +82,7 @@ function findStory(brief, itemIds = [], skip) {
   return null;
 }
 
-function thesisBlock(st, i, brief) {
+function thesisBlock(st, i, brief, lockedIds) {
   const t = thesisById(st.thesisId) || { title: st.thesisId, claim: '', url: '#', date: '' };
   const v = VERDICTS[st.verdict] || VERDICTS.mixed;
   const when = t.date ? fmtDate(t.date, { month: 'short', year: 'numeric' }) : '';
@@ -94,7 +94,7 @@ function thesisBlock(st, i, brief) {
       <h3 style="margin:0;font-family:${SERIF};font-weight:400;font-size:23px;line-height:1.18;color:${INK};">${esc(st.title)}</h3>
       <p style="margin:7px 0 0;font-family:${SANS};font-size:15px;line-height:1.55;color:${BODY};">${esc(st.brief)}</p>
       <p style="margin:8px 0 0;font-family:${SANS};font-size:15px;line-height:1.55;color:${INK};"><strong>What it means for the call:</strong> ${esc(st.impact)}</p>
-      ${st.action ? actionToggle(st.action) : ''}
+      ${st.action ? actionToggle(st.action) : lockedIds?.has(storyId('thesis', i)) ? lockedToggle(storyId('thesis', i)) : ''}
       <p style="margin:7px 0 0;font-family:${SANS};font-size:12px;line-height:1.6;color:${FAINT};">Source: ${sourceLinks(st.sources)}${full ? ` &nbsp;·&nbsp; <a href="#${full}" style="color:${FAINT};">Full story &darr;</a>` : ''}</p>
     </article>`;
 }
@@ -106,15 +106,23 @@ function actionToggle(text) {
   return `<details class="act" style="margin:10px 0 0;"><summary class="actbtn">What next</summary><div style="margin:8px 0 0;padding:9px 12px;background:#fff7e6;border-left:3px solid #b45309;border-radius:2px;font-family:${SANS};font-size:14px;line-height:1.5;color:${INK};">${esc(text)}</div></details>`;
 }
 
-// First screen: every next step in one list, portfolio first, each linking to its story.
-function actionsBlock(brief) {
+// Every next step, portfolio first: { id (story anchor), who, text }.
+export function actionRows(brief) {
   const rows = [];
   for (const p of PURPOSES) (brief[p.key] || []).forEach((st, i) => {
     if (!st.action) return;
     const named = actionCompanies(st.action);
     const who = st.company || (p.key === 'thesis' ? `Thesis: ${thesisById(st.thesisId)?.title || st.thesisId}` : named.length ? named.join(' · ') : p.label);
-    rows.push(`<li style="margin:0 0 10px;list-style:none;padding-left:14px;text-indent:-14px;"><span style="color:#b45309;">&rarr;</span> <a href="#${storyId(p.key, i)}" style="color:${INK};font-weight:600;text-decoration:none;">${esc(who)}</a> &mdash; ${esc(st.action)}</li>`);
+    rows.push({ id: storyId(p.key, i), who, text: st.action });
   });
+  return rows;
+}
+
+const actionRowHTML = (r) => `<li style="margin:0 0 10px;list-style:none;padding-left:14px;text-indent:-14px;"><span style="color:#b45309;">&rarr;</span> <a href="#${r.id}" style="color:${INK};font-weight:600;text-decoration:none;">${esc(r.who)}</a> &mdash; ${esc(r.text)}</li>`;
+
+// First screen: every next step in one list, portfolio first, each linking to its story.
+function actionsBlock(brief) {
+  const rows = actionRows(brief).map(actionRowHTML);
   if (!rows.length) return '';
   return `
   <details class="act" style="margin:16px 0 0;"><summary class="actbtn">What next &middot; ${rows.length} actions</summary>
@@ -122,7 +130,59 @@ function actionsBlock(brief) {
   </details>`;
 }
 
-function storyBlock(st, purpose, i) {
+// Locked "What next" for the published site: the actions ship only as
+// ciphertext (brief.locked, see public.mjs) and are decrypted in the browser
+// with the partners' passphrase. Without the passphrase nothing is readable.
+function lockedToggle(id) {
+  return `<details class="act" style="margin:10px 0 0;"><summary class="actbtn">What next</summary><div data-act="${id}" style="margin:8px 0 0;padding:9px 12px;background:#fff7e6;border-left:3px solid #b45309;border-radius:2px;font-family:${SANS};font-size:14px;line-height:1.5;color:${MUTED};">Locked for partners. <a href="#whatnext" style="color:${INK};font-weight:600;">Unlock at the top</a> with the partner passphrase.</div></details>`;
+}
+
+function lockedActionsBlock(locked) {
+  if (!locked?.n) return '';
+  return `
+  <details class="act" id="whatnext" style="margin:16px 0 0;"><summary class="actbtn">What next &middot; ${locked.n} actions</summary>
+    <div id="whatnext-body" style="margin:10px 0 0;padding:14px 16px;border:1.5px solid #b45309;border-radius:6px;background:#fffdf7;font-family:${SANS};font-size:14px;line-height:1.5;color:${BODY};">
+      <form id="unlock" style="margin:0;">
+        <label for="pass" style="display:block;font-weight:600;color:${INK};margin-bottom:6px;">Partner passphrase</label>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <input id="pass" type="password" autocomplete="current-password" required style="flex:1 1 220px;min-height:40px;padding:0 10px;border:1.5px solid #d4d4d4;border-radius:3px;font:inherit;">
+          <button type="submit" style="min-height:40px;padding:0 14px;border:1.5px solid #b45309;border-radius:3px;background:#fff7e6;color:#92400e;font:inherit;font-weight:600;cursor:pointer;">Unlock</button>
+        </div>
+        <p id="unlock-msg" role="status" style="margin:8px 0 0;font-size:13px;color:${FAINT};">Next steps are encrypted on this public page. Partners can unlock them here.</p>
+      </form>
+    </div>
+  </details>
+  <script>window.__locked = ${JSON.stringify(locked)};</script>
+  <script>${UNLOCK_JS}</script>`;
+}
+
+// Decrypts brief.locked (AES-256-GCM, key from PBKDF2-SHA256) and fills in every "What next".
+const UNLOCK_JS = `(function () {
+  var L = window.__locked, form = document.getElementById('unlock'), msg = document.getElementById('unlock-msg');
+  if (!L || !form || !window.crypto || !crypto.subtle) return;
+  var b64 = function (s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); };
+  var esc = function (s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; };
+  async function open(pass) {
+    var base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pass), 'PBKDF2', false, ['deriveKey']);
+    var key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(L.salt), iterations: L.iter, hash: 'SHA-256' }, base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+    var plain = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(L.iv) }, key, b64(L.ct));
+    return JSON.parse(new TextDecoder().decode(plain));
+  }
+  function show(rows) {
+    document.getElementById('whatnext-body').outerHTML = '<ul style="margin:10px 0 0;padding:12px 16px 2px;border:1.5px solid #b45309;border-radius:6px;background:#fffdf7;font-family:Inter,-apple-system,Roboto,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.5;color:${BODY};">' +
+      rows.map(function (r) { return '<li style="margin:0 0 10px;list-style:none;padding-left:14px;text-indent:-14px;"><span style="color:#b45309;">&rarr;</span> <a href="#' + r.id + '" style="color:${INK};font-weight:600;text-decoration:none;">' + esc(r.who) + '</a> &mdash; ' + esc(r.text) + '</li>'; }).join('') + '</ul>';
+    rows.forEach(function (r) { var el = document.querySelector('[data-act="' + r.id + '"]'); if (el) { el.style.color = '${INK}'; el.textContent = r.text; } });
+  }
+  async function attempt(pass, quiet) {
+    try { show(await open(pass)); try { sessionStorage.setItem('m31-brief-pass', pass); } catch (e) {} return true; }
+    catch (e) { if (!quiet) msg.textContent = 'That passphrase did not unlock this brief.'; msg.style.color = '#991b1b'; return false; }
+  }
+  form.addEventListener('submit', function (e) { e.preventDefault(); attempt(document.getElementById('pass').value, false); });
+  var saved = null; try { saved = sessionStorage.getItem('m31-brief-pass'); } catch (e) {}
+  if (saved) attempt(saved, true).then(function (ok) { if (!ok) { msg.style.color = '${FAINT}'; msg.textContent = 'Next steps are encrypted on this public page. Partners can unlock them here.'; } });
+})();`;
+
+function storyBlock(st, purpose, i, lockedIds) {
   const head = [st.company ? `<span style="${LABEL}font-size:11px;color:${INK};">${esc(st.company)}</span>` : '', sectorTag(st.sectorId), st.topRank ? `<span style="${LABEL}font-size:10px;color:#991b1b;">Top ${st.topRank}</span>` : '']
     .filter(Boolean).join(' <span style="color:#cfcfcf;">&nbsp;·&nbsp;</span> ');
   return `
@@ -131,7 +191,7 @@ function storyBlock(st, purpose, i) {
       <h3 style="margin:0;font-family:${SERIF};font-weight:400;font-size:23px;line-height:1.18;color:${INK};">${esc(st.title)}</h3>
       <p style="margin:7px 0 0;font-family:${SANS};font-size:15px;line-height:1.55;color:${BODY};">${esc(st.brief)}</p>
       <p style="margin:8px 0 0;font-family:${SANS};font-size:15px;line-height:1.55;color:${INK};"><strong>Impact:</strong> ${esc(st.impact)}</p>
-      ${st.action ? actionToggle(st.action) : ''}
+      ${st.action ? actionToggle(st.action) : lockedIds?.has(storyId(purpose, i)) ? lockedToggle(storyId(purpose, i)) : ''}
       ${st.next ? `<p style="margin:8px 0 0;font-family:${SANS};font-size:14px;line-height:1.5;color:${BODY};"><strong style="color:${INK};">Next:</strong> ${esc(st.next)}</p>` : ''}
       <p style="margin:7px 0 0;font-family:${SANS};font-size:12px;line-height:1.6;color:${FAINT};">Source: ${sourceLinks(st.sources)}</p>
     </article>`;
@@ -151,7 +211,7 @@ function dealsBlock(deals = []) {
 const PCOLOR = { portfolio: '#0a0a0a', thesis: '#6d28d9', frontier: '#0e7490', regulation: '#991b1b', tech: '#1d4ed8', macro: '#92400e' };
 const PNOTE = { portfolio: 'News on M31 companies', thesis: 'Today vs. what we said in public', frontier: 'Frontier science: biology, chemistry, physics, space', regulation: 'Rule changes in M31 sectors', tech: 'Breakthroughs and startup funding', macro: 'Rates, markets, energy, geopolitics, big companies' };
 
-function sectionBlock(p, brief) {
+function sectionBlock(p, brief, lockedIds) {
   const list = brief[p.key] || [];
   const extra = p.key === 'tech' ? dealsBlock(brief.deals) : '';
   const q = brief[`${p.key}Quiet`];
@@ -164,8 +224,14 @@ function sectionBlock(p, brief) {
       <div style="${LABEL}font-size:12px;color:${c};">${esc(p.label)} <span style="font-weight:500;letter-spacing:0.04em;text-transform:none;color:${FAINT};font-size:12px;">&nbsp;${PNOTE[p.key]}</span></div>
       <a href="#sections" style="font-family:${SANS};font-size:12px;color:${FAINT};text-decoration:none;white-space:nowrap;">&uarr; Top</a>
     </div>
-    ${list.map((st, i) => (p.key === 'thesis' ? thesisBlock(st, i, brief) : storyBlock(st, p.key, i))).join('')}${quiet}${extra}
+    ${list.map((st, i) => (p.key === 'thesis' ? thesisBlock(st, i, brief, lockedIds) : storyBlock(st, p.key, i, lockedIds))).join('')}${quiet}${extra}
   </section>`;
+}
+
+// "Refresh" for the published site: links to the GitHub workflow that writes a
+// new edition (needs write access to the repo) and shows the latest run's status.
+function refreshButton(r) {
+  return `<span class="refresh" data-runs="${esc(r.runsApi)}" data-run-url="${esc(r.runUrl)}" data-report="daily"></span><script src="${esc(r.script)}" defer></script>`;
 }
 
 // Previous / all / next links for the published archive.
@@ -191,6 +257,10 @@ export function renderHTML(brief, { quality, fullDigestUrl = 'https://m31-dashbo
   const shortDate = fmtDate(brief.date, { weekday: 'short', month: 'short', day: 'numeric' });
   const mins = Math.max(1, Math.round(readMinutes || 5));
   const nStories = PURPOSES.reduce((a, p) => a + (brief[p.key] || []).length, 0);
+  const lockedIds = new Set(actions ? [] : brief.locked?.ids || []);
+  // When this edition was generated, in Eastern Time: a 6am brief does not reflect 4pm news.
+  const gen = brief.meta?.generatedAt || brief.generatedAt;
+  const asOf = gen ? `${new Date(gen).toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'short', month: 'short', day: 'numeric' })} · ${new Date(gen).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' })} ET` : '';
   const jump = PURPOSES.map((p) => { const n = p.key === 'tech' ? (brief.tech || []).length + (brief.deals || []).length : (brief[p.key] || []).length; if (!n) return ''; const c = PCOLOR[p.key]; return `<a class="chip" href="#sec-${p.key}" style="display:inline-block;margin:0 6px 8px 0;padding:10px 13px;border:1.5px solid ${c};border-left-width:5px;border-radius:3px;background:#fff;color:${c};font-family:${SANS};font-size:13px;font-weight:600;line-height:1;text-decoration:none;white-space:nowrap;">${esc(p.label)} <span style="font-weight:500;color:${FAINT};">${n}</span> &darr;</a>`; }).join('');
   return `<!doctype html>
 <html lang="en">
@@ -231,22 +301,25 @@ export function renderHTML(brief, { quality, fullDigestUrl = 'https://m31-dashbo
         ${nav?.home ? `<a href="${esc(nav.home)}" style="font-family:${SERIF};font-size:26px;line-height:1;color:#fff;text-decoration:none;">M31 Capital</a>` : `<div style="font-family:${SERIF};font-size:26px;line-height:1;color:#fff;">M31 Capital</div>`}
         <div style="${LABEL}font-size:10px;color:${GOLD};margin-top:6px;">Daily Brief <span style="color:#6b6b6b;">·</span> For Partners</div>
       </td>
-      <td class="mast-right" style="vertical-align:middle;text-align:right;font-family:${SANS};font-size:12px;color:#a3a3a3;line-height:1.5;">${esc(shortDate)}<br>Top 3 in 30 sec · full ${mins} min</td>
+      <td class="mast-right" style="vertical-align:middle;text-align:right;font-family:${SANS};font-size:12px;color:#a3a3a3;line-height:1.5;">${asOf ? `Updated ${esc(asOf)}` : esc(shortDate)}<br>Top 3 in 30 sec · full ${mins} min</td>
     </tr></table>
   </div>
 
   <div class="card" style="background:#fff;border:1px solid ${RULE};border-top:0;border-radius:0 0 6px 6px;padding:30px 36px 36px;">
-    <div style="${LABEL}font-size:10px;color:${FAINT};">The Daily Brief &nbsp;·&nbsp; ${esc(longDate)}</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px 16px;flex-wrap:wrap;">
+      <div style="${LABEL}font-size:10px;color:${FAINT};">The Daily Brief &nbsp;·&nbsp; ${esc(longDate)}${asOf ? ` &nbsp;·&nbsp; <span style="color:${INK};">Updated ${esc(asOf.split(' · ')[1])}</span>` : ''}</div>
+      ${nav?.refresh ? refreshButton(nav.refresh) : ''}
+    </div>
     <h1 class="h1" style="margin:12px 0 0;font-family:${SERIF};font-weight:400;font-size:40px;line-height:1.08;color:${INK};">${esc(brief.headline)}</h1>
     <p style="margin:14px 0 0;font-family:${SANS};font-size:16px;line-height:1.55;color:${MUTED};">${esc(brief.bottomLine)}</p>
     ${topBlock(brief)}
-    ${actionsBlock(brief)}
+    ${actions ? actionsBlock(brief) : lockedActionsBlock(brief.locked)}
     <div id="sections" style="margin:24px 0 0;">
       <div style="${LABEL}font-size:10px;color:${INK};margin-bottom:10px;">Jump to a section</div>
       ${jump}
     </div>
 
-    ${PURPOSES.map((p) => sectionBlock(p, brief)).join('')}
+    ${PURPOSES.map((p) => sectionBlock(p, brief, lockedIds)).join('')}
 
     <div style="margin:36px 0 0;padding-top:16px;border-top:1px solid ${RULE};text-align:right;">
       <a href="${esc(fullDigestUrl)}" style="font-family:${SANS};font-size:13px;font-weight:600;color:${INK};text-decoration:none;">Full digest &rarr;</a>

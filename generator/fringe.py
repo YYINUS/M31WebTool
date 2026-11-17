@@ -13,20 +13,11 @@ import json
 from pathlib import Path
 
 from .common import LINK, STR, arr, enum, log, obj, research, structure
+from .sources import prefetch
 
 TOPICS = "MOND and modified gravity, psi and parapsychology, LENR and fusion in solids, consciousness \
 science, technosignatures and SETI, UAP, zero-point and vacuum physics, and speculative physics (arXiv \
 physics.gen-ph)"
-
-LISTINGS = [
-    "https://arxiv.org/list/physics.gen-ph/recent",
-    "https://arxiv.org/list/astro-ph.CO/recent",
-    "https://arxiv.org/list/astro-ph.GA/recent",
-    "https://arxiv.org/list/nucl-ex/recent",
-    "https://osf.io/preprints/psyarxiv/discover?q=parapsychology",
-    "https://pubpeer.com/recent",
-    "https://retractionwatch.com/",
-]
 
 SYSTEM = f"""You are the editor of the Fringe Foundation Weekly Signal, a decision-first scan for a \
 foundation that funds rigorous work on anomalous and frontier claims. Topics: {TOPICS}.
@@ -62,14 +53,28 @@ Editorial rules:
 convincing and what would prove it wrong."""
 
 
-def research_task(start: dt.date, end: dt.date, today: dt.date) -> str:
+def research_task(start: dt.date, end: dt.date, today: dt.date, candidates: str, counts: dict) -> str:
+    scanned = "; ".join(f"{k}: {v}" for k, v in counts.items())
     return f"""Today is {today:%A, %B %d, %Y}. Research this issue's window: {start:%b %d} – {end:%b %d, \
 %Y}{" (week in progress: cover up to today)" if end > today else ""}.
 
+PRE-FETCHED SOURCES. These listings were already pulled in code for the window, so you do not need to \
+search for them or open listing pages: arXiv (every paper in physics.gen-ph, and papers in astro-ph, \
+gr-qc, hep-ph, nucl-ex/th, quant-ph and q-bio.NC that match the Fringe topics), Retraction Watch, \
+PsyArXiv (psi and consciousness terms), the Journal of Scientific Exploration and NASA's Technical Reports \
+Server. What was scanned: {scanned}.
+
+<candidates>
+{candidates or "(no candidates found in the pre-fetched sources)"}
+</candidates>
+
 Work method:
-1. Open these listing pages first with web_fetch (they are allowed to be fetched directly) and scan \
-them for in-window items: {", ".join(LISTINGS)}. Then, for each topic ({TOPICS}), search for papers, \
-preprints, reports and serious journalism dated in the window. Run several searches per topic.
+1. Triage the candidates first: most arXiv items will be mainstream work outside the Fringe remit; keep \
+the ones that make or test a frontier claim, or are a critique of one. You may open any candidate URL with \
+web_fetch to read it. Then spend your web searches on what the listings do not cover: Journal of \
+Parapsychology, PLOS ONE / Royal Society Open Science psi work, PubPeer threads, LENR programs (ARPA-E, \
+DARPA MARRS), SETI Institute / Breakthrough Listen / Galileo Project, AARO and UAP releases, Quanta and \
+serious journalism, for each topic ({TOPICS}).
 2. Separately search for critiques: rebuttals, comment papers, failed replications, retractions and \
 corrections touching these topics.
 3. Open each candidate to confirm the date, authors, affiliations, venue and what it actually reports. \
@@ -158,10 +163,12 @@ Use only URLs that appear in the notes. Never add facts that are not in the note
 
 def generate(start: dt.date, end: dt.date, today: dt.date, out_dir: Path) -> Path:
     log(f"Fringe weekly {start}..{end}: research pass")
-    notes = research(SYSTEM, research_task(start, end, today), searches=60, fetches=40)
+    candidates, counts = prefetch(start, min(end, today), log=log)
+    notes = research(SYSTEM, research_task(start, end, today, candidates, counts), searches=60, fetches=40)
     log("Fringe weekly: structure pass")
     data = structure(SYSTEM, notes, INSTRUCTIONS, SCHEMA)
     data["start"], data["end"], data["generated"] = start.isoformat(), end.isoformat(), today.isoformat()
+    data["generated_at"] = dt.datetime.now(dt.UTC).isoformat(timespec="seconds")
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / f"{start.isoformat()}.json"
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
