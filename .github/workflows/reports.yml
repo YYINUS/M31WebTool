@@ -106,6 +106,7 @@ jobs:
           FLAG=""; [ "$KIND" = "weekly" ] && FLAG="--weekly"
           node gp-brief/run.mjs --date "$D" --work "$W" $FLAG > "$RUNNER_TEMP/gp-status.json"
           status=$(node -p "JSON.parse(require('fs').readFileSync('$RUNNER_TEMP/gp-status.json','utf8')).status")
+          # run.mjs always releases (the passing draft, or the best of three).
           if [ "$status" = "release" ] || [ "$FORCE" = "true" ]; then
             mkdir -p "data/$KIND" && cp "$W/public.json" "data/$KIND/$D.json"
             echo "Published the $D brief ($status)."

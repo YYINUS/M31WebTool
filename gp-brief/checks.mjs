@@ -251,7 +251,9 @@ export function runChecks(brief, items, opts = {}) {
 
 const WEIGHTS = { firstScreen: 2, relevance: 2, impact: 2, coverage: 1, novelty: 1, credibility: 1, signalToNoise: 1, clarity: 1 };
 export const CRITERIA = Object.keys(WEIGHTS);
-export const PASS = { weighted: 4.0, floor: 3 };
+// Pass mark (owner's decision, Nov 17): easier than the original 4.0 / floor 3,
+// which no live draft reached. "Would open tomorrow" is reported, not blocking.
+export const PASS = { weighted: 3.5, floor: 2 };
 
 export function decide(checks, judge) {
   const s = judge?.scores || {};
@@ -264,6 +266,5 @@ export function decide(checks, judge) {
   if (missingScores.length) reasons.push(`judge did not score: ${missingScores.join(', ')}`);
   if (weighted < PASS.weighted) reasons.push(`GP-value score ${weighted} < ${PASS.weighted}`);
   if (lowest < PASS.floor) reasons.push(`a criterion scored ${lowest} (floor ${PASS.floor})`);
-  if (judge?.openTomorrow === false) reasons.push("judge would not open tomorrow's issue");
   return { pass: reasons.length === 0, weighted, lowest, reasons };
 }

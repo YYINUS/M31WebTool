@@ -60,7 +60,7 @@ Three workflows write new editions: **Daily Brief** (`daily.yml`), **Weekly Brie
 | Daily Brief | Mon–Fri 11:41 (6:41 am ET in winter) | 48h of news (84h on Mondays); Portfolio and Frontier 7 days |
 | Fringe Weekly | Fri 13:17 | the 7 days ending that day (Sat–Fri) |
 
-**RELEASE or HOLD.** A brief is published only if it passes every hard gate in `checks.mjs` and the GP review: a weighted score of at least 4.0, no criterion below 3, and "would open tomorrow". After 3 drafts without a pass, the brief is **held**: nothing is published, and the run is marked failed so GitHub notifies you. To publish a held brief anyway, run the **Daily Brief** workflow by hand with the date and `publish_hold` ticked.
+**Publishing rule.** A draft passes when it has no automatic check failures and the GP review scores it at least 3.5 out of 5 (weighted), with no criterion below 2. If it doesn't pass, the writer revises it, up to three versions. After three, the best version is published anyway (fewest check failures, then highest score), so there is always a fresh brief. Each brief shows its review score in small print at the bottom.
 
 **Timestamps.** Each edition shows when its news was gathered, in Eastern Time ("Updated Tue, Nov 17 · 6:41 AM ET"), so a reader knows a 6 am brief does not reflect 4 pm news.
 

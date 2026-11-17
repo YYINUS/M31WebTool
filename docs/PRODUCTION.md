@@ -51,6 +51,10 @@ node gp-brief/test/smoke.mjs && node gp-brief/test/collect.mjs && node gp-brief/
 - **Manual refresh, on the page.** Partners want to refresh a brief during the day without leaving the site, and nobody should wait on a blank page. In the dashboard: a Refresh button on `/brief` that calls the cron route server-side (with `CRON_SECRET`), keeps showing the current edition, and swaps in the new row of `gp_briefs` when the run finishes. The standalone site does the same through a small relay (`worker/refresh-worker.js`) that starts the GitHub workflow.
 - **Thesis entries carry no action** (see `prompts.mjs` above).
 
+## 2a. Publishing rule changed (owner's decision, Nov 17)
+
+Pass mark lowered from 4.0 (floor 3, must "open tomorrow") to **3.5 (floor 2)**, and **no more HOLD**: after three drafts the best one is published (fewest check failures, then highest score), with its review score in small print. In four live runs on Nov 17, no draft reached 4.0 (scores 2.4–3.2, mostly "would open tomorrow"). Revisit the bar with partner feedback in shadow mode.
+
 ## 2b. New since: Weekly Brief and Raw Feed
 
 - **Weekly Brief** (Fridays ~3 pm ET): `run.mjs --weekly` uses the same pipeline with `WEEKLY_ADDENDUM` / `WEEKLY_JUDGE_ADDENDUM` (`prompts.mjs`), weekly checks (7-day freshness, ≤ 22 stories, ≤ 12 min, a dated and sourced `weekAhead`) and the same renderer (`weekly` option: "Weekly Brief", "Top 3 this week", a Week ahead section). `collect-cli.mjs --weekly` collects 7 days and merges the week's stored raw feed. In the dashboard: a second cron (Fridays) and a `/brief/weekly` page.

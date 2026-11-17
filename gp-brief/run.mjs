@@ -113,7 +113,10 @@ async function main() {
   }
 
   // 4 — RENDER the passing version, else the best-scoring one
-  const best = rounds.find((x) => x.decision.pass) || [...rounds].sort((a, b) => b.decision.weighted - a.decision.weighted)[0];
+  // The passing draft, else the best of the (up to 3) drafts: fewest check failures, then highest score.
+  // Owner's rule (Nov 17): never hold — after three versions, the best one goes live.
+  const best = rounds.find((x) => x.decision.pass)
+    || [...rounds].sort((a, b) => (a.checks.fails.length - b.checks.fails.length) || (b.decision.weighted - a.decision.weighted))[0];
   const final = { pass: best.decision.pass, weighted: best.decision.weighted, rounds: rounds.length, round: best.round };
   const opts = { quality: final, readMinutes: best.checks.stats.readMinutes, poolSize: items.length };
   fs.writeFileSync(file('brief.html'), renderHTML(best.checks.hydrated, { ...opts, weekly, fullDigestUrl: args['digest-url'] }));            // partners only
@@ -126,8 +129,8 @@ async function main() {
 
   // 5 — RELEASE or HOLD. Delivery is lib/slack.ts postToSlack(): slack.txt to
   // the partners' channel on RELEASE, to the reviewer on HOLD.
-  log(final.pass ? `RELEASE — draft ${best.round} cleared for partners` : `HOLD — best draft scored ${final.weighted}; send to reviewer`);
-  console.log(JSON.stringify({ status: final.pass ? 'release' : 'hold', ...final, dir: work }));
+  log(final.pass ? `RELEASE — draft ${best.round} passed the review` : `RELEASE — best of ${rounds.length} drafts (draft ${best.round}, GP-value ${final.weighted}, ${best.checks.fails.length} check failures) published below the pass mark`);
+  console.log(JSON.stringify({ status: 'release', ...final, dir: work }));
 }
 
 // Parse errors can quote model output (which may include actions), and CI logs are public.

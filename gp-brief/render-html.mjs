@@ -304,6 +304,7 @@ export function renderHTML(brief, { quality, fullDigestUrl = null, readMinutes, 
     ${fullDigestUrl ? `<div style="margin:36px 0 0;padding-top:16px;border-top:1px solid ${RULE};text-align:right;">
       <a href="${esc(fullDigestUrl)}" style="font-family:${SANS};font-size:13px;font-weight:600;color:${INK};text-decoration:none;">Full digest &rarr;</a>
     </div>` : ''}
+    ${brief.meta?.weighted != null ? `<p style="margin:18px 0 0;font-family:${SANS};font-size:12px;color:${FAINT};">Quality review: ${Number(brief.meta.weighted).toFixed(1)} / 5 &nbsp;·&nbsp; ${brief.meta.pass ? 'passed' : `best of ${brief.meta.rounds} drafts`}</p>` : ''}
     ${nav ? navBlock(nav) : ''}
   </div>
 </div>
