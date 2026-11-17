@@ -29,6 +29,11 @@ Compare each file with https://github.com/YYINUS/M31WebTool/tree/main/gp-brief.
 | `checks.mjs`, `prompts.mjs` (length) | At most 18 stories in total (new check); exact character limits stated in the writer prompt; talk of the day = the 6 most widely covered events (was: every event at 5+ outlets). **The last one changes an approved gate — please confirm.** | Live runs: drafts at 20–24 stories and 8–10 minutes; most failures were over-long fields and widely covered events left out, because a ~1,200-item pool has dozens of 5-outlet events. |
 | `prompts.mjs` | "M31 Thesis entries carry NO action". `draftUser` / `judgeUser` return `{ cached, rest }` with the news pool first, so it can be cached; `run.mjs` builds the revise call the same way. | Matches the approved partner sample for Nov 16, which has 6 actions and none on Thesis entries. The branch's draft had 9. |
 | `render-html.mjs` | (a) "Updated <weekday, date> · <time> ET" in the masthead and on the date line, from `meta.generatedAt`. (b) `actionRows()` exported, and the What next list uses `st.actionWho` when present. (c) Optional `nav` (prev / all / next, Refresh); nothing changes when `nav` is not passed. | (a) Partners asked for it: a 6 am brief doesn't reflect 4 pm news. (b) Lets a brief be re-rendered later without the portfolio file. (c) Used by the standalone site only. |
+| `feeds.mjs` (new) + `collect.mjs` | 24 publisher RSS feeds by section (CoinDesk, The Block, STAT, SpaceNews, Breaking Defense, Utility Dive, SEC, Fed, Quanta…), read before Google News so the version with a real summary wins; the pool prefers items with a summary. | Google News gives headlines only; the writer had nothing to say what a story *means*. Live: 171 of 400 pool items now carry a summary. |
+| `run.mjs` (publishing) | Never HOLD: after up to 3 drafts the best is published (fewest check failures, then highest score). Logs the GP verdict and fixes (What next is not treated as confidential). | Owner's decision (see 2a). |
+| `prompts.mjs` (tuning) | Headline and Top 3 from the last 24 hours; no filler (ticker blips, minor deals). Judge: next steps may rely on internal notes it can't see — judge usefulness, not traceability. | From the GP verdicts of the first published run (Nov 17). |
+| `render-html.mjs` (small) | "Quality review: x / 5" line at the bottom; "Full digest →" only when a URL is passed; a `weekly` mode (Weekly Brief, Top 3 this week, Week ahead). | Owner's requests. |
+| `collect-cli.mjs`, `feed-merge.mjs` (new) | Collection as its own step (for progress), the raw feed per day, and `--weekly` collection. | Raw Feed tab and Weekly Brief. |
 
 **Do not copy these**. They exist only because the standalone repo is public.
 
@@ -62,7 +67,7 @@ Pass mark lowered from 4.0 (floor 3, must "open tomorrow") to **3.5 (floor 2)**,
 
 ## 3. Then follow HANDOFF.md Steps 2–7
 
-1. **Step 2, live loop:** `ANTHROPIC_API_KEY=... GP_BRIEF_MODEL=claude-sonnet-5-5 node gp-brief/run.mjs --date $(date -u +%F)`. Read `quality-report.html`. No live writer and judge run has completed anywhere yet, so this is the first real test.
+1. **Step 2, live loop:** `ANTHROPIC_API_KEY=... GP_BRIEF_MODEL=claude-sonnet-5-5 node gp-brief/run.mjs --date $(date -u +%F)`. Read `quality-report.html`. Proven on GitHub Actions on Nov 17 (five live runs; collection ~25 s, a full run ~5 min; scores 2.4–3.2 against the original 4.0 bar, which is why the publishing rule changed).
 2. **Step 3:** cron route `app/api/cron/gp-brief/route.ts`, modeled on the digest cron. `maxDuration = 800`; collection takes about 6 minutes, then up to 3 drafts and 3 reviews.
 3. **Step 4:** `gp_briefs` table (SQL in HANDOFF.md). Store `meta.generatedAt` too.
 4. **Step 5:** `/brief` and `/brief/[date]` pages. Add the Refresh button if wanted.
@@ -72,4 +77,4 @@ Pass mark lowered from 4.0 (floor 3, must "open tomorrow") to **3.5 (floor 2)**,
 
 ## Prompt for Claude Code (in the dashboard repo)
 
-> Read `gp-brief/HANDOFF.md`, then https://github.com/YYINUS/M31WebTool/blob/main/docs/PRODUCTION.md. On branch `feat/gp-daily-brief`, port the changes in section 1 of PRODUCTION.md from https://github.com/YYINUS/M31WebTool/tree/main/gp-brief into `gp-brief/` (`llm.mjs`, `run.mjs`, `collect.mjs`, `prompts.mjs`, `render-html.mjs`). Don't copy `portfolio.mjs`, `public.mjs` or `render-site.mjs`. Run the three offline tests and fix any mock that assumed the old non-streaming client. Then do HANDOFF Step 2 (one live run) and show me the quality report before starting Steps 3–7. Open a PR to `master` when done; don't push to `master`.
+> Read `gp-brief/HANDOFF.md`, then https://github.com/YYINUS/M31WebTool/blob/main/docs/PRODUCTION.md. On branch `feat/gp-daily-brief`, port the changes in section 1 of PRODUCTION.md from https://github.com/YYINUS/M31WebTool/tree/main/gp-brief into `gp-brief/` (`llm.mjs`, `run.mjs`, `collect.mjs`, `checks.mjs`, `prompts.mjs`, `render-html.mjs`, and the new `feeds.mjs`, `collect-cli.mjs`, `feed-merge.mjs`). Don't copy `portfolio.mjs`, `public.mjs` or `render-site.mjs`. Run the three offline tests and fix any mock that assumed the old non-streaming client. Then do HANDOFF Step 2 (one live run) and show me the quality report before starting Steps 3–7. Open a PR to `master` when done; don't push to `master`.
