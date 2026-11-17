@@ -49,20 +49,47 @@ jobs:
           REPORT: ${{ inputs.report }}
         run: echo "report=${REPORT:-none}" >> "$GITHUB_OUTPUT"
 
-      # The GP brief: collect → draft → checks → GP review → revise (max 3).
-      # Only public.json (the brief with its "What next" actions) is published;
-      # drafts, reviews and the quality report stay in the runner's temp folder.
-      # Logs print summaries only (portfolio queries are company names).
-      - name: Generate Daily Brief
+      # The GP brief, in named steps so the site's Refresh panel can show progress:
+      # collect news → write and review (draft, checks, GP review, revise ≤3).
+      # Only public.json is published; drafts, reviews and the quality report
+      # stay in the runner's temp folder. Logs print summaries only.
+      - name: Check whether an edition is needed
+        id: need
+        if: steps.plan.outputs.report == 'daily'
+        env:
+          EVENT: ${{ github.event_name }}
+          DAY: ${{ inputs.date }}
+        run: |
+          D="${DAY:-$(date -u +%F)}"
+          echo "day=$D" >> "$GITHUB_OUTPUT"
+          # GitHub's own schedule is only a backup for the relay's clock: skip it
+          # when an edition for today was made in the last 3 hours.
+          if [ "$EVENT" = "schedule" ] && [ -f "data/daily/$D.json" ] && node -e "
+            const m = require('./data/daily/$D.json').meta || {};
+            process.exit(Date.now() - Date.parse(m.generatedAt || 0) < 3 * 3600e3 ? 0 : 1)"; then
+            echo "Recent edition exists; skipping this scheduled run."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Collect news
+        if: steps.need.outputs.run == 'true'
+        env:
+          PORTFOLIO_JSON: ${{ secrets.PORTFOLIO_JSON }}
+        run: node gp-brief/collect-cli.mjs "$RUNNER_TEMP/gp-brief"
+
+      - name: Write and review the brief
         id: daily
-        if: steps.plan.outputs.report == 'daily' || steps.plan.outputs.report == 'both'
+        if: steps.need.outputs.run == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PORTFOLIO_JSON: ${{ secrets.PORTFOLIO_JSON }}
-          DAY: ${{ inputs.date }}
+          GP_BRIEF_EFFORT: ${{ vars.GP_BRIEF_EFFORT }}
+          GP_BRIEF_JUDGE_EFFORT: ${{ vars.GP_BRIEF_JUDGE_EFFORT }}
+          D: ${{ steps.need.outputs.day }}
           FORCE: ${{ inputs.publish_hold }}
         run: |
-          D="${DAY:-$(date -u +%F)}"
           W="$RUNNER_TEMP/gp-brief"
           node gp-brief/run.mjs --date "$D" --work "$W" > "$RUNNER_TEMP/gp-status.json"
           status=$(node -p "JSON.parse(require('fs').readFileSync('$RUNNER_TEMP/gp-status.json','utf8')).status")
@@ -70,7 +97,7 @@ jobs:
             cp "$W/public.json" "data/daily/$D.json"
             echo "Published the $D brief ($status)."
           else
-            echo "::warning::The $D brief was HELD by the GP review and not published. Run the Daily Brief workflow again with publish_hold ticked to publish it anyway."
+            echo "::warning::The $D brief was HELD by the GP review and not published."
             echo "held=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -99,7 +126,7 @@ jobs:
             git push
           fi
 
-      - name: Build site
+      - name: Publish
         env:
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
           # The refresh relay's URL (Settings → Secrets and variables → Actions → Variables).

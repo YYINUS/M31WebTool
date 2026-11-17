@@ -42,7 +42,8 @@ const need = (name, what) => { log(`MANUAL MODE — waiting for ${what}: ${file(
 
 async function main() {
   // 1 — COLLECT (the brief's "Updated" time is when its news was gathered)
-  const collectedAt = new Date().toISOString();
+  // (when collect-cli.mjs ran as its own step, its time is in collected-at.txt)
+  const collectedAt = fs.existsSync(file('collected-at.txt')) ? fs.readFileSync(file('collected-at.txt'), 'utf8').trim() : new Date().toISOString();
   let items;
   if (args.items) items = readJSON(path.resolve(args.items));
   else if (fs.existsSync(file('items.json'))) items = readJSON(file('items.json'));

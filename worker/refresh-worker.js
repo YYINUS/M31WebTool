@@ -11,8 +11,43 @@
 //   REPO              (text)    YYINUS/M31WebTool
 //   ALLOWED_ORIGIN    (text)    https://yyinus.github.io
 //   COOLDOWN_MINUTES  (text)    optional, default 15: minimum gap between refreshes
+//   FRINGE_CRON       (text)    optional, default "17 13 * * 5": the cron below that runs the Fringe Weekly
+//
+// Triggers → Cron Triggers on the Worker: the schedule for ready-made editions
+// (Cloudflare's clock is reliable; GitHub's own schedule often fires late or not
+// at all). Times are UTC. Suggested:
+//   10:15 Mon–Fri  "15 10 * * 1-5"   morning edition, ready before 6 am ET
+//   19:15 Mon–Fri  "15 19 * * 1-5"   afternoon edition, ~2:15 pm ET (EST; one hour later in EDT)
+//   13:17 Fri      "17 13 * * 5"     Fringe Weekly
 
 const WORKFLOWS = { daily: 'daily.yml', fringe: 'fringe.yml' };
+
+function github(env) {
+  return (path, init = {}) => fetch(`https://api.github.com/repos/${env.REPO}/${path}`, {
+    ...init,
+    headers: {
+      Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'User-Agent': 'm31-briefs-refresh',
+      ...(init.body ? { 'Content-Type': 'application/json' } : {}),
+    },
+  });
+}
+
+// Start a workflow unless one is running or one started less than `gapMs` ago.
+async function start(env, workflow, gapMs) {
+  const gh = github(env);
+  const runsRes = await gh(`actions/workflows/${workflow}/runs?per_page=1`);
+  if (!runsRes.ok) return { status: 'error', detail: `GitHub ${runsRes.status}`, code: 502 };
+  const last = (await runsRes.json()).workflow_runs?.[0];
+  if (last && last.status !== 'completed') return { status: 'running', startedAt: last.run_started_at || last.created_at, code: 200 };
+  const since = last ? Date.now() - Date.parse(last.created_at) : Infinity;
+  if (since < gapMs) return { status: 'cooldown', minutes: Math.ceil((gapMs - since) / 60000), code: 429 };
+  const res = await gh(`actions/workflows/${workflow}/dispatches`, { method: 'POST', body: JSON.stringify({ ref: env.BRANCH || 'main' }) });
+  if (res.status !== 204) return { status: 'error', detail: `GitHub ${res.status}`, code: 502 };
+  return { status: 'started', at: new Date().toISOString(), code: 202 };
+}
 
 export default {
   async fetch(req, env) {
@@ -33,28 +68,14 @@ export default {
     if (!workflow) return json({ error: 'Unknown report' }, 400);
     if (env.REFRESH_PASSWORD && body.password !== env.REFRESH_PASSWORD) return json({ status: 'wrong-password' }, 401);
 
-    const gh = (path, init = {}) => fetch(`https://api.github.com/repos/${env.REPO}/${path}`, {
-      ...init,
-      headers: {
-        Authorization: `Bearer ${env.GITHUB_TOKEN}`,
-        Accept: 'application/vnd.github+json',
-        'X-GitHub-Api-Version': '2022-11-28',
-        'User-Agent': 'm31-briefs-refresh',
-        ...(init.body ? { 'Content-Type': 'application/json' } : {}),
-      },
-    });
+    const r = await start(env, workflow, Number(env.COOLDOWN_MINUTES || 15) * 60000);
+    const { code, ...out } = r;
+    return json(out, code);
+  },
 
-    // One run at a time, and not more often than the cooldown (each run calls the Claude API).
-    const runsRes = await gh(`actions/workflows/${workflow}/runs?per_page=1`);
-    if (!runsRes.ok) return json({ status: 'error', detail: `GitHub ${runsRes.status}` }, 502);
-    const last = (await runsRes.json()).workflow_runs?.[0];
-    if (last && last.status !== 'completed') return json({ status: 'running', startedAt: last.run_started_at || last.created_at });
-    const cooldownMs = Number(env.COOLDOWN_MINUTES || 15) * 60000;
-    const since = last ? Date.now() - Date.parse(last.created_at) : Infinity;
-    if (since < cooldownMs) return json({ status: 'cooldown', minutes: Math.ceil((cooldownMs - since) / 60000) }, 429);
-
-    const res = await gh(`actions/workflows/${workflow}/dispatches`, { method: 'POST', body: JSON.stringify({ ref: env.BRANCH || 'main' }) });
-    if (res.status !== 204) return json({ status: 'error', detail: `GitHub ${res.status}` }, 502);
-    return json({ status: 'started', at: new Date().toISOString() }, 202);
+  // Ready-made editions on Cloudflare's clock (see Cron Triggers above).
+  async scheduled(event, env, ctx) {
+    const workflow = event.cron === (env.FRINGE_CRON || '17 13 * * 5') ? WORKFLOWS.fringe : WORKFLOWS.daily;
+    ctx.waitUntil(start(env, workflow, 60 * 60000));
   },
 };
