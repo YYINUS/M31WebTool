@@ -39,8 +39,13 @@ async function googleNews(query, hours, limit = RESULTS_PER_QUERY) {
     // Google appends " - Source" to titles; strip it.
     const title = tag(it, 'title').replace(new RegExp(`\\s+-\\s+${source.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`), '');
     const t = Date.parse(tag(it, 'pubDate'));
-    // Google's <description> is an HTML list of links (no article text), so keep only the plain-text remnant.
-    return { title, source, url: tag(it, 'link'), publishedAt: Number.isFinite(t) ? new Date(t).toISOString() : '', summary: tag(it, 'description').replace(/\s+/g, ' ').slice(0, 300) };
+    // Google's <description> is escaped HTML: links to the article and related
+    // coverage, no article text. Decode, strip the markup, and keep the text only
+    // if it says more than the headline (otherwise it is noise in the pool).
+    const desc = tag(it, 'description').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ')
+      .replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+    const extra = desc.replace(title, '').replace(source, '').replace(/[\s·|-]+/g, ' ').trim();
+    return { title, source, url: tag(it, 'link'), publishedAt: Number.isFinite(t) ? new Date(t).toISOString() : '', summary: extra.length > 40 ? desc.slice(0, 300) : '' };
   });
 }
 

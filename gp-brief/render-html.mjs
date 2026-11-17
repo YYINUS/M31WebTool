@@ -53,7 +53,7 @@ const storyId = (purpose, i) => `s-${purpose}-${i + 1}`;
 const sectorTag = (id) => { const m = sectorById(id) || (SHORT[id] && { label: SHORT[id], color: FAINT }); return m ? `<span style="${LABEL}font-size:10px;color:${m.color};"><span style="display:inline-block;width:6px;height:6px;background:${m.color};margin-right:5px;vertical-align:1px;"></span>${esc(SHORT[id] || m.label)}</span>` : ''; };
 const SHORT = { money: 'Digital Money', defi: 'DeFi', web3: 'Web3', ai: 'AI', robotics: 'Robotics', defense: 'Defense', space: 'Space', lifesci: 'Health', energy: 'Energy', food: 'Food', deep: 'Deep Tech', frontier: 'Physics' };
 
-function topBlock(brief) {
+function topBlock(brief, weekly = false) {
   const tops = [];
   for (const p of PURPOSES) (brief[p.key] || []).forEach((st, i) => { if (st.topRank) tops.push({ ...st, purpose: p, i }); });
   tops.sort((a, b) => a.topRank - b.topRank);
@@ -67,7 +67,7 @@ function topBlock(brief) {
       </td></tr>`).join('');
   return `
   <div style="background:${PANEL};border-radius:6px;padding:16px 20px 18px;margin:24px 0 0;">
-    <div style="${LABEL}color:${INK};">Top 3 today</div>
+    <div style="${LABEL}color:${INK};">${weekly ? 'Top 3 this week' : 'Top 3 today'}</div>
     <table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;">${rows}</table>
   </div>`;
 }
@@ -160,6 +160,29 @@ function dealsBlock(deals = []) {
 const PCOLOR = { portfolio: '#0a0a0a', thesis: '#6d28d9', frontier: '#0e7490', regulation: '#991b1b', tech: '#1d4ed8', macro: '#92400e' };
 const PNOTE = { portfolio: 'News on M31 companies', thesis: 'Today vs. what we said in public', frontier: 'Frontier science: biology, chemistry, physics, space', regulation: 'Rule changes in M31 sectors', tech: 'Breakthroughs and startup funding', macro: 'Rates, markets, energy, geopolitics, big companies' };
 
+// Weekly edition: dated things to watch next week.
+const WEEK_COLOR = '#b8860b';
+function weekAheadBlock(brief) {
+  const list = brief.weekAhead || [];
+  if (!list.length) return '';
+  const rows = list.map((w, i) => `
+    <tr style="${i ? `border-top:1px solid ${RULE};` : ''}">
+      <td style="vertical-align:top;width:96px;padding:12px 12px 12px 0;${LABEL}font-size:11px;color:${WEEK_COLOR};">${esc(w.when)}</td>
+      <td style="vertical-align:top;padding:12px 0;">
+        <div style="font-family:${SERIF};font-size:20px;line-height:1.2;color:${INK};">${esc(w.what)}</div>
+        ${w.why ? `<div style="font-family:${SANS};font-size:14px;line-height:1.5;color:${BODY};margin-top:4px;">${esc(w.why)}</div>` : ''}
+        <div style="font-family:${SANS};font-size:12px;color:${FAINT};margin-top:4px;">${sectorTag(w.sectorId)}${w.sectorId ? ' &nbsp;·&nbsp; ' : ''}Source: ${sourceLinks(w.sources)}</div>
+      </td></tr>`).join('');
+  return `
+  <section id="sec-weekahead" style="margin:40px 0 0;">
+    <div style="padding-bottom:8px;border-bottom:2px solid ${WEEK_COLOR};display:flex;justify-content:space-between;align-items:baseline;gap:12px;">
+      <div style="${LABEL}font-size:12px;color:${WEEK_COLOR};">Week ahead <span style="font-weight:500;letter-spacing:0.04em;text-transform:none;color:${FAINT};font-size:12px;">&nbsp;What to watch next week</span></div>
+      <a href="#sections" style="font-family:${SANS};font-size:12px;color:${FAINT};text-decoration:none;white-space:nowrap;">&uarr; Top</a>
+    </div>
+    <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;">${rows}</table>
+  </section>`;
+}
+
 function sectionBlock(p, brief) {
   const list = brief[p.key] || [];
   const extra = p.key === 'tech' ? dealsBlock(brief.deals) : '';
@@ -181,7 +204,7 @@ function sectionBlock(p, brief) {
 // relay (r.endpoint) and opens it when published; without a relay it links to
 // the workflow on GitHub. See static/refresh.js and worker/refresh-worker.js.
 function refreshButton(r) {
-  return `<span class="refresh" data-report="daily" data-runs="${esc(r.runsApi)}" data-run-url="${esc(r.runUrl)}" data-endpoint="${esc(r.endpoint || '')}" data-latest="${esc(r.latest || 'index.html')}"></span><script src="${esc(r.script)}" defer></script>`;
+  return `<span class="refresh" data-report="${esc(r.report || 'daily')}" data-runs="${esc(r.runsApi)}" data-run-url="${esc(r.runUrl)}" data-endpoint="${esc(r.endpoint || '')}" data-latest="${esc(r.latest || 'index.html')}"></span><script src="${esc(r.script)}" defer></script>`;
 }
 
 // Previous / all / next links for the published archive.
@@ -190,7 +213,7 @@ function navBlock(nav) {
   return `
     <div style="margin:18px 0 0;padding-top:14px;border-top:1px solid ${RULE};display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:${SANS};font-size:13px;color:${FAINT};">
       ${link(nav.prev, nav.prev ? `&larr; ${esc(nav.prev.label)}` : '')}
-      ${nav.archive ? `<a href="${esc(nav.archive)}" style="color:${FAINT};">All briefs</a>` : ''}
+      <span>${nav.archive ? `<a href="${esc(nav.archive)}" style="color:${FAINT};">All briefs</a>` : ''}${nav.feed ? ` &nbsp;·&nbsp; <a href="${esc(nav.feed)}" style="color:${FAINT};">Raw feed</a>` : ''}</span>
       ${link(nav.next, nav.next ? `${esc(nav.next.label)} &rarr;` : '')}
     </div>`;
 }
@@ -198,12 +221,18 @@ function navBlock(nav) {
 // `actions: false` renders the shareable copy: no "What next" content in the file
 // at all (the collapsed button only hides it on screen; view-source would show it).
 // `nav` (optional, for the published site): { home, archive, prev: {href, label}, next: {href, label} }.
-export function renderHTML(brief, { quality, fullDigestUrl = 'https://m31-dashboard.vercel.app/news', readMinutes, poolSize, actions = true, nav = null } = {}) {
+export function renderHTML(brief, { quality, fullDigestUrl = 'https://m31-dashboard.vercel.app/news', readMinutes, poolSize, actions = true, nav = null, weekly = brief?.meta?.edition === 'weekly' } = {}) {
   if (!actions) {
     brief = structuredClone(brief);
     for (const p of PURPOSES) for (const st of brief[p.key] || []) delete st.action;
   }
   const longDate = fmtDate(brief.date, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
+  // Weekly edition: "Week of Nov 16 – 20, 2026" (Monday to the Friday it is dated).
+  const monday = new Date(Date.parse(brief.date + 'T12:00:00Z') - ((new Date(brief.date + 'T12:00:00Z').getUTCDay() + 6) % 7) * 86400e3).toISOString().slice(0, 10);
+  const endDay = Number(brief.date.slice(8, 10));
+  const weekEnd = monday.slice(5, 7) === brief.date.slice(5, 7) ? `${endDay}` : fmtDate(brief.date, { month: 'short', day: 'numeric' });
+  const weekLabel = `Week of ${fmtDate(monday, { month: 'short', day: 'numeric' })} – ${weekEnd}, ${brief.date.slice(0, 4)}`;
+  const EDITION = weekly ? 'Weekly Brief' : 'Daily Brief';
   const shortDate = fmtDate(brief.date, { weekday: 'short', month: 'short', day: 'numeric' });
   const mins = Math.max(1, Math.round(readMinutes || 5));
   const nStories = PURPOSES.reduce((a, p) => a + (brief[p.key] || []).length, 0);
@@ -211,12 +240,13 @@ export function renderHTML(brief, { quality, fullDigestUrl = 'https://m31-dashbo
   const gen = brief.meta?.generatedAt || brief.generatedAt;
   const asOf = gen ? `${new Date(gen).toLocaleDateString('en-US', { timeZone: 'America/New_York', weekday: 'short', month: 'short', day: 'numeric' })} · ${new Date(gen).toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit' })} ET` : '';
   const jump = PURPOSES.map((p) => { const n = p.key === 'tech' ? (brief.tech || []).length + (brief.deals || []).length : (brief[p.key] || []).length; if (!n) return ''; const c = PCOLOR[p.key]; return `<a class="chip" href="#sec-${p.key}" style="display:inline-block;margin:0 6px 8px 0;padding:10px 13px;border:1.5px solid ${c};border-left-width:5px;border-radius:3px;background:#fff;color:${c};font-family:${SANS};font-size:13px;font-weight:600;line-height:1;text-decoration:none;white-space:nowrap;">${esc(p.label)} <span style="font-weight:500;color:${FAINT};">${n}</span> &darr;</a>`; }).join('');
+  const jumpAll = jump + (weekly && (brief.weekAhead || []).length ? `<a class="chip" href="#sec-weekahead" style="display:inline-block;margin:0 6px 8px 0;padding:10px 13px;border:1.5px solid ${WEEK_COLOR};border-left-width:5px;border-radius:3px;background:#fff;color:${WEEK_COLOR};font-family:${SANS};font-size:13px;font-weight:600;line-height:1;text-decoration:none;white-space:nowrap;">Week ahead <span style="font-weight:500;color:${FAINT};">${brief.weekAhead.length}</span> &darr;</a>` : '');
   return `<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>M31 Daily Brief — ${esc(shortDate)}</title>
+<title>M31 ${EDITION} — ${esc(weekly ? weekLabel : shortDate)}</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   body { margin:0; background:${CREAM}; -webkit-text-size-adjust:100%; }
@@ -248,7 +278,7 @@ export function renderHTML(brief, { quality, fullDigestUrl = 'https://m31-dashbo
     <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:collapse;"><tr>
       <td style="vertical-align:middle;">
         ${nav?.home ? `<a href="${esc(nav.home)}" style="font-family:${SERIF};font-size:26px;line-height:1;color:#fff;text-decoration:none;">M31 Capital</a>` : `<div style="font-family:${SERIF};font-size:26px;line-height:1;color:#fff;">M31 Capital</div>`}
-        <div style="${LABEL}font-size:10px;color:${GOLD};margin-top:6px;">Daily Brief <span style="color:#6b6b6b;">·</span> For Partners</div>
+        <div style="${LABEL}font-size:10px;color:${GOLD};margin-top:6px;">${EDITION} <span style="color:#6b6b6b;">·</span> For Partners</div>
       </td>
       <td class="mast-right" style="vertical-align:middle;text-align:right;font-family:${SANS};font-size:12px;color:#a3a3a3;line-height:1.5;">${asOf ? `Updated ${esc(asOf)}` : esc(shortDate)}<br>Top 3 in 30 sec · full ${mins} min</td>
     </tr></table>
@@ -256,19 +286,20 @@ export function renderHTML(brief, { quality, fullDigestUrl = 'https://m31-dashbo
 
   <div class="card" style="background:#fff;border:1px solid ${RULE};border-top:0;border-radius:0 0 6px 6px;padding:30px 36px 36px;">
     <div style="display:flex;justify-content:space-between;align-items:center;gap:8px 16px;flex-wrap:wrap;">
-      <div style="${LABEL}font-size:10px;color:${FAINT};">The Daily Brief &nbsp;·&nbsp; ${esc(longDate)}${asOf ? ` &nbsp;·&nbsp; <span style="color:${INK};">Updated ${esc(asOf.split(' · ')[1])}</span>` : ''}</div>
+      <div style="${LABEL}font-size:10px;color:${FAINT};">The ${EDITION} &nbsp;·&nbsp; ${esc(weekly ? weekLabel : longDate)}${asOf ? ` &nbsp;·&nbsp; <span style="color:${INK};">Updated ${esc(asOf.split(' · ')[1])}</span>` : ''}</div>
       ${nav?.refresh ? refreshButton(nav.refresh) : ''}
     </div>
     <h1 class="h1" style="margin:12px 0 0;font-family:${SERIF};font-weight:400;font-size:40px;line-height:1.08;color:${INK};">${esc(brief.headline)}</h1>
     <p style="margin:14px 0 0;font-family:${SANS};font-size:16px;line-height:1.55;color:${MUTED};">${esc(brief.bottomLine)}</p>
-    ${topBlock(brief)}
+    ${topBlock(brief, weekly)}
     ${actionsBlock(brief)}
     <div id="sections" style="margin:24px 0 0;">
       <div style="${LABEL}font-size:10px;color:${INK};margin-bottom:10px;">Jump to a section</div>
-      ${jump}
+      ${jumpAll}
     </div>
 
     ${PURPOSES.map((p) => sectionBlock(p, brief)).join('')}
+    ${weekly ? weekAheadBlock(brief) : ''}
 
     <div style="margin:36px 0 0;padding-top:16px;border-top:1px solid ${RULE};text-align:right;">
       <a href="${esc(fullDigestUrl)}" style="font-family:${SANS};font-size:13px;font-weight:600;color:${INK};text-decoration:none;">Full digest &rarr;</a>

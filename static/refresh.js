@@ -6,12 +6,13 @@
 // keeps the current edition on screen, and opens the new one when published.
 // Without a relay configured, the button is not shown.
 (function () {
-  var NAME = { daily: 'brief', fringe: 'issue' };
-  var TYPICAL = { daily: 7, fringe: 10 }; // minutes, for the progress line
+  var NAME = { daily: 'brief', weekly: 'weekly brief', fringe: 'issue' };
+  var TYPICAL = { daily: 6, weekly: 8, fringe: 10 }; // minutes, for the progress line
   // Workflow step names (reports.yml) → what the reader sees.
   var STAGES = {
     daily: [['Collect news', 'Gathering news'], ['Write and review the brief', 'Writing and reviewing'], ['Publish', 'Publishing']],
     fringe: [['Generate Fringe Weekly', 'Researching and writing'], ['Publish', 'Publishing']],
+    weekly: [['Collect news', 'Gathering the week\u2019s news'], ['Write and review the brief', 'Writing and reviewing'], ['Publish', 'Publishing']],
   };
   var INK = '#0a0a0a', FAINT = '#6b6b6b', BODY = '#404040', AMBER = '#b45309', RED = '#991b1b';
   var SANS = 'Inter,-apple-system,Roboto,Helvetica,Arial,sans-serif';

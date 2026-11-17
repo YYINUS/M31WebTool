@@ -12,6 +12,7 @@
 //   ALLOWED_ORIGIN    (text)    https://yyinus.github.io
 //   COOLDOWN_MINUTES  (text)    optional, default 15: minimum gap between refreshes
 //   FRINGE_CRON       (text)    optional, default "17 13 * * 5": the cron below that runs the Fringe Weekly
+//   WEEKLY_CRON       (text)    optional, default "45 19 * * 5": the cron below that runs the Weekly Brief
 //
 // Triggers → Cron Triggers on the Worker: the schedule for ready-made editions
 // (Cloudflare's clock is reliable; GitHub's own schedule often fires late or not
@@ -19,8 +20,9 @@
 //   10:15 Mon–Fri  "15 10 * * 1-5"   morning edition, ready before 6 am ET
 //   19:15 Mon–Fri  "15 19 * * 1-5"   afternoon edition, ~2:15 pm ET (EST; one hour later in EDT)
 //   13:17 Fri      "17 13 * * 5"     Fringe Weekly
+//   19:45 Fri      "45 19 * * 5"     Weekly Brief, ~2:45 pm ET (EST)
 
-const WORKFLOWS = { daily: 'daily.yml', fringe: 'fringe.yml' };
+const WORKFLOWS = { daily: 'daily.yml', weekly: 'weekly.yml', fringe: 'fringe.yml' };
 
 function github(env) {
   return (path, init = {}) => fetch(`https://api.github.com/repos/${env.REPO}/${path}`, {
@@ -75,7 +77,8 @@ export default {
 
   // Ready-made editions on Cloudflare's clock (see Cron Triggers above).
   async scheduled(event, env, ctx) {
-    const workflow = event.cron === (env.FRINGE_CRON || '17 13 * * 5') ? WORKFLOWS.fringe : WORKFLOWS.daily;
+    const workflow = event.cron === (env.FRINGE_CRON || '17 13 * * 5') ? WORKFLOWS.fringe
+      : event.cron === (env.WEEKLY_CRON || '45 19 * * 5') ? WORKFLOWS.weekly : WORKFLOWS.daily;
     ctx.waitUntil(start(env, workflow, 60 * 60000));
   },
 };

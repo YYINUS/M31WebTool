@@ -25,6 +25,8 @@ Compare each file with https://github.com/YYINUS/M31WebTool/tree/main/gp-brief.
 | `llm.mjs` (speed) | `output_config.effort` configurable (`GP_BRIEF_EFFORT`, `GP_BRIEF_JUDGE_EFFORT`, default `high`; a live run at medium was held); system prompt and news pool sent as cacheable blocks (`cache_control: ephemeral`). | Faster, cheaper drafts and reviews. Revisions and repeat reviews read the large shared prefix from cache, at about a tenth of the price. |
 | `collect.mjs` (pool size) | `trimPool`: keep every portfolio item, each sector's 10 best-covered items, then the most widely covered, up to 400 (`GP_BRIEF_MAX_POOL`). | First live run: 1,191 items → the writer filled every section (26 stories, 9-min read, 13 check failures) and all 3 drafts were held. |
 | `collect.mjs` (speed) | 4 queries in parallel (`GP_BRIEF_COLLECT_LANES`), each lane keeping the Google pause. | ~50 queries went from 122 s to 35 s with the same items (481) and one 429. |
+| `collect.mjs` (summaries) | Google News `<description>` is escaped HTML (`&lt;a href=…`); it was stored as the item summary. Now decoded and dropped when it only repeats the headline. | ~65% fewer pool tokens in every writer and judge call, and no link noise in the pool. |
+| `checks.mjs`, `prompts.mjs` (length) | At most 18 stories in total (new check); exact character limits stated in the writer prompt; talk of the day = the 6 most widely covered events (was: every event at 5+ outlets). **The last one changes an approved gate — please confirm.** | Live runs: drafts at 20–24 stories and 8–10 minutes; most failures were over-long fields and widely covered events left out, because a ~1,200-item pool has dozens of 5-outlet events. |
 | `prompts.mjs` | "M31 Thesis entries carry NO action". `draftUser` / `judgeUser` return `{ cached, rest }` with the news pool first, so it can be cached; `run.mjs` builds the revise call the same way. | Matches the approved partner sample for Nov 16, which has 6 actions and none on Thesis entries. The branch's draft had 9. |
 | `render-html.mjs` | (a) "Updated <weekday, date> · <time> ET" in the masthead and on the date line, from `meta.generatedAt`. (b) `actionRows()` exported, and the What next list uses `st.actionWho` when present. (c) Optional `nav` (prev / all / next, Refresh); nothing changes when `nav` is not passed. | (a) Partners asked for it: a 6 am brief doesn't reflect 4 pm news. (b) Lets a brief be re-rendered later without the portfolio file. (c) Used by the standalone site only. |
 
@@ -48,6 +50,11 @@ node gp-brief/test/smoke.mjs && node gp-brief/test/collect.mjs && node gp-brief/
 - **Timestamps.** Every edition shows when its news was gathered, in Eastern Time.
 - **Manual refresh, on the page.** Partners want to refresh a brief during the day without leaving the site, and nobody should wait on a blank page. In the dashboard: a Refresh button on `/brief` that calls the cron route server-side (with `CRON_SECRET`), keeps showing the current edition, and swaps in the new row of `gp_briefs` when the run finishes. The standalone site does the same through a small relay (`worker/refresh-worker.js`) that starts the GitHub workflow.
 - **Thesis entries carry no action** (see `prompts.mjs` above).
+
+## 2b. New since: Weekly Brief and Raw Feed
+
+- **Weekly Brief** (Fridays ~3 pm ET): `run.mjs --weekly` uses the same pipeline with `WEEKLY_ADDENDUM` / `WEEKLY_JUDGE_ADDENDUM` (`prompts.mjs`), weekly checks (7-day freshness, ≤ 22 stories, ≤ 12 min, a dated and sourced `weekAhead`) and the same renderer (`weekly` option: "Weekly Brief", "Top 3 this week", a Week ahead section). `collect-cli.mjs --weekly` collects 7 days and merges the week's stored raw feed. In the dashboard: a second cron (Fridays) and a `/brief/weekly` page.
+- **Raw Feed**: `collect-cli.mjs` also writes everything collected (`feed.json`); `feed-merge.mjs` keeps a per-day file. The dashboard already has a Raw Feed tab in News Digest (it showed "Error: Failed: 504" on Nov 17); the GP brief's collection could feed it.
 
 ## 3. Then follow HANDOFF.md Steps 2–7
 

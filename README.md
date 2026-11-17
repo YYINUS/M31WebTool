@@ -1,8 +1,11 @@
 # M31 Research Briefs
 
-Two briefs, published as a static site on GitHub Pages in M31's design (m31.capital: black masthead, cream ground, Instrument Serif headlines, Inter body):
+Published as a static site on GitHub Pages in M31's design (m31.capital: black masthead, cream ground, Instrument Serif headlines, Inter body):
 
-- **M31 Daily Brief**: the GP Daily Brief, organized by purpose (Portfolio, M31 Thesis, Regulation, Tech & Funding, Macro & Markets, Frontier). The first screen has a headline, a bottom line and the Top 3 (30 seconds); the full read is about 5 minutes. Weekdays.
+- **News Digest**, with three tabs:
+  - **Daily Brief**: the GP Daily Brief, organized by purpose (Portfolio, M31 Thesis, Regulation, Tech & Funding, Macro & Markets, Frontier). The first screen has a headline, a bottom line and the Top 3 (30 seconds); the full read is about 5 minutes. Weekday mornings, plus an afternoon edition.
+  - **Weekly Brief**: the same format for the whole week, every Friday afternoon (~3 pm ET): the story of the week, Top 3 of the week, the six sections, and **Week ahead**, the dated things to watch next week. It draws on the week's stored raw feed plus a fresh 7-day collection.
+  - **Raw Feed**: everything the news search collected each day (often 1,000+ items), unedited, filterable by section and source, searchable, sorted by how widely an event was covered.
 - **Fringe Foundation Weekly Signal**: a decision-first scan of frontier and anomalous claims. Each claim gets a label (Act / Watch / Pending / Critique / Context / Benchmark), an evidence stage from 1 to 5 and a follow-up plan. Each issue also has an email-safe inbox version and links to the coverage and sources page. Fridays.
 
 ## Layout
@@ -20,7 +23,9 @@ gp-brief/             the Daily Brief pipeline (Node ≥ 18, no dependencies)
   taxonomy.mjs, thesis.mjs   M31 sectors and watchlists; M31's public theses (Substack)
 generator/            the Fringe Weekly (Python + Anthropic SDK), its source pre-fetch, and the site build
 templates/, static/   Fringe, inbox, coverage and home page templates and CSS
-data/daily/           one published Daily Brief per weekday (no actions)
+data/daily/           one published Daily Brief per weekday (the latest edition of the day)
+data/weekly/          one Weekly Brief per Friday
+data/feed/            the raw feed, one file per day (public news fields only, no search queries)
 data/fringe/          one Fringe issue per week (+ notes/ with the research notes)
 ```
 
@@ -48,7 +53,7 @@ Then set *Settings → Pages → Source* to **GitHub Actions**. Scheduled runs o
 
 ## Schedule, timestamps and refresh
 
-Two workflows write new editions: **Daily Brief** (`daily.yml`) and **Fringe Weekly** (`fringe.yml`). Both call `reports.yml`, which builds and deploys the site (a push to `main` that changes content or design also rebuilds it).
+Three workflows write new editions: **Daily Brief** (`daily.yml`), **Weekly Brief** (`weekly.yml`) and **Fringe Weekly** (`fringe.yml`). Both call `reports.yml`, which builds and deploys the site (a push to `main` that changes content or design also rebuilds it).
 
 | Report | When (UTC) | Covers |
 |---|---|---|
@@ -68,7 +73,7 @@ Setting up the relay (about 10 minutes, once):
 1. **GitHub token.** github.com → your avatar → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Repository access: *Only select repositories* → `M31WebTool`. Permissions: *Actions: Read and write*. Copy the token.
 2. **Worker.** dash.cloudflare.com (free account) → Workers & Pages → Create → Create Worker → name it `m31-refresh` → Deploy → Edit code → replace everything with the contents of `worker/refresh-worker.js` → Deploy.
 3. **Worker settings.** The Worker → Settings → Variables and Secrets → add: `GITHUB_TOKEN` (type *Secret*, the token), `REFRESH_PASSWORD` (*Secret*, e.g. `M31`), `REPO` = `YYINUS/M31WebTool`, `ALLOWED_ORIGIN` = `https://yyinus.github.io`. Deploy.
-4. **Edition schedule.** The Worker → Settings → Trigger events (Cron Triggers) → add, in UTC: `15 10 * * 1-5` (morning edition), `15 19 * * 1-5` (afternoon edition) and `17 13 * * 5` (Fringe Weekly). Add or remove editions here; each costs one run.
+4. **Edition schedule.** The Worker → Settings → Trigger events (Cron Triggers) → add, in UTC: `15 10 * * 1-5` (morning Daily Brief), `15 19 * * 1-5` (afternoon Daily Brief), `45 19 * * 5` (Weekly Brief) and `17 13 * * 5` (Fringe Weekly). Add or remove editions here; each costs one run.
 5. **Tell the site.** Copy the Worker's address (`https://m31-refresh.<your-subdomain>.workers.dev`). In the GitHub repo: Settings → Secrets and variables → Actions → *Variables* tab → New repository variable `REFRESH_ENDPOINT` = that address. The next run rebuilds the pages with the button.
 
 **Speed and cost.** A Daily Brief run takes about 5 minutes, shown on the site as three steps. News collection runs 4 queries at a time (about 1–2 minutes for ~145 queries). The writer and the GP review run at *high* thinking effort (quality first; a first live run at medium was held). The news pool is trimmed to about 400 items (every portfolio item, each sector's best-covered stories, then the most widely covered), which keeps the brief to the approved length. The system prompt and the news pool are prompt-cached, so a revision or a second review reads them at about a tenth of the token price. Readers never wait for a run: the site always shows the last finished edition, and a refresh swaps in the new one.

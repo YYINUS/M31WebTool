@@ -94,7 +94,7 @@ def write(path: Path, html: str) -> None:
 
 # ── Daily Brief ──────────────────────────────────────────────────────────────
 
-def daily_summary(it: dict) -> dict:
+def daily_summary(it: dict, kind: str = "daily") -> dict:
     d = it["d"]
     tops = []
     for key, label, color in PURPOSES:
@@ -103,7 +103,7 @@ def daily_summary(it: dict) -> dict:
                 tops.append({
                     "rank": st["topRank"], "label": label, "color": color, "company": st.get("company", ""),
                     "title": st["title"], "impact": st["impact"],
-                    "href": f"daily/{it['slug']}.html#s-{key}-{i + 1}",
+                    "href": f"{kind}/{it['slug']}.html#s-{key}-{i + 1}",
                 })
     tops.sort(key=lambda t: t["rank"])
     count = sum(len(d.get(k) or []) for k, _, _ in PURPOSES)
@@ -113,14 +113,68 @@ def daily_summary(it: dict) -> dict:
         "stories": count, "deals": len(d.get("deals") or []),
         "minutes": max(1, round((d.get("meta") or {}).get("readMinutes") or 5)),
         "as_of": as_of((d.get("meta") or {}).get("generatedAt")),
+        "week_label": week_label(it["slug"]),
+        "week_ahead": d.get("weekAhead") or [],
     }
 
 
-def build_daily() -> list[dict]:
-    if not (DATA / "daily").exists():
+def week_label(iso: str) -> str:
+    """'Week of Nov 16 – 20, 2026' for a brief dated on that week's Friday."""
+    d = dt.date.fromisoformat(iso)
+    mon = d - dt.timedelta(days=d.weekday())
+    end = f"{d.day}" if mon.month == d.month else f"{d:%b} {d.day}"
+    return f"Week of {mon:%b} {mon.day} – {end}, {d.year}"
+
+
+def build_briefs(kind: str) -> list[dict]:
+    """Daily or Weekly Brief: rendered by the approved renderer (gp-brief/render-site.mjs)."""
+    if not (DATA / kind).exists():
         return []
-    subprocess.run(["node", str(ROOT / "gp-brief" / "render-site.mjs"), str(DATA / "daily"), str(SITE / "daily")], check=True)
-    return [daily_summary(it) for it in load("daily")]
+    subprocess.run(["node", str(ROOT / "gp-brief" / "render-site.mjs"), str(DATA / kind), str(SITE / kind), kind], check=True)
+    return [daily_summary(it, kind) for it in load(kind)]
+
+
+# ── Raw feed ─────────────────────────────────────────────────────────────────
+
+# Section tags in the raw feed (the collector's query groups), with M31 colors.
+FEED_SECTIONS = [
+    ("portfolio", "Portfolio", "#0a0a0a"), ("bellwether", "Bellwethers", "#92400e"), ("regulation", "Regulation", "#991b1b"),
+    ("macro", "Macro", "#92400e"), ("vc", "Funding", "#1d4ed8"), ("ai", "AI", "#1d4ed8"), ("money", "Digital Money", "#b45309"),
+    ("defi", "DeFi", "#7c3aed"), ("web3", "Web3", "#db2777"), ("robotics", "Robotics", "#0369a1"), ("defense", "Defense", "#166534"),
+    ("space", "Space", "#4338ca"), ("lifesci", "Health", "#0f766e"), ("energy", "Energy", "#991b1b"), ("food", "Food", "#15803d"),
+    ("deep", "Deep Tech", "#5c5c5c"), ("frontier", "Frontier", "#0e7490"),
+]
+
+
+def build_feed() -> int:
+    days = sorted((DATA / "feed").glob("*.json"), reverse=True) if (DATA / "feed").exists() else []
+    t = env.get_template("feed.html")
+    labels = {k: v for k, v, _ in FEED_SECTIONS}
+    colors = {k: c for k, _, c in FEED_SECTIONS}
+    for i, p in enumerate(days):
+        feed = json.loads(p.read_text())
+        items = feed.get("items", [])
+        for it in items:  # feeds stored before the collector fix carry Google's escaped link markup as "summary"
+            if "news.google.com" in (it.get("summary") or "") or (it.get("summary") or "").startswith("&lt;"):
+                it["summary"] = ""
+        present = {it.get("sectorId") for it in items}
+        sources = sorted({it.get("source") for it in items if it.get("source")}, key=str.lower)
+        label = lambda q: f"{dt.date.fromisoformat(q):%a, %b} {dt.date.fromisoformat(q).day}"
+        older = days[i + 1].stem if i + 1 < len(days) else None
+        newer = days[i - 1].stem if i > 0 else None
+        html = t.render(
+            day_label=long_date(p.stem), as_of=as_of(feed.get("updatedAt")), count=f"{len(items):,}", sources=sources,
+            runs=len(feed.get("runs", [])), sections=[(k, v) for k, v, _ in FEED_SECTIONS if k in present],
+            has_weekly=(DATA / "weekly").exists() and any((DATA / "weekly").glob("*.json")),
+            prev={"href": f"{older}.html", "label": label(older)} if older else None,
+            next={"href": f"{newer}.html", "label": label(newer)} if newer else None,
+            items_json=json.dumps(items, ensure_ascii=False).replace("<", "\\u003c"),
+            labels_json=json.dumps(labels), colors_json=json.dumps(colors), extra_sources="",
+        )
+        write(SITE / "feed" / f"{p.stem}.html", html)
+        if i == 0:
+            write(SITE / "feed" / "index.html", html)
+    return len(days)
 
 
 # ── Fringe Foundation Weekly ─────────────────────────────────────────────────
@@ -215,13 +269,15 @@ def main() -> None:
     shutil.copytree(ROOT / "static", SITE / "static")
     (SITE / ".nojekyll").write_text("")
 
-    daily = build_daily()
+    daily = build_briefs("daily")
+    weekly = build_briefs("weekly")
+    feed_days = build_feed()
     fringe = build_fringe()
 
     now = dt.datetime.now(dt.UTC)
     write(SITE / "index.html", env.get_template("index.html").render(
-        daily=daily, fringe=fringe, updated=f"{now:%b} {now.day}, {now.year}"))
-    print(f"Built {len(daily)} daily and {len(fringe)} fringe issues into {SITE}")
+        daily=daily, weekly=weekly, feed_days=feed_days, fringe=fringe, updated=f"{now:%b} {now.day}, {now.year}"))
+    print(f"Built {len(daily)} daily, {len(weekly)} weekly, {feed_days} raw-feed days and {len(fringe)} fringe issues into {SITE}")
 
 
 if __name__ == "__main__":

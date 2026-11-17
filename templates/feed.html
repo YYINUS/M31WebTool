@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M31 Raw Feed · {{ day_label }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/feed.css">
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div>
+    <a class="word" href="../index.html">M31 Capital</a>
+    <div class="kick">News Digest <span>·</span> Raw Feed</div>
+  </div>
+  <div class="mast-right">{{ day_label }}{% if as_of %}<br>Updated {{ as_of }}{% endif %}</div>
+</header>
+
+<main class="sheet">
+  <nav class="tabs" aria-label="News Digest">
+    <a href="../daily/index.html">Daily Brief</a>
+    <a href="../weekly/index.html"{% if not has_weekly %} aria-disabled="true" class="off"{% endif %}>Weekly Brief</a>
+    <a href="index.html" class="on" aria-current="page">Raw Feed</a>
+  </nav>
+
+  <div class="head">
+    <div>
+      <h1>Raw feed</h1>
+      <p class="sub">Everything the Daily Brief collected on {{ day_label }}: <strong>{{ count }}</strong> items from <strong>{{ sources|length }}</strong> sources{% if runs > 1 %}, over {{ runs }} collections{% endif %}. Unfiltered and unedited — the brief is the curated version.</p>
+    </div>
+    <div class="days">
+      {% if prev %}<a href="{{ prev.href }}">&larr; {{ prev.label }}</a>{% endif %}
+      {% if next %}<a href="{{ next.href }}">{{ next.label }} &rarr;</a>{% endif %}
+    </div>
+  </div>
+
+  <form class="filters" onsubmit="return false">
+    <label>Section
+      <select id="f-section"><option value="">All</option>{% for k, v in sections %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select>
+    </label>
+    <label>Source
+      <select id="f-source"><option value="">All</option>{% for s in sources %}<option value="{{ s }}">{{ s }}</option>{% endfor %}</select>
+    </label>
+    <label class="grow">Search
+      <input id="f-q" type="search" placeholder="Words in the title or summary">
+    </label>
+    <label>Sort
+      <select id="f-sort"><option value="outlets">Most covered</option><option value="new">Newest</option></select>
+    </label>
+    <span id="f-count" class="count" role="status" aria-live="polite"></span>
+  </form>
+
+  <ol id="list" class="list"></ol>
+  <button type="button" id="more" class="more" hidden>Show more</button>
+
+  <footer class="foot">
+    <span>Collected from Google News{% if extra_sources %} and {{ extra_sources }}{% endif %} by the Daily Brief's news search. Kept as collected: check primary sources.</span>
+    <a href="../index.html">All briefs &rarr;</a>
+  </footer>
+</main>
+</div>
+
+<script type="application/json" id="feed-data">{{ items_json | safe }}</script>
+<script>
+(function () {
+  var items = JSON.parse(document.getElementById('feed-data').textContent);
+  var LABEL = {{ labels_json | safe }}, COLOR = {{ colors_json | safe }};
+  var $ = function (id) { return document.getElementById(id); };
+  var list = $('list'), more = $('more'), shown = 100;
+  function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+  function when(iso) {
+    var t = new Date(iso); if (isNaN(t)) return '';
+    return t.toLocaleString('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' ET';
+  }
+  function filtered() {
+    var sec = $('f-section').value, src = $('f-source').value, q = $('f-q').value.trim().toLowerCase(), sort = $('f-sort').value;
+    var out = items.filter(function (it) {
+      return (!sec || it.sectorId === sec) && (!src || it.source === src) &&
+        (!q || ((it.title || '') + ' ' + (it.summary || '')).toLowerCase().indexOf(q) >= 0);
+    });
+    out.sort(sort === 'new'
+      ? function (a, b) { return Date.parse(b.publishedAt) - Date.parse(a.publishedAt); }
+      : function (a, b) { return (b.outlets || 1) - (a.outlets || 1) || Date.parse(b.publishedAt) - Date.parse(a.publishedAt); });
+    return out;
+  }
+  function draw() {
+    var out = filtered();
+    $('f-count').textContent = out.length + ' result' + (out.length === 1 ? '' : 's');
+    list.innerHTML = out.slice(0, shown).map(function (it) {
+      var c = COLOR[it.sectorId] || '#5c5c5c';
+      return '<li class="card"><span class="tag" style="color:' + c + ';border-color:' + c + '">' + esc(LABEL[it.sectorId] || it.sectorId) + '</span>' +
+        '<div class="body"><a class="t" href="' + esc(it.url) + '" target="_blank" rel="noopener">' + esc(it.title) + ' ↗</a>' +
+        (it.summary && it.summary.toLowerCase().indexOf((it.title || '').toLowerCase().slice(0, 30)) < 0 ? '<p class="s">' + esc(it.summary) + '</p>' : '') +
+        '<div class="m">' + esc(it.source) + ' &nbsp;·&nbsp; ' + when(it.publishedAt) + '</div></div>' +
+        '<div class="o" title="Outlets covering this event">' + (it.outlets > 1 ? '<strong>' + it.outlets + '</strong><span>outlets</span>' : '') + '</div></li>';
+    }).join('') || '<li class="empty">Nothing matches these filters.</li>';
+    more.hidden = out.length <= shown;
+  }
+  ['f-section', 'f-source', 'f-sort'].forEach(function (id) { $(id).addEventListener('change', function () { shown = 100; draw(); }); });
+  $('f-q').addEventListener('input', function () { shown = 100; draw(); });
+  more.addEventListener('click', function () { shown += 100; draw(); });
+  draw();
+})();
+</script>
+</body>
+</html>

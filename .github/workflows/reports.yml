@@ -4,7 +4,7 @@ on:
   # Called by daily.yml and fringe.yml (schedule + "Run workflow" / Refresh buttons).
   workflow_call:
     inputs:
-      report: { type: string, required: true }        # daily | fringe | none
+      report: { type: string, required: true }        # daily | weekly | fringe | none
       date: { type: string, required: false, default: "" }
       publish_hold: { type: boolean, required: false, default: false }
       fringe_start: { type: string, required: false, default: "" }
@@ -55,17 +55,18 @@ jobs:
       # stay in the runner's temp folder. Logs print summaries only.
       - name: Check whether an edition is needed
         id: need
-        if: steps.plan.outputs.report == 'daily'
+        if: steps.plan.outputs.report == 'daily' || steps.plan.outputs.report == 'weekly'
         env:
           EVENT: ${{ github.event_name }}
+          KIND: ${{ steps.plan.outputs.report }}
           DAY: ${{ inputs.date }}
         run: |
           D="${DAY:-$(date -u +%F)}"
           echo "day=$D" >> "$GITHUB_OUTPUT"
           # GitHub's own schedule is only a backup for the relay's clock: skip it
           # when an edition for today was made in the last 3 hours.
-          if [ "$EVENT" = "schedule" ] && [ -f "data/daily/$D.json" ] && node -e "
-            const m = require('./data/daily/$D.json').meta || {};
+          if [ "$EVENT" = "schedule" ] && [ -f "data/$KIND/$D.json" ] && node -e "
+            const m = require('./data/$KIND/$D.json').meta || {};
             process.exit(Date.now() - Date.parse(m.generatedAt || 0) < 3 * 3600e3 ? 0 : 1)"; then
             echo "Recent edition exists; skipping this scheduled run."
             echo "run=false" >> "$GITHUB_OUTPUT"
@@ -78,10 +79,16 @@ jobs:
         env:
           PORTFOLIO_JSON: ${{ secrets.PORTFOLIO_JSON }}
           D: ${{ steps.need.outputs.day }}
+          KIND: ${{ steps.plan.outputs.report }}
         run: |
-          node gp-brief/collect-cli.mjs "$RUNNER_TEMP/gp-brief"
-          # Keep everything collected in the day's raw feed (the site's Raw Feed tab).
-          node gp-brief/feed-merge.mjs "$RUNNER_TEMP/gp-brief/feed.json" "data/feed/$D.json"
+          if [ "$KIND" = "weekly" ]; then
+            # 7-day window, plus the week's stored raw feed.
+            node gp-brief/collect-cli.mjs "$RUNNER_TEMP/gp-brief" --weekly
+          else
+            node gp-brief/collect-cli.mjs "$RUNNER_TEMP/gp-brief"
+            # Keep everything collected in the day's raw feed (the site's Raw Feed tab).
+            node gp-brief/feed-merge.mjs "$RUNNER_TEMP/gp-brief/feed.json" "data/feed/$D.json"
+          fi
 
       - name: Write and review the brief
         id: daily
@@ -92,16 +99,18 @@ jobs:
           GP_BRIEF_EFFORT: ${{ vars.GP_BRIEF_EFFORT }}
           GP_BRIEF_JUDGE_EFFORT: ${{ vars.GP_BRIEF_JUDGE_EFFORT }}
           D: ${{ steps.need.outputs.day }}
+          KIND: ${{ steps.plan.outputs.report }}
           FORCE: ${{ inputs.publish_hold }}
         run: |
           W="$RUNNER_TEMP/gp-brief"
-          node gp-brief/run.mjs --date "$D" --work "$W" > "$RUNNER_TEMP/gp-status.json"
+          FLAG=""; [ "$KIND" = "weekly" ] && FLAG="--weekly"
+          node gp-brief/run.mjs --date "$D" --work "$W" $FLAG > "$RUNNER_TEMP/gp-status.json"
           status=$(node -p "JSON.parse(require('fs').readFileSync('$RUNNER_TEMP/gp-status.json','utf8')).status")
           if [ "$status" = "release" ] || [ "$FORCE" = "true" ]; then
-            cp "$W/public.json" "data/daily/$D.json"
+            mkdir -p "data/$KIND" && cp "$W/public.json" "data/$KIND/$D.json"
             echo "Published the $D brief ($status)."
           else
-            echo "::warning::The $D brief was HELD by the GP review and not published."
+            echo "::warning::The $D $KIND brief was HELD by the GP review and not published."
             echo "held=true" >> "$GITHUB_OUTPUT"
           fi
 

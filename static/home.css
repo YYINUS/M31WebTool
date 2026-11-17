@@ -15,6 +15,12 @@ a{color:var(--ink)}
 .sheet{background:#fff;border:1px solid var(--rule);border-top:0;border-radius:0 0 6px 6px;padding:30px 36px 36px}
 .intro h1{margin:12px 0 0;font-family:var(--serif);font-weight:400;font-size:40px;line-height:1.08}
 .intro p{margin:14px 0 0;font-size:16px;color:var(--muted)}
+.tabs{display:flex;flex-wrap:wrap;align-items:center;gap:6px 4px;margin:28px 0 0}
+.tabs .label{margin-right:8px}
+.tabs a{padding:8px 13px;border:1.5px solid var(--ink);border-radius:3px;font-size:12px;font-weight:600;text-decoration:none}
+.tabs a:hover{background:var(--panel)}
+.tabs a.off{border-color:var(--rule);color:var(--faint);pointer-events:none}
+.when-ahead{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#b8860b;width:72px;padding-top:4px}
 .feature{margin:36px 0 0;padding-top:12px;border-top:2px solid var(--ink)}
 .feature-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px 16px;flex-wrap:wrap}
 .feature h2{margin:12px 0 0;font-family:var(--serif);font-weight:400;font-size:32px;line-height:1.12}
