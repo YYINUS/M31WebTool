@@ -125,8 +125,15 @@ export async function collect({ sectors = Object.keys(QUERIES), hours = new Date
   const cutoffFor = (key) => Date.now() - hoursFor(key) * 3600 * 1000;
   const out = [];
   const failures = [];
-  for (const sectorId of sectors) {
-    for (const query of QUERIES[sectorId] || []) {
+  // A few queries at a time (each lane keeps Google's pause): ~145 queries take
+  // about 1–2 minutes instead of ~6 one by one.
+  const jobs = [];
+  for (const sectorId of sectors) for (const query of QUERIES[sectorId] || []) jobs.push({ sectorId, query });
+  const lanes = Number(process.env.GP_BRIEF_COLLECT_LANES || 4);
+  let next = 0;
+  await Promise.all(Array.from({ length: lanes }, async () => {
+    while (next < jobs.length) {
+      const { sectorId, query } = jobs[next++];
       for (const [name, fn] of [['google', googleNews], ['newsapi', newsApi], ['gdelt', gdelt]]) {
         try {
           const items = await fn(query, hoursFor(sectorId));
@@ -136,7 +143,7 @@ export async function collect({ sectors = Object.keys(QUERIES), hours = new Date
         }
       }
     }
-  }
+  }));
   const fresh = dedupe(out.filter((it) => it.title && it.url && Date.parse(it.publishedAt) >= cutoffFor(it.sectorId)));
   scoreCoverage(fresh, out.filter((it) => Date.parse(it.publishedAt) >= cutoffFor(it.sectorId)));
   fresh.sort((a, b) => b.outlets - a.outlets);

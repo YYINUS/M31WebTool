@@ -16,6 +16,8 @@ const refresh = {
   runsApi: `https://api.github.com/repos/${REPO}/actions/workflows/daily.yml/runs?per_page=1`,
   runUrl: `https://github.com/${REPO}/actions/workflows/daily.yml`,
   script: '../static/refresh.js',
+  endpoint: process.env.REFRESH_ENDPOINT || '',   // the refresh relay (worker/refresh-worker.js)
+  latest: 'index.html',                           // where the newest edition lives
 };
 const label = (d) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' });
 

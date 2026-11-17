@@ -164,7 +164,8 @@ Use only URLs that appear in the notes. Never add facts that are not in the note
 def generate(start: dt.date, end: dt.date, today: dt.date, out_dir: Path) -> Path:
     log(f"Fringe weekly {start}..{end}: research pass")
     candidates, counts = prefetch(start, min(end, today), log=log)
-    notes = research(SYSTEM, research_task(start, end, today, candidates, counts), searches=60, fetches=40)
+    # Listings arrive pre-fetched, so a smaller search budget and medium effort suffice (faster, cheaper).
+    notes = research(SYSTEM, research_task(start, end, today, candidates, counts), effort="medium", searches=40, fetches=30)
     log("Fringe weekly: structure pass")
     data = structure(SYSTEM, notes, INSTRUCTIONS, SCHEMA)
     data["start"], data["end"], data["generated"] = start.isoformat(), end.isoformat(), today.isoformat()

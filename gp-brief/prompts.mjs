@@ -90,10 +90,10 @@ Return ONLY valid JSON:
   "frontierQuiet": ""
 }`;
 
-export const draftUser = ({ date, items, pool }) => `Date: ${date}
-
-NEWS POOL (${items.length} items):
+// The news pool goes first and is cached: every draft and revision in a run shares it.
+export const poolBlock = ({ items, pool }) => `NEWS POOL (${items.length} items):
 ${pool}`;
+export const draftUser = ({ date, items, pool }) => ({ cached: poolBlock({ items, pool }), rest: `Date: ${date}\n\nWrite the brief from the news pool above.` });
 
 export const JUDGE_SYSTEM = `You are a general partner at M31 Capital, reading tomorrow's daily brief on your phone. You want to know first what happened to your own companies, then what changed in the rules, the tech and the money in your sectors, then the macro backdrop. You will stop reading the day it wastes your time. You can tell padding from news and a restated fact from a real impact.
 
@@ -122,11 +122,8 @@ Return ONLY valid JSON:
   "fixes": ["Specific, concrete edits that would raise the lowest scores. Max 5."]
 }`;
 
-export const judgeUser = ({ hydrated, pool }) => `BRIEF:
-${JSON.stringify(hydrated, null, 2)}
-
-NEWS POOL:
-${pool}`;
+// Pool first (cached across review rounds), then the draft under review.
+export const judgeUser = ({ hydrated, pool }) => ({ cached: `NEWS POOL:\n${pool}`, rest: `BRIEF:\n${JSON.stringify(hydrated, null, 2)}` });
 
 export const REVISE_USER = (brief, judge, hardFails) => `Here is your current brief, followed by the GP's review and the automatic checks it failed. Produce a revised brief that fixes every hard failure and addresses the GP's fixes, misses, filler and weak impacts. Keep what worked. Same JSON format.
 

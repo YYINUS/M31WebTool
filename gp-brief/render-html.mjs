@@ -177,10 +177,11 @@ function sectionBlock(p, brief) {
   </section>`;
 }
 
-// "Refresh" for the published site: links to the GitHub workflow that writes a
-// new edition (needs write access to the repo) and shows the latest run's status.
+// "Refresh" for the published site: starts a new edition through the refresh
+// relay (r.endpoint) and opens it when published; without a relay it links to
+// the workflow on GitHub. See static/refresh.js and worker/refresh-worker.js.
 function refreshButton(r) {
-  return `<span class="refresh" data-runs="${esc(r.runsApi)}" data-run-url="${esc(r.runUrl)}" data-report="daily"></span><script src="${esc(r.script)}" defer></script>`;
+  return `<span class="refresh" data-report="daily" data-runs="${esc(r.runsApi)}" data-run-url="${esc(r.runUrl)}" data-endpoint="${esc(r.endpoint || '')}" data-latest="${esc(r.latest || 'index.html')}"></span><script src="${esc(r.script)}" defer></script>`;
 }
 
 // Previous / all / next links for the published archive.

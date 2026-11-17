@@ -26,7 +26,7 @@
 <div class="intro">
   <div class="intro-top">
     <div class="label muted">The Weekly Signal &nbsp;·&nbsp; {{ d.week_label }}{% if as_of %} &nbsp;·&nbsp; <span class="asof">Updated {{ as_of }}</span>{% endif %}</div>
-    <span class="refresh" data-report="fringe" data-runs="{{ refresh.runs }}" data-run-url="{{ refresh.url }}"></span>
+    <span class="refresh" data-report="fringe" data-runs="{{ refresh.runs }}" data-run-url="{{ refresh.url }}" data-endpoint="{{ refresh.endpoint }}" data-latest="{{ refresh.latest }}"></span>
   </div>
   <h1>{{ summary.headline }}</h1>
   <p>{{ summary.dek }}</p>

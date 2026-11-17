@@ -8,7 +8,18 @@ const JUDGE_MODEL = process.env.GP_BRIEF_JUDGE_MODEL || MODEL;
 
 export const hasLLM = () => Boolean(process.env.ANTHROPIC_API_KEY);
 
+// Faster, cheaper defaults: medium thinking effort (Sonnet 5.5's default is high).
+// Raise with GP_BRIEF_EFFORT / GP_BRIEF_JUDGE_EFFORT = high if quality drops.
+const EFFORT = process.env.GP_BRIEF_EFFORT || 'medium';
+const JUDGE_EFFORT = process.env.GP_BRIEF_JUDGE_EFFORT || EFFORT;
+
+// `user` is a string, or { cached, rest }: `cached` (the news pool) is the same
+// for every draft or every review in a run, so it is marked for prompt caching
+// together with the system prompt; later calls read it at a fraction of the cost.
 export async function askJSON({ system, user, maxTokens = 48000, judge = false }) {
+  const content = typeof user === 'string'
+    ? user
+    : [{ type: 'text', text: user.cached, cache_control: { type: 'ephemeral' } }, { type: 'text', text: user.rest }];
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
@@ -20,8 +31,9 @@ export async function askJSON({ system, user, maxTokens = 48000, judge = false }
       model: judge ? JUDGE_MODEL : MODEL,
       max_tokens: maxTokens,
       stream: true,
-      system,
-      messages: [{ role: 'user', content: user }],
+      output_config: { effort: judge ? JUDGE_EFFORT : EFFORT },
+      system: [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }],
+      messages: [{ role: 'user', content }],
     }),
     signal: AbortSignal.timeout(900000),
   });

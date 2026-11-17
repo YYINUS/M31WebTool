@@ -63,7 +63,8 @@ async function main() {
     else if (r === 1) brief = await askJSON({ system: DRAFT_SYSTEM, user: draftUser({ date, items, pool }) });
     else {
       const prev = rounds[r - 2];
-      brief = await askJSON({ system: DRAFT_SYSTEM, user: `${REVISE_USER(prev.brief, prev.judge, prev.checks.fails)}\n\n${draftUser({ date, items, pool })}` });
+      const u = draftUser({ date, items, pool });
+      brief = await askJSON({ system: DRAFT_SYSTEM, user: { cached: u.cached, rest: `${u.rest}\n\n${REVISE_USER(prev.brief, prev.judge, prev.checks.fails)}` } });
     }
     brief.date = brief.date || date;
     writeJSON(bf, brief);

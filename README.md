@@ -59,7 +59,17 @@ Two workflows write new editions: **Daily Brief** (`daily.yml`) and **Fringe Wee
 
 **Timestamps.** Each edition shows when its news was gathered, in Eastern Time ("Updated Tue, Nov 17 · 6:41 AM ET"), so a reader knows a 6 am brief does not reflect 4 pm news.
 
-**Refresh.** Each brief has a **Refresh** button. It opens the matching workflow on GitHub, where anyone with write access clicks **Run workflow** for a fresh edition (about 15 minutes; a same-day Daily Brief is replaced by the newer edition). The panel also shows whether a refresh is running and when the last one finished, from GitHub's public API. A static page cannot start a run itself without exposing a GitHub token.
+**Refresh.** Each brief has a **Refresh** button. Readers type the password and click **Refresh now**; the page follows the run and opens the new edition when it is published (a same-day Daily Brief is replaced by the newer edition). A static page cannot start a GitHub run by itself without exposing a token, so the button talks to a small relay, a free Cloudflare Worker (`worker/refresh-worker.js`) that holds the token, checks the password, allows one run at a time and at most one every 15 minutes, and starts the workflow. Until the relay is set up, the button links to the workflow on GitHub instead.
+
+Setting up the relay (about 10 minutes, once):
+
+1. **GitHub token.** github.com → your avatar → Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Repository access: *Only select repositories* → `M31WebTool`. Permissions: *Actions: Read and write*. Copy the token.
+2. **Worker.** dash.cloudflare.com (free account) → Workers & Pages → Create → Create Worker → name it `m31-refresh` → Deploy → Edit code → replace everything with the contents of `worker/refresh-worker.js` → Deploy.
+3. **Worker settings.** The Worker → Settings → Variables and Secrets → add: `GITHUB_TOKEN` (type *Secret*, the token), `REFRESH_PASSWORD` (*Secret*, e.g. `M31`), `REPO` = `YYINUS/M31WebTool`, `ALLOWED_ORIGIN` = `https://yyinus.github.io`. Deploy.
+4. **Tell the site.** Copy the Worker's address (`https://m31-refresh.<your-subdomain>.workers.dev`). In the GitHub repo: Settings → Secrets and variables → Actions → *Variables* tab → New repository variable `REFRESH_ENDPOINT` = that address.
+5. Run either workflow once (or push to `main`) so the pages are rebuilt with the relay address.
+
+**Speed and cost.** A Daily Brief run takes about 5–8 minutes. News collection runs 4 queries at a time (about 1–2 minutes for ~145 queries). The writer and the GP review run at *medium* thinking effort (set `GP_BRIEF_EFFORT` / `GP_BRIEF_JUDGE_EFFORT` = `high` as Actions variables to trade speed for depth). The system prompt and the news pool are prompt-cached, so a revision or a second review reads them at about a tenth of the token price. Readers never wait for a run: the site always shows the last finished edition, and a refresh swaps in the new one.
 
 **Fringe sources.** Before its research pass, the Fringe Weekly pulls its standing sources in code for the issue's window: every arXiv paper in physics.gen-ph plus topic-matched papers in astro-ph, gr-qc, hep-ph, nucl-ex/th, quant-ph and q-bio.NC; Retraction Watch; PsyArXiv (psi and consciousness terms); the Journal of Scientific Exploration; and NASA's Technical Reports Server (`generator/sources.py`). Web search is then spent on what those don't cover (Journal of Parapsychology, PubPeer, LENR programs, SETI and UAP sources, journalism).
 

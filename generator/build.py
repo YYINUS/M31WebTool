@@ -27,6 +27,8 @@ DATA, SITE = ROOT / "data", ROOT / "site"
 SITE_URL = os.environ.get("SITE_URL", "")
 # The repository whose workflows write new editions (for the Refresh buttons).
 REPO = os.environ.get("GITHUB_REPOSITORY", "YYINUS/M31WebTool")
+# The refresh relay (worker/refresh-worker.js); without it, Refresh links to GitHub.
+REFRESH_ENDPOINT = os.environ.get("REFRESH_ENDPOINT", "")
 ET = ZoneInfo("America/New_York")
 
 # Daily Brief sections, in reading order, with the renderer's colors (gp-brief/render-html.mjs).
@@ -192,7 +194,8 @@ def build_fringe() -> list[dict]:
         rows, legend = fringe_nav(d)
         summary = fringe_summary(d)
         refresh = {"runs": f"https://api.github.com/repos/{REPO}/actions/workflows/fringe.yml/runs?per_page=1",
-                   "url": f"https://github.com/{REPO}/actions/workflows/fringe.yml"}
+                   "url": f"https://github.com/{REPO}/actions/workflows/fringe.yml",
+                   "endpoint": REFRESH_ENDPOINT, "latest": "index.html"}
         html = t.render(d=d, root="../", prev=prev, next=nxt, nav_rows=rows, legend=legend, slug=it["slug"],
                         summary=summary, as_of=as_of(d.get("generated_at")), refresh=refresh)
         write(SITE / "fringe" / f"{it['slug']}.html", html)
