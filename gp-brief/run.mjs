@@ -104,6 +104,9 @@ async function main() {
     log(`draft ${r}: GP-value ${decision.weighted} → ${decision.pass ? 'PASS' : 'FAIL (' + decision.reasons.join('; ') + ')'}`);
     // Diagnostics safe for public logs: failure TYPES (no text) and the judge's numeric scores.
     if (checks.fails.length) log(`draft ${r}: check failures by type: ${failureTypes(checks.fails)}`);
+    // The reviewer's own words, to tune the writer (brief content only: What next is not treated as confidential).
+    if (judge?.verdict) log(`draft ${r}: GP verdict: ${judge.verdict}`);
+    for (const f of (judge?.fixes || []).slice(0, 5)) log(`draft ${r}: GP fix: ${String(f).slice(0, 240)}`);
     if (judge?.scores) log(`draft ${r}: GP scores ${Object.entries(judge.scores).map(([k, v]) => `${k} ${v}`).join(', ')} · open tomorrow: ${judge.openTomorrow ? 'yes' : 'no'}`);
     rounds.push({ round: r, brief, checks, judge, decision });
     if (decision.pass) break;
