@@ -58,7 +58,7 @@
     <span class="mono muted small">{{ c.meta }}</span>
   </div>
   <h2 id="h-{{ c.id }}">{{ c.claim }}</h2>
-  <div class="people">{{ c.people }}{% for l in c.links %} · <a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% endfor %}</div>
+  <div class="people">{{ c.people }}{% for l in c.links %} · {% if l.url %}<a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% else %}{{ l.label }}{% endif %}{% endfor %}</div>
 
   <div class="two">
     <div class="box">
@@ -104,7 +104,7 @@
         <div class="body2">{{ c.compare_text }}{% if c.compare_link.url %} <a href="{{ c.compare_link.url }}" rel="noopener">{{ c.compare_link.label or 'Source ↗' }}</a>{% endif %}</div>
       </div>
       {% endif %}
-      {% if c.primary_link.url %}<a class="primary" href="{{ c.primary_link.url }}" rel="noopener">{{ c.primary_link.label }}</a>{% endif %}
+      {% if c.primary_link.url %}<a class="primary" href="{{ c.primary_link.url }}" rel="noopener">{{ c.primary_link.label }}</a>{% elif c.primary_link.label %}<span class="primary">{{ c.primary_link.label }}</span>{% endif %}
     </div>
   </details>
   <a class="back small" href="#top">Back to labels</a>
@@ -118,7 +118,7 @@
   <div>Every card links to its source. Items we could not verify were left out. Researched and drafted with Claude; check primary sources before acting.</div>
   <nav class="issues" aria-label="Other issues">
     {% if prev %}<a href="{{ prev.href }}">← {{ prev.label }}</a>{% else %}<span></span>{% endif %}
-    <a href="{{ root }}index.html#fringe-archive">Earlier weeks</a>
+    <span><a href="coverage.html">Coverage and sources</a> · <a href="{{ slug }}-email.html">Inbox version</a> · <a href="{{ root }}index.html#fringe-archive">Earlier weeks</a></span>
     {% if next %}<a href="{{ next.href }}">{{ next.label }} →</a>{% else %}<span></span>{% endif %}
   </nav>
 </footer>

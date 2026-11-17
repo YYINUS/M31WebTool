@@ -5,7 +5,9 @@ Two auto-generated reports, published as a static site on GitHub Pages:
 - **M31 Daily Brief**: a 2-minute morning read across M31's sectors, with a headline story, today's asks, and why each item matters and what to watch next. Every weekday.
 - **Fringe Foundation Weekly Signal**: a decision-first scan of frontier and anomalous claims (MOND, psi, LENR, consciousness, technosignatures, UAP). Each claim gets a label (Act / Watch / Pending / Critique / Context / Benchmark), an evidence stage from 1 to 5, an impact rating and a follow-up plan. Every Friday.
 
-Both layouts are ported from the design canvases "M31 Daily Brief – Simplified" and "Fringe Foundation Weekly — Redesign".
+Both layouts are ported from the design canvases "M31 Daily Brief – Simplified" and "Fringe Foundation Weekly — Redesign". Each Fringe issue also gets an **inbox version** (`fringe/<date>-email.html`, email-safe tables and inline styles) and links to the **coverage and sources** page (`fringe/coverage.html`).
+
+The archive starts with the hand-written issues from those canvases: Daily Brief Oct 22, and Fringe Oct 31 – Nov 6 and Nov 7 – 12. Their JSON files carry `"source": "design canvas (hand-written issue)"`. The canvas's second Daily Brief had no date, so it isn't in the archive.
 
 ## How it works
 
@@ -16,7 +18,7 @@ generator/common.py   Claude API calls: a web-research pass, then a structured-o
 generator/build.py    renders data/**/*.json through templates/ into site/
 data/daily/           one JSON per issue (+ notes/ with the raw research notes)
 data/fringe/
-templates/, static/   HTML templates and CSS
+templates/, static/   HTML templates and CSS (daily, fringe, fringe_email, coverage, index)
 .github/workflows/reports.yml   schedule → generate → commit data → build → deploy to Pages
 ```
 

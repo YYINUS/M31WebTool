@@ -1,0 +1,307 @@
+{
+  "week_label": "Nov 7 – 12, 2026",
+  "status": "5-minute scan",
+  "coverage_warning": "",
+  "cards": [
+    {
+      "id": "darkenergy",
+      "nav": "DARK ENERGY",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "COSMOLOGY · ARXIV PREPRINT · NOV 8",
+      "claim": "Large regions of the Universe may hold less dark energy than average, and it could show up in local expansion",
+      "people": "Oem Trivedi, Abraham (Avi) Loeb",
+      "links": [
+        {
+          "label": "arXiv:2611.11094 ↗",
+          "url": "https://arxiv.org/abs/2611.11094"
+        }
+      ],
+      "stage": 1,
+      "stage_headline": "Stage 1 of 5: an idea, not yet tested.",
+      "stage_note": "A phenomenological model with numerical predictions. No data fit yet. Not peer reviewed; the authors invite comments.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "Dark energy would stop being uniform, and patches of it could feed into the Hubble tension.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "In their model, a 10% deficiency slows a typical void’s expansion by about 2.7%, leaving 60–100 km/s velocity residuals across 30–50 Mpc."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Whether any survey sees those residuals. The H0 effect needs deficiencies of about 20% across several hundred Mpc."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "DESI, Rubin or peculiar-velocity surveys find the predicted residuals in voids, beyond what matter alone explains."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "The authors flag isotropy and dynamical-consistency limits; surveys that find no residuals would rule it out."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Oem Trivedi",
+          "role": "lead author"
+        },
+        {
+          "name": "Avi Loeb",
+          "role": "co-author, Harvard"
+        }
+      ],
+      "todo": "No outreach yet. Set a citation alert and watch for void or peculiar-velocity analyses that test it.",
+      "rule_label": "Trigger",
+      "rule_text": "a survey reports velocity residuals in voids of the predicted size.",
+      "needs_owner": false,
+      "compare_text": "An earlier analysis found a local underdensity of matter does not resolve the Hubble tension.",
+      "compare_link": {
+        "label": "Source ↗",
+        "url": "https://ar5iv.labs.arxiv.org/html/2110.04226"
+      },
+      "primary_link": {
+        "label": "arXiv: Is Dark Energy Inhomogeneous? ↗",
+        "url": "https://arxiv.org/abs/2611.11094"
+      }
+    },
+    {
+      "id": "brainstem",
+      "nav": "BRAINSTEM MIND",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "CONSCIOUSNESS · PEER-REVIEWED · NOV 9",
+      "claim": "The basic feeling of being conscious starts in the brainstem, not the cortex",
+      "people": "Marshall Devor, Mark Baron · The Neuroscientist",
+      "links": [
+        {
+          "label": "DOI ↗",
+          "url": "https://doi.org/10.1177/10738584261470362"
+        },
+        {
+          "label": "Press release ↗",
+          "url": "https://www.afhu.org/2026/11/09/could-consciousness-begin-deep-in-the-brain-researchers-make-the-case/"
+        }
+      ],
+      "stage": 1,
+      "stage_headline": "Stage 1 of 5: an idea, not yet tested.",
+      "stage_note": "A hypothesis paper built on existing findings. We read the press release, not the paper.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "Moves the search for consciousness away from the cortex, where the leading theories place it.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "It draws on pain research, brain stimulation, injury cases where cortical damage spares pain, and anesthesia circuits."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Any explicit, numbered predictions. The release points only to the mesopontine tegmentum as a place to test it."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "Experiments on mesopontine tegmentum circuits change conscious experience while the cortex is left intact."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "Conscious experience persists when those brainstem circuits are disabled."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Marshall Devor",
+          "role": "Hebrew University of Jerusalem"
+        },
+        {
+          "name": "Mark Baron",
+          "role": "Hebrew University and Harvard Medical School"
+        }
+      ],
+      "todo": "Get the full paper and list any predictions it makes that a cortical theory would not.",
+      "rule_label": "Trigger",
+      "rule_text": "a brainstem experiment designed to separate it from cortical theories.",
+      "needs_owner": false,
+      "compare_text": "The Cogitate adversarial collaboration (Nature, 2025) challenged key predictions of both leading cortical theories.",
+      "compare_link": {
+        "label": "Source ↗",
+        "url": "https://www.nature.com/articles/s41586-025-08888-1"
+      },
+      "primary_link": {
+        "label": "The Neuroscientist: Brainstem Theory of Consciousness ↗",
+        "url": "https://doi.org/10.1177/10738584261470362"
+      }
+    },
+    {
+      "id": "uapradar",
+      "nav": "UAP RADAR",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "UAP · NEWS REPORT · NOV 10",
+      "claim": "The Galileo Project plans a passive-radar observatory to image and take spectra of UAP",
+      "people": "Avi Loeb, Galileo Project",
+      "links": [
+        {
+          "label": "IBTimes UK ↗",
+          "url": "https://www.ibtimes.co.uk/harvard-professor-avi-loeb-explains-how-new-passive-radar-system-will-gather-high-resolution-uap-1831410"
+        },
+        {
+          "label": "Press release ↗",
+          "url": "https://avi-loeb.medium.com/a-new-galileo-project-observatory-for-high-resolution-imaging-and-spectroscopy-of-uap-d16daccd0cdb"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Planned, no data.",
+      "stage_note": "Install target within about a year. Loeb says it is funded but hasn’t named backers.",
+      "impact_heading": "IF IT WORKS, HOW BIG A DEAL?",
+      "impact": "MEDIUM",
+      "impact_text": "Civilian, high-resolution images and spectra of unidentified objects, the data UAP claims usually lack.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "Passive radar uses reflections of existing signals to steer a metre-class telescope. It would be the fourth observatory, in Ithaca, after Massachusetts, Pennsylvania and Nevada."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Budget, backers, and whether the imaging will be good enough. No findings have been announced."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Avi Loeb",
+          "role": "Harvard, director of the Galileo Project"
+        }
+      ],
+      "todo": "No outreach yet. When the observatory is commissioned, ask whether its raw data will be public.",
+      "rule_label": "Trigger",
+      "rule_text": "first published commissioning data.",
+      "needs_owner": false,
+      "compare_text": "The UAP FILES critique below, and Breakthrough Listen’s 3I/ATLAS search, which found no credible signal down to about 0.1 W.",
+      "compare_link": {
+        "label": "Source ↗",
+        "url": "https://www.pulse.bot/spacetech/news/interstellar-comet-3iatlas-isnt-an-alien-spacecraft-astronomers-confirm-in-the-end-there-were-no-sur-075bdd00-d689-49b2-a06d-04bb11b243f1"
+      },
+      "primary_link": {
+        "label": "IBTimes UK: How a new passive radar system will gather high-resolution UAP data ↗",
+        "url": "https://www.ibtimes.co.uk/harvard-professor-avi-loeb-explains-how-new-passive-radar-system-will-gather-high-resolution-uap-1831410"
+      }
+    },
+    {
+      "id": "uapfiles",
+      "nav": "UAP FILES",
+      "label": "CRITIQUE",
+      "label_detail": "",
+      "meta": "UAP · JOURNALISM · NOV 9",
+      "claim": "The former head of the Pentagon’s UAP office says the disclosure movement rests on recycled cases and circular reporting",
+      "people": "Sean Kirkpatrick, interviewed by Zach Weissmueller",
+      "links": [
+        {
+          "label": "Reason ↗",
+          "url": "https://reason.com/video/2026/11/09/whats-really-in-the-governments-uap-files/"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Interview, not new data.",
+      "stage_note": "It rests on the 2024 AARO report Kirkpatrick wrote.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "It is the only pushback in this week’s set, and it bears on every UAP item we cover.",
+      "details": [
+        {
+          "heading": "What he says",
+          "text": "Some widely shared videos were already resolved but were reissued as unresolved. No official review has confirmed a UAP as extraterrestrial technology."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "He is a party to the dispute, and he contests accounts by David Grusch and Luis Elizondo."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Sean Kirkpatrick",
+          "role": "former head of AARO, the Pentagon’s UAP office"
+        },
+        {
+          "name": "Zach Weissmueller",
+          "role": "Reason, produced the piece"
+        }
+      ],
+      "todo": "Add one rule: before any government-released UAP case gets a card, check whether AARO already resolved it.",
+      "rule_label": "",
+      "rule_text": "",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "Reason: What’s really in the government’s UAP files? ↗",
+        "url": "https://reason.com/video/2026/11/09/whats-really-in-the-governments-uap-files/"
+      }
+    },
+    {
+      "id": "seticatalog",
+      "nav": "SETI CATALOG",
+      "label": "CONTEXT",
+      "label_detail": "DO",
+      "meta": "TECHNOSIGNATURES · NEWSLETTER · NOV 8",
+      "claim": "NASA’s technosignature database finds 112 search approaches, and none of the 28 tried is complete",
+      "people": "Nick Siegler (NASA JPL), Eddie Schwieterman, Evan Sneed (UC Riverside)",
+      "links": [
+        {
+          "label": "Planetary Perspectives ↗",
+          "url": "https://planetaryperspectives.substack.com/p/nasas-field-guide-to-technosignatures"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Early results, not yet public.",
+      "stage_note": "First shown at IAUS404 in March; this write-up is from Nov 8.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "A map of which searches are feasible but untried, which is where funding would add the most.",
+      "details": [
+        {
+          "heading": "What it holds",
+          "text": "41 technosignatures, 112 approaches (61% doable from the ground), each scored on Sofia Sheikh’s nine axes of merit."
+        },
+        {
+          "heading": "What’s next",
+          "text": "Planned hosting with the NASA Exoplanet Archive at Caltech’s IPAC, plus an AI agent that flags new papers."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Nick Siegler",
+          "role": "Chief Technologist, NASA Exoplanet Exploration Program, JPL"
+        },
+        {
+          "name": "Eddie Schwieterman, Evan Sneed",
+          "role": "UC Riverside, co-builders"
+        },
+        {
+          "name": "Sofia Sheikh",
+          "role": "SETI Institute, author of the axes of merit"
+        }
+      ],
+      "todo": "Ask Siegler’s team when the database will be public. Use it to rank technosignature claims we cover, such as last week’s power-density metric.",
+      "rule_label": "",
+      "rule_text": "",
+      "needs_owner": true,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "Planetary Perspectives: NASA’s Field Guide to Technosignatures ↗",
+        "url": "https://planetaryperspectives.substack.com/p/nasas-field-guide-to-technosignatures"
+      }
+    }
+  ],
+  "left_out": "",
+  "searched_note": "Searched Nov 7–12 across MOND, psi, LENR, consciousness, technosignatures and UAP. No new psi or LENR publications from these dates turned up.",
+  "start": "2026-11-07",
+  "end": "2026-11-12",
+  "generated": "2026-11-12",
+  "source": "design canvas (hand-written issue)"
+}

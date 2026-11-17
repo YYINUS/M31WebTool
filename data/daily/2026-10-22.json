@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-22",
+  "date_label": "Thu, Oct 22",
+  "read_time": "90-sec read",
+  "headline": "Incumbents can't stop crypto, so they're trying to become its gatekeepers",
+  "dek": "The CFTC is shrinking, Moody's rated its first DeFi protocol, and banks are launching tokenized-asset custody. The question for us is whether these new gatekeepers stick.",
+  "asks": [
+    {
+      "verb": "Discuss",
+      "text": "Moody's DeFi rating at the next research meeting"
+    },
+    {
+      "verb": "Decide",
+      "text": "are the CFTC cutbacks a clean tailwind for Bitcoin, or a new regulatory risk?"
+    },
+    {
+      "verb": "Research",
+      "text": "the primary endpoint of Viking's oral GLP-1 trial"
+    }
+  ],
+  "sections": [
+    {
+      "name": "Crypto & Digital Assets",
+      "thesis": "TradFi is shifting from resisting crypto to intermediating it.",
+      "items": [
+        {
+          "significance": "MAJOR",
+          "flag": "",
+          "title": "Moody's rates its first DeFi protocol: Sky (MakerDAO) at B3",
+          "why": "TradFi's risk apparatus is positioning itself as the entry gate for institutional DeFi money.",
+          "watch": "whether LPs start requiring ratings like this before allocating.",
+          "sources": [
+            {
+              "label": "Forkast",
+              "url": "https://m31-dashboard.vercel.app/news"
+            }
+          ],
+          "source_note": ""
+        },
+        {
+          "significance": "MAJOR",
+          "flag": "",
+          "title": "The CFTC is shrinking as its crypto mandate grows",
+          "why": "less enforcement near term, and the agency is already months behind industry on AI agents in finance.",
+          "watch": "whether the SEC or DOJ moves to fill the gap.",
+          "sources": [
+            {
+              "label": "NPR",
+              "url": "https://m31-dashboard.vercel.app/news"
+            },
+            {
+              "label": "Forkast",
+              "url": "https://m31-dashboard.vercel.app/news"
+            }
+          ],
+          "source_note": ""
+        },
+        {
+          "significance": "MODERATE",
+          "flag": "",
+          "title": "Banks are becoming the rails for tokenized assets",
+          "why": "Standard Chartered is launching custody in Singapore and KoreInside is bringing regulated securities to public chains. Tokenization is moving from pilots to live business.",
+          "watch": "first client names and volume figures.",
+          "sources": [
+            {
+              "label": "Cointelegraph",
+              "url": "https://m31-dashboard.vercel.app/news"
+            },
+            {
+              "label": "Bitcoinist",
+              "url": "https://m31-dashboard.vercel.app/news"
+            }
+          ],
+          "source_note": ""
+        }
+      ],
+      "also_noted": [
+        "Vitalik addresses AI risk to crypto cryptography",
+        "DeFi TVL $91.5B, down 3.9% on the week (macro, not structural)",
+        "HashKey adds trustless Bitcoin vaults",
+        "16 fake wallet extensions caught stealing seed phrases"
+      ]
+    },
+    {
+      "name": "Healthcare & Life Sciences",
+      "thesis": "Can a pill replace GLP-1 injections for maintenance?",
+      "items": [
+        {
+          "significance": "MODERATE",
+          "flag": "",
+          "title": "Viking tests whether a pill can hold weight loss after injections",
+          "why": "if it works, Novo and Lilly's ~$50B+ injectable franchise is exposed sooner than their pipelines assume.",
+          "watch": "the trial's primary endpoint and enrollment speed.",
+          "sources": [
+            {
+              "label": "PR Newswire",
+              "url": "https://m31-dashboard.vercel.app/news"
+            }
+          ],
+          "source_note": ""
+        }
+      ],
+      "also_noted": [
+        "three new psychedelics trials, including LSD for alcohol use and psilocybin for Alzheimer's",
+        "rapamycin prevention trial in ApoE4 carriers"
+      ]
+    },
+    {
+      "name": "Robotics & Autonomy",
+      "thesis": "Quiet day; one rumor to confirm.",
+      "items": [
+        {
+          "significance": "MINOR",
+          "flag": "UNCONFIRMED",
+          "title": "Nvidia reportedly discussed another $1B investment in Figure AI",
+          "why": "Nvidia would be buying into the humanoid platform layer, not just selling it chips.",
+          "watch": "confirmation from a primary source.",
+          "sources": [
+            {
+              "label": "Crypto Briefing",
+              "url": "https://m31-dashboard.vercel.app/news"
+            }
+          ],
+          "source_note": "secondhand"
+        }
+      ],
+      "also_noted": []
+    }
+  ],
+  "quiet_sectors": [
+    "AI Systems",
+    "Deep Tech",
+    "Food & Agriculture"
+  ],
+  "filtered_out": "",
+  "source": "design canvas (hand-written issue)"
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fringe Foundation Weekly · {{ d.week_label }} · inbox version</title>
+</head>
+<body style="margin:0;padding:0;background:#F6F5F1;">
+{%- set mono = "font-family:'IBM Plex Mono',Menlo,Consolas,monospace;" -%}
+{%- set sans = "font-family:'IBM Plex Sans',Helvetica,Arial,sans-serif;" -%}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F6F5F1;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="560" cellpadding="0" cellspacing="0" style="width:100%;max-width:560px;background:#FFFFFF;border:1px solid #DAD8CF;border-radius:12px;{{ sans }}color:#16181D;font-size:16px;line-height:1.5;">
+
+<tr><td style="padding:20px 28px;border-bottom:1px solid #DAD8CF;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+    <td style="{{ mono }}font-size:12px;font-weight:600;letter-spacing:0.08em;">FRINGE FOUNDATION · WEEKLY SIGNAL</td>
+    <td align="right" style="{{ mono }}font-size:12px;color:#5B6070;">{{ d.week_label }}</td>
+  </tr></table>
+</td></tr>
+
+<tr><td style="padding:24px 28px 8px;">
+  <div style="{{ mono }}font-size:12px;letter-spacing:0.06em;color:#5B6070;padding-bottom:12px;">DO THIS WEEK</div>
+  {% for a in actions %}
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid {{ '#F1C7B0' if a.tag == 'FIX' else '#ECEBE6' }};{{ 'background:#FDF5F0;' if a.tag == 'FIX' else '' }}border-radius:10px;margin-bottom:12px;">
+  <tr>
+    <td valign="top" width="52" style="padding:14px 0 14px 14px;"><span style="{{ mono }}display:inline-block;background:{{ a.bg }};color:{{ a.fg }};font-weight:600;font-size:12px;padding:3px 8px;border-radius:999px;">{{ a.tag }}</span></td>
+    <td style="padding:14px;font-size:15px;"><strong>{{ a.title }}</strong> {{ a.text }}{% if a.sub %}<br><span style="color:#5B6070;font-size:14px;">{{ a.sub }}</span>{% endif %}</td>
+  </tr></table>
+  {% else %}
+  <div style="font-size:15px;color:#5B6070;padding-bottom:12px;">No actions this week. Everything below is watch-only.</div>
+  {% endfor %}
+</td></tr>
+
+{% if top %}
+<tr><td style="padding:8px 28px 20px;">
+  <div style="{{ mono }}font-size:12px;letter-spacing:0.06em;color:#5B6070;padding-bottom:14px;">TOP CLAIMS · BAR = EVIDENCE STAGE, 1 (IDEA) TO 5 (REPEATED BY OTHERS)</div>
+  {% for c in top %}
+  <div style="border-bottom:1px solid #ECEBE6;padding-bottom:14px;margin-bottom:14px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+      <td style="{{ mono }}font-size:12px;color:#5B6070;">{{ c.meta }}</td>
+      {% if c.stage > 0 %}<td align="right" width="110">{% for i in range(1, 6) %}<span style="display:inline-block;width:18px;height:6px;border-radius:2px;margin-left:3px;background:{{ '#16181D' if i <= c.stage else '#DAD8CF' }};"></span>{% endfor %}</td>{% endif %}
+    </tr></table>
+    <div style="font-weight:600;padding:6px 0;">{{ c.claim }}</div>
+    <div style="font-size:14px;color:#3A3F4B;">{{ c.stage_note }}</div>
+  </div>
+  {% endfor %}
+  {% if watching or bench %}
+  <div style="font-size:14px;color:#3A3F4B;">{% if watching %}<strong>Also watching:</strong> {{ watching | join(', ') }}.{% endif %}{% if bench %} <strong>Benchmark:</strong> {{ bench }}{% endif %}</div>
+  {% endif %}
+</td></tr>
+{% endif %}
+
+<tr><td style="padding:8px 28px 28px;">
+  <a href="{{ full_url }}" style="display:block;text-align:center;background:#16181D;color:#FFFFFF;text-decoration:none;font-weight:600;font-size:16px;padding:14px 20px;border-radius:8px;">Read the full issue · {{ d.cards | length }} cards</a>
+</td></tr>
+
+<tr><td style="padding:16px 28px;border-top:1px solid #DAD8CF;font-size:13px;color:#5B6070;">
+  Reply to flag a claim or a critique we missed.
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

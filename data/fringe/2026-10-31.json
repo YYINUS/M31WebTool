@@ -1,0 +1,479 @@
+{
+  "week_label": "Oct 31 – Nov 6, 2026",
+  "status": "5-minute scan",
+  "coverage_warning": "Two of our news feeds sent nothing this week (daily news and critiques), so this issue shows no pushback on any claim.",
+  "cards": [
+    {
+      "id": "mond",
+      "nav": "MOND SIMS",
+      "label": "ACT",
+      "label_detail": "REACH OUT",
+      "meta": "COSMOLOGY · ARXIV PREPRINT",
+      "claim": "A hybrid MOND cosmology with an 11 eV sterile neutrino can form realistic early structure",
+      "people": "Tomas Ondro, Nikolaos Samaras · affiliation not in source",
+      "links": [],
+      "stage": 3,
+      "stage_headline": "Stage 3 of 5: tested against a control.",
+      "stage_note": "Preprint, not peer reviewed. One group, no replication. Headline results not yet seen.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "Early structure without cold dark matter, and a concrete lab target: a sterile neutrino near 11 eV.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "Hydrodynamical runs compare the model with ΛCDM (H0 = 67.8, Ωm ≈ 0.31) and its νHDM progenitor. The authors say it fits the third Planck CMB peak."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "The headline results, because our abstract was cut off. Whether another code reproduces them."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "An independent group with a different MOND code gets the same structure, or evidence turns up for a sterile neutrino near 11 eV."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "Limits exclude an 11 eV sterile neutrino at the needed abundance, or structure forms at the wrong times or amounts."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Tomas Ondro",
+          "role": "co-author, ran the simulations"
+        },
+        {
+          "name": "Nikolaos Samaras",
+          "role": "co-author"
+        },
+        {
+          "name": "[Independent MOND simulation group]",
+          "role": "to identify, for a reproduction with a different code"
+        }
+      ],
+      "todo": "Email both authors for the full results, the simulation code and the observable where their model and ΛCDM diverge most.",
+      "rule_label": "Decide",
+      "rule_text": "if they name one clean discriminating observable, invite them to speak.",
+      "needs_owner": true,
+      "compare_text": "Last week’s open thread: a comment argues a published 3.3σ kinematic SZ exclusion of deep MOND does not follow from its own calculation.",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "arXiv: The formation of the first cosmic structures in hybrid Milgromian cosmology",
+        "url": ""
+      }
+    },
+    {
+      "id": "psi",
+      "nav": "FIELD PSI",
+      "label": "ACT",
+      "label_detail": "READ FIRST",
+      "meta": "CONSCIOUSNESS · PEER-REVIEWED",
+      "claim": "The strength of the surrounding electromagnetic field changes psi task performance",
+      "people": "Dean Radin (Institute of Noetic Sciences), Michelle Fauver, Glenn Hartelius · Journal of Parapsychology",
+      "links": [],
+      "stage": 3,
+      "stage_headline": "Stage 3 of 5: tested against a control.",
+      "stage_note": "Single-lab RCT, peer reviewed. No replication. We saw the title only, so the result is unknown.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "A physical knob that turns a psi effect up or down would make it testable on demand.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "It is a randomized controlled trial in a reviewed journal, testing a moderator that can be manipulated."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "The direction and size of any effect, or whether field condition was blinded."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "A preregistered replication in another lab, blind to field condition, finds the same effect."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "That replication finds no difference, or the effect disappears once field condition is blinded."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Dean Radin",
+          "role": "Institute of Noetic Sciences, long record in experimental psi"
+        },
+        {
+          "name": "Glenn Hartelius",
+          "role": "co-author; also on a large NLP analysis of psilocybin reports this week"
+        },
+        {
+          "name": "Michelle Fauver",
+          "role": "co-author"
+        },
+        {
+          "name": "Zoltan Kekecs",
+          "role": "ELTE, designed the Transparent Psi Project; a candidate to design a replication"
+        }
+      ],
+      "todo": "Get the full paper. Check preregistration, whether the data are shared and how field condition was blinded.",
+      "rule_label": "Decide",
+      "rule_text": "if it reports a specific positive effect with a clear protocol, scope funding for an independent preregistered replication.",
+      "needs_owner": true,
+      "compare_text": "A 2025 three-study Bem replication (PLOS ONE) confirmed an anomaly once, then failed to repeat it in 217,800 trials. One confirmatory hit is not enough.",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "Journal of Parapsychology: Effect of Electromagnetic Field Strength on Psi Performance",
+        "url": ""
+      }
+    },
+    {
+      "id": "golden",
+      "nav": "GOLDEN RATIO",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "PARTICLE PHYSICS · GEN-PH PREPRINT",
+      "claim": "Golden-ratio and pentagonal rules predict the lepton mixing angles and recur in quark masses",
+      "people": "Jacek Ciborowski · affiliation not in source",
+      "links": [],
+      "stage": 2,
+      "stage_headline": "Stage 2 of 5: uses data, but no comparison group.",
+      "stage_note": "Single-author preprint. Fitted after the fact, with no underlying dynamics.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "MEDIUM",
+      "impact_text": "A hint of an underlying symmetry that sets fermion mixing and masses.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "Three explicit rules: T5(θ12) = 0, T5(θ23) = −1 and θ13 ≈ θ12·θ23/π. The author labels it semi-empirical."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Whether the match is more than coincidence. The screener calls it numerological."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "New precision measurements converge on the predicted angles, or it makes a correct prediction it wasn’t tuned for."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "Better measurements of θ12, θ23 or θ13 exclude the predicted values."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Jacek Ciborowski",
+          "role": "author"
+        }
+      ],
+      "todo": "No outreach now. Check the predicted angles each time new neutrino oscillation results come out.",
+      "rule_label": "Trigger",
+      "rule_text": "a prediction made in advance holds up.",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "arXiv: Fine structure of fermion mixing and quark-mass hierarchies",
+        "url": ""
+      }
+    },
+    {
+      "id": "power",
+      "nav": "POWER DENSITY",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "TECHNOSIGNATURES · ARXIV PREPRINT",
+      "claim": "High power density is a universal signature that can guide biosignature and technosignature searches",
+      "people": "Clément Vidal, Luciano Kadian · affiliation not in source",
+      "links": [],
+      "stage": 2,
+      "stage_headline": "Stage 2 of 5: uses data, but no comparison group.",
+      "stage_note": "Calculation with control populations. No anomaly found yet.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "MEDIUM",
+      "impact_text": "One metric for ranking where technosignature searches look first.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "Cataclysmic variables, neutron stars and transient black holes rank high, against young stars and supermassive black holes as controls."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "How the metric separates life or technology from ordinary accretion."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "A ranked search finds accretion behavior standard models can’t explain, and it persists."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "Standard accretion physics explains every high-ranking system."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Clément Vidal",
+          "role": "technosignatures and cosmic evolution"
+        },
+        {
+          "name": "Luciano Kadian",
+          "role": "co-author"
+        }
+      ],
+      "todo": "No outreach yet. Useful framing, but there is no testable anomaly.",
+      "rule_label": "Trigger",
+      "rule_text": "a power-density-ranked search reports an unexplained, persistent anomaly.",
+      "needs_owner": false,
+      "compare_text": "Breakthrough Listen’s radio search of 3I/ATLAS could detect transmitters down to about 0.1 W and found no credible signal. Null results with stated sensitivity are the bar.",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "arXiv: Power Density as a Universal Biosignature: An Application to the Stellivore Hypothesis",
+        "url": ""
+      }
+    },
+    {
+      "id": "horizon",
+      "nav": "HORIZON ENTROPY",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "COSMOLOGY · GEN-PH PREPRINT",
+      "claim": "Late-time cosmic acceleration can arise from matter alone through Barrow-corrected horizon entropy",
+      "people": "Navaneeth Preman P K, Sarath Nelleri · affiliation not in source",
+      "links": [],
+      "stage": 1,
+      "stage_headline": "Stage 1 of 5: an idea, not yet tested.",
+      "stage_note": "Theory derived two ways. No fit to observational data.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "Accelerated expansion without dark energy.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "Modified Friedmann equations from Barrow entropy and Kaniadakis statistics. The authors also check the generalized second law and perturbation growth."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Whether it fits any data, and how many free parameters it needs."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "A joint fit to supernova, BAO and growth data matches ΛCDM without extra parameters."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "It can’t fit expansion and growth at once, or needs parameters excluded elsewhere."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Navaneeth Preman P K, Sarath Nelleri",
+          "role": "authors"
+        }
+      ],
+      "todo": "Nothing until the authors publish a fit to data.",
+      "rule_label": "Trigger",
+      "rule_text": "a joint supernova, BAO and growth fit appears.",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "arXiv: Matter-Only Late-Time Acceleration via Barrow Entropy in Kaniadakis Statistics",
+        "url": ""
+      }
+    },
+    {
+      "id": "rv",
+      "nav": "REMOTE VIEWING",
+      "label": "PENDING",
+      "label_detail": "TITLE ONLY",
+      "meta": "CONSCIOUSNESS · PEER-REVIEWED",
+      "claim": "Individual data records within controlled remote viewing sessions can be scored for correctness",
+      "people": "Jana Rogge · Journal of Parapsychology",
+      "links": [],
+      "stage": 0,
+      "stage_headline": "Not rated yet: we only saw the title.",
+      "stage_note": "Single author, no replication, no results seen.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "LOW",
+      "impact_text": "A methods gain: less subjective judging, whether or not remote viewing is real.",
+      "details": [],
+      "follow": [
+        {
+          "name": "Jana Rogge",
+          "role": "remote viewing methodology"
+        }
+      ],
+      "todo": "Get the paper and see whether the scoring rubric is fixed in advance.",
+      "rule_label": "Decide",
+      "rule_text": "if it could support blinded scoring against decoy targets, keep it for a later replication.",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "Journal of Parapsychology: Investigating the Correctness of Single Data Records Within CRV Sessions",
+        "url": ""
+      }
+    },
+    {
+      "id": "polt",
+      "nav": "POLTERGEIST DATA",
+      "label": "PENDING",
+      "label_detail": "TITLE ONLY",
+      "meta": "CONSCIOUSNESS · PEER-REVIEWED",
+      "claim": "Patterns in William Roll’s poltergeist case database recur in a new, independently gathered set",
+      "people": "Bryan J. Williams, Gerald F. Solfvin · Journal of Parapsychology",
+      "links": [],
+      "stage": 0,
+      "stage_headline": "Not rated yet: we only saw the title.",
+      "stage_note": "Preliminary survey, framed as a replication. No results seen.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "LOW",
+      "impact_text": "A coded case set others can test against. Case reports can’t show the events are real.",
+      "details": [],
+      "follow": [
+        {
+          "name": "Bryan J. Williams",
+          "role": "leads the replication of Roll’s database"
+        },
+        {
+          "name": "Gerald F. Solfvin",
+          "role": "co-author"
+        }
+      ],
+      "todo": "Get the paper and ask whether the coded dataset is public.",
+      "rule_label": "Decide",
+      "rule_text": "if it is public and coded by rules fixed in advance, list it as a data resource.",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "Journal of Parapsychology: A Conceptual Replication and Extension of William G. Roll’s Database",
+        "url": ""
+      }
+    },
+    {
+      "id": "fusion",
+      "nav": "COLD FUSION",
+      "label": "CONTEXT",
+      "label_detail": "DO",
+      "meta": "LENR · NEWS REPORT",
+      "claim": "What survives of cold fusion is an active exotic-atom physics program, not an energy source",
+      "people": "George Musser (journalist) · Quanta Magazine",
+      "links": [],
+      "stage": 0,
+      "stage_headline": "Journalism, not data.",
+      "stage_note": "In the lab, materials-enhanced fusion at low energy is now measured, but no group shows net energy gain.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "MEDIUM",
+      "impact_text": "Compact neutron and heat sources from materials-driven fusion. Grid energy stays out of reach.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "Quanta reports a thriving exotic-atom research program, including muon-catalyzed fusion, in the area once tied to cold fusion."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Which groups and results the piece names. Our excerpt didn’t say."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "Exotic-atom fusion keeps producing peer-reviewed results."
+        },
+        {
+          "heading": "Would change the conclusion",
+          "text": "Independently replicated net excess energy from a low-energy nuclear process."
+        }
+      ],
+      "follow": [
+        {
+          "name": "George Musser",
+          "role": "Quanta, wrote the piece"
+        },
+        {
+          "name": "Jeremy Munday",
+          "role": "UC Davis, corresponding author of the July 2026 sub-keV fusion paper"
+        },
+        {
+          "name": "Thomas Schenkel, Arun Persaud",
+          "role": "Berkeley Lab, co-authors of that paper"
+        },
+        {
+          "name": "Konrad Czerski",
+          "role": "University of Szczecin, earlier electron-screening measurements"
+        }
+      ],
+      "todo": "Read the full Quanta piece and list the exotic-atom researchers it names. Add any with recent peer-reviewed results to contacts.",
+      "rule_label": "Also watch",
+      "rule_text": "papers from ARPA-E’s LENR teams and awards under DARPA’s MARRS program on fusion rates in solids.",
+      "needs_owner": true,
+      "compare_text": "Karahadian et al., Nature Communications, Jul 18 2026: deuterium fusion in Pd and Ti foils plateaus below about 2.5 keV, over 10¹⁸ above bare-nucleus rates. The team says the rates are far too small for energy.",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "Quanta Magazine: Is There Anything Left in the Dream of Cold Fusion?",
+        "url": ""
+      }
+    },
+    {
+      "id": "vacuum",
+      "nav": "VACUUM BOUND",
+      "label": "BENCHMARK",
+      "label_detail": "",
+      "meta": "MAINSTREAM · VACUUM PHYSICS",
+      "claim": "A new bound on low-energy light-by-light scattering is ten orders of magnitude tighter",
+      "people": "Authors not in source",
+      "links": [],
+      "stage": 0,
+      "stage_headline": "Experimental measurement.",
+      "stage_note": "The strongest new evidence this week, from mainstream physics.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "It tests no fringe claim directly, but any zero-point energy claim must be consistent with it.",
+      "details": [],
+      "follow": [
+        {
+          "name": "[Authors]",
+          "role": "not in our source; add from the paper"
+        }
+      ],
+      "todo": "Log the bound as a benchmark, and check every future zero-point energy claim against it.",
+      "rule_label": "",
+      "rule_text": "",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "",
+        "url": ""
+      }
+    }
+  ],
+  "left_out": "Left out: a preprint on wavefunction collapse via relative entropy flux, and a speculative metal-bending mechanism with no new data.",
+  "searched_note": "",
+  "start": "2026-10-31",
+  "end": "2026-11-06",
+  "generated": "2026-11-06",
+  "source": "design canvas (hand-written issue)"
+}

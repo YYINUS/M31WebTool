@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import os
+import re
 import shutil
 from pathlib import Path
 
@@ -14,6 +16,8 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA, SITE = ROOT / "data", ROOT / "site"
+# Absolute site URL (e.g. https://owner.github.io/repo/) so links in the inbox version work from email.
+SITE_URL = os.environ.get("SITE_URL", "")
 
 LABEL_ORDER = ["ACT", "WATCH", "PENDING", "CRITIQUE", "CONTEXT", "BENCHMARK"]
 LABEL_MEANING = {
@@ -56,6 +60,34 @@ def fringe_nav(d: dict):
     return rows, legend
 
 
+PILL = {"ACT": ("#FBE9DF", "#9A3412"), "DO": ("#E6EDFB", "#1E40AF"), "FIX": ("#ECEBE6", "#4B5060")}
+
+
+def split_first_sentence(text: str) -> tuple[str, str]:
+    m = re.match(r"(.+?[.!?])\s+(.*)", text, re.S)
+    return (m.group(1), m.group(2)) if m else (text, "")
+
+
+def fringe_email(d: dict) -> dict:
+    """Derive the inbox version's sections from an issue's cards."""
+    actions = []
+    for c in d["cards"]:
+        if c["label"] == "ACT" or (c["label"] == "CONTEXT" and c["label_detail"] == "DO"):
+            tag = "ACT" if c["label"] == "ACT" else "DO"
+            title, rest = split_first_sentence(c["todo"] or c["claim"])
+            sub = f"{c['rule_label']}: {c['rule_text']}" if c["rule_label"] and c["rule_text"] else ""
+            actions.append({"tag": tag, "title": title, "text": rest, "sub": sub})
+    if d.get("coverage_warning"):
+        actions.append({"tag": "FIX", "title": "Coverage gap.", "text": d["coverage_warning"], "sub": ""})
+    for a in actions:
+        a["bg"], a["fg"] = PILL[a["tag"]]
+    claims = [c for c in d["cards"] if c["label"] in ("ACT", "WATCH", "PENDING")]
+    top = claims[:2]
+    watching = [c["nav"].title() for c in claims[2:] if c["label"] == "WATCH"]
+    bench = next((c["claim"] for c in d["cards"] if c["label"] == "BENCHMARK"), "")
+    return {"actions": actions, "top": top, "watching": watching, "bench": bench}
+
+
 def main() -> None:
     if SITE.exists():
         shutil.rmtree(SITE)
@@ -76,10 +108,15 @@ def main() -> None:
     for i, it in enumerate(fringe):
         prev, nxt = neighbours(fringe, i, "week_label")
         rows, legend = fringe_nav(it["d"])
-        html = t.render(d=it["d"], root="../", prev=prev, next=nxt, nav_rows=rows, legend=legend)
+        html = t.render(d=it["d"], root="../", prev=prev, next=nxt, nav_rows=rows, legend=legend, slug=it["slug"])
         write(SITE / "fringe" / f"{it['slug']}.html", html)
         if i == 0:
             write(SITE / "fringe" / "index.html", html)
+        full_url = f"{SITE_URL}fringe/{it['slug']}.html" if SITE_URL else f"{it['slug']}.html"
+        email = env.get_template("fringe_email.html").render(d=it["d"], full_url=full_url, **fringe_email(it["d"]))
+        write(SITE / "fringe" / f"{it['slug']}-email.html", email)
+
+    write(SITE / "fringe" / "coverage.html", env.get_template("coverage.html").render())
 
     updated = dt.datetime.now(dt.UTC).strftime("%b %d, %Y %H:%M UTC")
     write(SITE / "index.html", env.get_template("index.html").render(daily=daily, fringe=fringe, updated=updated))
