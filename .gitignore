@@ -3,3 +3,4 @@ __pycache__/
 site/
 .env
 *.key
+gp-brief/portfolio.local.json

@@ -14,6 +14,10 @@ on:
       date:
         description: "Daily: date YYYY-MM-DD (blank = today)"
         required: false
+      publish_hold:
+        description: "Daily: publish even if the GP review holds the brief"
+        type: boolean
+        default: false
       fringe_start:
         description: "Fringe: window start YYYY-MM-DD (blank = 6 days before end)"
         required: false
@@ -22,7 +26,7 @@ on:
         required: false
   push:
     branches: [main]
-    paths: ["data/**", "templates/**", "static/**", "generator/build.py"]
+    paths: ["data/**", "templates/**", "static/**", "generator/build.py", "gp-brief/**"]
 
 permissions:
   contents: write
@@ -37,6 +41,8 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    outputs:
+      held: ${{ steps.daily.outputs.held }}
     steps:
       - uses: actions/checkout@v4
 
@@ -46,6 +52,10 @@ jobs:
           cache: pip
 
       - run: pip install -r requirements.txt
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
 
       - name: Decide what to generate
         id: plan
@@ -62,12 +72,30 @@ jobs:
           fi
           echo "report=$r" >> "$GITHUB_OUTPUT"
 
+      # The GP brief: collect → draft → checks → GP review → revise (max 3).
+      # Drafts, reviews and the partner copy with "What next" actions stay in
+      # the runner's temp folder and are never committed or uploaded; only
+      # public.json (no actions) is published. Logs print summaries only.
       - name: Generate Daily Brief
+        id: daily
         if: steps.plan.outputs.report == 'daily' || steps.plan.outputs.report == 'both'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PORTFOLIO_JSON: ${{ secrets.PORTFOLIO_JSON }}
           DAY: ${{ inputs.date }}
-        run: python -m generator.daily $DAY
+          FORCE: ${{ inputs.publish_hold }}
+        run: |
+          D="${DAY:-$(date -u +%F)}"
+          W="$RUNNER_TEMP/gp-brief"
+          node gp-brief/run.mjs --date "$D" --work "$W" > "$RUNNER_TEMP/gp-status.json"
+          status=$(node -p "JSON.parse(require('fs').readFileSync('$RUNNER_TEMP/gp-status.json','utf8')).status")
+          if [ "$status" = "release" ] || [ "$FORCE" = "true" ]; then
+            cp "$W/public.json" "data/daily/$D.json"
+            echo "Published the $D brief ($status)."
+          else
+            echo "::warning::The $D brief was HELD by the GP review and not published. Rerun with publish_hold to publish it anyway."
+            echo "held=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Generate Fringe Weekly
         if: steps.plan.outputs.report == 'fringe' || steps.plan.outputs.report == 'both'
@@ -111,3 +139,13 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Marks the run failed (so GitHub notifies you) when the brief was held.
+  held:
+    needs: generate
+    if: needs.generate.outputs.held == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "::error::Today's Daily Brief did not pass the GP review after 3 drafts, so it was not published. Rerun with publish_hold to publish it anyway."
+          exit 1

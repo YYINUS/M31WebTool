@@ -6,26 +6,31 @@
 <title>Fringe Foundation Weekly · {{ d.week_label }}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ root }}static/fringe.css">
 </head>
 <body>
 <div id="top">
 
-<header class="bar">
-  <div class="bar-in">
-    <a class="brand" href="{{ root }}index.html">
-      <span class="logo"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#FFFFFF" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="6"></circle><path d="M8 2v12M2 8h12"></path></svg></span>
-      <span class="mono strong">FRINGE FOUNDATION · WEEKLY SIGNAL</span>
-    </a>
-    <div class="mono muted">{{ d.week_label }} · {{ d.status }}</div>
+<div class="wrap">
+<header class="mast">
+  <div>
+    <a class="word" href="{{ root }}index.html">Fringe Foundation</a>
+    <div class="kick">Weekly Signal <span>·</span> Frontier claims, screened</div>
   </div>
+  <div class="mast-right">{{ d.week_label }}<br>{{ d.status | capitalize }}</div>
 </header>
 
-<main class="wrap">
+<main class="sheet">
+
+<div class="intro">
+  <div class="label muted">The Weekly Signal &nbsp;·&nbsp; {{ d.week_label }}</div>
+  <h1>{{ summary.headline }}</h1>
+  <p>{{ summary.dek }}</p>
+</div>
 
 {% if d.coverage_warning %}
-<div class="warn" role="note"><span class="pill pill-fix">NOTE</span><span>{{ d.coverage_warning }}</span></div>
+<div class="warn" role="note"><span class="pill pill-fix">Note</span><span>{{ d.coverage_warning }}</span></div>
 {% endif %}
 
 <nav class="jump" aria-label="Jump to a card">
@@ -33,7 +38,7 @@
   <div class="jump-row">
     {% for g in row %}
     <div class="jump-group">
-      <span class="jump-label c-{{ g.label | lower }}">{{ g.label }}</span>
+      <span class="jump-label label c-{{ g.label | lower }}">{{ g.label }}</span>
       {% for c in g.cards %}<a class="chip chip-{{ g.label | lower }}" href="#c-{{ c.id }}">{{ c.nav }}</a>{% endfor %}
       {% if not g.cards %}<span class="none">None this week</span>{% endif %}
     </div>
@@ -55,7 +60,7 @@
   <div class="tags">
     <span class="nav-tag mono">{{ c.nav }}</span>
     <span class="pill pill-{{ c.label | lower }}">{{ c.label }}{% if c.label_detail %} · {{ c.label_detail }}{% endif %}</span>
-    <span class="mono muted small">{{ c.meta }}</span>
+    <span class="label meta">{{ c.meta }}</span>
   </div>
   <h2 id="h-{{ c.id }}">{{ c.claim }}</h2>
   <div class="people">{{ c.people }}{% for l in c.links %} · {% if l.url %}<a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% else %}{{ l.label }}{% endif %}{% endfor %}</div>
@@ -123,6 +128,7 @@
   </nav>
 </footer>
 </main>
+</div>
 </div>
 <script>
 (function () {

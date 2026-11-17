@@ -1,305 +1,406 @@
 {
-  "date_label": "Mon, Nov 16",
-  "read_time": "2-min read",
-  "headline": "Money got expensive the same week AI needs more of it than ever",
-  "dek": "The 10-year Treasury yield hit about 5.15% and markets fully price a December Fed hike. In the same week, Anthropic is reportedly set to raise up to $90.4B, and capital cost, not demand, is becoming the limit on growth for crypto, AI infrastructure and energy projects.",
-  "asks": [
-    {
-      "verb": "Decide",
-      "text": "how we update late-stage AI marks and secondary bids once Anthropic prices; pick comparison companies before Nov 19"
-    },
-    {
-      "verb": "Discuss",
-      "text": "portfolio runway with the 10-year above 5% and a December hike, especially AI infrastructure and energy companies that rely on debt"
-    },
-    {
-      "verb": "Research",
-      "text": "where stablecoin rails still beat card networks in agent payments (business-to-business, cross-border, machine-to-machine)"
-    },
-    {
-      "verb": "Research",
-      "text": "the size of the PJM ride-through retrofit market (about 10 GW with one year to comply) and re-underwrite robot-AI model companies at CoRL"
-    }
-  ],
-  "sections": [
-    {
-      "name": "AI Systems",
-      "thesis": "Frontier AI gets a public price as its compute supplier faces leadership and export-control risk.",
-      "items": [
-        {
-          "significance": "MAJOR",
-          "flag": "UNCONFIRMED",
-          "title": "Anthropic IPO reportedly prices Nov 18 and trades Nov 19 as \"ANT\"",
-          "why": "it would set the first public price for a frontier AI lab, resetting private marks and secondary prices; the reported raise is up to $90.4B (IPO plus private placement) at a $1.4T target, with the book about 6x oversubscribed.",
-          "watch": "final price against the range, first-day trade, and the effect on late-stage AI rounds",
-          "sources": [
-            {
-              "label": "Stocktwits via TradingView (citing Bloomberg)",
-              "url": "https://www.tradingview.com/news/stocktwits:b15d85833094b:0-anthropic-ipo-reportedly-closed-to-china-hong-kong-buyers-mirroring-spacex-playbook/"
-            },
-            {
-              "label": "Empower",
-              "url": "https://www.empower.com/the-currency/money/anthropic-ipo-news"
-            }
-          ],
-          "source_note": "Timing and order book come from a single secondhand report; the S-1 (Oct 26) is confirmed. Conflict disclosure: the brief's research editor is Claude, made by Anthropic, so this item reports outside sources only."
-        },
-        {
-          "significance": "MAJOR",
-          "flag": "",
-          "title": "Congress summons Nvidia's Huang over China chip exports; Nvidia reports earnings Nov 17 under an interim CEO",
-          "why": "the main AI compute supplier has a temporary leader (CFO Colette Kress, after Huang's Nov 12 resignation) and faces hearing-driven export enforcement, which adds supply and pricing risk to compute plans.",
-          "watch": "Q3 FY27 earnings Nov 17, the CEO search, and hearings Dec 1–3",
-          "sources": [
-            {
-              "label": "Nvidia",
-              "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
-            },
-            {
-              "label": "Al Jazeera",
-              "url": "https://www.aljazeera.com/news/2026/11/13/nvidias-huang-lutnick-summoned-to-testify-to-us-senate"
-            }
-          ],
-          "source_note": "Resignation is pre-window (Nov 12); reasons for the exit are unconfirmed and excluded."
-        },
-        {
-          "significance": "MODERATE",
-          "flag": "",
-          "title": "LangChain raises $300M Series C at a $3B valuation, led by CapitalG",
-          "why": "investors are paying up for model-agnostic agent tooling, which cuts against fears that the labs will absorb the tooling layer.",
-          "watch": "whether other agent-tooling rounds price similarly",
-          "sources": [
-            {
-              "label": "TechCrunch",
-              "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
-            }
-          ],
-          "source_note": "Funding confirmed; the 7,000 LangSmith customer count is LangChain's own figure."
-        }
-      ],
-      "also_noted": [
-        "ChatGPT Wallet lets agents complete purchases with user approval each time; see Crypto.",
-        "Nebius's CEO reportedly said bond markets are effectively closed to neo-cloud GPU-rental companies (secondhand newsletter).",
-        "FAA's Nov 13 nationwide ground stop came days after its AI routing tool SMART went nationwide; no link is confirmed and the vendor denies a role (AI aggregator).",
-        "Pre-window: four nonprofits sued Anthropic, Google, Meta, OpenAI and SpaceX on Nov 12 seeking to freeze new model training (aggregator)."
-      ]
-    },
-    {
-      "name": "Energy & Grid",
-      "thesis": "Grid access for data centers now comes with performance rules and local politics.",
-      "items": [
-        {
-          "significance": "MAJOR",
-          "flag": "",
-          "title": "PJM asks FERC to require data centers of 50 MW or more to ride through grid disturbances",
-          "why": "it creates a retrofit market for power electronics, UPS controls, batteries and stabilizing equipment across about 10 GW of existing loads, after 3.9 GW suddenly dropped off the grid on July 22.",
-          "watch": "FERC comment deadlines, PJM's coming ramp-rate rules, and copycat grid operators",
-          "sources": [
-            {
-              "label": "PJM Inside Lines",
-              "url": "https://insidelines.pjm.com/pjm-proposes-new-rules-to-protect-grid-reliability-as-data-center-demand-grows/"
-            }
-          ],
-          "source_note": ""
-        },
-        {
-          "significance": "MODERATE",
-          "flag": "UNCONFIRMED",
-          "title": "Voters limited or blocked data centers in 40 of 41 local ballot measures",
-          "why": "community approval is becoming a bottleneck alongside grid capacity, which favors on-site generation and smaller distributed sites.",
-          "watch": "more local moratoria and permitting fights",
-          "sources": [
-            {
-              "label": "TIME",
-              "url": "https://time.com/article/2026/11/16/ai-data-centers-electricity-carbon-emissions-study/"
-            }
-          ],
-          "source_note": "Single source for the ballot figure."
-        }
-      ],
-      "also_noted": [
-        "IREN's commercial chief says data center lead times now exceed 7 years in most places (secondhand).",
-        "Pre-window: Belgium and ENGIE pushed the deadline for a possible state takeover of the nuclear fleet to Dec 12."
-      ]
-    },
-    {
-      "name": "Crypto & Digital Assets",
-      "thesis": "Card networks took consumer agent checkout while exchanges lean on recurring revenue.",
-      "items": [
-        {
-          "significance": "MAJOR",
-          "flag": "",
-          "title": "OpenAI launches ChatGPT Wallet on Amex, Chase, Mastercard and Visa, with no crypto or stablecoins",
-          "why": "the largest consumer agent platform chose card rails for its first agent payments, weakening the thesis that agent commerce defaults to crypto.",
-          "watch": "whether stablecoins get added, and crypto openings in business or machine-to-machine payments",
-          "sources": [
-            {
-              "label": "OpenAI",
-              "url": "https://openai.com/index/introducing-chatgpt-wallet/"
-            },
-            {
-              "label": "Stablecoin Insider",
-              "url": "https://stablecoininsider.org/chatgpt-wallet/"
-            },
-            {
-              "label": "Yahoo Tech",
-              "url": "https://tech.yahoo.com/ai/chatgpt/articles/openai-launches-chatgpt-wallet-let-140102177.html"
-            }
-          ],
-          "source_note": "Launch from OpenAI; the no-crypto detail comes from secondary outlets."
-        },
-        {
-          "significance": "MODERATE",
-          "flag": "",
-          "title": "Kraken parent Payward's Q3 adjusted EBITDA falls 67% to $60M as trading volume drops 30%",
-          "why": "client-balance and subscription income rose to 52% of the total, which shows exchanges shifting to recurring revenue and changes how to value them.",
-          "watch": "Q4 volumes in the selloff and the timing of the prediction-markets launch",
-          "sources": [
-            {
-              "label": "Quartz",
-              "url": "https://qz.com/kraken-payward-third-quarter-earnings-drop-111326"
-            },
-            {
-              "label": "Invezz",
-              "url": "https://invezz.com/news/2026/11/13/kraken-payward-q3-2026-results/"
-            },
-            {
-              "label": "Crowdfund Insider",
-              "url": "https://www.crowdfundinsider.com/2026/11/323290-kraken-parent-payward-reports-declining-profits-while-planning-prediction-markets-and-ai-finance-tools-to-compete-with-robinhood-and-coinbase/"
-            }
-          ],
-          "source_note": "Shareholder letter not opened."
-        },
-        {
-          "significance": "MINOR",
-          "flag": "UNCONFIRMED",
-          "title": "BitGo says Unocoin's disputed transfers were signed with Unocoin's own keys",
-          "why": "it shows that in shared-key custody, a custodian's freeze doesn't bind a client that holds enough keys.",
-          "watch": "Unocoin's loss figure and service restart",
-          "sources": [
-            {
-              "label": "The Crypto Desk (citing crypto.news)",
-              "url": "https://thecryptodesk.substack.com/p/the-crypto-desk-saturday-14-november-14"
-            }
-          ],
-          "source_note": "Single secondhand source; company statements only."
-        }
-      ],
-      "also_noted": [
-        "BTC fell to about $62,000 on Nov 15, about 23% below its Nov 4 high; US spot BTC ETFs lost $1.91B over seven straight sessions.",
-        "New York issued advertising standards for licensed crypto firms; the prediction-market state–federal fight spread to Arkansas (weekly roundup).",
-        "Pre-window: the UK House of Lords approved stablecoin perimeter amendments Nov 11; they are not yet law.",
-        "Pre-window: Taiwan's draft stablecoin rules restrict issuance mainly to banks; 40-day comment period from Nov 3."
-      ]
-    },
-    {
-      "name": "Robotics & Autonomy",
-      "thesis": "General models may absorb robot AI, pushing value toward hardware, data and deployment.",
-      "items": [
-        {
-          "significance": "MAJOR",
-          "flag": "",
-          "title": "OpenAI disbands its standalone robotics team, saying its general models now control robots",
-          "why": "if frontier models can run robots, the case for separate robot-AI model startups weakens.",
-          "watch": "CoRL this week and robot-AI startup fundraising",
-          "sources": [
-            {
-              "label": "Fortune",
-              "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
-            }
-          ],
-          "source_note": "Reorganization confirmed by OpenAI; performance claims are OpenAI's own."
-        },
-        {
-          "significance": "MODERATE",
-          "flag": "",
-          "title": "Pony.ai and Toyota launch fully driverless paid robotaxi service in Guangzhou",
-          "why": "a major carmaker's mass-produced vehicle is now in driverless commercial service, a step toward scale robotaxi manufacturing.",
-          "watch": "fleet size and expansion beyond Guangzhou",
-          "sources": [
-            {
-              "label": "PR Newswire via Manila Times",
-              "url": "https://www.manilatimes.net/2026/11/16/tmt-newswire/pr-newswire/ponyai-and-toyota-launch-fully-driverless-commercial-services-with-gen-7-bz4x-robotaxi/2470480"
-            }
-          ],
-          "source_note": "company source"
-        }
-      ],
-      "also_noted": [
-        "Pre-window: Tesla says Robotaxi now runs 24/7 in every city it serves (Nov 11).",
-        "Coverage gap: no dedicated humanoid funding search this window."
-      ]
-    },
-    {
-      "name": "Healthcare & Life Sciences",
-      "thesis": "Pharma M&A exits stay open despite the rate shock.",
-      "items": [
-        {
-          "significance": "MODERATE",
-          "flag": "",
-          "title": "J&J to acquire Ollin Biosciences for $2.2B upfront plus up to $1.1B in milestones",
-          "why": "pharma is still paying billions upfront for clinical-stage biotech, so the exit path for private biotech remains open.",
-          "watch": "antitrust timing and Ollin's lead eye-disease programs",
-          "sources": [
-            {
-              "label": "The Pharma Letter",
-              "url": "https://www.thepharmaletter.com/biotech-news/j-j-to-acquire-ollin-biosciences"
-            }
-          ],
-          "source_note": "Trade press quoting J&J's announcement."
-        }
-      ],
-      "also_noted": [
-        "Novo's CagriSema showed about 21% weight loss vs 2% on placebo at 68 weeks in REDEFINE 9 (secondary source; check the Lancet paper).",
-        "Helus Pharma reports positive Phase 3 topline results for HLP003 as an add-on depression treatment (company claim; NDA timeline needs checking).",
-        "FDA approved Biocon's Perjeta biosimilar, but US launch is blocked until Q3 2028 at the earliest.",
-        "Pre-window, unconfirmed: PharmTech reports signs the FDA shelved its National Priority Voucher pilot; there is no FDA statement."
-      ]
-    },
-    {
-      "name": "Deep Tech",
-      "thesis": "Near-term quantum value runs through hybrid quantum–classical systems.",
-      "items": [
-        {
-          "significance": "MODERATE",
-          "flag": "UNVERIFIED",
-          "title": "IBM claims its Nighthawk r2 runs up to 100,000 samples per second, 25x Heron, at SC26",
-          "why": "quantum value is arriving through hybrid systems inside supercomputing centers, which favors scheduling and integration software.",
-          "watch": "the Gordon Bell result for the Cleveland Clinic/RIKEN/IBM protein simulation",
-          "sources": [
-            {
-              "label": "IBM",
-              "url": "https://www.ibm.com/quantum/blog/sc26"
-            },
-            {
-              "label": "CASRAI (aggregator)",
-              "url": "https://casrai.org/news/fermilab-ibm-nvidia-quantum-hpc-codesign-platform-sc26-2026"
-            }
-          ],
-          "source_note": "Company claims; the IBM/NVIDIA/Fermilab platform was seen only via aggregator."
-        }
-      ],
-      "also_noted": [
-        "MediaTek raised its 2026 custom AI chip revenue outlook from $2.0B to $2.5B (secondhand).",
-        "AMD's MEXT memory engine reportedly halves DRAM requirements (Tom's Hardware).",
-        "Unconfirmed: TSMC reportedly approved up to $1B of investment split between OpenAI and Anthropic shares (aggregator only; date unclear)."
-      ]
-    }
-  ],
-  "quiet_sectors": [
-    "Frontier Physics",
-    "Food & Agriculture"
-  ],
-  "filtered_out": "Filtered out: price and liquidation recaps, CZ's IPO-selloff speculation, Huang personal-conduct coverage, market-size press releases, and unverified model launches.",
   "date": "2026-11-16",
-  "sectors": [
-    "Crypto & Digital Assets",
-    "AI Systems",
-    "Healthcare & Life Sciences",
-    "Robotics & Autonomy",
-    "Energy & Grid",
-    "Deep Tech",
-    "Frontier Physics",
-    "Food & Agriculture"
-  ]
+  "headline": "Nvidia reports tomorrow without Huang; Anthropic may price above $1.5T",
+  "bottomLine": "Tech sold off into Nvidia's first results since Huang's exit, as Washington tightened AI-chip exports and Anthropic weighed lifting its IPO price. In the portfolio, SpaceX caught a Starship upper stage for the first time and Anduril unveiled an unmanned warship.",
+  "numbers": [],
+  "portfolio": [
+    {
+      "company": "SpaceX (prev. xAI)",
+      "sectorId": "space",
+      "confidence": "single-source",
+      "topRank": 3,
+      "itemIds": [
+        "p1"
+      ],
+      "title": "SpaceX catches a Starship upper stage for the first time",
+      "brief": "After 22.5 hours in orbit, the Ship was caught by the launch tower on Saturday; the booster missed its catch and splashed down. The next flight will try to catch both stages.",
+      "impact": "A recoverable upper stage is the piece that makes Starship cheap enough for Starlink V3 and orbital data centers. The stock is still below its IPO price, so the catch has not been priced in yet.",
+      "sources": [
+        {
+          "id": "p1",
+          "name": "Space.com",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/whats-next-for-spacexs-starship-after-epic-flight-15-chopsticks-catch",
+          "publishedAt": "2026-11-15T15:00:00Z",
+          "title": "What's next for SpaceX's Starship after epic Flight 15 chopsticks catch?"
+        }
+      ]
+    },
+    {
+      "company": "Anduril",
+      "sectorId": "defense",
+      "confidence": "single-source",
+      "itemIds": [
+        "p2"
+      ],
+      "title": "Anduril and HD Hyundai unveil an unmanned warship for the US Navy",
+      "brief": "The jointly built autonomous surface vessel was shown at HD Hyundai's Ulsan shipyard. It starts sea trials in Korea and moves to the US in early 2027 for testing.",
+      "impact": "Pairing with Korea's largest shipbuilder gives Anduril hulls at scale without building its own yard first, and positions it for the Navy's push toward unmanned fleets.",
+      "sources": [
+        {
+          "id": "p2",
+          "name": "KED Global",
+          "url": "https://www.kedglobal.com/shipping-shipbuilding/newsView/ked202611160003",
+          "publishedAt": "2026-11-16T06:09:00Z",
+          "title": "HD Hyundai, Anduril launch unmanned warship, target US Navy contracts"
+        }
+      ]
+    }
+  ],
+  "portfolioQuiet": "",
+  "thesis": [
+    {
+      "thesisId": "spiritual-warfare",
+      "verdict": "confirms",
+      "confidence": "single-source",
+      "itemIds": [
+        "m2"
+      ],
+      "title": "The White House is now weighing in on who runs Nvidia",
+      "brief": "Trump said a Huang return 'certainly isn't a bad idea' while Commerce finalized new AI-chip export limits and the Treasury Secretary publicly attacked the Commerce Secretary over enforcement.",
+      "impact": "Who leads the world's key AI company and where its chips may go are now political decisions made in days. Our November essay predicted this; expect more of it.",
+      "sources": [
+        {
+          "id": "m2",
+          "name": "The National",
+          "url": "https://thenationalnews.com/future/technology/2026/11/16/ai-export-rules-jensen-huang-trump",
+          "publishedAt": "2026-11-16T18:00:00Z",
+          "title": "After Jensen Huang's resignation, US Commerce finalises AI export rule"
+        }
+      ]
+    },
+    {
+      "thesisId": "populist-1873",
+      "verdict": "contradicts",
+      "confidence": "single-source",
+      "itemIds": [
+        "c1"
+      ],
+      "title": "Bitcoin sits near half its record while inflation runs hot",
+      "brief": "Bitcoin touched $62K over the weekend, its lowest since July, even as October producer prices rose 6.5% year on year. Spot ETFs had seven straight days of outflows.",
+      "impact": "We argued Bitcoin would win as money lost value. Right now it trades like a leveraged tech stock that falls when rates rise. That is the strongest evidence against the call this year.",
+      "sources": [
+        {
+          "id": "c1",
+          "name": "KuCoin",
+          "url": "https://kucoin.com/news/articles/crypto-daily-market-report-november-16-2026",
+          "publishedAt": "2026-11-16T01:00:00Z",
+          "title": "Crypto daily market report, Nov 16: BTC touched $62K, ETF outflows, stablecoins shrink"
+        }
+      ]
+    },
+    {
+      "thesisId": "populist-1873",
+      "verdict": "confirms",
+      "confidence": "single-source",
+      "itemIds": [
+        "n2"
+      ],
+      "title": "Fed contacts now rank AI as a top financial-stability risk",
+      "brief": "In the Fed's latest survey, 87% of contacts named AI-related risks, up from 50% in May, citing how the build-out is financed and the risk of a correction.",
+      "impact": "The fragile, debt-funded AI boom in our 1873 essay is now the Fed's own worry. The other half of the call, that hard assets win, is not playing out yet.",
+      "sources": [
+        {
+          "id": "n2",
+          "name": "The Neuron",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-16-2026/",
+          "publishedAt": "2026-11-16T22:00:00Z",
+          "title": "Fed survey: 87% of contacts now name AI as a financial-stability risk"
+        }
+      ]
+    }
+  ],
+  "regulation": [
+    {
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "itemIds": [
+        "m2"
+      ],
+      "title": "Commerce closes the cloud loophole for AI chips",
+      "brief": "A final rule limits remote access to advanced AI chips through data centers abroad and requires licenses for AI exports to Indonesia, Malaysia, Singapore, Brazil and Thailand.",
+      "impact": "Renting US chips in Southeast Asia, the main workaround, now needs a license. Decentralized and confidential-compute networks with nodes in those countries take on new compliance risk.",
+      "next": "Effective date and rule text still to publish; lawmakers are pushing for tighter controls.",
+      "sources": [
+        {
+          "id": "m2",
+          "name": "The National",
+          "url": "https://thenationalnews.com/future/technology/2026/11/16/ai-export-rules-jensen-huang-trump",
+          "publishedAt": "2026-11-16T18:00:00Z",
+          "title": "After Jensen Huang's resignation, US Commerce finalises AI export rule"
+        }
+      ]
+    },
+    {
+      "sectorId": "money",
+      "confidence": "single-source",
+      "itemIds": [
+        "r2"
+      ],
+      "title": "Bank regulator finalizes the first stablecoin rules under the GENIUS Act",
+      "brief": "The OCC's final rule sets reserve, redemption, audit and reporting requirements for the stablecoin issuers it supervises. The Fed is consulting on its own version.",
+      "impact": "Stablecoin issuance now has a federal rulebook and a start date, which favors banks already under the OCC and makes non-bank issuers look riskier to partners.",
+      "next": "Rule takes effect Jan 18, 2027; Fed proposals still out for comment.",
+      "sources": [
+        {
+          "id": "r2",
+          "name": "TokenPost",
+          "url": "https://www.tokenpost.com/news/regulation/57889",
+          "publishedAt": "2026-11-15T09:00:00Z",
+          "title": "OCC final rule moves US stablecoin law into implementation"
+        }
+      ]
+    },
+    {
+      "sectorId": "defi",
+      "confidence": "single-source",
+      "itemIds": [
+        "r1"
+      ],
+      "title": "Washington sues states to protect Kalshi's event contracts",
+      "brief": "The US and the CFTC asked a federal court to stop Arkansas from treating Kalshi's contracts as illegal gambling, arguing federal derivatives law overrides the state. A similar suit targets Louisiana.",
+      "impact": "The CFTC is fighting for exclusive control of new crypto-style derivatives. If it wins, perps and prediction venues get one national regulator instead of 50 state fights.",
+      "next": "A federal court rules on preemption; the Louisiana case runs in parallel.",
+      "sources": [
+        {
+          "id": "r1",
+          "name": "Bitcoin.com News",
+          "url": "https://news.bitcoin.com/regulation-and-legal/this-week-in-crypto-law-november-15-2026/",
+          "publishedAt": "2026-11-15T14:00:00Z",
+          "title": "This Week in Crypto Law (November 15, 2026)"
+        }
+      ]
+    }
+  ],
+  "tech": [
+    {
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "topRank": 2,
+      "itemIds": [
+        "n1"
+      ],
+      "title": "ChatGPT gets a wallet so AI agents can pay; Shopify adopts an agent rulebook",
+      "brief": "OpenAI's ChatGPT Wallet lets agents buy for users with Face ID approval, built with Visa, Mastercard and Amex. Separately, Shopify switched on Sierra's Poppy protocol, which tells agents what stores allow.",
+      "impact": "Agent payments now run on card networks, inside the largest AI app. Startups selling agent-payment rails need a distribution partner, not just a product.",
+      "sources": [
+        {
+          "id": "n1",
+          "name": "The Neuron",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-16-2026/",
+          "publishedAt": "2026-11-16T22:00:00Z",
+          "title": "OpenAI launches ChatGPT Wallet so agents can buy for users; Sierra's Poppy protocol adopted by Shopify"
+        }
+      ]
+    },
+    {
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "itemIds": [
+        "n3"
+      ],
+      "title": "Meituan releases a 1.6T-parameter model trained on Chinese chips",
+      "brief": "LongCat-2.5, an open-weight coding-agent model, was reportedly trained entirely on Chinese hardware; running it takes 194 Huawei Ascend chips.",
+      "impact": "On the day the US tightened chip exports, China showed a frontier-scale model built without them. Export controls slow China's labs but no longer stop them.",
+      "sources": [
+        {
+          "id": "n3",
+          "name": "The Neuron",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-16-2026/",
+          "publishedAt": "2026-11-16T22:00:00Z",
+          "title": "Meituan's LongCat-2.5, a 1.6T-parameter open model reportedly trained entirely on Chinese hardware"
+        }
+      ]
+    }
+  ],
+  "deals": [
+    {
+      "kind": "round",
+      "sectorId": "defense",
+      "firm": "Kleiner Perkins & Costanoa",
+      "text": "backed Nidus's $30M round; AI robots for US defense manufacturing, starting with wire harnesses.",
+      "itemIds": [
+        "n5"
+      ],
+      "sources": [
+        {
+          "id": "n5",
+          "name": "The Neuron",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-16-2026/",
+          "publishedAt": "2026-11-16T22:00:00Z",
+          "title": "Nidus raises $30M for AI robotics in US defense manufacturing"
+        }
+      ]
+    },
+    {
+      "kind": "round",
+      "sectorId": "robotics",
+      "firm": "Highland Europe",
+      "text": "led Stark Future's €150M+ round at €1.2B pre-money; electric off-road motorcycles.",
+      "itemIds": [
+        "f1"
+      ],
+      "sources": [
+        {
+          "id": "f1",
+          "name": "Tech Startups",
+          "url": "https://techstartups.com/2026/11/16/startup-funding-news-today-november-16-2026-blackbird-coffee-daisytuner-stark-future-seawolf-stoa-more/",
+          "publishedAt": "2026-11-16T07:00:00Z",
+          "title": "Startup Funding News Today, November 16, 2026: Blackbird Coffee, Daisytuner, Stark Future, Seawolf, Stoa & more"
+        }
+      ]
+    },
+    {
+      "kind": "round",
+      "sectorId": "lifesci",
+      "firm": "Versant Ventures",
+      "text": "founded and backs Seawolf Therapeutics, which raised $100M across seed and Series A for repeat-dose DNA medicines.",
+      "itemIds": [
+        "f1"
+      ],
+      "sources": [
+        {
+          "id": "f1",
+          "name": "Tech Startups",
+          "url": "https://techstartups.com/2026/11/16/startup-funding-news-today-november-16-2026-blackbird-coffee-daisytuner-stark-future-seawolf-stoa-more/",
+          "publishedAt": "2026-11-16T07:00:00Z",
+          "title": "Startup Funding News Today, November 16, 2026: Blackbird Coffee, Daisytuner, Stark Future, Seawolf, Stoa & more"
+        }
+      ]
+    },
+    {
+      "kind": "round",
+      "sectorId": "ai",
+      "firm": "Elaia & LEA Ventures",
+      "text": "co-led Daisytuner's €6M seed; compilers that run AI models efficiently on both Nvidia and AMD chips.",
+      "itemIds": [
+        "f1"
+      ],
+      "sources": [
+        {
+          "id": "f1",
+          "name": "Tech Startups",
+          "url": "https://techstartups.com/2026/11/16/startup-funding-news-today-november-16-2026-blackbird-coffee-daisytuner-stark-future-seawolf-stoa-more/",
+          "publishedAt": "2026-11-16T07:00:00Z",
+          "title": "Startup Funding News Today, November 16, 2026: Blackbird Coffee, Daisytuner, Stark Future, Seawolf, Stoa & more"
+        }
+      ]
+    }
+  ],
+  "macro": [
+    {
+      "sectorId": "ai",
+      "confidence": "confirmed",
+      "topRank": 1,
+      "itemIds": [
+        "m3",
+        "m1"
+      ],
+      "title": "Nvidia reports tomorrow, its first results since Huang quit",
+      "brief": "Shares are down about 13% since Thursday and the Nasdaq fell 2.5% today. Wall Street expects about $109B in revenue; Nvidia's board says it is not bringing Huang back.",
+      "impact": "Guidance, not the quarter, is the test: any sign customers are pausing orders would hit every AI valuation, and the reaction lands two days before Anthropic starts trading.",
+      "sources": [
+        {
+          "id": "m3",
+          "name": "Saxo",
+          "url": "https://www.home.saxo/content/articles/equities/nvidia-earnings-preview-the-first-big-test-after-jensen-huangs-exit-16112026",
+          "publishedAt": "2026-11-16T08:00:00Z",
+          "title": "Nvidia earnings preview: the first big test after Jensen Huang's exit"
+        },
+        {
+          "id": "m1",
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html",
+          "publishedAt": "2026-11-16T21:04:00Z",
+          "title": "Stock market today: Dow and S&P 500 drop, Nasdaq sinks over 2% as Nvidia leads AI trade lower, Anthropic IPO looms"
+        }
+      ]
+    },
+    {
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "itemIds": [
+        "m4"
+      ],
+      "title": "Anthropic weighs pricing its IPO above $1.5 trillion",
+      "brief": "Anthropic is reportedly looking to lift its valuation above $1.5T before pricing this week, even as the Nasdaq 100 sits about 10% off its high and October was the weakest month for share sales this year.",
+      "impact": "A higher price would raise the bar for every private AI round; a stumble after pricing would hit late-stage AI valuations right when several are raising.",
+      "sources": [
+        {
+          "id": "m4",
+          "name": "ION Analytics (Mergermarket)",
+          "url": "https://ionanalytics.com/insights/mergermarket/anthropic-explores-ipo-price-hike-even-as-equity-deals-slow-amid-hedge-fund-pain-ecm-pulse-global/",
+          "publishedAt": "2026-11-16T12:13:00Z",
+          "title": "Anthropic explores IPO price hike even as equity deals slow amid hedge fund pain"
+        }
+      ]
+    },
+    {
+      "sectorId": "money",
+      "confidence": "single-source",
+      "itemIds": [
+        "c1"
+      ],
+      "title": "Bitcoin briefly drops to $62K as $2B of leveraged bets unwind",
+      "brief": "Bitcoin hit its lowest since July over the weekend before recovering to about $65K. Stablecoin supply fell $17B in a month and sentiment hit extreme fear.",
+      "impact": "Crypto liquidity is the thinnest since 2022 heading into year-end token unlocks. Expect unlocks to meet very few buyers.",
+      "sources": [
+        {
+          "id": "c1",
+          "name": "KuCoin",
+          "url": "https://kucoin.com/news/articles/crypto-daily-market-report-november-16-2026",
+          "publishedAt": "2026-11-16T01:00:00Z",
+          "title": "Crypto daily market report, Nov 16: BTC touched $62K, ETF outflows, stablecoins shrink"
+        }
+      ]
+    },
+    {
+      "confidence": "single-source",
+      "itemIds": [
+        "m5"
+      ],
+      "title": "Oil falls as the IEA sees the first surplus since the war began",
+      "brief": "US crude fell 3.7% to about $85 after the IEA said supply now exceeds demand by about 2M barrels a day this quarter.",
+      "impact": "Cheaper oil is the one piece of relief for inflation; if it holds, it softens the case for a big December rate hike.",
+      "sources": [
+        {
+          "id": "m5",
+          "name": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html",
+          "publishedAt": "2026-11-16T21:04:00Z",
+          "title": "Oil falls as IEA sees first supply surplus since the war began"
+        }
+      ]
+    }
+  ],
+  "frontier": [
+    {
+      "sectorId": "frontier",
+      "confidence": "company-claim",
+      "itemIds": [
+        "n4"
+      ],
+      "title": "OpenAI's next model helped write a proof defining the Standard Model on a grid",
+      "brief": "An OpenAI paper co-written with its unreleased GPT-6 Astra proposes a rigorous mathematical definition of particle physics on a spacetime lattice. Physicist Nathaniel Craig says the model helped build the proof.",
+      "impact": "A long-standing gap in the foundations of physics is now being attacked with AI. It is a research claim, not yet peer-reviewed, but it is the clearest sign yet that AI is doing real theoretical physics.",
+      "sources": [
+        {
+          "id": "n4",
+          "name": "The Neuron",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-16-2026/",
+          "publishedAt": "2026-11-16T22:00:00Z",
+          "title": "OpenAI paper with GPT-6 Astra proposes a mathematical definition of the Standard Model on a spacetime grid"
+        }
+      ]
+    }
+  ],
+  "frontierQuiet": "",
+  "meta": {
+    "date": "2026-11-16",
+    "pass": true,
+    "weighted": 4.55,
+    "rounds": 1,
+    "readMinutes": 6.2,
+    "poolSize": 16,
+    "source": "approved reference issue (gp-brief/out/2026-11-16)"
+  }
 }
