@@ -1,10 +1,11 @@
-// "Refresh" button for the published briefs — everything happens on the page.
+// "Generate" button for the published briefs.
 //
 // The reader types the password and clicks Refresh now. The request goes to
 // the refresh relay (data-endpoint, worker/refresh-worker.js), which starts the
 // run; the page then follows it step by step (from GitHub's public run data),
 // keeps the current edition on screen, and opens the new one when published.
-// Without a relay configured, the button is not shown.
+// Without a relay configured, the panel links to the workflow on GitHub (Run
+// workflow); the page then follows the run and opens the new edition.
 (function () {
   var NAME = { daily: 'brief', weekly: 'weekly brief', fringe: 'issue' };
   var TYPICAL = { daily: 6, weekly: 8, fringe: 10 }; // minutes, for the progress line
@@ -33,22 +34,24 @@
 
   function setup(el) {
     var endpoint = el.dataset.endpoint || '';
-    if (!endpoint) { el.remove(); return; }
     var report = el.dataset.report || 'daily';
     var noun = NAME[report] || 'brief';
     var stages = STAGES[report] || STAGES.daily;
     el.style.cssText = 'position:relative;display:inline-block;font-family:' + SANS + ';';
     el.innerHTML =
       '<button type="button" class="open" aria-expanded="false" style="min-height:32px;padding:0 12px;border:1.5px solid ' + INK + ';border-radius:3px;background:#fff;color:' + INK + ';font:600 12px/1 ' + SANS + ';cursor:pointer;">' +
-      '<span aria-hidden="true">↻</span> <span class="badge">Refresh</span></button>' +
+      '<span aria-hidden="true">↻</span> <span class="badge">Generate</span></button>' +
       '<div class="panel" hidden style="position:absolute;right:0;top:40px;z-index:5;width:min(320px,86vw);padding:14px 16px;background:#fff;border:1px solid #e5e5e5;border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.08);font-size:13px;line-height:1.5;color:' + BODY + ';text-align:left;">' +
-      '<div style="font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:' + INK + ';margin-bottom:6px;">Get a fresh edition</div>' +
-      '<p class="intro" style="margin:0;">Gathers the latest news and writes a new edition of this ' + noun + ' (about ' + TYPICAL[report] + ' minutes). Keep reading: this page opens the new edition when it is ready.</p>' +
-      '<form class="go" style="margin:10px 0 0;">' +
+      '<div style="font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:' + INK + ';margin-bottom:6px;">Generate a new edition</div>' +
+      '<p class="intro" style="margin:0;">Gathers the latest news and writes a new edition of this ' + noun + ' (about ' + TYPICAL[report] + ' minutes). Keep this page open: it shows the progress and opens the new edition when it is ready.</p>' +
+      (endpoint ? '' :
+        '<p class="gh" style="margin:8px 0 0;color:' + FAINT + ';">It runs on GitHub (needs write access to the repository): click <strong style="color:' + INK + ';">Run workflow</strong> there, then come back to this page.</p>' +
+        '<a class="gh" href="' + el.dataset.runUrl + '" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;padding:8px 12px;border-radius:3px;background:' + INK + ';color:#fff;font-weight:600;text-decoration:none;">Generate on GitHub \u2192</a>') +
+      '<form class="go" style="margin:10px 0 0;"' + (endpoint ? '' : ' hidden') + '>' +
       '<label style="display:block;font-weight:600;color:' + INK + ';margin-bottom:4px;" for="rf-pass-' + report + '">Password</label>' +
       '<div style="display:flex;gap:8px;flex-wrap:wrap;">' +
       '<input id="rf-pass-' + report + '" type="password" autocomplete="current-password" style="flex:1 1 120px;min-height:36px;padding:0 10px;border:1.5px solid #d4d4d4;border-radius:3px;font:inherit;">' +
-      '<button type="submit" style="min-height:36px;padding:0 12px;border:0;border-radius:3px;background:' + INK + ';color:#fff;font:600 13px ' + SANS + ';cursor:pointer;">Refresh now</button></div></form>' +
+      '<button type="submit" style="min-height:36px;padding:0 12px;border:0;border-radius:3px;background:' + INK + ';color:#fff;font:600 13px ' + SANS + ';cursor:pointer;">Generate now</button></div></form>' +
       '<div class="steps" hidden style="margin:10px 0 0;"></div>' +
       '<p class="line" role="status" aria-live="polite" style="margin:10px 0 0;color:' + FAINT + ';"></p></div>';
 
@@ -84,9 +87,10 @@
     }
 
     function follow(startedAt) {
-      badge.textContent = 'Refreshing…';
+      badge.textContent = 'Generating…';
       form.hidden = true;
       el.querySelector('.intro').hidden = true;
+      el.querySelectorAll('.gh').forEach(function (g) { g.hidden = true; });
       if (polling) return;
       var tick = function () {
         api(el.dataset.runs).then(function (j) {
@@ -102,10 +106,11 @@
             say('<strong style="color:' + INK + ';">New edition published.</strong> Opening it…', INK);
             setTimeout(function () { location.href = el.dataset.latest + '?v=' + Date.now(); }, 40000); // let the site's cache catch up
           } else {
-            badge.textContent = 'Refresh';
+            badge.textContent = 'Generate';
             stepsEl.hidden = true;
-            form.hidden = false;
-            say('This refresh did not publish a new edition: it did not pass the quality review, or a step failed. The current ' + noun + ' stays up.', RED);
+            if (endpoint) form.hidden = false;
+            el.querySelectorAll('.gh').forEach(function (g) { g.hidden = false; });
+            say('This run did not publish a new edition: it did not pass the quality review, or a step failed. The current ' + noun + ' stays up.', RED);
           }
         }).catch(function () {});
       };
@@ -118,10 +123,24 @@
         var run = (j.workflow_runs || [])[0];
         if (!run) { say(''); return; }
         if (run.status !== 'completed') { follow(run.created_at); return; }
-        if (run.conclusion === 'success') say('Last refreshed ' + ago(run.updated_at) + '.');
-        else say('The last refresh (' + ago(run.updated_at) + ') did not publish a new edition.');
+        if (run.conclusion === 'success') say('Last generated ' + ago(run.updated_at) + '.');
+        else say('The last run (' + ago(run.updated_at) + ') did not publish a new edition.');
       }).catch(function () { say(''); });
     }
+
+    // Without the relay: after opening GitHub, watch for the new run and follow it here.
+    var gh = el.querySelector('a.gh');
+    if (gh) gh.addEventListener('click', function () {
+      say('Waiting for the run to start on GitHub\u2026');
+      var since = Date.now(), waits = 0;
+      var watch = setInterval(function () {
+        api(el.dataset.runs).then(function (j) {
+          var run = (j.workflow_runs || [])[0];
+          if (run && Date.parse(run.created_at) >= since - 60000) { clearInterval(watch); follow(run.created_at); }
+          else if (++waits > 60) { clearInterval(watch); say(''); }
+        }).catch(function () {});
+      }, 15000);
+    });
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -146,7 +165,7 @@
       var show = panel.hidden;
       panel.hidden = !show;
       open.setAttribute('aria-expanded', String(show));
-      if (show) { if (!polling) status(); if (!form.hidden) form.querySelector('input').focus(); }
+      if (show) { if (!polling) status(); if (endpoint && !form.hidden) form.querySelector('input').focus(); }
     });
     document.addEventListener('click', function (e) { if (!el.contains(e.target)) { panel.hidden = true; open.setAttribute('aria-expanded', 'false'); } });
     status(); // a run already in progress shows on the button

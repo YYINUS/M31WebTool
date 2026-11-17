@@ -221,7 +221,7 @@ function navBlock(nav) {
 // `actions: false` renders the shareable copy: no "What next" content in the file
 // at all (the collapsed button only hides it on screen; view-source would show it).
 // `nav` (optional, for the published site): { home, archive, prev: {href, label}, next: {href, label} }.
-export function renderHTML(brief, { quality, fullDigestUrl = 'https://m31-dashboard.vercel.app/news', readMinutes, poolSize, actions = true, nav = null, weekly = brief?.meta?.edition === 'weekly' } = {}) {
+export function renderHTML(brief, { quality, fullDigestUrl = null, readMinutes, poolSize, actions = true, nav = null, weekly = brief?.meta?.edition === 'weekly' } = {}) {
   if (!actions) {
     brief = structuredClone(brief);
     for (const p of PURPOSES) for (const st of brief[p.key] || []) delete st.action;
@@ -301,9 +301,9 @@ export function renderHTML(brief, { quality, fullDigestUrl = 'https://m31-dashbo
     ${PURPOSES.map((p) => sectionBlock(p, brief)).join('')}
     ${weekly ? weekAheadBlock(brief) : ''}
 
-    <div style="margin:36px 0 0;padding-top:16px;border-top:1px solid ${RULE};text-align:right;">
+    ${fullDigestUrl ? `<div style="margin:36px 0 0;padding-top:16px;border-top:1px solid ${RULE};text-align:right;">
       <a href="${esc(fullDigestUrl)}" style="font-family:${SANS};font-size:13px;font-weight:600;color:${INK};text-decoration:none;">Full digest &rarr;</a>
-    </div>
+    </div>` : ''}
     ${nav ? navBlock(nav) : ''}
   </div>
 </div>
