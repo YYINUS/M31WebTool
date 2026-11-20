@@ -1,0 +1,547 @@
+{
+  "week_label": "Nov 14 – 20, 2026",
+  "status": "5-minute scan",
+  "coverage_warning": "",
+  "cards": [
+    {
+      "id": "workspace",
+      "nav": "WORKSPACE TEST",
+      "label": "ACT",
+      "label_detail": "READ FIRST",
+      "meta": "CONSCIOUSNESS SCIENCE · ARXIV PREPRINT · NOV 19",
+      "claim": "A causal test can show whether a network's global workspace actually does the computing or only relays answers computed elsewhere, which task accuracy and ablation tests cannot distinguish.",
+      "people": "Diaoxuan He, Linqian Wu (affiliations not in source)",
+      "links": [
+        {
+          "label": "arXiv:2611.26018 ↗",
+          "url": "https://arxiv.org/abs/2611.26018"
+        }
+      ],
+      "stage": 3,
+      "stage_headline": "Stage 3 of 5: tested against a control.",
+      "stage_note": "The test was checked against networks deliberately built either to relay or to recombine information, a known-answer control, and the abstract says it identified the computation correctly in every case. No other team has repeated it. Read from the arXiv listing abstract only.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "MEDIUM",
+      "impact_text": "It turns a central claim of Global Workspace Theory (information becomes conscious when it is broadcast to specialised processes that then use it) into a property that can be tested in trained models. That matters for claims about consciousness in AI.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "On networks built to be either relays or recombiners, the causal test recovered the correct answer in every case, while accuracy and ablation could not tell them apart."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "How well it works on large pretrained models. The abstract mentions only one known interface in a pretrained Transformer. Whether code is released is also unknown."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "Released code, and an independent team applying it to a different model family."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "Built-in relay-or-recombine networks that the test misclassifies."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Diaoxuan He",
+          "role": "Author"
+        },
+        {
+          "name": "Linqian Wu",
+          "role": "Author"
+        }
+      ],
+      "todo": "Read the paper this week and check whether code is released.",
+      "rule_label": "Decide",
+      "rule_text": "If the code is open, consider it for a small methods grant to test it independently.",
+      "needs_owner": true,
+      "compare_text": "Read against the adversarial collaborative review of integrated information and predictive processing theories.",
+      "compare_link": {
+        "label": "arXiv:2509.00555 ↗",
+        "url": "https://arxiv.org/abs/2509.00555"
+      },
+      "primary_link": {
+        "label": "arXiv: causal test of global workspace computation ↗",
+        "url": "https://arxiv.org/abs/2611.26018"
+      }
+    },
+    {
+      "id": "uapdm",
+      "nav": "UAP DARK",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "UAP · ARXIV PREPRINT (HEP-PH) · NOV 17",
+      "claim": "Axion quark nuggets, a proposed form of dark matter, could explain reported UAP features: high speed, extreme acceleration, no leftover material and no sonic boom despite supersonic motion.",
+      "people": "Ariel Zhitnitsky (affiliation not in source)",
+      "links": [
+        {
+          "label": "arXiv:2611.23373 ↗",
+          "url": "https://arxiv.org/abs/2611.23373"
+        }
+      ],
+      "stage": 1,
+      "stage_headline": "Stage 1 of 5: an idea, not yet tested.",
+      "stage_note": "It's a theoretical argument. The abstract cites no UAP dataset or comparison group.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "It would link UAP to dark matter physics. The author says he uses the same parameters as his earlier AQN work, which limits how much the model can be tuned. He has previously used AQN to explain other anomalies, such as the ANITA events (arXiv:2105.01668).",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "It argues that some UAP belong with sky-quakes, ball lightning and other unexplained transient events, all driven by the nugget's antiquark core."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Which specific UAP events are modelled, if any; whether it makes numerical predictions for brightness, sound or radiation; how it fits existing AQN constraints. No critiques found."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "A testable prediction, such as a radiation or acoustic signature, compared against UAP records with sensor data (Galileo Project, or AARO cases with official analysis)."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "Well-instrumented supersonic UAP with no matching signature, or the AQN parameter range being ruled out by other dark matter searches."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Ariel Zhitnitsky",
+          "role": "Author; developed the AQN model"
+        }
+      ],
+      "todo": "Nothing this week.",
+      "rule_label": "Trigger",
+      "rule_text": "A follow-up that compares the model with a sensor-instrumented UAP dataset.",
+      "needs_owner": false,
+      "compare_text": "Galileo Project's first triangulation results (Avi Loeb's blog, about 8 weeks old).",
+      "compare_link": {
+        "label": "Galileo Project triangulation ↗",
+        "url": "https://avi-loeb.medium.com/first-triangulation-results-in-search-for-uap-by-the-galileo-project-observatories-eacc4798a538"
+      },
+      "primary_link": {
+        "label": "arXiv: axion quark nuggets and UAP ↗",
+        "url": "https://arxiv.org/abs/2611.23373"
+      }
+    },
+    {
+      "id": "ionosphere",
+      "nav": "IONO SETI",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "TECHNOSIGNATURES · ARXIV PREPRINT (ASTRO-PH.IM) · NOV 19",
+      "claim": "An exoplanet's ionospheric radio cutoff should rise and fall over its orbit, which could mark broadband radio leakage as coming from the planet and also probe exoplanet ionospheres.",
+      "people": "Michael A. Garrett (University of Manchester; Leiden Observatory and University of Malta also listed)",
+      "links": [
+        {
+          "label": "arXiv:2611.26025 ↗",
+          "url": "https://arxiv.org/abs/2611.26025"
+        }
+      ],
+      "stage": 1,
+      "stage_headline": "Stage 1 of 5: an idea, not yet tested.",
+      "stage_note": "It's a model with no observations. The author calls detection observationally challenging.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "MEDIUM",
+      "impact_text": "It gives a physical check that separates a planet's own radio leakage from local interference on Earth.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "Oblique propagation, magnetic fields and absorption smooth the cutoff into a gradual escape function. Delays in the atmosphere's response shift its timing a little, but the rise and fall survives."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Whether current instruments could detect it."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "Detectability forecasts for instruments such as LOFAR or SKA-Low on real target lists."
+        },
+        {
+          "heading": "Would prove it wrong (as a useful test)",
+          "text": "A finding that for all realistic targets the cutoff falls below the frequency at which ground-based telescopes can see through Earth's own ionosphere."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Michael A. Garrett",
+          "role": "Author"
+        }
+      ],
+      "todo": "Nothing this week.",
+      "rule_label": "Trigger",
+      "rule_text": "A detectability forecast or a pilot analysis on low-frequency radio data.",
+      "needs_owner": false,
+      "compare_text": "Garrett's earlier framework for broadband radio leakage, MNRAS 549(3) stag991.",
+      "compare_link": {
+        "label": "MNRAS stag991 ↗",
+        "url": "https://academic.oup.com/mnras/article/549/3/stag991/8697603"
+      },
+      "primary_link": {
+        "label": "arXiv: ionospheric cutoff as a technosignature ↗",
+        "url": "https://arxiv.org/abs/2611.26025"
+      }
+    },
+    {
+      "id": "ndesynth",
+      "nav": "NDE SYNTH",
+      "label": "PENDING",
+      "label_detail": "TITLE ONLY",
+      "meta": "CONSCIOUSNESS SCIENCE · PSYARXIV PREPRINT · NOV 17",
+      "claim": "A comparative synthesis of near-death experiences and NDE-like experiences; results not yet seen.",
+      "people": "Authors not yet seen",
+      "links": [
+        {
+          "label": "PsyArXiv tu64g ↗",
+          "url": "https://osf.io/preprints/psyarxiv/tu64g"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Not rated yet: we only saw a stub.",
+      "stage_note": "Only an abstract stub was seen; headline results not yet seen.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "",
+      "impact_text": "Unknown until the abstract or full text is read.",
+      "details": [
+        {
+          "heading": "Still unknown",
+          "text": "Authors, methods, sources included and conclusions."
+        }
+      ],
+      "follow": [],
+      "todo": "Open the preprint when page access allows.",
+      "rule_label": "Trigger",
+      "rule_text": "Full abstract read; promote to a full card if it makes a testable claim.",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "PsyArXiv: NDE vs. NDE-like experiences ↗",
+        "url": "https://osf.io/preprints/psyarxiv/tu64g"
+      }
+    },
+    {
+      "id": "meditation",
+      "nav": "MEDITATION",
+      "label": "PENDING",
+      "label_detail": "TITLE ONLY",
+      "meta": "CONSCIOUSNESS SCIENCE · PSYARXIV PREPRINT · NOV 18",
+      "claim": "A single-case study reports unusual events across four meditation techniques; results not yet seen.",
+      "people": "Authors not yet seen",
+      "links": [
+        {
+          "label": "PsyArXiv kr2xb ↗",
+          "url": "https://osf.io/preprints/psyarxiv/kr2xb"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Not rated yet: we only saw a stub.",
+      "stage_note": "Only an abstract stub was seen. It isn't clear whether 'unusual events' includes anything psi-like.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "",
+      "impact_text": "Unknown until the abstract or full text is read.",
+      "details": [
+        {
+          "heading": "Still unknown",
+          "text": "Authors, what counts as an unusual event, measures used and results."
+        }
+      ],
+      "follow": [],
+      "todo": "Open the preprint when page access allows.",
+      "rule_label": "Trigger",
+      "rule_text": "Full abstract read; promote if it reports psi-relevant events with measurements.",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "PsyArXiv: unusual events across four meditation techniques ↗",
+        "url": "https://osf.io/preprints/psyarxiv/kr2xb"
+      }
+    },
+    {
+      "id": "van",
+      "nav": "VAN",
+      "label": "CRITIQUE",
+      "label_detail": "",
+      "meta": "CONSCIOUSNESS SCIENCE · PSYARXIV PREPRINT · NOV 18",
+      "claim": "The Visual Awareness Negativity changes reliably with attention, which challenges its use as a specific marker of conscious perception.",
+      "people": "Łucja Doradzińska, Michał Bola (affiliations not in source)",
+      "links": [
+        {
+          "label": "PsyArXiv ezn3p ↗",
+          "url": "https://osf.io/preprints/psyarxiv/ezn3p_v1"
+        }
+      ],
+      "stage": 3,
+      "stage_headline": "Stage 3 of 5: tested against a control.",
+      "stage_note": "Attention was manipulated experimentally, and a second experiment confirmed the effect. Preregistration status not seen; the PDF was not opened.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "The VAN, a brain-wave signal about 200–300 ms after a stimulus, is widely used as a marker of consciousness. If it tracks attention, that marker is weakened.",
+      "details": [
+        {
+          "heading": "What they say",
+          "text": "VAN amplitude changes reliably with attention, confirmed in Experiment 2."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Sample sizes, effect sizes, and whether a VAN remains once attention is controlled."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "A preregistered study where awareness and attention vary independently and the VAN tracks awareness only."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Michał Bola",
+          "role": "Author"
+        }
+      ],
+      "todo": "Read the full text before funding any VAN-based consciousness work.",
+      "rule_label": "Decide",
+      "rule_text": "Hold any VAN-based funding decision until the full text has been read.",
+      "needs_owner": false,
+      "compare_text": "The preregistered VAN study.",
+      "compare_link": {
+        "label": "PMC5823961 ↗",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5823961/"
+      },
+      "primary_link": {
+        "label": "PsyArXiv: VAN and attention ↗",
+        "url": "https://osf.io/preprints/psyarxiv/ezn3p_v1"
+      }
+    },
+    {
+      "id": "dbi",
+      "nav": "DBI HOLE",
+      "label": "CRITIQUE",
+      "label_detail": "",
+      "meta": "SPECULATIVE GRAVITY · ARXIV COMMENT PAPER (GR-QC) · NOV 17",
+      "claim": "The black hole solution proposed in arXiv:2511.14047 fails the field equations of general relativity with a DBI scalar near the horizon, so it is not a black hole in that theory.",
+      "people": "Mustapha Azreg-Aïnou, Marco A. A. de Paula (affiliations not in source)",
+      "links": [
+        {
+          "label": "arXiv:2611.23597 ↗",
+          "url": "https://arxiv.org/abs/2611.23597"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Mathematical check, not data.",
+      "stage_note": "A consistency check on a theoretical solution, so the evidence scale doesn't apply. Read from the arXiv listing abstract only.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "Low stakes for our remit, which touches primordial dark matter, but it is a clean example of a comment paper correcting a published solution.",
+      "details": [
+        {
+          "heading": "What they say",
+          "text": "The physical branch of the DBI field ends outside the event horizon, so the solution does not satisfy all field equations there."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "No reply from the original authors has been seen. A reply or correction would settle it."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Mustapha Azreg-Aïnou",
+          "role": "Comment author"
+        },
+        {
+          "name": "Marco A. A. de Paula",
+          "role": "Comment author"
+        }
+      ],
+      "todo": "No action.",
+      "rule_label": "Trigger",
+      "rule_text": "A reply from the original authors, or a correction to arXiv:2511.14047.",
+      "needs_owner": false,
+      "compare_text": "Read against the original paper, arXiv:2511.14047.",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "arXiv: comment on DBI black hole solution ↗",
+        "url": "https://arxiv.org/abs/2611.23597"
+      }
+    },
+    {
+      "id": "prompts",
+      "nav": "AI PROMPTS",
+      "label": "CONTEXT",
+      "label_detail": "DO",
+      "meta": "RESEARCH INTEGRITY · RETRACTION WATCH NEWS · NOV 19",
+      "claim": "Hidden instructions to AI reviewers are turning up inside preprints and published papers.",
+      "people": "Reported by Retraction Watch; found by sleuth Nick Brown",
+      "links": [
+        {
+          "label": "Retraction Watch ↗",
+          "url": "https://retractionwatch.com/2026/11/19/prompt-injection-ai-llm-peer-review-published-papers/"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Journalism, not data.",
+      "stage_note": "A news report, not a new claim.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "If we use AI tools to help triage grantee preprints, hidden prompts could bias that triage.",
+      "details": [
+        {
+          "heading": "What happened",
+          "text": "Nick Brown found hidden text asking AI reviewers to give a paper a good review, placed in a figure in a font coloured to match the graph. Such prompts are now appearing in published papers."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "None of the reported cases were in our topic areas."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Nick Brown",
+          "role": "Research-integrity sleuth"
+        }
+      ],
+      "todo": "Add a hidden-text and prompt-injection check to how we screen grantee preprints, especially where AI tools help with triage.",
+      "rule_label": "",
+      "rule_text": "",
+      "needs_owner": true,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "Retraction Watch: prompt injection in published papers ↗",
+        "url": "https://retractionwatch.com/2026/11/19/prompt-injection-ai-llm-peer-review-published-papers/"
+      }
+    },
+    {
+      "id": "casimir",
+      "nav": "CASIMIR",
+      "label": "BENCHMARK",
+      "label_detail": "READ FIRST",
+      "meta": "ZERO-POINT AND VACUUM PHYSICS · ARXIV PREPRINT (QUANT-PH) · NOV 19",
+      "claim": "A precise measurement of the magnetic field reflected from a copper plate disagrees with both the Drude and plasma models of metals, and its phase, measured for the first time, disagrees qualitatively with Drude.",
+      "people": "M. Dhital, G. L. Klimchitskaya, V. M. Mostepanenko, U. Mohideen (affiliations not in source)",
+      "links": [
+        {
+          "label": "arXiv:2611.25856 ↗",
+          "url": "https://arxiv.org/abs/2611.25856"
+        }
+      ],
+      "stage": 2,
+      "stage_headline": "Stage 2 of 5: uses data, but no comparison group.",
+      "stage_note": "One team's measurement compared with theory; no independent repeat known. Checked through search excerpts of the full text only.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "It probes the s-polarised evanescent waves at the centre of the Casimir puzzle, where force measurements fit the plasma model rather than the physically expected Drude model. The baseline theory of vacuum forces near metals is itself unsettled, and any zero-point energy device must be judged against it.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "According to the paper, the plasma model disagrees with this data even more strongly than the Drude model does, so neither explains it."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "The size of the discrepancy in standard-deviation terms, and the error budget."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "An independent group repeating the magnitude and phase measurement."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "An independent measurement that agrees with the Drude model."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Umar Mohideen",
+          "role": "Experiment"
+        },
+        {
+          "name": "G. L. Klimchitskaya",
+          "role": "Theory"
+        },
+        {
+          "name": "V. M. Mostepanenko",
+          "role": "Theory"
+        }
+      ],
+      "todo": "Read it and use it as the reference standard for any zero-point energy proposal.",
+      "rule_label": "Decide",
+      "rule_text": "If an independent lab offers to repeat the measurement, scoping a replication is in remit.",
+      "needs_owner": false,
+      "compare_text": "The same group's earlier paper, 'Casimir effect invalidates the Drude model for TE evanescent waves'.",
+      "compare_link": {
+        "label": "arXiv:2310.14026 ↗",
+        "url": "https://arxiv.org/pdf/2310.14026"
+      },
+      "primary_link": {
+        "label": "arXiv: reflected magnetic field from copper and the Casimir puzzle ↗",
+        "url": "https://arxiv.org/abs/2611.25856"
+      }
+    },
+    {
+      "id": "darkenergy",
+      "nav": "DARK ENERGY",
+      "label": "BENCHMARK",
+      "label_detail": "",
+      "meta": "COSMOLOGY · ARXIV PREPRINT (ASTRO-PH.CO) · NOV 19",
+      "claim": "Simons Observatory and CMB-S4 on their own cannot distinguish DESI's preferred evolving dark energy from a cosmological-constant model that mimics the same CMB pattern; ΛCDM stays within about 2σ.",
+      "people": "Anna Chiara Ferri, Ruchika, Alessandro Melchiorri (affiliations not in source)",
+      "links": [
+        {
+          "label": "arXiv:2611.26305 ↗",
+          "url": "https://arxiv.org/abs/2611.26305"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Forecast on simulated data.",
+      "stage_note": "A forecast, not a measurement, so the evidence scale doesn't apply. Checked through search excerpts of the full text.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "This week's dynamic vacuum energy papers in physics.gen-ph rest on the DESI DR2 dark energy hint. CMB data alone won't confirm it, so the evidence still depends on DESI and supernova data.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "Next-generation CMB experiments alone leave ΛCDM within about 2σ of the DESI-preferred evolving dark energy."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "It is a forecast; conclusions depend on the simulated data assumptions."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Alessandro Melchiorri",
+          "role": "Author"
+        }
+      ],
+      "todo": "No action. Keep it as the reference point for vacuum-decay claims.",
+      "rule_label": "",
+      "rule_text": "",
+      "needs_owner": false,
+      "compare_text": "Read the physics.gen-ph dynamic vacuum energy papers (Millo 2611.23449; Chaudhary et al. 2611.23340) against this forecast.",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "arXiv: CMB forecasts for evolving dark energy ↗",
+        "url": "https://arxiv.org/abs/2611.26305"
+      }
+    }
+  ],
+  "left_out": "Left out: mainstream modified gravity and cosmology with no frontier claim, keyword-only matches (zero-point length, QCD Casimir factors, the Th-229 clock), low-priority theory such as Casimir-like wormholes and an out-of-remit toroidal dipole comment, mainstream PsyArXiv psychology, off-topic Retraction Watch items, and relevant but out-of-window pieces such as Quanta's Nov 2 cold fusion feature (https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/); the massive mechanical superposition proposal (2611.22428) is held for next week.",
+  "searched_note": "Searched arXiv listings and comment papers, PsyArXiv, Journal of Scientific Exploration, Journal of Parapsychology, PLOS ONE, Royal Society Open Science, PubPeer, Retraction Watch, ARPA-E LENR pages, NASA NTRS and AARO, but hit a page-opening limit, so several items were read from abstracts or excerpts only. Nothing new turned up for psi, LENR, MOND or official UAP releases, and no failed replications were found in psi, LENR, MOND or technosignatures.",
+  "start": "2026-11-14",
+  "end": "2026-11-20",
+  "generated": "2026-11-20",
+  "generated_at": "2026-11-20T21:23:26+00:00"
+}
