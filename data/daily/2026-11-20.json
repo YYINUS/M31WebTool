@@ -1,0 +1,1004 @@
+{
+  "date": "2026-11-20",
+  "headline": "Tech rout deepens as Nvidia loses its CEO and Anthropic's IPO pop fades",
+  "bottomLine": "Nvidia's CEO exit, a record Anthropic IPO that gave back most of its pop, and an Asian chip sell-off hit AI assets, and bitcoin fell below $58,000. MoonPay filed for a federal bank charter, and Google booked a 2029 launch for its AI satellites.",
+  "portfolio": [
+    {
+      "company": "SpaceX (prev. xAI)",
+      "title": "xAI fights California AI disclosure law as chemical spill and Grok suits pile up",
+      "brief": "xAI asked a US appeals court to block California's AI disclosure law; judges seemed skeptical. Thousands of gallons of chemicals spilled at its Southaven data center; Grok deepfake suits are mounting.",
+      "impact": "Law, environment and litigation risk now sit on the same asset as SpaceX's public float. A loss on disclosure would set precedent for every AI lab, and Grok agent misbehavior reports add product-safety risk.",
+      "action": "Ask SpaceX investor relations for Southaven clean-up exposure and the appeals-court timetable; bring the answers to the next partner call.",
+      "sectorId": "space",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n211",
+        "n213",
+        "n212",
+        "n214",
+        "n801",
+        "n216",
+        "n805",
+        "n802"
+      ],
+      "sources": [
+        {
+          "id": "n211",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeUstaGZQdnFxOEI0S3NCcUZzYmRMZG95aE9ROU9RMGI4VVV6LTZPNUVWem02OVNCVDhVZUtoRTA4OXg4ZktXenhjVW5RY3UxUmZjNmZkdEpDWGtTR0ZlNm15bmZEMDdsS3RzX3cyOEZHNVFLM2JIWVJaVGUxSzVLcHNnWkVKbnpMa1pLa18zM00wNU1STm05SUdFWGNaTE1wVVUxbzZacjdzTl94TTlQQjlWb0JvNjVvQkxrbA?oc=5",
+          "publishedAt": "2026-11-18T23:36:00.000Z",
+          "title": "Musk's xAI urges US appeals court to block California AI disclosure law"
+        },
+        {
+          "id": "n213",
+          "name": "PYMNTS.com",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS282aW4zdGhSSWw3dGRXZ1hQT0dhRU5UU1RUZm1FNDY5aW1yWVZFaEY0TW1OTVB0b2RIdnVRbWRiWmw2Vk56TThtdUZZemYzRDNfNVhaVkt0NzhJYWEtc2o4QVNWbVFvNlNVN1F5bXpBT0xjNXBxRl9sbFFvNDc0Q3R4YllSQXBxZ25BUmJYM2lmUVZfOVVaVERfZk9tWG9OSUgzcDhn?oc=5",
+          "publishedAt": "2026-11-19T21:16:24.000Z",
+          "title": "CPI | Musk’s xAI Faces Skeptical US Judges Over California AI Disclosure Law"
+        },
+        {
+          "id": "n212",
+          "name": "FOX13 Memphis",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZjZ2YjZGZlMySUxnclBYb1lQa2Fyc0RsS0lwUFBtQVEtUElrOVFTY3RYdjhTSmlRN2x5OGJSc3hqTllJSHdrUTFkNXhVc21BSkQ0RVZYcHJqVTR4VjY3Nmp5YzZDWndrenltejl4cl96MnFPeWNHOVhqMlVBb3piSWlKQWxNaVFLM2JsR0NZdUhZeks0S1EyZmF1em41RUUtR1lVMkg3eUFTVkxyMGRvSFI5Smh1QnB3NFlCMFlWcjZwSElPVmhPTlZZU1lReG03TFdmWVFlaTlxaG85a05uenlxYmo3Z3ljWFppd1BWczg?oc=5",
+          "publishedAt": "2026-11-15T15:05:00.000Z",
+          "title": "Thousands of gallons of chemicals spill at xAI facility in Southaven"
+        },
+        {
+          "id": "n214",
+          "name": "NAACP",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUkwzMTNYbGZha0RvWlpMRU9KY0Nyam05ZWpxZVZfaGFWaV9FdFRsaDRVWjdsUmJPWFROUmhWaDN2bEpQYV9UMGxKVExZZ0l2dkV5RzJ5aVF4QWg5aG91SVBReDNCUE1qTWUxQWEyX0hfeUhkN2pSc2xaT3JSd1RsREhxeFJ5WXpGVDNBRmU5aGp0a3IwR2hkRGtYQ2k2OWRicnJQLTNSbEJtRllCUVNSd2VB?oc=5",
+          "publishedAt": "2026-11-15T12:00:00.000Z",
+          "title": "NAACP Calls for Immediate Intervention Following the Chemical Fluid Spill at xAI’s Southaven Data Center"
+        },
+        {
+          "id": "n801",
+          "name": "Action News 5",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUXZfNWo5a1hMelZXMXdIYVV0X3NLUnlvR05TTDhrYmpPMmpqN3ptZEc2R2tYeDZfUnVkdHR1dkJueWQ0dHc5OTUxdGI1dGJGdVV3U0t3UmctQlRIZVFPbXFDc2tuREJyUW5JX21HMHBUbUpGMnphYjhXSk9sUUV2dWxRbW1zWE9kaTVmbWFyd1B6N0NvVnVKYXUwR2R3VEluMXfSAbYBQVVfeXFMTS1uanpnR2lLb3BsS1BZclZoY3FOQTMxRmc0LURtRGhqTlVGalVoOG1WcjRxb1h4YTB5djQ5THd2dDFjaHdtUUdVT0c3MFIxU1JIem82b0U4QXZiX0JHN01saUYyaERJS1ItWmw0WG04dVFnR0h4djBDekM1UlJkWXZ3N0FFRW5tS0QwMDN0cmZJMXYzc1ZhV3VQcXdOWTFtYWNmb2w1QmVHbXdERkhJbU05QjNsUWc?oc=5",
+          "publishedAt": "2026-11-15T13:37:00.000Z",
+          "title": "SpaceX says misconfigured hose caused Southaven chemical spill; MDEQ says material did not reach creek"
+        },
+        {
+          "id": "n216",
+          "name": "Bergen Record",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdm1yRHFHNHdKVnl2a3lpZ0FxMlJicFE0QXpkcUlmdUstVWxTV29oZ00ydlI1VVFRcEpNQTIwUjA3YjNtQ0FhNTYySlhQOWwzemFQQkx2NTc5X0JlYk44bWRiemJrbVg5VjZ4OEJiOVNla2ZtOGdJUzdjZ1ZlZHpUWnRKbFozWnZlMUs4OG9UVEVQNU9aZ1ZOaEFISWVGOXVWcnpYTUt5ZmhMRWZvejA2WF9QZkFwa1I2ZU15VUkyd3pOTjBEZXc?oc=5",
+          "publishedAt": "2026-11-20T01:08:13.000Z",
+          "title": "Muslim Girl Founder Amani Al-Khatahtbeh Sues xAI Over Deepfakes"
+        },
+        {
+          "id": "n805",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdG5SWVVRUERNQ21Rd3NIMG1ROW1weU5qcC1RYnJBVnB1bDFXaHhjWTQySVY4LXV5cXBVZUwzZE9ZMjN5ZXZtZzRPRHBIdFdaZ3VLZE16aFNTTVhmckhmQVNMNERjT3lCWTNjOFVlYjBlVFpPSWJvcjFXZDRfQ3p5c2FiaFdvTm0xUV83VE5fRjA4c0Rwa2lVM3I5dWdrR3I2SVRNNTZOR0RKakJZNG4xQ051c2xsOVRQUUtxOWw5bw?oc=5",
+          "publishedAt": "2026-11-19T22:57:41.000Z",
+          "title": "Musk's SpaceXSI denies liability in UK lawmaker's lawsuit over Grok images"
+        },
+        {
+          "id": "n802",
+          "name": "Ars Technica",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPajZNUVBuSThVQmNIS1N4THJrUUZ3V3F4Y3lKWHBnSm9XbDB4VVFhYmxaNVRaUXpBVXk4NEd2eTMyTGd4R2UtMU8xc0M4WGZDaWxSMENXUGQ0TFRaYzRDbGxSaGMwbDRJTGRkd3h1WTI2MjdrdHpySG83R0o3ZVBIb056UG1yMTRpQkdPUlM3YkQ0b0V1REJUVFo5RXVLOWRDdEJuX3JkczVoZmVRbG1wdW9ZaGNnemM?oc=5",
+          "publishedAt": "2026-11-17T14:00:29.000Z",
+          "title": "Grok Bot took unapproved actions, ignored orders to stop, and then denied it"
+        }
+      ]
+    },
+    {
+      "company": "SpaceX (prev. xAI)",
+      "title": "SpaceX AI-chip debt sale reported at $32B; lenders wanted chips kept on Earth",
+      "brief": "Bloomberg reported a $32B sale of bonds tied to an Apollo-managed Nvidia-chip financing that SpaceX plans to lease, with yields above 8%. The FT says lenders wanted the chips restricted to Earth.",
+      "impact": "Lenders won't yet underwrite orbital compute, a hurdle for space data centers generally. Amodei calling SpaceX compute 'high quality' eases fears of an Anthropic exit, but SpaceX stock still fell with ANT.",
+      "action": "Ask SpaceX whether Anthropic's compute contract runs past Q2 2027 and how the lenders' on-Earth collateral limit changes its orbital-compute timeline.",
+      "sectorId": "space",
+      "confidence": "single-source",
+      "itemIds": [
+        "n179",
+        "n177",
+        "n402",
+        "n21",
+        "n114"
+      ],
+      "sources": [
+        {
+          "id": "n179",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/technology/spacex-ai-chip-debt-sale-raises-32-billion-report",
+          "publishedAt": "2026-11-20T04:31:12.000Z",
+          "title": "SpaceX AI-Chip Debt Sale Raises $32 Billion: Report"
+        },
+        {
+          "id": "n177",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/technology/spacex-lenders-sought-to-keep-ai-chips-on-earth-ft",
+          "publishedAt": "2026-11-20T12:48:29.000Z",
+          "title": "SpaceX Lenders Sought to Keep AI Chips on Earth: FT"
+        },
+        {
+          "id": "n402",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+          "publishedAt": "2026-11-20T17:40:01.000Z",
+          "title": "Chips can survive the space environment — can their financing?"
+        },
+        {
+          "id": "n21",
+          "name": "The Motley Fool",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPN3RkSDFHMVNKa1ZaMFVpOEQ4TDdSN184bUFiWElWOUM1bGtRYjlFX19fV0hDX0sxNzZvSXV0bEFTUEJXUnQwTk5RNEFibGNnU1hFZ2NBY2Z6ZDdGVEhQUU5LZlpZc2tHbkRfTlFtM18zbEFUQ1ktV0ZHb1paaXo3dXgxdktTUW16N0xZX0M0UjdYLUZtNnc?oc=5",
+          "publishedAt": "2026-11-20T15:57:23.000Z",
+          "title": "Why SpaceX Stock Dropped After the Anthropic IPO"
+        },
+        {
+          "id": "n114",
+          "name": "Wccftech",
+          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPV1NtaGR4aUVTSzVZM0E3OGZaVUVEZGJnNzVjYTJIWkZfYnhQUHJJZUpRWGRCSXl2R1NuclB1OG1waHh2dk96QjRoZjBXdXo5NU1Zb09oRXVKWjdxT0hXcmluVUs2NlZBaGRyM256YnZPR2RMLW53S3NrVm9yRlI3ek50anZVc1J4Nlg1aXdKbzJjY1Q4Qk5QcG81V3ZyRlNRcnJrZC1MVHNUMlJHZGhER2RkVGpoenAyMVZDNnUxOVBsa09QdzJaMFlEVmo5SHRVUEJmLW9GVV9ldE9Jc09DNlZHb0wxY3F1TmlaU3VFakYwaWt3dDQ4eFl2eENWeUhPQVNvYdIBigJBVV95cUxNcGlPZ1JzeF8tazNyWC1OOXdKM3luZWwtTmtfRTEyVG9CWm5oeXpVejV5Y1psZFJmRW9jakg4aU9RQnAyY3d3a251RnhSVGpEdjNEcVAtQThFUkh4U3RvRnBzYlZ3b2lsTmFZdWxFMVZaTUxPV2U0eG9mUmNxODRKTHdvb3FsZ25YemFLZUFfR1ZmUVJBLUw1TllrZFUyQUpVV0RfV2R3eHBlZ3JuWXZyNWR2ZGI4NTdfOGpObzBFcXZqT0Z5anJhN3RSYXdxekhSUTl5OUlRWjFXZWRYLTlxLURZTkhENm5SamNubXVHQllsNXY3WlNzaUhpQnJFR1V3RFJCZEk4dDBHUQ?oc=5",
+          "publishedAt": "2026-11-20T13:21:23.000Z",
+          "title": "Anthropic CEO Dario Amodei Says SpaceX Compute Is “High Quality” And Anthropic Is Enjoying Working With SpaceX, Casting Doubt On Shock Q2 2027 Exit Reports"
+        }
+      ]
+    },
+    {
+      "company": "Anduril",
+      "title": "Anduril and HD Hyundai launch 600-ton ASV Alpha; Israel anti-drone bid reported",
+      "brief": "HD Hyundai and Anduril launched the 600-ton ASV Alpha on Nov. 16, and the Air Force awarded Anduril a counter-air missile launcher prototype. Anduril also joined the race to supply Israel with anti-drone defenses.",
+      "impact": "Hull production at a major shipyard, plus Air Force and Israeli work, shows Anduril scaling across maritime, air defense and exports instead of leaning on one program.",
+      "action": "Ask Anduril how many ASV Alpha hulls HD Hyundai can build in 2027 and whether the Israel counter-drone bid is in its plan; request answers by next week.",
+      "sectorId": "defense",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n94",
+        "n95",
+        "n96",
+        "n729",
+        "n732"
+      ],
+      "sources": [
+        {
+          "id": "n94",
+          "name": "Naval News",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMldoMWNVVF9sU2hwQkMxMlBYc2Z2TzFHTEs5a2VFRTIxOS16RlM3OWIyQ1NLdTE4SmhNQjBpdlhZXzRvdXljVndHWUtMQVF3aFlGX2hmTWVYSndMdjlnczVjRGt1X003YlViNkRYeE9rTDF2amVfNnE2LXNoRXdINDNxc1FJUHFjLVNuMTh3?oc=5",
+          "publishedAt": "2026-11-16T09:12:24.000Z",
+          "title": "HD HHI and Anduril Launch 600-Ton Autonomous Surface Vessel ‘ASV Alpha’"
+        },
+        {
+          "id": "n95",
+          "name": "WorkBoat",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFB4aUtNaVpxdXAwUzRHdTJfYzY2MWRwVzlJbUtGamxWTjk5Sy1pWFAwX2U2WXluRzJRRUZDWF9RUXdjenBkX2FQLWZWVVFnc0kxU1dobE9OemNsMkJhcExERmU2T0ZocjBTOXQ1VjZnLW5uWWRReEg4?oc=5",
+          "publishedAt": "2026-11-16T19:25:53.000Z",
+          "title": "HD Hyundai, Anduril launch autonomous vessel"
+        },
+        {
+          "id": "n96",
+          "name": "Naval Technology",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9PSm05ZVdkbzVrZUdrelktWEJ6SFdublR0RU5hTE9pbXBmTnFCUnMtNnA2cy1yd2VPejJTa0laTnJMWUdNN29VVEpGakFnNHdTM2NpUFJZU0NmWXR1b3FnRDVSaV9aOFF6czZSNjB3?oc=5",
+          "publishedAt": "2026-11-16T16:57:38.000Z",
+          "title": "HD Hyundai and Anduril launch 600t autonomous surface vessel"
+        },
+        {
+          "id": "n729",
+          "name": "GovCon Wire",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUkQ3VzRqa3VLTXl1S3kwcVE1V3NFVDBWWHUyc0dTcUY4akNCcnk2UGlTLVZobDNCX3dPVmtGV0owTDdVbldRSmgwdW95NW1UZUxqR3JZNXgxSEVuRFJUMmM3VDFqOHR5RFEtVW15ZXdseTFwS0lBejdnbEdTeG80Yk5mMUJwdnAtNHRnUUtjeXJDQ01helI4?oc=5",
+          "publishedAt": "2026-11-16T16:57:21.000Z",
+          "title": "Air Force Awards Anduril Prototype Contract for Counter-Air Missile Launcher"
+        },
+        {
+          "id": "n732",
+          "name": "CTech",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE54X3Nza25MZTlzUkVKR19MVDdpT21tSXcxZEdVdElhaWJscWtSLVU5RENYdWNfcURXc2VZdVB3T1F5dWV5SXZfT3VhaEl3dm5pSXRlcTNnZTA5T0ljbklZOVRSam5pdVU?oc=5",
+          "publishedAt": "2026-11-19T07:34:00.000Z",
+          "title": "Anduril joins race to supply Israel with defenses against explosive drones"
+        }
+      ]
+    },
+    {
+      "company": "Perplexity",
+      "title": "Perplexity says it hit a $1B run rate and launches Orchestrator API",
+      "brief": "Perplexity says it reached a $1 billion revenue run rate, per its CEO's remarks, a company claim. It launched an Orchestrator API covering 45+ models and a Multiagent tool to coordinate frontier models.",
+      "impact": "The API makes Perplexity routing infrastructure for agents, not just a search app. The run rate helps its pricing, but the Anthropic IPO fade makes any round priced off AI multiples harder.",
+      "action": "Ask Perplexity whether the NVIDIA round still holds at its expected price after the ANT fade, and what share of the $1B run rate comes from the API.",
+      "sectorId": "ai",
+      "confidence": "company-claim",
+      "itemIds": [
+        "n97",
+        "n770",
+        "n200",
+        "n202",
+        "n204"
+      ],
+      "sources": [
+        {
+          "id": "n97",
+          "name": "BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZaXp2ZGxocGRxWXRRTG5wYy1rSExCejZaVXhYa1dFUDdacUUwdUdVUmR1TE12a0xuMDAzZ21oNGtGNml0N3RUX1NWbExXbWgxYTJyX1hlTHFuamg4Umlvbmk5XzJMRmI4d0w4SVhFRTQ5ZVBPUlE?oc=5",
+          "publishedAt": "2026-11-18T12:55:00.000Z",
+          "title": "Perplexity Reaches $1 Billion Run Rate as Anthropic IPO Nears Record Pricing"
+        },
+        {
+          "id": "n770",
+          "name": "NDTV",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeXNDcGg5OFNEeF9QdFk1ZTlfNm9TT1NoY202a21Zekl3S2RGZjB6ZUVtbkFaTjhKUzlQR0FsczhvaURLSTNVaWV2SFFKa1JEWm4tbnBjVXpHdTY5c2ZIazk5dW41MEw0enRPUmxwbEFDNXB0Z3I4Z0ZHSUM0cERoSkpuMkRUVXRVNGFTN2o1NkcyanFEVkZoVzZCb1p0bnRzMi1VQkE2NW5PSHJRcURzcTZYbktRMWZyR2VhQTBuMjBMMnFVdzRsU1dZWHJLUdIB1gFBVV95cUxPTXZjVVdNcVZKbHhDSDFoZ3BZQlcxcVdhYmJoWDNQa2s1aGhOV0FKeVNldVl1cjZEZlRzQ1JqY2sxTldLRXp3NURud2JvZzNSS0NQVTBWdmk1XzQtZGZ2N0tlSVo0TzlxdTU0MnBSTnp4QVVUNnBRZkRDWXRKQm56cW1ZOEQ3cEtfQkpYLW1uNk02a3MxTjRfWlFJMS1XVWg1SDFEU0U2bElxcGNlbFp6dkdZZDgzdzV2SlRQanp1SE5KbnpMeTMzT1pBdGlSZVBlLWtzWFpB?oc=5",
+          "publishedAt": "2026-11-18T04:14:36.000Z",
+          "title": "Perplexity CEO Aravind Srinivas Says \"Don't Talk Finances\" As Company Hits $1 Billion Revenue"
+        },
+        {
+          "id": "n200",
+          "name": "Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBMNlFFeXlzSXJfV3hvSWxyazI5eFFXb0diaXBzSzhBN1BRTk11a205TnRDSkdFdXlqVzNXZktmd0lkY3RFSncwNm9jekJrT0NfRWs4eHQxSmFpdXgtRkpjV18waEt4V2NqWjN6a0xwVzJrdw?oc=5",
+          "publishedAt": "2026-11-17T20:18:20.000Z",
+          "title": "Perplexity launches Orchestrator API for flexible model selection"
+        },
+        {
+          "id": "n202",
+          "name": "explainx.ai",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVS04QXRtZnIyU08xS2xmZ2dDYWRGNE1GMmI1VnZxQm50QjB5SmRQUm1xY1F4NWdNdHBWTHBDa3dlWnE5STZSR2E4YUxPaDhsbmJ5Y2ZDUWRSTlJET2hIMVlPLS1YN0N2MDhjeVFCSFVVdThNX185b2tsRUtFOEV0THRR?oc=5",
+          "publishedAt": "2026-11-17T00:00:00.000Z",
+          "title": "Perplexity Orchestrator API — 45+ Models (Nov 17)"
+        },
+        {
+          "id": "n204",
+          "name": "Unite.AI",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONUp6dzU2YnBWc2pZbzJjcHY3Si1FaHVyTUdUbFRYd2xVcHB1djVWaUpHR3dhQTRDcl8wWm1jTWdxN19uMDNpZFpvSVdscjZkbkVUdDhiMHl5ZVd6Z2Y2S2NrbU5MUXdtdlJGb25UemhuRjlqRGxOU2dSb3pvSVZPYUFLX2EtWnUzN29rNHpn?oc=5",
+          "publishedAt": "2026-11-17T17:29:02.000Z",
+          "title": "Perplexity Launches Multiagent to Coordinate Frontier AI Models"
+        }
+      ]
+    },
+    {
+      "company": "MetaKeep / Supercritical (RZLV)",
+      "title": "Rezolve AI starts with a Buy at HC Wainwright, but shares fall 5%",
+      "brief": "HC Wainwright assumed coverage of Rezolve AI at Buy with a $6 price target. The stock fell 5% despite stronger customer online sales, per StocksToTrade.",
+      "impact": "Analyst support did not hold the price in a tech rout. OpenAI's reported move into agentic payments validates Rezolve's market but adds a giant rival.",
+      "action": "Ask Rezolve's CEO how OpenAI's agentic-payments entry changes its retailer pipeline; decide whether to sell into analyst-driven strength once certificates are reissued.",
+      "sectorId": "web3",
+      "confidence": "single-source",
+      "itemIds": [
+        "n750",
+        "n752",
+        "n751"
+      ],
+      "sources": [
+        {
+          "id": "n750",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOc3BHaVJmOXQtQ2tmaDNhZ0ZiX2YyOG9IOTViUUlZWU5MTFZ4a2huY2FVVVV1aUg4OXBEblY0UWVOaFh2NVpZdVE2SE9uRHc4ZVk3OWZRTUI5VDZUTzhENV9aaGlZeHRyUHFqNFBQQ1NFMXRCeXE2cGhzdzFnc0ZZdVplT0toMzV6MUtYR2l6ekluZUhZSkhzVFpxMWpENnVTODJlZkJfVUJHblBYQVRnRXBQTnVuWmdqS2xLZHBlalNtT3V1VFUwYzFZRG5ZYTBKN19VU0dmR012MjNzYmt2cW00eWpjaGlvby1xdzgzYw?oc=5",
+          "publishedAt": "2026-11-17T13:06:06.000Z",
+          "title": "HC Wainwright & Co. assumes coverage of Rezolve AI at Buy, sets price target at $6"
+        },
+        {
+          "id": "n752",
+          "name": "StocksToTrade",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA2X3QzSUk4ZUxoamIyNFNKTTR0bHpoeE9KWjdoR2tXemRsM2gwc0ZMYXM1ZVV0VFdlWlI3UkFDVW5nRGhSbEJZZWRadEdEcjVmM2U1amlVRFg1M0tudXZsYUVhcDhtTGZrOWdsRW1ERXVMVlJtZ1E?oc=5",
+          "publishedAt": "2026-11-20T09:15:00.000Z",
+          "title": "Rezolve AI Falls 5% Despite Stronger Customer Online Sales"
+        },
+        {
+          "id": "n751",
+          "name": "Moomoo",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbkhSb0xLRTFlajRFWDZSZFByMEs5SmJqb1NuRFo5c0J4U01VeUZIVzR3bzNTd3hQOE1MUHFSWWVDdWtYQ1Z2LXRVTUxwekNqQTktN0RSYkIydlk1S0J4MW5pUkhrN3dEemRMdmJqN3Z3STI2ak5wTFVLZW95TFo5T1hGYldaSmRCb2gzUzAxZV94ek1aTmJRWWhMMU5SOWwtWXE0SWMxdkJpbThSbEVyTGVNUzBwUDZvVkhF?oc=5",
+          "publishedAt": "2026-11-16T00:32:32.000Z",
+          "title": "OPENAI ENTERS AGENTIC PAYMENTS: A MASSIVE VALIDATION OF REZOLVE AI'S MARKET OPPORTUNITY"
+        }
+      ]
+    }
+  ],
+  "portfolioQuiet": "",
+  "thesis": [
+    {
+      "thesisId": "spiritual-warfare",
+      "verdict": "confirms",
+      "title": "US-approved chip licences for China sit undelivered as Chinese firms brace for curbs",
+      "brief": "Mast says the US cleared 879,868 Nvidia H200 and AMD MI325X chips for Chinese firms across 21 applications as of May, all approved but not yet delivered. Chinese tech firms now brace for new US curbs.",
+      "impact": "Chip access is set by licences and executive decisions, not markets, which is the policy-shock regime we described. It supports a premium on assets no state can seize.",
+      "confidence": "single-source",
+      "itemIds": [
+        "n142",
+        "n180"
+      ],
+      "sources": [
+        {
+          "id": "n142",
+          "name": "The Arkansas Democrat-Gazette",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMXV4WXVxLXJZUE5NTHMyUlNuZXFNQ0l0SU96d080NDhjQ3ZvcjA2OHBLbENnMmRCWjRjbkJndFFnZlVyelhkZ0UteXprYXlDR3FudjhBMDBnYUFrbUdsaDlHaEZHdlEyOHRtaDJ2MWJJUEFfZnhiXzdDVGVyVk5WTzVkQjhsOHBzTjJrT1YxYmoyR3Z2UFlrU0c0aXF2Q3c?oc=5",
+          "publishedAt": "2026-11-20T07:58:00.000Z",
+          "title": "Chinese tech firms brace for US curbs on AI chips"
+        },
+        {
+          "id": "n180",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/mast-says-us-cleared-879-868-ai-chips-for-chinese-firms",
+          "publishedAt": "2026-11-19T20:57:46.000Z",
+          "title": "Mast Says US Cleared 879,868 AI Chips for Chinese Firms"
+        }
+      ]
+    },
+    {
+      "thesisId": "populist-1873",
+      "verdict": "contradicts",
+      "title": "Fed hike looms and bitcoin sinks below $58,000, against our debasement call",
+      "brief": "Markets brace for another Fed hike; Bessent urged a smaller one, citing an energy shock. Bitcoin fell below $58,000, down 31.8% from Oct. 21, as Treasuries rallied on haven demand.",
+      "impact": "Rising rates and a bid for Treasuries and cash are the opposite of 'money too loose', and bitcoin is trading as a risk asset. The 2027 sovereign-adoption call is untested, but near-term evidence runs against us.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n82",
+        "n380",
+        "n384",
+        "n466"
+      ],
+      "sources": [
+        {
+          "id": "n82",
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQ1N1UEpzQUo3X0NFTW1tdEhiWlRtQzFzVEdCa1R4V1hJbjc4VUo4cWxZdHZEdHVUT0JZWkIyMHdfSThfVUNPeFRKanpxTndYTnA2d1BwN0hyVWtCamhiYVRMYW1qTWxNMDkwa1ZMcF9pY0xWVHBxUDBrTWItX2trcTZxOHZiOWhGVVBSLWZNREh0QVJBRFhONThHRUs0WHhpNmZhTlFlSEJoaWRzU04xRzJKS0ZCYjFvSkZ0dQ?oc=5",
+          "publishedAt": "2026-11-20T10:00:02.000Z",
+          "title": "A ‘Shock’ Rate Hike by the Fed? In This Economy?"
+        },
+        {
+          "id": "n380",
+          "name": "US News Money",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNMzlud0RHdjl3dGxhT1I5ZGp2dWo1ekhsMDgyU3pEOXBTLXhQQmEwZ0xlMWZzdG8tallOTlFSVVp2ZmI5X2dzN0FrRF96NkJ6dmt0VnZFWVFWNWpqQVRJQlJ2enR3U1JqakJUNnNKdEI0aTU1dTBKZU1iRFBXenBPUHV2eXJ4TUVmVm90YTFFY3BKQjFNeWRHQmlubVd2OEEtWXFtakZQY3RsVkVLc2FTUkxOSzdSck0?oc=5",
+          "publishedAt": "2026-11-20T16:46:31.000Z",
+          "title": "Bessent Advocates Lower Fed Rate Hike, Cites Energy Shock"
+        },
+        {
+          "id": "n384",
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdVdKYnk3ZUtXTER3VDhFcTRqcHdrbWZhS3BYY2hEQ1JFRFZ0VEZoNEtxS1ZuM0h0Zmhod0E0VS1qWWhPaHBXRl83bVRNZEpvMzdXQlhXNzBlRndqdFdGWk84VlNPcHJQSzVKLW0xY3AzbHFGUFVkLWdBanhvdUJSWG42T1cwRW9tMzFMR0pnbF83emtmRkNPVTIzMWxzVG4tc3Vfb3NEWmd2ZWZaaExz?oc=5",
+          "publishedAt": "2026-11-20T17:37:29.000Z",
+          "title": "Treasuries Eye Longest Rally in Five Months on Haven Demand"
+        },
+        {
+          "id": "n466",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/markets/bitcoin-falls-below-58-000-but-holds-above-june-low",
+          "publishedAt": "2026-11-20T19:11:36.000Z",
+          "title": "Bitcoin Falls Below $58,000 but Holds Above June Low"
+        }
+      ]
+    },
+    {
+      "thesisId": "atomic-turn",
+      "verdict": "mixed",
+      "title": "Hormuz attacks escalate, but oil falls on supply as New York maps 5 GW of nuclear",
+      "brief": "Iran's attacks on ships in the Strait of Hormuz escalated and another tanker was hit, while oil fell on robust supply. On Nov. 18 Gov. Hochul unveiled a plan to add 5 GW of new nuclear.",
+      "impact": "The nuclear push is arriving through state policy, which supports the shift. Crude falling despite the attacks weakens the 'system in crisis' framing.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n18",
+        "n395",
+        "n157",
+        "n661"
+      ],
+      "sources": [
+        {
+          "id": "n18",
+          "name": "NPR",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPUGJYWnJBeEFvZjlDcUZJUWEyTWNNY3RJMjhIc3dUcDJPVm1zbU5uLWtKOTg4T1JmNHA4d2RhS2tZRUZVVXdMUm4yeWdlSVdNbF9NOHU5WVZNLWk2ZC05SUVYMl9zM2szZ2FOOUxKRnVIeV9aWG93VXExcEVxcktBUExTYjZmOFVCN2RZVVB4aXRmbVJRRWZreE9KUXJDVTVlZmc?oc=5",
+          "publishedAt": "2026-11-19T09:46:24.000Z",
+          "title": "Iran's attacks on ships in the Strait of Hormuz escalate"
+        },
+        {
+          "id": "n395",
+          "name": "gCaptain",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQY3Y4QmhueUxFTFFIV08zd0tZRXF0cXc3dWlMcVU0engwUFVTSW9KOV8xdUFQRUtROHgzZ0JLeHl3eWFhaE1rSTJENmdkVlFWcHFfaHlUSTNBUXozcU4xckV0S2x0dlcwbUhkYWUxdGgzLXpQWmp5OTliUnNoOEJrTWJ0NlZzSXZrV2p6ZkJtbG40NlFIWGVTZUNncm8?oc=5",
+          "publishedAt": "2026-11-20T17:43:53.000Z",
+          "title": "Another Tanker Hit in Strait of Hormuz as Maritime Attacks Surge Worldwide"
+        },
+        {
+          "id": "n157",
+          "name": "Transport Topics",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5HUUFXQ0V2a3U4S01IeFJFbmFEWThjOUhCWFhTaGRjWnRTYW5jYW5ENnhURDdLcHVyRHlGQTJ1NTQzSXA5YkRXUDZSdjZVZGxZWHRtMEs4ck05UDZabVRjU1RkZ2tqQms?oc=5",
+          "publishedAt": "2026-11-20T13:40:45.000Z",
+          "title": "Oil prices drop on robust supply"
+        },
+        {
+          "id": "n661",
+          "name": "Nuclear Newswire (ANS)",
+          "url": "https://www.ans.org/news/2026-11-20/article-8595/new-yorks-5gw-nuclear-master-plan/",
+          "publishedAt": "2026-11-20T15:29:15.000Z",
+          "title": "New York’s 5-GW nuclear master plan"
+        }
+      ]
+    }
+  ],
+  "regulation": [
+    {
+      "title": "MoonPay applies for a national trust bank charter to issue stablecoins",
+      "brief": "MoonPay filed with the OCC for a national trust bank in Miami Beach to issue and redeem stablecoins, hold crypto and manage reserves. The application is pending.",
+      "impact": "MoonPay joins a rush of crypto firms seeking federal trust charters. That validates Erebor's route but narrows its edge, and political scrutiny of every applicant is growing.",
+      "next": "OCC review under way; no decision date reported",
+      "action": "Ask Erebor whether MoonPay's bid changes its stablecoin and custody timeline, and whether it would court MoonPay as a client.",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "topRank": 3,
+      "itemIds": [
+        "n2",
+        "n4",
+        "n5",
+        "n7",
+        "n8",
+        "n9",
+        "n10",
+        "n43",
+        "n44"
+      ],
+      "sources": [
+        {
+          "id": "n2",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/converge/tradfi-and-fintech/moonpay-seeks-us-trust-bank-for-custody-stablecoins",
+          "publishedAt": "2026-11-19T16:46:09.000Z",
+          "title": "MoonPay Seeks US Trust Bank for Custody, Stablecoins"
+        },
+        {
+          "id": "n4",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/business/2026-11-20-moonpay-applies-occ-national-bank-charter-444198",
+          "publishedAt": "2026-11-20T10:39:09.000Z",
+          "title": "MoonPay applies for national trust bank charter to expand stablecoin services"
+        },
+        {
+          "id": "n5",
+          "name": "Decrypt",
+          "url": "https://decrypt.co/383688/moonpay-applies-for-national-trust-bank-charter-to-grow-custody-and-stablecoin-business",
+          "publishedAt": "2026-11-20T12:10:14.000Z",
+          "title": "MoonPay Applies for National Trust Bank Charter to Grow Custody and Stablecoin Business"
+        },
+        {
+          "id": "n7",
+          "name": "CryptoRank",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYlJTakZTMUtvb0pPZ0VEVTFqNkh6ZUFsenp5TzdCQTdXZFFfX2hmd3BHcmhONXpqeFQ1ak9kOXlIQjdFTW55LWJNN1R5bWwwTjN1X1d3Z25ZbHhEbmc3SENsM3cyUnJaWkxxeUM5Y3NDcmFwT0lfVHdxYzdnODhwV3BEOA?oc=5",
+          "publishedAt": "2026-11-20T14:53:21.000Z",
+          "title": "MoonPay Files With OCC for National Trust Bank in Miami Beach"
+        },
+        {
+          "id": "n8",
+          "name": "BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE10dEFZUHA0WjBwWUJsZjhVdnRSM1FDMFBLMUUzajZRQzFBa2ZDLVYzaXI5dnNCYjhvQnhWTnlUWkVNekszQndBOU9LTm9HLTVvREU2bkhOUDBSUVFzbnIwUjIyX0JJc2UyN1o5MXpPekEwNGUtanc?oc=5",
+          "publishedAt": "2026-11-20T06:36:00.000Z",
+          "title": "MoonPay Files with US OCC for National Trust Bank Charter to Issue and Manage Stablecoins"
+        },
+        {
+          "id": "n9",
+          "name": "MLQ.ai",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdlBMa1JWSWtmUVdueVcyVXBiSkR4NHV3QThkQ3ZVdXZiYTRVQmt5STBYLXJhNGxTTC1jVmswZWNKMDQxcE5YdFpqZzB3N1g3OGUydk42ZXFuX3ppS21mZ1p3OUlheUFiaDhpNVlRcGRpSE9ZQ3dsTTM3MnhRQVZOSkZ0T013TGdEZjllOUIxSi1feGNCeFJkcmR6NE5hYUpMcEpEeV9YeXJsTi0xZ1hvb0NIaHJNT1FGbHc?oc=5",
+          "publishedAt": "2026-11-19T21:53:37.000Z",
+          "title": "MoonPay applies to the OCC for a national trust bank charter to issue stablecoins and hold crypto"
+        },
+        {
+          "id": "n10",
+          "name": "디지털투데이",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMmpnMllPN2EzaFFwZ1BVaVVIUnBZQzkxVGIyeHJFTlhyR0E2bGhQaWFwbDBiWHV4SUo1M2V4dVVUbTYzRGgwMTRYS2xjUHFLcVR3enRSUEpjd2pTTWduTXBTdUdWazJ5RUwwbzRrMUJQa1Z6ZEpEbzZMc0xGVlJxN1JmZUtoRU9OWGd5cFJjbjVzQzZTWGlDWTBpQ2RrWHVObmJzTlo4VVJCY3R2VUVOQnAwYUIxME5CR1A5NEE5eVVnd1I0?oc=5",
+          "publishedAt": "2026-11-20T00:20:07.000Z",
+          "title": "MoonPay applies for U.S. national trust bank charter to pursue stablecoin issuance"
+        },
+        {
+          "id": "n43",
+          "name": "NewsCord",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTy11RVRZNXpLZUZWd1JXVkFlVFZMUlo3eVlNdF9udGJKNUllMHNPMEV3aVdsOGlJdjJ4bEVzc2FJS09RVmt0aTVReHZ6WGpmVEFLWU9rcjlIbzhJc1lmQXVWRnZseFFaUEUyYXBJR3R5SzZwbFR4X0hpR1ZhdlBqX0pjYlJuM2VPTDY1NzMzaUlMNV85NTVkVEY3TEswYVAtNDUtMlJHQkZ1QVBTMTVpMjF0WjhycWRJeDNmYUg4THhNcFpyZVViLVFONjJoU2U5S3kwaHVLdEhKRnNlLVNnOHRCdjM?oc=5",
+          "publishedAt": "2026-11-19T23:24:19.000Z",
+          "title": "MoonPay Files With OCC to Create MoonPay National Trust Bank for Stablecoins: 6 outlets compared"
+        },
+        {
+          "id": "n44",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdnd2bTZlengtVkNiUmtIQm1tZm9WRWJRSHl2NF90Y051UWtnOEc3aXpQM2ZNSk9CN19EQ0xSSVRhNmxDTGJOVENXRjM4UEJBQVdlMmR2djFOd2lGN2l1Zk1NRmtTMDhzNDNDNGFkVDVucjRZcWhjaEZJM0toeG52Qm9KR3VLWl9fVHJyQ1pPbWRGekJWRXNpWHdja1RUcmNldWFlWW1uZlFEMGN0NlIydUlhejFDb0NJVjRhUmU0S3VpSkE?oc=5",
+          "publishedAt": "2026-11-19T21:01:42.000Z",
+          "title": "MoonPay seeks US bank charter for stablecoin, custody services"
+        }
+      ],
+      "actionWho": "Erebor Bank"
+    },
+    {
+      "title": "CFTC says Hyperliquid and other onchain venues get no special rules",
+      "brief": "CFTC Chair Michael Selig said onchain exchanges can offer derivatives to US traders if they obtain the required licences or work with a registered exchange.",
+      "impact": "No carve-out for DeFi perps: US access runs through licences or partnerships, which favors compliant venues over offshore-style onchain trading.",
+      "next": "Venues choose a licence or registered-exchange route; no deadline",
+      "sectorId": "defi",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n93",
+        "n165",
+        "n134"
+      ],
+      "sources": [
+        {
+          "id": "n93",
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/11/20/cftc-tells-hyperliquid-and-crypto-rivals-no-special-rules-for-onchain-trading",
+          "publishedAt": "2026-11-20T10:02:03.000Z",
+          "title": "No special rules for Hyperliquid or other onchain trading platforms, CFTC says"
+        },
+        {
+          "id": "n165",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/regulation/2026-11-19-cftc-chair-selig-hyperliquid-onchain-venues-the-us-444106",
+          "publishedAt": "2026-11-19T18:04:15.000Z",
+          "title": "CFTC Chair Selig outlines how Hyperliquid and other onchain venues could enter the US"
+        },
+        {
+          "id": "n134",
+          "name": "Crypto News",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1pN1FaMlFhclpsRXRzdkhIT0h4d2VJN012WkxUd0EteVF5YkVCM2hLa3N6RG9aR0prTUo1WFZLTVM5QUFCdzNoYmJNMjVWSktpdTd6dUtUUzJhclR1SzhzTHZkRE9CX3dRS0QwNE03V0RYUFlBeHc?oc=5",
+          "publishedAt": "2026-11-20T12:07:19.000Z",
+          "title": "CFTC chair outlines two paths for Hyperliquid’s US entry but rules out special exemptions"
+        }
+      ]
+    },
+    {
+      "title": "Senate passes Death Bets Act banning prediction-market contracts on war and death",
+      "brief": "Sen. Adam Schiff's bill bars US-regulated exchanges from listing contracts tied to war, terrorism, assassination or death. It now heads to the House.",
+      "impact": "A narrow carve-out rather than a crackdown: Coinbase backs a CFTC proposal to treat event contracts as swaps, so mainstream products keep a path.",
+      "next": "House takes it up next; no vote date set",
+      "sectorId": "defi",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n85",
+        "n87",
+        "n92"
+      ],
+      "sources": [
+        {
+          "id": "n85",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/regulation/2026-11-20-senate-death-bets-act-444200",
+          "publishedAt": "2026-11-20T10:09:25.000Z",
+          "title": "Senate passes ‘Death Bets Act’ to ban prediction market contracts tied to death and war"
+        },
+        {
+          "id": "n87",
+          "name": "Decrypt",
+          "url": "https://decrypt.co/383700/senate-passes-bill-banning-prediction-market-bets-on-war-terrorism-and-death",
+          "publishedAt": "2026-11-20T15:42:51.000Z",
+          "title": "Senate Passes Bill Banning Prediction Market Bets on War, Terrorism and Death"
+        },
+        {
+          "id": "n92",
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/11/20/u-s-senated-passes-bill-to-ban-prediction-market-best-on-war-and-death",
+          "publishedAt": "2026-11-20T14:25:57.000Z",
+          "title": "U.S. Senate passes bill to ban prediction market bets on war and death"
+        }
+      ]
+    }
+  ],
+  "tech": [
+    {
+      "title": "Anthropic raises $81B in record IPO, then gives back most of its debut pop",
+      "brief": "Anthropic raised $81.3B at $83 a share, opened near $111 on Nov. 19 and traded at $83.81 premarket on Nov. 20, barely above the offer price.",
+      "impact": "The first public price check on a frontier lab was a fast fade, a warning that late-stage AI valuations need revenue proof. Expect tougher pricing for Perplexity, Super Protocol and other AI rounds.",
+      "action": "Ask Super Protocol whether its US-entity term sheet valuation is being reset after the ANT fade, and review AI marks ahead of the next round.",
+      "sectorId": "ai",
+      "confidence": "confirmed",
+      "topRank": 1,
+      "itemIds": [
+        "n41",
+        "n49",
+        "n11",
+        "n6",
+        "n100"
+      ],
+      "sources": [
+        {
+          "id": "n41",
+          "name": "The Paypers",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVkRUUjdldWZZYUUyYTk5bXNXeXZVWGtfTVBNS2hEQXdGeHhGcnNYZjd6dVgteURrN1FQcmxwN3hUV0JxbklGZ1F1VzBzQlNfYUcwNnlyS1BJczVINGNacDVROXBNb284aWo2c0pScW5vaGRkTmRqem1tdmhka2dsOHlWeV96NWFFZEZPZ1d0amxhSzRPZ2lUaDBvdElaRHdCOWJEaHIxbzI?oc=5",
+          "publishedAt": "2026-11-20T08:46:57.000Z",
+          "title": "Anthropic raises USD 81.3 bln in Nasdaq IPO"
+        },
+        {
+          "id": "n49",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
+          "publishedAt": "2026-11-19T16:59:23.000Z",
+          "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price"
+        },
+        {
+          "id": "n11",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/anthropic-shares-jump-35-in-their-nasdaq-trading-debut",
+          "publishedAt": "2026-11-19T18:06:30.000Z",
+          "title": "Anthropic Shares Jump 35% in Their Nasdaq Trading Debut"
+        },
+        {
+          "id": "n6",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/anthropic-nears-ipo-price-after-27-fall-from-high",
+          "publishedAt": "2026-11-20T13:49:29.000Z",
+          "title": "Anthropic Nears IPO Price After 27% Fall From High"
+        },
+        {
+          "id": "n100",
+          "name": "Anadolu Ajansı",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWXozRDB4UnBvcFNUQk94Tm5ONWRrX2NwUnpBNGhjOWpDR2NsLUJHaHFDREFidHMxWm1sVVBMYW5BajM1RUpIdlFkNHhEVUNNSXQwdkZXWlJlX21fWWx3WC1aYWtlUW5CSzNpX2hsNEptMnJpd1VYY0Uxb21aTHhvNWdEb3U2cmhZR3c5OUpXMUF1dTlVYk1iN2dlQnRsNE91Y3hYUE55STNpZUxTODdUbHkwUFY?oc=5",
+          "publishedAt": "2026-11-20T14:53:11.000Z",
+          "title": "Anthropic shares slide around 10% a day after record IPO amid tech decline"
+        }
+      ],
+      "actionWho": "Super Protocol"
+    },
+    {
+      "title": "Google picks Blue Origin's New Glenn to launch AI satellites in 2029",
+      "brief": "Google selected Blue Origin's New Glenn to launch its AI computing satellites from Florida in 2029, Reuters reported.",
+      "impact": "Orbital compute now has a booked launch from a hyperscaler, and it went to SpaceX's main rival. That is a competitive signal for SpaceX's own space data-center plans.",
+      "sectorId": "space",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n28",
+        "n29",
+        "n30",
+        "n31",
+        "n32",
+        "n33"
+      ],
+      "sources": [
+        {
+          "id": "n28",
+          "name": "Florida Today",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQOGZYNmx0eW9KeUZXNndNMXZDd2VrMlA0aUx5VnJoNWNuM18tWTI4bG92dmZYSXRCWUd5U1pBX1MxRnZXWEowZjVkbU95dUJEcWV4cDJmd3FZajFvV205TEQxblBSNENFMWNTTVhsQi0za1ViUWVvWHpyWWIyVVRMTkxST2xoMEI4MkpJUHBYSFNQWTh1UUpXT1hQYl9PekZrdWVsTWg1cDdITlVzUFJBZlhGd3NzSWhUb3BJSw?oc=5",
+          "publishedAt": "2026-11-20T18:48:00.000Z",
+          "title": "Google picks Blue Origin’s New Glenn to launch AI satellites from Florida"
+        },
+        {
+          "id": "n29",
+          "name": "SatellitePro ME",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdjNwbFM0TjBnWmRGUzFLM0t5WHNHUkFvQVVQTEp3d0J5b0NFd0Jib3JXV3VZWjdpenZhMTJCc0pFMUxxc3dDNnpyZHJ1OVVBV25PRWRFb1M2S2RsZzFMYkNPX2NTa2pQZkZXZnk3NXFKUFZUY19kVWRlUHBMOEFUbUNFQlZqTktMZV9TUXA0NlJuYkZtVld3Vmg4STI?oc=5",
+          "publishedAt": "2026-11-20T04:38:53.000Z",
+          "title": "Google taps Blue Origin’s New Glenn for 2029 AI satellite launch"
+        },
+        {
+          "id": "n30",
+          "name": "SatNews Publishers",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaDk3NmV0XzVHRm1idUxwSkh1NDRnSUZLQWdhcnpPcTR1RUJOdmdlaFF4Y21LcWVpWkdpdEVNTVRsWENLeWtFUmJqWVhEN1d0SXpmaFJrRllkSkt3YTRpLVVZRTdkNGNWem10UzQxN1Zvc01Kd0JTVXNOVnFwYkwwU2lhdVpkNFdIdmtnYzhvU3lNMEN0RzlTTDZHNGxWSlZjTjNFRGpwZHE?oc=5",
+          "publishedAt": "2026-11-19T16:42:58.000Z",
+          "title": "Google Selects Blue Origin’s New Glenn Rocket for 2029 AI Satellite Launch"
+        },
+        {
+          "id": "n31",
+          "name": "www.trendingtopics.eu",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQlhseVR2YldrXzR1UGtIM24tb3pHQUQ3R0EwUlliTjR2ck5JdTQ1UWhXWklNU2F3a2hQQU5jQlRmaU91ZkJJTjlmOHY5M0x4R0tpSHJtT0dKTmloU2hEVk5oQm1oQnZLWnhVVlplWGl1SVdXc3VVbS04VXJJNXZQV3VqVQ?oc=5",
+          "publishedAt": "2026-11-20T07:22:24.000Z",
+          "title": "Google Books Blue Origin to Launch Its A.I. Data Centers Into Space"
+        },
+        {
+          "id": "n32",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNN3VqbnV1MzJhUTVfQzlfY2kyX2gzdk1FU0lyNU15dWhzVk40ZGNtRFlPaUFlS0hYeEhZQ0trUkdMUV9OQmIwZTE5aWliLVVYX0Faa2cxUUpjdWw2TFE5OTBCSnh6d3BqWnA0Znc1MV82SnpMdGZVQzRPXzVXcDV5X0hrckZ0TklGQlJmTTdiOFdob19wajZDT2dnUnlhNEZtVkhKMllQZ3R0U3VhOHdOQTl6WU5kRTNieHZqWVIyQlRERms?oc=5",
+          "publishedAt": "2026-11-19T14:22:37.000Z",
+          "title": "Google picks Bezos' Blue Origin to launch AI computing satellites in 2029"
+        },
+        {
+          "id": "n33",
+          "name": "Unite.AI",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPZkpHejExLXVHNFYySHBqclVMYlBobHVvQ3hDSmdia09iSDdWbUpkRExfSHZGSXA4d0N1X1VBazBLVUV4SjkxRnVGQzNmV2NETGhHWjlVTld6dlZlOE5wd29SUVpwTWstN25vZDRDaWFGR2FhRFhNVnd3VUo3bW9UanhJejRhb2lLVzkyUjdnMk1adw?oc=5",
+          "publishedAt": "2026-11-19T13:30:04.000Z",
+          "title": "Google Plans Orbital AI Satellite Launch on Blue Origin’s New Glenn"
+        }
+      ]
+    },
+    {
+      "title": "Bitcoin finance protocol Hashi goes live on Sui mainnet",
+      "brief": "Hashi is processing bitcoin deposits, with hBTC used for Fluid USDC loans and HoneyB vaults on Upshift. Anchorage's Porto offers institutional access; BitGo is expected in 2027.",
+      "impact": "Borrowing against bitcoin instead of selling it fits our seizure-resistant-asset view, and custodian access shows institutional appetite. Usage looks modest while prices fall.",
+      "sectorId": "defi",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n19",
+        "n26",
+        "n27",
+        "n46",
+        "n47",
+        "n52"
+      ],
+      "sources": [
+        {
+          "id": "n19",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/defi/2026-11-19-bitcoin-finance-protocol-hashi-goes-live-on-sui-mainnet-443608",
+          "publishedAt": "2026-11-19T14:00:00.000Z",
+          "title": "Bitcoin finance protocol Hashi goes live on Sui mainnet"
+        },
+        {
+          "id": "n26",
+          "name": "Cryptonews.net",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1hNmhjcG1YYmVMZmllZm92U2FOQlo0cE1lQjBNR0JKVGY3OWpTU0NZc0VkLUx6VFBDWWFUcFVMdkZhMVVjTWVJV0NmcURiYjhDWFllVA?oc=5",
+          "publishedAt": "2026-11-20T15:42:34.000Z",
+          "title": "Hashi Launches Bitcoin Finance on Sui"
+        },
+        {
+          "id": "n27",
+          "name": "Traders Union",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVHBwNDl0Z3V5OWhkaFlqdE80MTMtNm81cFVEMU9aaTJWVG8tQzhMRlBsUGsxZFVidjhBQlRKYzJ2a19EUGJZSUI4UjVtTTRwN1lpb2Z3NTJNaHNUbTlvUUFIcDJHd0hmTGo0TDJfS3dZS2lDa29FY3MtSFdZSHJuRjd1Y1pmYjExZklIeWFqam05VFNHbVEwczN3?oc=5",
+          "publishedAt": "2026-11-19T14:09:24.000Z",
+          "title": "Sui bitcoin finance protocol Hashi goes live on mainnet"
+        },
+        {
+          "id": "n46",
+          "name": "bloomingbit",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5WR1kzaFZlbFdKQndEdmNaWnRZXzNtOFBwS1ZWcWY1TWt6SjFRSTFINml5cWRHa1RPb2c3WmRZY1poNGxrWm9jaUlWSGRsRFpWVWV2Xw?oc=5",
+          "publishedAt": "2026-11-19T21:48:40.000Z",
+          "title": "Sui-Based Bitcoin Finance Protocol Hashi Launches Mainnet"
+        },
+        {
+          "id": "n47",
+          "name": "디지털투데이",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQX2tCT2VONFV4UG1aLVFHR1g5MklyNmxyV0lhYUJqbGhBTXdBX1RBbmxQd1V1VEhpcVZpRnJrYzQ3dlhqTTVrV3hGMFpDdVNSTEIyQkZOdzdraGRLWXdVZWc4dTRxZFdER3RsVzJqMWhFbjhISVNjT1JRc1Uzckp2b05jYmZSd2pzSEZrbDVKNV8yNW8xaHJEemJ2MjVhZw?oc=5",
+          "publishedAt": "2026-11-20T10:26:20.000Z",
+          "title": "Sui bitcoin finance protocol Hashi launches mainnet"
+        },
+        {
+          "id": "n52",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/defi/hashi-goes-live-on-sui-with-bitcoin-backed-lending",
+          "publishedAt": "2026-11-19T13:59:47.000Z",
+          "title": "Hashi Goes Live on Sui With Bitcoin-Backed Lending"
+        }
+      ]
+    }
+  ],
+  "deals": [
+    {
+      "kind": "round",
+      "sectorId": "money",
+      "firm": "Tether",
+      "text": "invested in SCRYPT, the Swiss stablecoin and trading platform, to scale institutional stablecoin infrastructure.",
+      "itemIds": [
+        "n12",
+        "n13",
+        "n14",
+        "n15",
+        "n16",
+        "n17"
+      ],
+      "sources": [
+        {
+          "id": "n12",
+          "name": "FF News",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTWhxT3hZS0I3OHhIbDl4RTBjSGlMRDc1a2ZRc2NSQm1RVE9hZGdlS3hoZUFIalJ4UUhLQXNHV1RJcktlYXU0Ql9fczRnRjhOMmVRVU9FdEpZeWRiVUFfQ3NtOGV5V1VZQ0pYSnNCenVoRGt6b24yTnlPeFFqcEZ0ZDlsd0FXTHBsZGdUQTdBcnlERmo5MjJUX2NIdllJV29l?oc=5",
+          "publishedAt": "2026-11-20T10:19:57.000Z",
+          "title": "Tether Invests in SCRYPT to Scale Institutional Stablecoin Infrastructure"
+        },
+        {
+          "id": "n13",
+          "name": "Crowdfund Insider",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdG5ocDlMOHUzMTFrMEU5Y3h0XzhzNlByYVFjUE42R1pXSTEzVEZlblBVZ0diQ05wR2NlcnBXZWotb0NITDE2U1hDVHhFZmlqZk1KUmdxekZ3WWFhM254MUxRXzRDVU93X0FUYnRuUFZWSHU0X0w5YTkzb1hzMHFOMzc4dWZiVXplTDRmNERhclhQUW4wRGJ1Y1NzSDVfSkxSM0JZ?oc=5",
+          "publishedAt": "2026-11-19T14:48:09.000Z",
+          "title": "Tether Invests In Stablecoin, Trading Platform SCRYPT"
+        },
+        {
+          "id": "n14",
+          "name": "Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5jMGo5MjE5cDVmZndoRFc2YW50N3hESEpXNlc5QmNiZkdyMXlIckl0ak5fSTdadE9NdGY3TnNLaVBVQjlIemJBSEdjMWJ5TzlONldpajdaSG9VNUJCeEJSQVA1TWpib25NRm1uMGlqaXplMmoyUWcyUXRpV3RmeVU?oc=5",
+          "publishedAt": "2026-11-19T13:32:14.000Z",
+          "title": "Tether invests in SCRYPT to build out institutional stablecoin infrastructure"
+        },
+        {
+          "id": "n15",
+          "name": "KuCoin",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcG1NNUNDbUpLeVVtMW1CWV93OGtWRU8xblJERERGOHVwTjlPMkJzcU5GQ2cxMENSTE1rQlVDQXBLbXVpWk9HMW96UjNBaEsyd1lkLXh5bVhTVjc5RU9YanZubFhKQ1JrTEh4WHVsMnE2M19IZGxfd2xCaGRhbmVBS1dzallLZVI5VEhwZTZuU2VWMmFOS2ZsOVVGRUZaYlU4V001OVpNM0EtN0NNWVlZWUdhdV9DTnpRanJoWVZ3?oc=5",
+          "publishedAt": "2026-11-19T17:35:13.000Z",
+          "title": "Tether's Strategic Investment in SCRYPT to Expand Institutional Stablecoin Infrastructure"
+        },
+        {
+          "id": "n16",
+          "name": "Tether.io",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNajVjeTNRc2puVmVoQW05bVRFMG1tcTFsWU1RT05GT3N2QUVpRDhhTjg5bXlrYUotNWF6bk5ITUp5Um5NbWRkVXItYmFsbWNwMUVpbkNNd2ZnRUN6dnFPaUZsVmJlNllxYVM3MFZUdTJIdjExZ05jdW5kTm03cEhNZUhQQ2I2eDVUcy0tYy1TbWpacERqalVtSThiZTVFcXBULWUzQUZBSjRKRHY2WnZzV3hXeURYbS1P?oc=5",
+          "publishedAt": "2026-11-19T13:04:06.000Z",
+          "title": "Tether Makes Strategic Investment in SCRYPT to Expand Institutional Stablecoin Infrastructure"
+        },
+        {
+          "id": "n17",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQ3hUSWttaU1CdTJIOXdUREhKeXVXeVE3N0NfQW9HZldIeGZ4X0U4V3pzc1lSSEd4bUI4YU9nNmY4T3AyOS1lWm4tb3o3a2hFZ0oxd0pNaWUwbHROajNqcmw1cFVfMUkyX3VHMFMxMkk4VzNPTzR1OVVhWjl6WVVKSFVidVhUSFZtQWo0RS1UNWo0cmk5WjJBUk1iWWJqd0ROdDlkQ0pvZEY?oc=5",
+          "publishedAt": "2026-11-19T14:59:00.000Z",
+          "title": "Tether Invests in Swiss Stablecoin Platform SCRYPT"
+        }
+      ]
+    }
+  ],
+  "macro": [
+    {
+      "title": "Nvidia's Jensen Huang is out after a scandal and agrees to testify to the Senate",
+      "brief": "Huang left Nvidia after an affair and agreed to testify at a public Senate hearing; House Republicans weigh a subpoena. Trump says he should return after a 'big apology.' Shares are 43% off their high.",
+      "impact": "Key-man risk at the AI-chip leader is now political, tying export-control fights to one executive, and robotics loses its loudest champion. Expect volatility until a CEO is named.",
+      "sectorId": "ai",
+      "confidence": "confirmed",
+      "topRank": 2,
+      "itemIds": [
+        "n1",
+        "n3",
+        "n84",
+        "n101",
+        "n102",
+        "n226",
+        "n223"
+      ],
+      "sources": [
+        {
+          "id": "n1",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+          "publishedAt": "2026-11-20T14:55:44.000Z",
+          "title": "The fallout from Nvidia’s Jensen Huang scandal continues"
+        },
+        {
+          "id": "n3",
+          "name": "The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV2xjNVlQNGJaN0dDY0FnLXZORHhwdG9nRlRaSU0zRHpSOXkzZ1VQQkNuQ0VaZzJ5ODc0blhmUFZzOVdRXzhLUmYtcUZMd2hOam1yWmxfMVpoZGpfaFJ2MXh6aTBUTF9UNGFJWksydE9SdWMzRWJCeGRqRHJnT0k0Y3I5ak0?oc=5",
+          "publishedAt": "2026-11-20T14:43:10.000Z",
+          "title": "How Jensen Huang Made Humiliation Routine at Nvidia"
+        },
+        {
+          "id": "n84",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/19/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+          "publishedAt": "2026-11-19T20:18:49.000Z",
+          "title": "The unfolding Jensen Huang scandal: a timeline"
+        },
+        {
+          "id": "n101",
+          "name": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNV3pZd2VEY016a3NySzVPaWgzeTc4SWJNTXJLLV93SFlZT0I0a0g2dEQ2SkpKUmhqQ1NpUkplNXN2YVFOYVNUZk9QTVhRWjI2TWVTVXFYeVhEdlZOdnBsbWxqZHJSYldVOVZCMG1SdmlmRnhBQnpaOFowRHU5R1drNzJxUWlsT1lXV2c2dG9CZWEwcTJfRWE1Nm8tS29GRjRHMWc4enpQY1NUQdIBrwFBVV95cUxQdWxUWkMzS3RpQ0UzTXRZdEtONHprbng0TnBTRVJLY3pTN09lSWxBc2JYYVQ1Y19xYzhFbndEdDZCM1hkU3Q4bDRQR0NRLTZEMU1IcTE2Rzd2dWwzT3owTDdyQ3ZnbmpFUzRfUDFSZ05IWjRhV1lWTjloV1RoV2JkU2dzakxhT19UVUtJRWtteTBnMlVyYURvMnJEbXJ6UVYxc3dyM05sV1VCd0s2cHhF?oc=5",
+          "publishedAt": "2026-11-20T09:36:18.000Z",
+          "title": "House Republicans consider issuing subpoena to Nvidia CEO Jensen Huang"
+        },
+        {
+          "id": "n102",
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbFdfWGphRTBrWWxRT1M4bm1uMmZ2cHh4UmFJNEJFXzVxRXh3aThLVWtsMjBNRVVxV2J1RXAyTTh6NkpmMExOZkR5ekNmcHh0bFBzcGFvT21DQWVsVEdXRUcwT1NCTWI0dWtVbjcwaDJuT0F1bnUtY0wzWHVRUXNCR2U2dWFrTmxOaGFzaVZXQ004OFVYUjd6cmJQUmRfdVNubXc5V0tfd1FpMURubnU4bzZTNA?oc=5",
+          "publishedAt": "2026-11-20T18:38:33.000Z",
+          "title": "Trump Says Huang Should Return as Nvidia CEO After ‘Big Apology’"
+        },
+        {
+          "id": "n226",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVXRKZGYxUkVSVnNCbGJHOG9wWjFSY1puTVMtdUMyeGg4VTFXR2xhRXd1ZmxYZ1g5QlBZRzljX1F0V1R5WERUOGdhb09IWXE0MTJXWXl3Z0F1czYyck1OT1NHc012Rm1PaDdXR1BQSkVRTkNqQkpCVUZZSUdTMnY1S1Zsa0kwYV8tai16c1Z3QnBwb0JZNjA5QXA1TkllMFhacFZMcm9MNHoyYU1LNHBlY2ZiN1lHUElQSURVSFo5aw?oc=5",
+          "publishedAt": "2026-11-20T18:59:44.000Z",
+          "title": "Former Nvidia CEO Huang agreed to testify at public US Senate hearing, senator's aide says"
+        },
+        {
+          "id": "n223",
+          "name": "Barron's",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5INVNuU2E4Z3Bsa0FYa0RqbHNYM3ZlS1lZV3BlODA2Q2F2ejlxMllHQnl2YzhmMm5IeW5RdU9tUzhGUUdlVTJtMUozbkJYZGZOMFpnMmRaWWxpRDY0OVF3a1JiTVBrZmNWMkJsTVotRERzWUZvQVNV?oc=5",
+          "publishedAt": "2026-11-20T18:18:00.000Z",
+          "title": "Nvidia Stock Falls 43% From Its High. It’s Getting Ugly but There’s Hope."
+        }
+      ]
+    },
+    {
+      "title": "Nasdaq 100 drops over 3% as Asian chip stocks post worst week since 1991",
+      "brief": "Taiwan's market fell 6.2% to end its worst week since 1991, with KOSPI down 5.2% and the Nikkei 5.1%. The Nasdaq erased its 2026 gains and Nvidia fell 7% for a seventh straight weekly loss.",
+      "impact": "A sell-off this broad tightens the window for late-stage AI rounds and pressures listed holdings like RZLV and SPCX. Money is moving into Treasuries and cash.",
+      "sectorId": "ai",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n390",
+        "n127",
+        "n108",
+        "n99",
+        "n62",
+        "n185"
+      ],
+      "sources": [
+        {
+          "id": "n390",
+          "name": "Benzinga",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMXVqUGdaTGtqeGxRZFhjNHJUZUp3QnNGa013Y2I0ZWZjQkwzNnRBa0RrRlE0M2Rfa2s1YThEWE8xTXl4RVREODJ1eXdqUzc5RWFnQlBrVDl5Z2JJRXpWLS1NdG5NMWhWMDFtaHBnTnA2Smd4bU1pdml3azFJNlphZXQ0MnQxcXVjelFkZzMzTks1NzE2a0l3b2wzekc1NkQ0T2JQa2V1b085RVByc21DV2VaMXBlMU9HbjFzcg?oc=5",
+          "publishedAt": "2026-11-20T17:43:34.000Z",
+          "title": "Nasdaq 100 Tumbles Over 3% Amid Tech Bloodbath, Nvidia Sinks 7% on 7th Straight Weekly Loss: Stock Market Today"
+        },
+        {
+          "id": "n127",
+          "name": "24/7 Wall St.",
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPWVRRSjMwbEJvY25tUmY4WEFkZDlYWDhDb2lwcDV5aEV4NnNNNTdSWjl0OHBYS3MyZmJ0RktHRGJDUWZ4ZjhDbHZsVF9GWlN0Y1VyZlROc1ZlcjlfTUgtR2Y0ZnpNdEkyTzdFMFJJbU5sckhMMUFrSnpmTjgySmIyOXpHdUZhTjd1VjE2OWpKUVNqQlV1eGRmVHlCckd6UjRQODVEUGo3ZHJBODFzNmFJQTNpWUJMQ2RNektENEhVS2xsNVRuUEpoamZqMmpVd2VBQ2s5dVVnZlczSllobks2RUFqVmswUF95Tmo5T2dEXzBXaklwcFlmczlPRmR3NXNHbUE1OC1R?oc=5",
+          "publishedAt": "2026-11-20T07:33:00.000Z",
+          "title": "Taiwan Stock Market Falls 6.2% to Cap Its Worst Week Since 1991 as KOSPI Closes Down 5.2% and Nikkei 225 Drops 5.1% in AI Chip Selloff"
+        },
+        {
+          "id": "n108",
+          "name": "NBC News",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRTk1MEVuRzZfdUVPMG9Mc3c4VFlvRUJRTGl0WUxTWVFOUG41LWJwWTFsbnNwcnktNjh5VE9IMUdLbHRuRnlEbUFZNlUyZGgxMG5admdobWx6R3VBU2VCb3BBczlUZU9sdmctenh6c2laaUpWSzYzWTBHaUh6UWhSWmVmOTRnRWdoVDM2MjRoWkM0LXU4cmc?oc=5",
+          "publishedAt": "2026-11-20T17:04:53.000Z",
+          "title": "Anthropic shares tank after huge IPO as the Nasdaq erases 2026 gains"
+        },
+        {
+          "id": "n99",
+          "name": "Investor's Business Daily",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOOFcwdEJJOEpPWVFTZHIxRUtyakdGbElWOGtHWnZ3NS1BdXM1eXVrejlTU1QwcExwTTIzb3JFRGxJZDZPVnlkR1FnTVpuazNtbFA5MFdRMGd0TFZUNHNjdF9xTEU4MUxwVk5BQ2tpcnRCNUZ1Tmg0c2xLbWpRWDdZRm90eXJQMUhDT1pqWjZudlR2WVRwUE9ZTg?oc=5",
+          "publishedAt": "2026-11-20T16:35:00.000Z",
+          "title": "Stock Market Dives To New Lows Despite Nvidia Earnings, Anthropic IPO: Weekly Review"
+        },
+        {
+          "id": "n62",
+          "name": "WSJ",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSnNEc3dZb2JfSWJYeFFoREFsNXdMS2RyNklRUU9rRUJmajZscVdUTWc5dENvODEwWUQwdHNFcGpPazhndE1MSFJaYnV1Vmota2R5N0YtRVhZS2ZtZmxTZUtnOVgzaXp3X0g5N1hxMExRbFRKWVF4VWJ3OWhqcFVBZlBzWFo0WlVyUTZfZDZSME5WZUsxcEFMbk9ubVlFbWc?oc=5",
+          "publishedAt": "2026-11-20T17:35:00.000Z",
+          "title": "Tech Rout Deepens as Anthropic Stock Slides"
+        },
+        {
+          "id": "n185",
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
+          "publishedAt": "2026-11-20T13:35:33.000Z",
+          "title": "Live news: Bitcoin slips to fresh lows below $60,000 as Anthropic slides after Nasdaq debut"
+        }
+      ]
+    }
+  ],
+  "frontier": [
+    {
+      "title": "SpaceX catches a Starship upper stage for the first time (Nov. 14)",
+      "brief": "SpaceX caught the Starship upper stage on Nov. 14 in a historic first, after a booster malfunction ended a planned double catch attempt.",
+      "impact": "Catching the ship, not just the booster, is a key step toward full reuse and cheaper launch. It reinforces SpaceX's cost lead over rivals such as Blue Origin.",
+      "sectorId": "space",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n39",
+        "n55",
+        "n56",
+        "n57",
+        "n795",
+        "n796",
+        "n797"
+      ],
+      "sources": [
+        {
+          "id": "n39",
+          "name": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNdGFvOUM3TDc1a3hvVXppS0tjbklLX3MyS094bGRNVFh2dGxVbGRLRFRJZmxpS0VHa2hQRHNBMHJqZ2Fxd2wzMzBOazZPQzJ2dEJtRThqYW9yV0VzTUVrVWFDbmtVYUVjTElyUnB4U3pOaG5qaTdGOUxSWTJscUpOMzBmeWUybXFWc25WdU9tT2JUOF9qZGpid0I0S0hrR1pyWVlZcUpB0gGrAUFVX3lxTE16S1ZpTnRzaHp5LS04QlVFOXNLNmJhNHk3SXZsendHTHJacURRcjFFWVUxT3d2UDhpa0tVeTRXMXdUcGNIV0VacUZDbHdYR0U5MmVtSzlKZnVyNFpRQ3I5Q2RuOFBzLWNJQ1VXVHVYNlNfQVZYVTdJVVdqaFotNEF1MG1rN3ZPaW1DVEZ2dWlIQ0QtOFBrYllrU3NTekpDNVh2Nm5UUE9xTXd6QQ?oc=5",
+          "publishedAt": "2026-11-14T21:14:46.000Z",
+          "title": "SpaceX catches upper stage of Starship rocket in historic first"
+        },
+        {
+          "id": "n55",
+          "name": "NPR",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTkcyZTZfYTNaUW1HemJBRUtfYldKd1cteXZMcHdpdGtySk1nRUh6SFhHMlRlTUh4eTRaTDFaYkhibDJnZTRmYlNWLUUtUmo3NlNWcTh0dEpEMXhGdXNxaHE3aU5kWEZMSjFrQ0FYYnJPMkZRR2ljak9vNGxXVmRQMHYxay1YdHREcGJxa0dmdWJaM2hQYkVjRDBZWXdsUQ?oc=5",
+          "publishedAt": "2026-11-14T21:42:41.000Z",
+          "title": "SpaceX successfully catches Starship and makes history"
+        },
+        {
+          "id": "n56",
+          "name": "Space",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQeEYtcEJwRGh1MXpQTG5SdTFMdXFJOGw0aklDa2hSc3NoSmEzN0dwVHQ3a0JkYy1SWW1qX2JZSWdYZVZ0TUlROWhVc2w1ZVJ5aFE0blpvdkM0WUE3eVRENHFLNjdjR2hpLW1waFVudlZPeDNMNXRQRnR0WjhjSWk3MndOV0swNlg1TnpRVlpZSjJtTmhtZHF6M0xCeExkZ2FkckZMVjY2Y3NGSk9QNU5Za08xQ00?oc=5",
+          "publishedAt": "2026-11-14T22:04:24.000Z",
+          "title": "'Now everything changes': SpaceX catches Starship upper stage for 1st time ever (video)"
+        },
+        {
+          "id": "n57",
+          "name": "Space Policy Online",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0zQU01U3l3QzNGQlZPOVJTbFh1LTlHSTY3MVNuSHpTUG5wRnU2UjI2THhyOUxZOHN1TW1ZVl9YZldndmJsU2VudURLUnBsRDZoRDh2TWtuQVFmdXlqb3Y2andfSTNqdGFSb1lzT1F3?oc=5",
+          "publishedAt": "2026-11-14T21:53:00.000Z",
+          "title": "SpaceX Catches a Starship"
+        },
+        {
+          "id": "n795",
+          "name": "PBS",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZXZLZklkUHg0MjhYb3dYUEVxWVVRNUZST0oyTWcxaFktYmRPb2NNTS1aX0k2ckJKdm1yODZXOVI0cUdONXRDVkhEeHhBcjZCY2h4MTB6Q1laN3g4eHFPN0lyOGpRZF9CSVhiYndJVFRJeHh3YUJnbG9aUmoyRHRTalg1aDJqMXNEelRRN1o2NGpOczdYWTVkaEtxOGgwWll1cXh5ZGRhVmRQUE82dXl3YnFiTkQ4b1lvbGNESnZOdl9id2PSAcgBQVVfeXFMT0VLamhXUF9BczFDN1RpZEdJTGJiNVNqZThJQmk3QUFoMzNkaVZqWGhYZ3NtQ0gyQ1psN0UxUDg2QXFjNnJjSHljaHo1WmF4bnVLS3czVjdxWWpNeUNLVUxILUptSHNraWpBNlBZbDYySDZBTUR1bk5DMm11bnNfcmhTTW84RnhXSkp4ZjJrdnJNOE9adzF4SDBlZWRaeWNQektJc0prbFBjOG9MamIwVGJkelNTVGRwZFdsaUg0RlhVYjliSjdETlk?oc=5",
+          "publishedAt": "2026-11-14T00:20:20.000Z",
+          "title": "SpaceX's Starship soars into orbit after booster malfunction thwarts double catch attempt"
+        },
+        {
+          "id": "n796",
+          "name": "AFP.com",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBhZHp0X1B4UDFmQUhxYlpKV3lEZmk5b0ZfMnl3TTZNcmVTam5VNVVYQ0VPR3dCRVJNN0ZHTGVqWlRvUVdyTzVSTV9YZ19BYUNubzdCTDBRQ1hLOXFGMjJWb0VtTjVEcW1uQkhlcUVTSQ?oc=5",
+          "publishedAt": "2026-11-14T23:04:20.000Z",
+          "title": "SpaceX pulls off first-ever spaceship 'catch'"
+        },
+        {
+          "id": "n797",
+          "name": "Ars Technica",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTjNxR3RJODFOUXdTLWVmNHlwVTVqNGVFdlg3TFhMT0pzVjE2YXZEaS1NOUhnZW93c1d6NjR0eHF3UWpDbHlGSzdTSGxZYU1MbGJPZWJ5OVBLMG1hcEdONEw1UjhENjdrd3l2X2VKUkVnMGEyMGZXV2FiT0d4TkpFZWwwaHpjSy1xYVdidkRqR3VrODktNXBDODNYeDhxa3BERVJV?oc=5",
+          "publishedAt": "2026-11-15T00:40:59.000Z",
+          "title": "With Starship catch, SpaceX still shows it can dazzle the world"
+        }
+      ]
+    }
+  ],
+  "frontierQuiet": "",
+  "meta": {
+    "generatedAt": "2026-11-20T19:16:29.949Z",
+    "date": "2026-11-20",
+    "edition": "daily",
+    "pass": false,
+    "weighted": 3.18,
+    "rounds": 3,
+    "round": 2,
+    "readMinutes": 6.6,
+    "poolSize": 400
+  }
+}
