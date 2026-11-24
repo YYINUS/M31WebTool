@@ -1,0 +1,1252 @@
+{
+  "date": "2026-11-24",
+  "headline": "Nvidia sheds 8% of its Huang rebound as Anthropic slips below IPO price",
+  "bottomLine": "Nvidia gave back 8% of Monday's 31% rebound as Congress readied new China chip limits, and Anthropic fell below its $83 IPO price. SpaceX and Tesla named merger directors, Erebor passed $1B in loans, and Hormuz tanker attacks held oil near $89.",
+  "portfolio": [
+    {
+      "company": "SpaceX (prev. xAI)",
+      "title": "SpaceX and Tesla name merger directors as Dec. 8 share unlock nears",
+      "brief": "FT: five directors will negotiate; Morgan Stanley and Goldman advise SpaceX, Evercore advises Tesla, and the share-exchange ratio is unsettled. Up to 797.6M SPCX shares can be sold from Dec. 8.",
+      "impact": "The ratio will decide what our remaining stake becomes, and the unlock may hit before it is set, leaving the stock to trade on rumor. Talks are FT-sourced; no deal is signed.",
+      "action": "Confirm with the fund team today whether the first-20% sale ran before the ~Nov 6 window, and decide the plan for the Dec. 8 unlock by Dec. 1.",
+      "sectorId": "space",
+      "confidence": "single-source",
+      "topRank": 2,
+      "itemIds": [
+        "n54",
+        "n53",
+        "n96",
+        "n97",
+        "n65",
+        "n800"
+      ],
+      "sources": [
+        {
+          "id": "n54",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQXlLNG9FZFJ0SjJ6YmxybS03UEdTTDZuMUpzQ1pHdmZQUG1WRVdMRktKZ3ptRVVCNXkxdm92eEVBZ0N5c0pDemw5M3NOLUpxWV9tZHdQRWtJM2NnQnZZZVljOEtaRjQzdlRDR2hjM2VIWU9MZS12QmkwbDkyUl9mNGxRRUk4WW5IVm1QVWJuQWhyYS1jN1FMQzBmOHdhLWhTMjRHUnJhOVplSnY4Nm9YMmNfUHdqbms?oc=5",
+          "publishedAt": "2026-11-24T05:20:00.000Z",
+          "title": "SpaceX, Tesla appoint five directors to guide merger talks, FT reports"
+        },
+        {
+          "id": "n53",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/markets/ft-names-five-directors-leading-tesla-spacex-merger-talks",
+          "publishedAt": "2026-11-24T13:17:21.000Z",
+          "title": "FT Names Five Directors Leading Tesla–SpaceX Merger Talks"
+        },
+        {
+          "id": "n96",
+          "name": "Financial Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeEdHa3JaV1FnaExBWDEtY1FaT0hubE5OcXZHSDNFNlRWYkw4Nk5YbWtmRkxIaTVUMHRLZ042V1llZlV2VWRaZ2pieEpKbXFpNlZtNHNWY0tWWDI2YWNrMjFPd1EySzVXWnh2ZGJqRzNIbDZXUUE1Wnc3ZFI0dFlhWHR4N3k?oc=5",
+          "publishedAt": "2026-11-24T05:01:20.000Z",
+          "title": "SpaceX-Tesla: the directors negotiating the biggest merger ever"
+        },
+        {
+          "id": "n97",
+          "name": "Investor's Business Daily",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMjhrZjFrSnQxNHQyNEM0dFEtRUVWYXFydjZ0OW1lZTF0aUp5ZWMxd1MzS3Z5RVBRNThFZTVDNUljNElaamp6WTU2T3g3anlFZmR3QVNPVlJXcFZMYlM0TlFpTEFxbU1OWFFlYnZzaExBM1ZFRlhTb3cwM0IyeUZxbg?oc=5",
+          "publishedAt": "2026-11-24T15:26:00.000Z",
+          "title": "Tesla, SpaceX Reportedly Pick Board Members To Negotiate Elon Musk's Mega Merger"
+        },
+        {
+          "id": "n65",
+          "name": "BASENOR - Tesla Accessories",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONjdvOVNYMDBITm1aMFowb01hLWQzcndBRkxkYllTUUFRYVB1VlA5bUM1bWdxZHFLNEFJMHhOSjBVbFI3SklSTFhMU0tSc0JKdUoxckM4a0ZPc1Raamx4SnpLWmtGRDB1aXZtdks0dWtQQzFYNFlDYVNxWEFDZDlVbHpRbGFRcUhRdWJpVVJycVpnZjNsVG1TZjV6bHlPbjQ?oc=5",
+          "publishedAt": "2026-11-24T17:07:04.000Z",
+          "title": "Tesla-SpaceX Merger: Five Directors Named to Negotiate $3.6T Deal"
+        },
+        {
+          "id": "n800",
+          "name": "Nacionale",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUXl4bUlKWEltRGNXS2d3WHMzaEVFb0x3SWVPQ1RYUTVJemtYTU1Ia3BHajBLMUU2S0ZCS1lUSTZnT3FtSUc1ZUpCdXlLdzJLRHNFRFpmVHNBcWFVd2wzaE1mWVIyOXdrRUhLU0QtbWl1ODd1b3JNM0Y2THNaV283eGJpNHJkQU40cDc4d2RGc3F5THE1a2xrZHhkS2tlejBPMWxCVmQwVUE3bkRFbmRpakw3ZmtzV0lQY2NuaXZsZjc?oc=5",
+          "publishedAt": "2026-11-23T17:11:47.000Z",
+          "title": "When is the next SpaceX stock unlock? Up to 797.6 million SPCX shares can be sold from December 8"
+        }
+      ]
+    },
+    {
+      "company": "SpaceX (prev. xAI)",
+      "title": "States sue SpaceX over Grok sexual images; xAI fights California AI law",
+      "brief": "Oregon and Virginia allege misleading Grok safety claims over sexualized images of real people, including minors, and seek penalties and injunctions. xAI also asks an appeals court to block California's AI disclosure law.",
+      "impact": "Judges sounded skeptical of xAI in the California case, and two states now test liability for Grok's output. Legal headlines will land just as the Dec. 8 unlock adds supply.",
+      "action": "Ask SpaceX investor relations this week for its legal-exposure estimate on the Grok suits, and get our counsel's read before Dec. 8 unlock decisions.",
+      "sectorId": "space",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n63",
+        "n86",
+        "n129",
+        "n138",
+        "n188",
+        "n190",
+        "n191",
+        "n302",
+        "n306",
+        "n307"
+      ],
+      "sources": [
+        {
+          "id": "n63",
+          "name": "WIRED",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10aEd4SHJ6SGl5Ymd0SG0xVFFtbHpnWUxMNUMtRDQzekxMOUNyYUVncFhYYkFsZUVjYkRQV1F0dVQ0Q3U0VjEyM3VqQWhoNmNmMV9XVHNpazAxMFcxSjROVmxnczNkb0dwSmtxQU52OTdJYmtY?oc=5",
+          "publishedAt": "2026-11-23T11:00:00.000Z",
+          "title": "States Sue SpaceX Over Grok Deepfakes"
+        },
+        {
+          "id": "n86",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObnVxU21QWWFOSHYzcW1sajgxS25DUndFTGd6dTh6UzdyaFR5U0QtMWlROWIxZ01IcU0wNG5FLXRaMWZoS1o0dHhEUUFiaDItWFVIbE01S1pTbDZxYVZGN1hMaHlNYXBZck84N3JPaW1xcW5VMHdNeFBHSWZmRVN6MzlHZjdEcl8wTkVERGhBU3M0dVBXSHBFUHNpM1pCc1Q0MV9HTWlveVJSV1hiSEFaWjJDMEI0b2p2bzBIZEdrampIVFlVWEE?oc=5",
+          "publishedAt": "2026-11-23T20:28:29.000Z",
+          "title": "Virginia, Oregon sue Musk's SpaceX over Grok AI's creation of child sexual abuse images"
+        },
+        {
+          "id": "n129",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/regulation/oregon-virginia-sue-spacex-over-grok-image-safeguards",
+          "publishedAt": "2026-11-24T03:44:39.000Z",
+          "title": "Oregon, Virginia Sue SpaceX Over Grok Image Safeguards"
+        },
+        {
+          "id": "n138",
+          "name": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTFFieDlnaXIxeGhqTDYtdDhwNEFyMnNJM29SY3poc2F6R3VIek9OeXJad2dKU3ZiZ1hhZ3BIRW9vX1RVaS05ZFJCcnlEbWdsS3NzRkJtVGIxTENDdzJDSk90NE1ySDNuSF9IYlVsOVpmcGRYRnZwLWJMSUdMY0d3WUFvblRNN3BrWmRoY1JqQzctM2ItcDF0S1V1cVd3dzhmU213d0F0UDdHX0hySEFRRXIyWUJmM3BlWW1Z0gHAAUFVX3lxTE9OWFJXNU4tM0gxYzRpdDBWelp4Tm5uZlF1SUVGQVA2MXc1aldsSVJYOXhCeHNnTFBUcm1odVpaSUNKTmw5OVhMVFhJX2JLb3J1TG9IVG1oTTZIZ2FzZXBpZzMzbng3UU8yMUpnUDFYWk5FMnpaVlhOZU5QVVVPaHZjUklmVU13dFppdFd0aWpjcDk0TUFaclBQZXhGSndwYTdWNUtkRGlfTDZjSVhEcEFCM3pfX1djOWhFSmMzZTk0NQ?oc=5",
+          "publishedAt": "2026-11-23T21:17:59.000Z",
+          "title": "US states sue SpaceX over Grok AI’s creation of child sexual abuse material"
+        },
+        {
+          "id": "n188",
+          "name": "FOX 5 DC",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVGk3NDRPMmxIaWZHcEttQktCVVRSYkV6bmhKMVJfTDMxcXZmOUxvTkk5azN3Yl93MGtjQjZZSDkxQjZOVDh5TWpPVFhWVF9LQ21DYm83a0M1YlFvdkNiekVjYkYxSHByZGFKWWl1dVBvWFh3X0x4TFRpV2lHR0xTRHRqNmItVXlfYV9uRjhlbEZ0QXJtSXlJVFhORQ?oc=5",
+          "publishedAt": "2026-11-23T21:22:17.000Z",
+          "title": "Virginia sues SpaceX, X and xAI over explicit, child exploitation deepfakes made by Grok"
+        },
+        {
+          "id": "n190",
+          "name": "Virginia Mercury",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWDR4S2hhczdMMmgxREZTY1dzUXZhZmJjS1BHY3NhYWNQa3hpV0JIT2paRk5QdV9ZSzBhOTVLX0hLMU1CMHR5Z0UxYVZndldZUmhYTWdSS1JmTDBRV2lLNndJb29kWGU0ZWxJZ18zQ2JJWEJuUkNWU2JNQTRBZklJQ19EODBFODZFZ3NTWkYtdUVSdmZiclN4X2FiM1BjeGJ3UGduMmNqb0ZlVktFcER1aXN2dmE?oc=5",
+          "publishedAt": "2026-11-23T17:33:31.000Z",
+          "title": "Virginia sues SpaceX, Grok for AI-generated, nonconsensual sexualized images"
+        },
+        {
+          "id": "n191",
+          "name": "Ars Technica",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWXFIRlRpQkkyY0F5YUVjb1RmN1g2cUdPWHJ3ZkhTVnVzcVNJaG5QY0lHRlV1cEdBNmFqWHQ3c0lpWEU1RGlLanphd1pPbmZjc0dvME9UcXFsNWNSTWJ0VDNsTmcyWGVNaG1lRzAwTEMxNXVycHc3YjItWkVXRXFiNDRZeWVWVEZzZ2NLd2FCOHVhSGVVTEJDMTEwdG1JVVRJdDBVSzQyS0lhY1Q5MnNYZmZFdmVWUlR2TmhzdG1R?oc=5",
+          "publishedAt": "2026-11-23T21:30:44.000Z",
+          "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn"
+        },
+        {
+          "id": "n302",
+          "name": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbHNWNVZoWUNJLXJxQl9wTkZnTFdZNkVTZXllR2pxSlFMeWxnS0xENDRnUXZBSENCV3lybG1tSXFfWF9xdWJiMHVxYlhWSXVkMU9lTFlFR200Qkg2eVpOR2NzRE55RXhudHRnb1QzTEZIdXFQUWl2bDRVMDVxT2FqbkNnTXJVS1J5bGfSAY8BQVVfeXFMTzdXQVNETlE0OGxPY0FSejh4THJESzBWQ0ZnV1NXRWtwUEE5T0hpbGs2SmpYMXVTdThMa1BqR2xQTTN2ZWZQb1JkZ0RfOC1KZm0yRldLX19pWWZpZUpBVGxpTXRyWF9KTW1hSUdHcENaVDlQN0QtcFdnSTJyMEl3ejNGNHRYc093blFaakhHS0k?oc=5",
+          "publishedAt": "2026-11-23T12:40:37.000Z",
+          "title": "SpaceX sued by Oregon and Virginia over AI deepfake porn, Grok safety claims"
+        },
+        {
+          "id": "n306",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeUstaGZQdnFxOEI0S3NCcUZzYmRMZG95aE9ROU9RMGI4VVV6LTZPNUVWem02OVNCVDhVZUtoRTA4OXg4ZktXenhjVW5RY3UxUmZjNmZkdEpDWGtTR0ZlNm15bmZEMDdsS3RzX3cyOEZHNVFLM2JIWVJaVGUxSzVLcHNnWkVKbnpMa1pLa18zM00wNU1STm05SUdFWGNaTE1wVVUxbzZacjdzTl94TTlQQjlWb0JvNjVvQkxrbA?oc=5",
+          "publishedAt": "2026-11-18T23:42:57.000Z",
+          "title": "Musk's xAI urges US appeals court to block California AI disclosure law"
+        },
+        {
+          "id": "n307",
+          "name": "PYMNTS.com",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS282aW4zdGhSSWw3dGRXZ1hQT0dhRU5UU1RUZm1FNDY5aW1yWVZFaEY0TW1OTVB0b2RIdnVRbWRiWmw2Vk56TThtdUZZemYzRDNfNVhaVkt0NzhJYWEtc2o4QVNWbVFvNlNVN1F5bXpBT0xjNXBxRl9sbFFvNDc0Q3R4YllSQXBxZ25BUmJYM2lmUVZfOVVaVERfZk9tWG9OSUgzcDhn?oc=5",
+          "publishedAt": "2026-11-19T21:16:24.000Z",
+          "title": "CPI | Musk’s xAI Faces Skeptical US Judges Over California AI Disclosure Law"
+        }
+      ]
+    },
+    {
+      "company": "Erebor Bank",
+      "title": "Erebor passes $1B in loans, lends Harbinger over $100M with Pinegrove",
+      "brief": "FT: Erebor has topped $1B in loans against about $7B in deposits; the NY Post puts assets near $8B. With Pinegrove it is lending truck maker Harbinger over $100M, and it lent Forward Industries $50M.",
+      "impact": "Loans are a small slice of deposits, so earnings hinge on lending faster without credit mistakes. Harbinger and Forward are the first read on credit quality under the charter model.",
+      "action": "Make the Erebor introduction Circuit requested by Friday, and ask Erebor for its loan-book breakdown by borrower type and its target loan-to-deposit ratio.",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n745",
+        "n750",
+        "n746",
+        "n61",
+        "n62",
+        "n132",
+        "n177",
+        "n178",
+        "n748",
+        "n747"
+      ],
+      "sources": [
+        {
+          "id": "n745",
+          "name": "Financial Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS005WjE3WE13YkwybXphbVB1Q3lMUWEzdlczVFBuRWVSdWJlb3VmVW1mZzAxNmFTYzdDU3ZSUDloSV8xNHhLN2NaOVhVLUhXS2M5N2ZrR1YtdW5zVDVkRGN6b3ZsTDNzS21YMm9vMVh3TldoQmhGSFlGMlpHa2xYeVZIXzY?oc=5",
+          "publishedAt": "2026-11-23T11:00:08.000Z",
+          "title": "Palmer Luckey’s start-up bank hits $1bn in loans"
+        },
+        {
+          "id": "n750",
+          "name": "Dealroom",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZVFhcm8yT2VISl8wQUZWelJFeDZyM3BlcHZrbEpnaGkxeVllM3dyXzVQQVROTFlBUmx3NXJYdHplTEZ4NHpUald0N3RKMHhZdUtyb3MzZnY2Snh6YU83N1ZjT3V3T0RMMlRuR24wMDU3RkxSSktFTjJLb3RPWDloODRqWU5aWlI2dTJoX3h0OTFoNlhjZmc?oc=5",
+          "publishedAt": "2026-11-24T10:37:52.000Z",
+          "title": "Palmer Luckey's Erebor tops $1B in loans, holds $7B deposits"
+        },
+        {
+          "id": "n746",
+          "name": "New York Post",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd1hNQmpUdnNiZFh0dWNBSHh5S3FqZkhLdE5qZnQtaThzM0tLaGRCYjZabEd0cDdlWFRjdm5PM3ZZVHhxRnhyeXU2Y1M5Wk5aX3Y3el9aX1JzRTJfSFctQ3lxeDBoYVVJTVRxR2tXdGNNckUtTFl6aldPYk1uVWVxdDNpMnM3WjFEVHNfZWNOdzV5SnY5UWxpMUdSVTEtZGhDc1FFTWhRTGNlS3NzVXVFOUVpdXY0VXJKc2hqdkVtWENnV3d2?oc=5",
+          "publishedAt": "2026-11-24T21:14:00.000Z",
+          "title": "Erebor Bank blends startup energy with midwest values — to win $8B assets in under a year"
+        },
+        {
+          "id": "n61",
+          "name": "Mezha.net",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNU211WVA2Sm9qTU1IeHZiZFVPYXluUzlmRWdGUVpHRmRLQVVXNkl2RXgxUDdHTDZmZjBWQlczUk10RExZVnYxczZaemQ4dTZRenI1bG15ZU1qU1oydW44V0Y4anE1RTBnMnRuRWk4eWFLRHVidElXLXZuNVFENW9BekQxc09HOVUtUDZv?oc=5",
+          "publishedAt": "2026-11-24T17:45:53.000Z",
+          "title": "Harbinger gets financing from Palmer Luckey’s Erebor Bank"
+        },
+        {
+          "id": "n62",
+          "name": "Orange County Business Journal",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUlhUSDBhN25WdVBjbjRUeXdoODFlRnRYSFpDLW9BNEl0WkVpdzdKbFdkMlZyT0FuXzNFVmFSLUNRSklwUVZOekJRb3kzTWN4anVfZHIwRUVTeFMydkgxOUpyV1hDRC1FSzNNRjZCdFFPNkhTR0R1YV9uTGtaZVFDSzhVNmVnRVJ0cGI4cUUyb1ZmZWswTS1xWmo5Q0VvazJmZkVsaS1NU25EREhCLUlpalVn?oc=5",
+          "publishedAt": "2026-11-24T19:35:22.000Z",
+          "title": "Harbinger Secures Over $100M Financing from Palmer Luckey’s Erebor, Pinegrove"
+        },
+        {
+          "id": "n132",
+          "name": "Yahoo! Finance Canada",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWXRiOEFJcF9ESlprbFZMU25Qbl82eWxtSXFJN3BjNkdrUS05S3dlNDI5N1lMbTBQT2w2OWdHWENWa05uTXdNZlhNLWtmNW9FWFRrTEYxSGdNdURTNjg3N1lMZkRGZks0Zy02eFFoSUJocEFGQnF0ZEgzX1liT3o0SkRjTmJXX0xjUm1z?oc=5",
+          "publishedAt": "2026-11-24T16:00:00.000Z",
+          "title": "Harbinger Secures More Than $100 Million in Debt Financing from Erebor Bank and Pinegrove Venture Partners to Support Production Ramp and Future Growth"
+        },
+        {
+          "id": "n177",
+          "name": "TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcmI2Y2hqYWtIM1ZvOUlmUkRqUVdRekVFNDJ0enJ1TGRwMHlNZFNOb2VqLTQtUDI1QnNuRnZqLUdmYk1hUllocHFvM1lFVXVuZU1tQ3RjaFFrMTc4UXROT1JHUjNZbHBKbnVmRUhVQXBoeVhIS3NsTy1zZUVpTFIycGEwa2FnYWpOU29vYWk4ZE5UR1A2Z05ySWJPMWU2MnRKLXRPemc2TXhWQk1ReTNxWjZaaw?oc=5",
+          "publishedAt": "2026-11-24T17:29:09.000Z",
+          "title": "Electric truck startup Harbinger gets financing boost from Palmer Luckey’s bank"
+        },
+        {
+          "id": "n178",
+          "name": "Orange County Register",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWDlZdzBWNnVYSnk2U2RNMVFJbWExVE1meTBtY1FQR0FXUGN2VmN3ZGRjcjMwZUdFMkFNSVd1Vk5kdFJwdUNPWGZRQ1VwbjlyMkpkNDdUZGVuaWFhRFlCM3l2cFZKX2ZUMEU1VF9GLWZZV3dLV3VpSUZrODRfUzByWnRTMEgwbHBYNWNWZXZRVk54YWVlNm1DSVQ4Y1dhcW1heGFZYjFkQ3NMLVU?oc=5",
+          "publishedAt": "2026-11-24T20:38:15.000Z",
+          "title": "Bank backed by Palmer Luckey invests $100M in Garden Grove’s Harbinger"
+        },
+        {
+          "id": "n748",
+          "name": "Axios",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPME9DYi1oU3hmZlZncFUyUnRvME1mc21wQ3hjS3VmS2xJM0JBTlZsTWZIY1VCb2Nab0g1R1RZcUVycHpmdTF1eG9NdnRKVEMtdWRkSG9oeDhZRzE0dVBDVERjRWtCb0VxcXVETVJQcTRvQXo5MjNvSGNrOElOQVYxRGY3a3FtaHlnbkNqVHNfd2RjZVk?oc=5",
+          "publishedAt": "2026-11-24T14:04:22.000Z",
+          "title": "Harbinger is moving past VC equity to use debt to grow"
+        },
+        {
+          "id": "n747",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQU05nRVYzY3NORXo1QnlMX0JzS2Q2V0hERnF1Q1JWOWx5dF9KV0RycDVPcjVZNGxCYVMyNnpBLXpJYjZnb1JyYVpmYU1nUGpoVVR5SnhyZkpzZXVvSzV2VlVNZVE0Rlh6TDRoSDYyM25QckdUNVRHc0tTbDFlQ0laUUlVTEpfOW5LbmFyRENSd1RIRlRObjZDWEFxMnJ0aFNQdDloRUZFTUFqR09UcEZ2b1ZucEh5M052ME5valpHaXZJeEZuVXdTb2ZR?oc=5",
+          "publishedAt": "2026-11-19T22:03:01.000Z",
+          "title": "Forward Industries Secures $50 Million Two-Year Loan From Erebor Bank"
+        }
+      ]
+    },
+    {
+      "company": "Perplexity",
+      "title": "Perplexity says it hit $1B revenue, launches Monitor API; Amazon suit continues",
+      "brief": "NDTV (Nov. 18) reports Perplexity hit $1B in revenue; the basis isn't stated. Its new Monitor API runs continuous web watches, and Amazon wants to continue its suit over the AI tool in lower court.",
+      "impact": "If the revenue figure holds, it backs the agent-infrastructure push. The Amazon case tests whether AI agents may act on third-party sites, and a loss could limit where they operate.",
+      "action": "Ask Aravind Srinivas this week for the basis of the $1B figure (annualized or booked) and status of the NVIDIA-round confirmation we are waiting on.",
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "itemIds": [
+        "n772",
+        "n764",
+        "n761",
+        "n763"
+      ],
+      "sources": [
+        {
+          "id": "n772",
+          "name": "NDTV",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQeXNDcGg5OFNEeF9QdFk1ZTlfNm9TT1NoY202a21Zekl3S2RGZjB6ZUVtbkFaTjhKUzlQR0FsczhvaURLSTNVaWV2SFFKa1JEWm4tbnBjVXpHdTY5c2ZIazk5dW41MEw0enRPUmxwbEFDNXB0Z3I4Z0ZHSUM0cERoSkpuMkRUVXRVNGFTN2o1NkcyanFEVkZoVzZCb1p0bnRzMi1VQkE2NW5PSHJRcURzcTZYbktRMWZyR2VhQTBuMjBMMnFVdzRsU1dZWHJLUdIB1gFBVV95cUxPTXZjVVdNcVZKbHhDSDFoZ3BZQlcxcVdhYmJoWDNQa2s1aGhOV0FKeVNldVl1cjZEZlRzQ1JqY2sxTldLRXp3NURud2JvZzNSS0NQVTBWdmk1XzQtZGZ2N0tlSVo0TzlxdTU0MnBSTnp4QVVUNnBRZkRDWXRKQm56cW1ZOEQ3cEtfQkpYLW1uNk02a3MxTjRfWlFJMS1XVWg1SDFEU0U2bElxcGNlbFp6dkdZZDgzdzV2SlRQanp1SE5KbnpMeTMzT1pBdGlSZVBlLWtzWFpB?oc=5",
+          "publishedAt": "2026-11-18T04:14:36.000Z",
+          "title": "Perplexity CEO Aravind Srinivas Says \"Don't Talk Finances\" As Company Hits $1 Billion Revenue"
+        },
+        {
+          "id": "n764",
+          "name": "The Decoder",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQc1NEYkR0NzBjZFd2bmR3UG5BYjhwT2hyWjRQSlQybW5faWdhRTI2cVJYMml2Zm9YWnNtZUVRU0dZNmRGR0ZjemRscE12ajRoUEh5LWtkYXljZVJBcVIxcjR2c2owTjZtdHpxZ1NFUUpwUmZJbXQ5UUtzXy1jcldjM1dmZEh5eHFmRWNFd0JPODE3bFRGWm1sTjc2aHY0UjRPckNxMnhRVk9QS0gzZmc2MWhtdWU?oc=5",
+          "publishedAt": "2026-11-22T14:20:28.000Z",
+          "title": "Perplexity's new Monitor API turns web search from a one-off query into a nonstop watchdog"
+        },
+        {
+          "id": "n761",
+          "name": "Law360",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSnN6Sk1rUElPS0F4MDNjcE9KX21PSThHQ3A5bUZ2bzhRYTRycnAxWVJUMTYyU0RRamh0NXpHbGJJeThXdzBUdzl4QnRFcHBsYklLZ2lFbVF5NTJrUHJRMS1qSmZSbkVBSE50QzRGQlpySG9LT2M3RFAwd1FseTJaZmw3UFBNWGpkV1ZrZEhNeE90dE5IZGd4TUloS0VSYkXSAVZBVV95cUxNRmljenp2WGM0NkE3QVpNSF91U0s2VnIxMkVvOGdnN0tCVi13ejM3WENTdHRkLW1oQ3BoSUFPQTVXaWNqWF9pNXptMUNmdEFfWU8wMXRlQQ?oc=5",
+          "publishedAt": "2026-11-21T01:12:50.000Z",
+          "title": "Perplexity Fights Uphill To Avoid Amazon Suit Over AI Tool"
+        },
+        {
+          "id": "n763",
+          "name": "Courthouse News",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaGFOTkZLSWQ1dTRKQkpVOVl2Qk05UjVHTGt2MjZGT0ZPam96MUZNdnowWTgxQzFMNEFEeTNtLVl4RU9CNGxBNXdCUGdfRGd4Tm1qdWI4TGNyMS0wSmc4ZkZMSTBxRXo2bFp0Rm1rR2xhZnRiWTN2UzRvWENwQUI4SHVid2ljeUJTelFhWlZMU0tubUhOc3VpWldxMHlCODdHRDR3?oc=5",
+          "publishedAt": "2026-11-21T00:08:45.000Z",
+          "title": "Back in lower court, Amazon wants to continue suit against AI assistant"
+        }
+      ]
+    },
+    {
+      "company": "Anduril",
+      "title": "Air Force awards Anduril counter-air launcher prototype as stopgap fight looms",
+      "brief": "The Air Force gave Anduril a prototype contract for a counter-air missile launcher (ExecutiveBiz, Nov. 18). The White House wants stopgap-bill exemptions for Golden Dome and the Pentagon's munitions ramp-up.",
+      "impact": "A prototype award is a first step, not a production order, and a stopgap without exemptions can freeze new starts. The White House request helps only if Congress approves it.",
+      "action": "Ask Anduril's finance lead by Friday which programs, including this launcher, need stopgap exemptions to start, and whether production decisions slip if Congress refuses.",
+      "sectorId": "defense",
+      "confidence": "single-source",
+      "itemIds": [
+        "n734",
+        "n166"
+      ],
+      "sources": [
+        {
+          "id": "n734",
+          "name": "ExecutiveBiz",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbk1Wb2dKUFREMGJrWFNZajYtVEtsQzVURU5JREU4eWFkWHBHeVl2LXVjZWNtRHAwQm01Q3NDZkNYdXVzQThPX2t5MXQ3YkxUb2lVMmpER2dITEFtU1lLalJQNXZCZTZFbVltd0U1VDl2TnZ2SE1oTmdVVGgwWTRjc0d3cGg4di1CcU02QXRiMnNxU0pQT29JZVR3?oc=5",
+          "publishedAt": "2026-11-18T16:49:55.000Z",
+          "title": "Air Force Awards Anduril Prototype Contract for Counter-Air Missile Launcher"
+        },
+        {
+          "id": "n166",
+          "name": "Breaking Defense",
+          "url": "https://breakingdefense.com/2026/11/white-house-seeks-funding-exemptions-for-golden-dome-trump-battleship-in-next-funding-stopgap/",
+          "publishedAt": "2026-11-24T16:30:00.000Z",
+          "title": "White House seeks funding exemptions for Golden Dome, Trump battleship in next funding stopgap"
+        }
+      ]
+    }
+  ],
+  "portfolioQuiet": "",
+  "thesis": [
+    {
+      "thesisId": "spiritual-warfare",
+      "verdict": "confirms",
+      "title": "Trump says he 'made the deal' to bring back Nvidia's Huang",
+      "brief": "Trump told CNBC he spoke to Nvidia's board and 'convinced them'; the board cited input from senior U.S. officials when it reversed course. Lawmakers from both parties want to know what was promised.",
+      "impact": "A president overturning a chipmaker's board within days is the sudden executive action we described. The bipartisan backlash shows the contest is now fought in Washington, not in the market.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n7",
+        "n59",
+        "n260",
+        "n16",
+        "n12"
+      ],
+      "sources": [
+        {
+          "id": "n7",
+          "name": "The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE41T3Z1VnJLSk9LLURuSVhPYVJEdHZmUXIwQzYteGVERktDYm55NEpKNU1jMEFpbzgtTmVURzlzU2drN0Juc19HR0tCREl2MUJRWjFaTGFCd3FJWVEwNUwwalc3RktTcHVLMDVfMnZCVU9DLUZMaWZ1dnd3?oc=5",
+          "publishedAt": "2026-11-23T16:51:55.000Z",
+          "title": "Trump Is Said to Have Pushed to Reinstate Nvidia CEO Jensen Huang"
+        },
+        {
+          "id": "n59",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return/",
+          "publishedAt": "2026-11-23T16:39:10.000Z",
+          "title": "Trump reportedly called into Nvidia board meeting to advocate for Huang's return"
+        },
+        {
+          "id": "n260",
+          "name": "Decrypt",
+          "url": "https://decrypt.co/383853/trump-says-he-made-the-deal-to-reinstate-jensen-huang-sparking-bipartisan-backlash",
+          "publishedAt": "2026-11-24T11:35:13.000Z",
+          "title": "Trump Says He 'Made the Deal' to Reinstate Jensen Huang, Sparking Bipartisan Backlash"
+        },
+        {
+          "id": "n16",
+          "name": "Decrypt",
+          "url": "https://decrypt.co/383797/nvidia-reinstates-jensen-huang-as-ceo-days-after-board-ruled-out-his-return",
+          "publishedAt": "2026-11-23T14:07:21.000Z",
+          "title": "Nvidia Reinstates Jensen Huang as CEO Days After Board Ruled Out His Return"
+        },
+        {
+          "id": "n12",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing/",
+          "publishedAt": "2026-11-23T15:04:01.000Z",
+          "title": "Trump endorses Jensen Huang's return to Nvidia, says US has no evidence of wrongdoing"
+        }
+      ]
+    },
+    {
+      "thesisId": "populist-1873",
+      "verdict": "contradicts",
+      "title": "Dollar strength and bitcoin outflows cut against our debasement call",
+      "brief": "Dollar Index held above 104, highest since March 2025; November bitcoin ETF outflows hit a record $4.71B. Strategy bought just 457 BTC ($29.6M), and an estimate puts its equity near 0.7x its bitcoin.",
+      "impact": "Savers are buying dollars, not hard assets, and the largest corporate bitcoin buyer is slowing, so near-term evidence runs against sovereign rotation. The end-2027 G20 call is untested.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n22",
+        "n290",
+        "n123",
+        "n55",
+        "n172",
+        "n102"
+      ],
+      "sources": [
+        {
+          "id": "n22",
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/11/24/bitcoin-falls-below-usd60-000-as-rally-on-jensen-huang-s-nvidia-return-fades",
+          "publishedAt": "2026-11-24T10:08:38.000Z",
+          "title": "Bitcoin falls below $60,000 as rally on Jensen Huang’s Nvidia return fades"
+        },
+        {
+          "id": "n290",
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion",
+          "publishedAt": "2026-11-24T12:36:28.000Z",
+          "title": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion"
+        },
+        {
+          "id": "n123",
+          "name": "WSJ",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZ01XVnNSdmRPYmYxOWNxejJQZ3Zsa3Ywa21rWWNDSi0ydnk5N0RjZ1BNQS1BRnNuSlZDcXpkUkZ4QkQ0V25rLUQ1MjRMa2hsRWlOQy1HOVRadlBZcG5TT3NIZ0duRDJvb0JGVHc4ZFE4dlVQSDBQcDhuMTFsdkRuRGQ4djl3bDE4c3lpMjEzU0dZWHo1dlNRTWo5LThIMHZtVk9iVjhoWGR1azJKUEE?oc=5",
+          "publishedAt": "2026-11-23T21:15:00.000Z",
+          "title": "Treasury Yields Rise After Huang Returns as Nvidia CEO; European Bond Yields Slip"
+        },
+        {
+          "id": "n55",
+          "name": "Bitcoin Magazine",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Va0I5TGR5NllmQjAyS3BmbGp2V0dOc1FiUjN6V2V3eWQ2blhiWlhHeE9fa1N1ZVNmM21RSWFXMmZWOElUYnpFTGZaeUhaSGpzOExwaFd4Z082Z3UwWXV3VGxEQ1dFZjIxOElrTDFNbkw?oc=5",
+          "publishedAt": "2026-11-23T14:09:04.000Z",
+          "title": "Strategy (MSTR) Adds 457 Bitcoin For $29.6 Million"
+        },
+        {
+          "id": "n172",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/markets/strategy-s-estimated-equity-value-trails-its-bitcoin",
+          "publishedAt": "2026-11-24T01:11:14.000Z",
+          "title": "Strategy's Estimated Equity Value Trails Its Bitcoin"
+        },
+        {
+          "id": "n102",
+          "name": "Coinpedia",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRHh0ODhkQmFxeGtHZzJXRWd5anh6SXBVOVB3R0xkZWFrQXMzeFZDU3ZzT1l6MDBCLXB1aGktZjFPaGdkd0lucFM4a0VwOWhoMXBoeGR6OHh1RmpIWlNUTG05QmhoVkVFY2MzMGFVZk40OTQ3d2IzSVV6Z3dWd1JVdURvN0tpSDRySXhMbFN1Ulh2dEpUS3ozQUhvSEpSS19oM2pYZU4zaWpZLW9SUWVqdXJzUjlDWXNJR3Vz0gHAAUFVX3lxTE1NYTJXZXVUTEhoX2FobjhBaVFmVWdqLWZpREFYaUFsSFNaeUZfOFkxSE5oY2tGR2ZxdGhQV0hGOXBUalNpVWFibHpEWTBBQko3djA0QkJtRzZma3JRcGhSX2lSOXZfQVlmMXdXa0ZEQ2Zqc1luM1A2Ml9hRlRGanZqU0dfV2FVUWcxazdUUXZLc3h5eXhPOUJya3pzaElIakJiWFRzWnEtTUtkZmxVVk1YaXdaZVNQU2JCVVFjamVraQ?oc=5",
+          "publishedAt": "2026-11-24T11:27:26.000Z",
+          "title": "MSTR Stock Premarket Today: Strategy Falls 5% As Shares Trade Below Bitcoin Value"
+        }
+      ]
+    },
+    {
+      "thesisId": "atomic-turn",
+      "verdict": "mixed",
+      "title": "Nuclear wins a permit and Senate bill, but utilities still add gas for data centers",
+      "brief": "TVA holds the first SMR construction permit but hasn't decided to build, and signed a $1.7B data-center deal. FirstEnergy won approval for a $2.5B gas plant; the Senate passed a permitting bill with nuclear amendments.",
+      "impact": "Nuclear is advancing in permitting, yet utilities still add gas for data-center load, and Vistra's CEO calls interconnect queues overstated. The shift is real but slower than our call implies.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n527",
+        "n526",
+        "n282",
+        "n529"
+      ],
+      "sources": [
+        {
+          "id": "n527",
+          "name": "Utility Dive",
+          "url": "https://www.utilitydive.com/news/tva-touts-17b-data-center-deal-under-new-large-load-tariff/875630/",
+          "publishedAt": "2026-11-24T16:11:04.000Z",
+          "title": "TVA touts $1.7B data center deal under new large-load tariff"
+        },
+        {
+          "id": "n526",
+          "name": "Utility Dive",
+          "url": "https://www.utilitydive.com/news/firstenergy-utilities-get-approval-for-25b-gas-plant-in-west-virginia/875646/",
+          "publishedAt": "2026-11-24T17:26:49.000Z",
+          "title": "FirstEnergy utilities get approval for $2.5B gas plant in West Virginia"
+        },
+        {
+          "id": "n282",
+          "name": "Nuclear Newswire (ANS)",
+          "url": "https://www.ans.org/news/2026-11-24/article-8616/senate-approves-permitting-bill-with-nuclear-energy-amendmentswhats-next/",
+          "publishedAt": "2026-11-24T18:23:59.000Z",
+          "title": "Senate approves permitting bill with nuclear energy amendments—what’s next?"
+        },
+        {
+          "id": "n529",
+          "name": "Utility Dive",
+          "url": "https://www.utilitydive.com/news/vistra-midterms-data-center-ercot-pjm/875626/",
+          "publishedAt": "2026-11-24T15:54:55.000Z",
+          "title": "Midterms provide clarity on data center development: Vistra CEO"
+        }
+      ]
+    }
+  ],
+  "regulation": [
+    {
+      "title": "Congress readies tighter China chip limits as Huang is due to testify next week",
+      "brief": "Bipartisan backlash makes new restrictions on Nvidia's China dealings more likely, and Huang is scheduled to testify in the Senate next week. The U.S. also added Megaspeed to its trade blacklist.",
+      "impact": "Congress is likely to write the export limits the White House softened, keeping policy risk on AI-chip supply, which every compute-reliant portfolio company shares.",
+      "next": "Huang testifies in the Senate next week; Nvidia's own probe remains open",
+      "sectorId": "ai",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n176",
+        "n42",
+        "n41",
+        "n34",
+        "n38"
+      ],
+      "sources": [
+        {
+          "id": "n176",
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/a-bipartisan-backlash-is-hitting-nvidia-in-washington-in-the-wake-of-trumps-push-for-huangs-return-565626f2?mod=mw_rss_topstories",
+          "publishedAt": "2026-11-24T20:42:00.000Z",
+          "title": "A bipartisan backlash is hitting Nvidia in Washington in the wake of Trump&#x2019;s push for Huang&#x2019;s return"
+        },
+        {
+          "id": "n42",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/",
+          "publishedAt": "2026-11-23T18:12:22.000Z",
+          "title": "Jensen Huang scheduled to testify next week in Senate following reinstatement as Nvidia CEO"
+        },
+        {
+          "id": "n41",
+          "name": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUzQzaW8ybWpocDRMUXdIRU1XWXk5TmZEa0F4VG10U19qamdObWdpMDFKeFNsdWMtRlI2RDRxUDllUm9WaTEyVlc3MllMZWZueVRIWGtVTTZJdVhyQm1DbnVaNU1YMkRhbHdKQUxRT3FOQ2dXOXR4LXlnNXBNVkpKeE9hQlRzbHhLbWJHdlMydHllMGJMamNCVm04TWwxUUtRTXhhQUZoY3ZONURYVHFpdDliWWRONGR1NHfSAb8BQVVfeXFMTUtjTm5TTXAxUTFsSERQWTlKQ1c2NDd0NVJDa1dBTm1fSEJyZ2hGZTRJX29YamI4TFB1TUJiY0hoTjQtWk41aUpObzFGX0E5QVBCNFZUNzFyNHh6c2JkcU90MWxXZVE3WnpZOFdlR2VCU1MwemJvTGVOZTJLLXZUY201N0hVc0RhYjUyejluZ0U5UDhZZ2MyeU1MbXh6RkpJSUx5dmtub2F5bW9GZFF1Z0JJQTVOeGNvLXk0cHhMam8?oc=5",
+          "publishedAt": "2026-11-24T10:49:39.000Z",
+          "title": "US adds Megaspeed to trade blacklist as Nvidia’s Huang returns as CEO"
+        },
+        {
+          "id": "n34",
+          "name": "House Financial Services Committee Democrats (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNTGhZRjNKWXQ3MkxVSFI1QWxRaUpCdzY3SDhBTjJuX1ZoV211RjY3cHhoVF8yQmdyQmhUUjYxTXF0aVRZYnBzTHVja2FWWGVJWHFFUW5xTWZYM0NXVF9yMHFHODN1Tm1hUExTbFh0c2pjT1phOFRXZ3F1azdqVWJxSnJJdW9FRTBjTFJLZ1JvRHR6UQ?oc=5",
+          "publishedAt": "2026-11-24T21:10:20.000Z",
+          "title": "Ranking Member Maxine Waters Demands Answers Following Jensen Huang’s Reinstatement as NVIDIA CEO Amid National Security Concerns and Trump’s Intervention"
+        },
+        {
+          "id": "n38",
+          "name": "The Independent",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZHZmeXNKc3d3VUhIbFJLaVlPT2RITVE3cjJ4QzFkNUlub1Y2OG5CZ0R1ZGFVcWR3NlVTTDR4S2FmcnYwaGdOZzViaU8tM3B1QVJQZ0hvUkZFNG1SMmZqbnBTcWRaOEE0VUNsMVRRZ2RHb2pGRDhFYWZZZG1tSWs3SEJuclRMRTl3XzVNOGhxbU15Z01GVXhVOHh0S3Q5NFdCUVBVVS1n?oc=5",
+          "publishedAt": "2026-11-24T19:31:00.000Z",
+          "title": "Nvidia board joins Jensen Huang under scrutiny after reinstating embattled CEO"
+        }
+      ]
+    },
+    {
+      "title": "South Korea proposes ending its ICO ban and limiting won stablecoins to banks",
+      "brief": "The FSC's draft Digital Asset Act would allow domestic token sales under IPO-style disclosure and cap exchange ownership at 20%, with exceptions. Won stablecoins would start limited to bank-majority consortia.",
+      "impact": "It reopens a large retail token market to onshore issuance, which favors tokens with disclosed revenue. Bank-led won stablecoins keep the payment rails with incumbents.",
+      "next": "Draft awaits the legislative process; no vote date reported",
+      "sectorId": "web3",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n127",
+        "n128",
+        "n131",
+        "n110",
+        "n144",
+        "n145",
+        "n213"
+      ],
+      "sources": [
+        {
+          "id": "n127",
+          "name": "Decrypt",
+          "url": "https://decrypt.co/383905/south-korea-moves-lift-ico-ban-after-nearly-decade",
+          "publishedAt": "2026-11-24T18:36:03.000Z",
+          "title": "South Korea Moves to Lift Its ICO Ban After Nearly a Decade"
+        },
+        {
+          "id": "n128",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/regulation/south-korea-proposes-ico-return-exchange-ownership-cap",
+          "publishedAt": "2026-11-24T07:26:40.000Z",
+          "title": "South Korea Proposes ICO Return, Exchange Ownership Cap"
+        },
+        {
+          "id": "n131",
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/11/24/south-korea-proposes-ending-2017-ico-ban-to-boost-jobs-and-onshore-crypto-investment",
+          "publishedAt": "2026-11-24T14:40:53.000Z",
+          "title": "South Korea proposes ending 2017 ICO ban to boost jobs and onshore crypto investment"
+        },
+        {
+          "id": "n110",
+          "name": "Crypto News",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBWRTY0NTNPZWJvSDRNY0luVkhMNGt4cm9HbHlwQmJxei1nVGpKeU9wVmgwQTdBREJFUWRYWVZPZl9GbnJ4RkZVWDZOVkxFem9wN1p3Ml9ZOWlxcENSTE1vaUF4V1hvWDZGYUFZcUc4RjEwbTB4SkdfMA?oc=5",
+          "publishedAt": "2026-11-24T09:30:10.000Z",
+          "title": "South Korea unveils crypto bill to lift ICO ban and regulate stablecoins"
+        },
+        {
+          "id": "n144",
+          "name": "CoinGape",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYlFlU1BKdHZJVWRyc1ZxSkJxMUVVVUozemVBZDlMOG1UQjdrZnRueVZYWVh4WFRnZXg0Z3o0MXc2a21nTWZOV2Q5S1dnZG9SVkFXWE0yZTdwUXZ5RnpJckxWUU16MXRGZzRTcjNoV0sxWDhnVjNPSW9LT1JOMWZwenJkWVl3SGppMlJYTndKS09WVnBSVGJVbmdxVUw1T1VicjE1UUpEZHFqdGVGcXFWazh2RDJHeFhMSmc?oc=5",
+          "publishedAt": "2026-11-24T07:49:00.000Z",
+          "title": "South Korea Unveils Digital Asset Bill Covering Crypto Exchanges, Won-Pegged Stablecoins and ICOs"
+        },
+        {
+          "id": "n145",
+          "name": "www.tmgm.com",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUmNsYWVUUXJhX2F2cFFfV3RvQktINkR2TzNFbmktQTh0VHA4d3J5NXBpVW5ZS1RtakdiNHFBY1A2RVNpZVFNb3I4RWRtdEtkRlppS1VrRFRfbGw4X2U2RWdoMkNRaE5PeEhDaEN2eXJ2My1JYndYTVhMbVM1VnNVemVoM180YXhuaERqc3o5dV96YUxaQUNoT1Y0a1E4M0djTjFILXNwODlPempXRmNlZmZyNTByWWVzenZleFNLVW14MFFOVExNY2NqaWkxY01fVFAyTjNNbUt6UzFobjJpTS1xU1VjRFk?oc=5",
+          "publishedAt": "2026-11-24T09:50:17.000Z",
+          "title": "South Korea proposes to lift nine-year ban on ICOs, mandate bank-led Won stablecoins"
+        },
+        {
+          "id": "n213",
+          "name": "Disruption Banking",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUzlNZXlWUlg0WDJiQmhBZ0hRZ2RxcjlJY3lUUFRQSzRxZXVuby1STUhzRks2X0p0eXNTSjVRVGxyZkVyYjlFa3l3b3ZveVpPX1ZPejJqOGl0VFZ6QmJJNGpxR2NVVlNmXzhsMUxsV1RjcVJYNFItbnlvbW42N2JKdFRkLVFDOWlwaEdabDFaM29jZ0hoX2RUUm5aaU4ycHhUdDBha3RRRTc4SG40Y1Y3RldfdXNBRDZHMXdmcFdYM04?oc=5",
+          "publishedAt": "2026-11-24T12:53:46.000Z",
+          "title": "South Korea’s Digital Asset Act Reopens ICOs and Caps Exchange Ownership at 20%"
+        }
+      ]
+    }
+  ],
+  "tech": [
+    {
+      "title": "Anthropic and OpenAI staff say unreleased models are too unsafe to release",
+      "brief": "Axios reports employees at both labs fear their best unreleased models are too dangerous to release, and that executives underrate the risks. OpenAI's chief scientist separately proposed shared limits on AI development.",
+      "impact": "An anonymous-staff scoop, not a company statement. If labs are holding back models, state action on frontier AI becomes likelier, the scenario in our Spiritual Warfare call.",
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "topRank": 3,
+      "itemIds": [
+        "n75",
+        "n76",
+        "n77",
+        "n78",
+        "n113",
+        "n114",
+        "n60",
+        "n79"
+      ],
+      "sources": [
+        {
+          "id": "n75",
+          "name": "Axios",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNWnJmY2hLTWlhTHcwN3pVSEhYOXlYUThYQXJ3RWxobVlPR2lweWpSQUY1NklSLVNVUHI4c0wwdnN3azBiV05wTVV6ZmRMTllRR1dvcmNYdjRheHZDOUNVaTBxUFpuS3BZUVBvZ2tpMlpTSS1oYWZ3SC16RVZEME51a0FB?oc=5",
+          "publishedAt": "2026-11-24T11:27:41.000Z",
+          "title": "Scoop: Anthropic and OpenAI employees fear unreleased AI models are too unsafe to release"
+        },
+        {
+          "id": "n76",
+          "name": "Quartz",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNkE3YU1IenBxWVlaRGFFeXBDaU1FeEZrYS14S3dOcFNfbWhLOGRBRmpveXA1bnNVakFOdThSeGRzaGtnN1dFWGNpZmR1b1F0TDZ5eTZlbmNRNnlnU01yNEw2dmZ2OW1fM2sya05CclFCSWpJVnMzRHZ3MUw0b1pXWGRnUlVtMERP?oc=5",
+          "publishedAt": "2026-11-24T18:22:15.000Z",
+          "title": "Anthropic and OpenAI employees warn their best AI models are too unsafe to release"
+        },
+        {
+          "id": "n77",
+          "name": "Seeking Alpha",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOVdlcmVTTmhCWXp6Z3ZrYTZUQlhORjB4aWpkWGhQYXhDdU5idENMeXJ1MERWYk9BMUY5QzVBRzhnS0xCUVVUdnlCRVpXLW0tTUZWb1hRcFdFV05HZVI1Q3ozVFU1MmZUME5reDBtMW50Sks0dHRUUXJBbWRNWGpVQmlLMzUydnBreEdnbjhRWG51WF9KcFVEUkNpNlAzQ0xHZlZ6S3JtQk9qdG5VSXBWSm41WlRFRUhnSmxqR0FyYTlCc3M?oc=5",
+          "publishedAt": "2026-11-24T10:59:56.000Z",
+          "title": "Anthropic, OpenAI have AI models some staff see too unsafe to release: report (ANT:NASDAQ)"
+        },
+        {
+          "id": "n78",
+          "name": "Gadget Review",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQzh1T2NmUHpCbm9sU2pZNmFVcFhhanUtd2JyYnhVdmMxRkJNRFA3QkdhNjV3MUxuWHNfYk9BdlN6OUl3N0xwbC1BYlNLaFFOM3JZcTY3LWpHM0FGYkxuVUFaU1hMX1dlQlp1bXB0TUlFOVh4MGxhU1hwZ3BzS3dId1pCS0J3bHctN3RJaVk4LWs?oc=5",
+          "publishedAt": "2026-11-24T17:32:38.000Z",
+          "title": "AI Employees Fear Some Models Are Too Dangerous to Release"
+        },
+        {
+          "id": "n113",
+          "name": "Tom's Hardware",
+          "url": "https://news.google.com/rss/articles/CBMikgNBVV95cUxPUDBvdGZPSXFmVHpDeGFIc1gyZTM2SDVpY1lsRF80djNqaDNzSkF5Uy1kbFdaT3ZFcG1abTRHVFFHYmFyZmVfMmVtUERkNVM0bU9xYlZUUF9qY3Vpa0tKRXlhZ2RqdVo2UmRvSjN1SklUOXA4anJfX2t4cURCLWQwTXJycUJURjNEZVB6ellRTUF4QWt4ZS1TOWZTNHNmUkN0elFXTFBNak5IMG5ONWpRM3QzUjZDTTAzcmgxcGFDMWFYd1NFc09LS1dDTTRvU1MwZ092ZEhsSkFHcW5zbTdpTjgxcmVzTHo2eUdZbUwta0VyT0h0am40MDhaMlZBeUJiUVluVy05TUlPbGRmdkptbDBUMHpLbFlBOFAweUR2OWlSUVN3R1NESHExdG5zOGE3U2pHWTdhOWFla040TUVHOWFRcXRaS2NGeV90MXFNd3NqMGRPRUlBR0tBcjAwMXlSTHJjOWVBM2dPZmdJd0VfNUtXNmcyQV91QTAtc0JGNU9kUTBKRXQ2VkpXUUo0aFBrOGc?oc=5",
+          "publishedAt": "2026-11-24T21:00:00.000Z",
+          "title": "Frontier AI employees alarmed that unseen Open AI and Anthropic models are too powerful to release, report claims — worry spreads that executives are ‘out of touch’ with severity of risks, will choose profit over safety"
+        },
+        {
+          "id": "n114",
+          "name": "India Today",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQU1ZXVTczZ19fVUNoM0hjTE5HQ1VRc053TzhBSWRIdThyMXpod05IRm1ibTdFeXhyRVhFd2d5TTE3QlR5YXh0X29mOEo0clZ1cWV4S21UWVBnbTRRVzQwRS1rTUkxUW5sT0UzM2hTUkFsTC1La2tmS1h2VmRYTjV6bndpeW9JRGlJWTdnem1jVXlQUFowVlRBdUotWS1sTzQ4MmNidlJUdzhERGpiczRYazlIRlFyV1FoNk5hczE3cU5jcTd3SGlhSUp3cjZtS0ttdXJ3MXRNaFFQQ3JYd2pjUmMxUmsxOVXSAewBQVVfeXFMT1g0WHlIeXV1cGt2MWthMWw1Q2RzZVNDTW10TldieFRZbzhpdk9VaFprZWItdXpicEk3XzcxekY0RUF2ZGJHbHVXY3FBRVhjOUxkVHNoYnNNUTZzUWI3UVQ4QktIYk5Jb2NFWmVKaDZHQ3d4OVFlTURaVmM4MlVmQzltUXkwSkYwT1Y3VENvSkVTTmxKbFRPSy1jNEtYYmtaY05fSmNnZzVJZi1HOVF3YUE5QmlySjMxa1BlZ0MzT19GTzFOS0sxeHV3bElPa2pYT1ZHbFJFa0VFaHY0SDRHNHZJS3Y5V09uUVZhN3Q?oc=5",
+          "publishedAt": "2026-11-24T13:15:43.000Z",
+          "title": "Anthropic, OpenAI employees' shocking warning: AI models are now too powerful for public release"
+        },
+        {
+          "id": "n60",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/openai-chief-scientist-proposes-limits-on-ai-development",
+          "publishedAt": "2026-11-24T04:58:58.000Z",
+          "title": "OpenAI Chief Scientist Proposes Limits on AI Development"
+        },
+        {
+          "id": "n79",
+          "name": "The Neuron",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9iSExuaVFOTVFiVk82ekxkcnFoWGhIOUhkLUV5dnplWEl6aUY3ck5oaGVqTUp2NzB5NEVaYnhVNll1RUljb1Ffd01IaEtnbGdENmhnd3FyemZ2MUZZTWpTNmExUkZrZ25RQldYWmExV0ZSMlFJcTF3QWpDZm0?oc=5",
+          "publishedAt": "2026-11-23T11:50:52.000Z",
+          "title": "OpenAI Chief Scientist Proposes Shared AI Limits"
+        }
+      ]
+    },
+    {
+      "title": "Circle and Paribu sign MoU to explore USDC in Türkiye",
+      "brief": "Circle and Turkish exchange Paribu signed a memorandum of understanding to explore USDC access and onchain finance in Türkiye, including Circle's Arc network and tokenized assets.",
+      "impact": "An MoU commits nothing yet. It shows dollar-stablecoin distribution moving through local exchanges, the opposite of Korea's bank-only won-stablecoin approach.",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n56",
+        "n73",
+        "n74",
+        "n111",
+        "n112",
+        "n147",
+        "n148"
+      ],
+      "sources": [
+        {
+          "id": "n56",
+          "name": "Cryptonews.net",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBkM3VEdkZQdFFHQkNMSGdMSEZaV0xFSXJyVWNmeUtjM0VBcGdLeURaTjZZSkFQSWFmWXpsTTBuVEpwcnNrU2F1bTdQRWNtN0V1WlVvMWVmSQ?oc=5",
+          "publishedAt": "2026-11-24T14:38:00.000Z",
+          "title": "Circle and Paribu sign MoU to expand USDC in Turkey"
+        },
+        {
+          "id": "n73",
+          "name": "CoinMarketCap",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTkhjN3VYR2QtRzIxVUdGVU92czU1cmpleEZMVDZibDBNZlpCdGJSRlFEN3A1aWFlYl9xNTJKY1FFV0FMX3J3czRidXZxbW5UMU5sMU1UVkoxalhqQ2FEVDdydnZkZXFNZGFPcTg5dnhySGFoOXNqaGVTcUFHN3JaUw?oc=5",
+          "publishedAt": "2026-11-24T20:23:42.000Z",
+          "title": "Paribu and Circle Sign MOU to Explore USDC Access in Turkey"
+        },
+        {
+          "id": "n74",
+          "name": "Morningstar",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQaU9RaDg2VjlkTkJVU2RRMVFCejN3amNyWkk2bGZvQXJUbXFHVUk2MS1KMXhYZUdqR3JfYWVuamFLTFo4Yk5wYlV6aU5QN05INEE1N2pzVGlnMzZ6SktLOTNscGpydmdaSGMxZ3BCdmgyN1BZeFVMVTd6di1DWGJzTHRHc1RDOUZfaWJkbTVzLUZmYzVIcWxsVjB5ekpobDFTRlFxbk1SM2V2d2xRVVBEZ2NSbXNOT1hPMUFzeUdKSXB6TjI3S2VrODVpOFIyWDFJN0p1VUxNdw?oc=5",
+          "publishedAt": "2026-11-24T11:00:00.000Z",
+          "title": "Paribu and Circle Sign MOU to Explore USDC Access and Onchain Finance in Türkiye"
+        },
+        {
+          "id": "n111",
+          "name": "Crypto News",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVmY2V1Nicm56aFB5elNZWVllQmJteUNuN1ZkOUFLbnVmaTktWkJJTHRkUjdyVG5SSG1IT3l1WHhQbUJ0czFaQklPRHVsVC11MG5fbDZLRmhvUHpXSXhkUnRaUEdnYkZEMVlQMExLdExfTXlJWnJLZWRrNy1tM0NIRHl5bHk1VllYNnlVTw?oc=5",
+          "publishedAt": "2026-11-24T14:16:12.000Z",
+          "title": "Circle partners with Paribu to explore USDC expansion in Turkey"
+        },
+        {
+          "id": "n112",
+          "name": "Paribu",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBLZEE4LWlkY1JjRnFCZnlYRHU3VHg0dE5EUlBDb0VRUGpTWDBSVExxMl9SdmJoTDVLU2tGeWoyZnZPdEh5bEp4Mksyb3ExTU5FaElLY1lUMV9RdUJVNFRtLVFpRkY?oc=5",
+          "publishedAt": "2026-11-24T13:58:52.000Z",
+          "title": "Paribu and Circle sign MOU to explore collaboration in Türkiye – ParibuLog"
+        },
+        {
+          "id": "n147",
+          "name": "BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9iMUpHcExaSG9Xczh4YnpBQnJ4ZDR3dUV0NmVXLV9PYjk5M1plUU1VYlE5ejl4b0d5cHZjcDlhZUpFMjdvUlpvb1lNNHY5XzlFZkNudU5OMlhTVGZmZF9kUkRTUjExSTZyRjdIZW9HUmd0VFl1cXc?oc=5",
+          "publishedAt": "2026-11-24T20:55:00.000Z",
+          "title": "Circle Inks Turkey MOU With Paribu to Push USDC, Arc and Tokenized Assets"
+        },
+        {
+          "id": "n148",
+          "name": "Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1oYVhENUZrUWFjbEZBZkZtRWN0YlR0X1haMUFCdEhDOHNuZ2xvdjFidWhwRzRkdDhxblpDMks3LXFCazZVMzFDOWswQ0tPbmFWZzNNREgyMGpNUndJR3I0Q195cmdqODZxMldoTHlZZDdIdHJCc1A5dg?oc=5",
+          "publishedAt": "2026-11-24T14:09:48.000Z",
+          "title": "Circle signs MOU with Paribu to expand onchain finance in Türkiye"
+        }
+      ]
+    }
+  ],
+  "deals": [
+    {
+      "kind": "round",
+      "sectorId": "lifesci",
+      "firm": "Sanofi",
+      "text": "agreed to buy biotech Insmed for $41B, the largest biopharma acquisition in years, adding two approved drugs.",
+      "itemIds": [
+        "n508"
+      ],
+      "sources": [
+        {
+          "id": "n508",
+          "name": "STAT",
+          "url": "https://www.statnews.com/pharmalot/2026/11/24/sanofi-buying-insmed-roche-breast-cancer-pill/?utm_campaign=rss",
+          "publishedAt": "2026-11-24T14:27:36.000Z",
+          "title": "STAT+: Pharmalittle: We’re reading about Sanofi buying Insmed, Roche touting its breast cancer pill, and more"
+        }
+      ]
+    },
+    {
+      "kind": "round",
+      "sectorId": "ai",
+      "firm": "Sierra",
+      "text": "raised $1.75B in a Series F at a $30B valuation; the AI customer-service company reports over $400M in annual recurring revenue.",
+      "itemIds": [
+        "n165",
+        "n171"
+      ],
+      "sources": [
+        {
+          "id": "n165",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+          "publishedAt": "2026-11-23T14:43:03.000Z",
+          "title": "Sierra doubles valuation to $30B within six months as demand for AI in CX takes off"
+        },
+        {
+          "id": "n171",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/sierra-announces-1-75b-raise-at-a-30b-valuation",
+          "publishedAt": "2026-11-24T03:37:47.000Z",
+          "title": "Sierra Announces $1.75B Raise at a $30B Valuation"
+        }
+      ]
+    },
+    {
+      "kind": "round",
+      "sectorId": "robotics",
+      "firm": "Ant Group",
+      "text": "led a $100M round in Chinese robotics startup Simplexity at a $1.6B valuation.",
+      "itemIds": [
+        "n150",
+        "n154",
+        "n155",
+        "n156"
+      ],
+      "sources": [
+        {
+          "id": "n150",
+          "name": "The Rundown AI",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZ3hPV1BfeEhtWWdvVHA3NklSNzJzTGhXNHVHaG5KdlhYcGdncFFtdTV2TmRUU0YyN1N6Q25TYTNVZFYyazUzTGJ4ejZpUEFqT3FBZGVibXV2dFB4LVo5QlQxRVFDYTE5RVdXdDIxNGVjOE01aTdxc2Y0NXVjT3EwVXV6Yw?oc=5",
+          "publishedAt": "2026-11-24T15:04:50.000Z",
+          "title": "Ant Group leads $100M Simplexity round at $1.6B valuation"
+        },
+        {
+          "id": "n154",
+          "name": "FourWeekMBA",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNX29pX2dFQ1VVUS1BdWN6R0ZVbFFyOTNyOGZ0bTJfSFYwODQzMTFfNjhJdXpMX0YwbDFKWDJLOURTSXNkTmVzUUNUT0xuMXdHR2dHT1h4bjZ5cVpUV1R4S3F1U1FyclZaV3daSEdwOXd5VFdSOGZ2dEJwUm1mNmdxeGZtWVRQNU9QU1VJ?oc=5",
+          "publishedAt": "2026-11-23T01:20:34.000Z",
+          "title": "Ant Leads $100M Round in Simplexity at $1.6B, 16 Months In"
+        },
+        {
+          "id": "n155",
+          "name": "KuCoin",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQR05WTW80SzNVWE9CdXFKSS1lSC1vRHZPR2s3QjhsNHRyNWhnRllBTl9jdndLZHh2NTFIUklrMWF1VkdUVGhPbnFLM3BaVVVnUlFpbFhaOFBUN3RYbEtGYWdrNWJaOVVNZUQ0c0ZiVzNrRG12NjdOTnNlTGZDUXpXR3ZYZnA1T0tpOFZqbWg0VHBGM1RHNVhFa2gxOFNaVW9CSnJjNUJSRUJkSU1tUWc?oc=5",
+          "publishedAt": "2026-11-23T09:20:15.000Z",
+          "title": "Ant Group leads $100M pre-A round in Simplexity Robotics, valuation reaches $1.6B"
+        },
+        {
+          "id": "n156",
+          "name": "MLQ.ai",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVEtGa0MzRVA1eXFwR2JxNHhab1B4OVEzeHVfWmItdUFMa0ZaVl84NDdoRGktNEVwdXY1MmRWR1AzMnU2bEhZVHZiYlpsTW1Nc1gtNU1ScFBVWkNhT2NqZTlOV3BNWVlvTTZibVNodDJSQmt6TkF2Skg5Zl9DQThMMW5xUEtSRXBpRFAwWnBCQVVwWU0ya1VOOFFDVQ?oc=5",
+          "publishedAt": "2026-11-23T09:38:34.000Z",
+          "title": "Ant Group leads a $100 million round in Chinese robotics startup Simplexity"
+        }
+      ]
+    },
+    {
+      "kind": "round",
+      "sectorId": "defense",
+      "firm": "SovAI and NSSIF",
+      "text": "backed Agon's $70M Series A at a $450M valuation; the startup is building Europe's defense AI lab.",
+      "itemIds": [
+        "n151",
+        "n234",
+        "n235",
+        "n240"
+      ],
+      "sources": [
+        {
+          "id": "n151",
+          "name": "Tectonic Defense",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE00VmR2TW5wUGtTNkt2dVhLQkU4SnlGYzMzNkpuakVlVExQQlUwcDJrRVJzczhfNTJ1YXJSZkcwSE93bWxhV2R5cWhNYk10eE9vWU9mdnV4TVdEem9TVHVjcDJkakUyZ3dUVk1UXzVaSGFHY0xUeGRB?oc=5",
+          "publishedAt": "2026-11-23T08:16:31.000Z",
+          "title": "First Look: Agon Raises $70M Series A"
+        },
+        {
+          "id": "n234",
+          "name": "Dealroom",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTGlPTFpOQTRmazJCa1hxa1FMSk5odV9iTV9qOUtfQzQwLXFPeHp5eFhtcW9LTVZES2tRXzUxZFhORTRvUjgyM2RFOXJycVdVcmFQMEhfM3dKdUdnNXBXWG1ianFiNTRmRF91STJPZFlaRXRHTkFNOU9oTUlweXRvY1plekVUTGE3YThvVmJyVmhHSXZGOXY1MG9GSQ?oc=5",
+          "publishedAt": "2026-11-23T06:46:57.000Z",
+          "title": "Defense AI startup Agon raises $70M Series A at $450M valuation"
+        },
+        {
+          "id": "n235",
+          "name": "Tech.eu",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYnFVUk14WjFPdldJYkpuMXRkQVU4YVk2TzlRdlFvejY1azZCLVo4TVhiUTFkd1hQVXNmOWw0cF9FUC1Yb2pIWjZ2N1BCaUNlWXMtMXhmMldyeEs3VXo1azBJMXdQMFBUcHVpZzg2RXptbmZDTnpVSFJ4bUFNRjFZZjR0dlF1NDZiMTgyekZCNkxURVRDR1BxWg?oc=5",
+          "publishedAt": "2026-11-23T09:28:18.000Z",
+          "title": "Defence startup Agon raises $70M, with UK's SovAI and NSSIF investing"
+        },
+        {
+          "id": "n240",
+          "name": "ET Enterprise AI",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxORE1ZWkEwRi10Q0EtYUVQUDdsZjdJbzh2N1kzWVJ6U3BwS1RnZHNINFk4S3VCdkJTTlhRVnVKcEpWWUg2cU80dXZxd3hoUmw5Q1pJS2dZTkFiQXhueXNDT1p3MVd5MlFQUFM2d0pVY2hpM0tpVUhEdGx0T19uRW5FajBYc0poQkloZHBBblljd0dmcHZvTjN2YmIwankxTXhzbjUwaU5XNzk4VkpLX1VFVG9QWXBZSjV6bnBqLURvaEp6N1FRanU3VndWZ3JhLS1PazZCUDlFbDdUd0ZBY2xYZjFQSFbSAeQBQVVfeXFMTkRNWVpBMEYtdENBLWFFUFA3bGY3SW84djdZM1lSelNwcEtUZ2RzSDRZOEt1QnZCU05YUVZ1SnBKVllINnFPNHV2cXd4aFJsOUNaSUtnWU5BYkF4bnlzQ09adzFXeTJRUFBTNndKVWNoaTNLaVVIRHRsdE9fbkVuRWowWHNKaEJJaGRwQW5ZY3dHZnB2b04zdmJiMGp5MU14c241MGlOVzc5OFZKS19VRVRvUFlwWUo1em5wai1Eb2hKejdRUWp1N1Z3VmdyYS0tT2s2QlA5RWw3VHdGQWNsWGYxUEhW?oc=5",
+          "publishedAt": "2026-11-23T09:09:28.000Z",
+          "title": "Agon raises $70 million in Series A round to build Europe's defence AI lab"
+        }
+      ]
+    },
+    {
+      "kind": "fund",
+      "sectorId": "ai",
+      "firm": "Kaszek",
+      "text": "closed a $650M fund to back AI startups across Latin America.",
+      "itemIds": [
+        "n415",
+        "n416"
+      ],
+      "sources": [
+        {
+          "id": "n415",
+          "name": "Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOd3NNYlMxYzRneHlCRDZmYUh4bjVmOVgxT0dTNnVlbGVCaEZOLXBQbDdfQmZRN1Qtams2YnRNOEVoNGhrdnNROURDUzFnM1Jxd19sLWw2VTg2Xzl6dVp0RzZNdk45YVdoUkdSVzBZa1hGajZqbHRVbDRDLXM4NldDT1pfZkpqR3REQ0V4QUg3UkxGV2p0SzkxMUY5eXluSVBnZWxmZFdSQTZZOUxCMFpmN2Z5QQ?oc=5",
+          "publishedAt": "2026-11-24T14:00:00.000Z",
+          "title": "Kaszek Raises $650 Million Fund for Latin America’s AI Startups"
+        },
+        {
+          "id": "n416",
+          "name": "The Next Web",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE90b285cjNJa1lOeThLOHBjY0RhMkN1ZUdJVTFNNlVXRGVzSzdTNldtd2haTW1EUU4tU2tfa01sRmpOSFc4UDlrZHdmOGJ5VE5sNmZQUVNjWDNnbnlOOHo3aFRpdTA3NmVtOHpoOURxZm1sZWx2azNndkh3?oc=5",
+          "publishedAt": "2026-11-24T16:59:36.000Z",
+          "title": "Kaszek closes $650M fund to back AI startups across Latin America"
+        }
+      ]
+    }
+  ],
+  "macro": [
+    {
+      "title": "Nvidia falls 8% after Monday's 31% rebound as Huang probes stay open",
+      "brief": "Nvidia fell about 8% Tuesday but kept most of Monday's 31.5% gain after Huang's reinstatement; a chip ETF fell more. The board's investigation remains open.",
+      "impact": "A roughly 30% swing on one executive and a White House call shows how much of the AI-capex trade rests on a single name; TSMC alone added $158B in value in a day.",
+      "sectorId": "ai",
+      "confidence": "confirmed",
+      "topRank": 1,
+      "itemIds": [
+        "n1",
+        "n2",
+        "n3",
+        "n4",
+        "n6",
+        "n9",
+        "n23",
+        "n26",
+        "n27",
+        "n28",
+        "n64"
+      ],
+      "sources": [
+        {
+          "id": "n1",
+          "name": "The Neuron",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE00VjJKNTNwZFVwdFRMOHkzUTV4REYxN00wcGtxTHMwWjluVlRhdTdRc1JkbmhYdFlrcXZQcU9mYTRQZXFLZlQ0SzAzamtiNlZNekdmckRfeE1MY2I0aTNFcnY3d095bi1J?oc=5",
+          "publishedAt": "2026-11-24T09:46:43.000Z",
+          "title": "Jensen Huang Returns as Nvidia CEO"
+        },
+        {
+          "id": "n2",
+          "name": "AppleInsider",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNUpleGdtQ005emh5a2FXRU1fYkFKRmdsbU5mQUU2Mk1CN1F3WEpweENpOTFjVjdDZmhaem5Sdy1VZzQ4NGFiMmFtSk9HbHE1eGxwcWl1MW5OM1JyRGdQS1BZUVBLeGpYYzJVRWJrVDRGc013WGszanllNkpUWWlVblZQMVEwUVJEYmVz?oc=5",
+          "publishedAt": "2026-11-23T17:11:27.000Z",
+          "title": "Jensen Huang is reinstated as Nvidia CEO"
+        },
+        {
+          "id": "n3",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/nvidia-falls-8-after-rally-on-huang-s-return-as-ceo",
+          "publishedAt": "2026-11-24T16:21:35.000Z",
+          "title": "Nvidia Falls 8% After Rally on Huang's Return as CEO"
+        },
+        {
+          "id": "n4",
+          "name": "The Robot Report",
+          "url": "https://www.therobotreport.com/nvidia-reinstates-jensen-huang-after-11-day-absence/",
+          "publishedAt": "2026-11-23T14:20:46.000Z",
+          "title": "NVIDIA reinstates Jensen Huang after 11-day absence"
+        },
+        {
+          "id": "n6",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/markets/nvidia-jumps-31-at-close-after-huang-returns-as-ceo",
+          "publishedAt": "2026-11-24T03:11:34.000Z",
+          "title": "Nvidia Jumps 31% at Close After Huang Returns as CEO"
+        },
+        {
+          "id": "n9",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQ2VuMWM0TmxDX1JHckNONUktS3M3eFVSbDVJeWQ0bWZsUFlhWTZ6dkZWSi1lUTlZUjVnamk5OTQ4bTBBc2ViWHJzekF0cTlWSlo0blR1ZkU2RDNYVU5QbnJOaDcwZVlmWlljTHEwRV9wQ2pfdG9nNG1icTZvcnBwalZFZGRCa3Q0dTNvQ2dWcVdzTnlGcHZEajN4ME5URDNTTV9RODhxSWQzdlBTZUZDZTF1ZkExektQMVhibk5PdFoyMEJfMmtIYnZR?oc=5",
+          "publishedAt": "2026-11-24T17:11:23.000Z",
+          "title": "Nvidia stock falls after epic rally on Jensen Huang's return as CEO"
+        },
+        {
+          "id": "n23",
+          "name": "Fortune",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRDJKT0N0SGk5NTdyMW1wSWRScEtaRHlSenZuZUl2UTV1bklXMlkyUkhXRi1PbExqV0R1RDNWT21zZkk5WVk4OWk5ZW1MTXVRTTduMkFFOXd5WGhMY2lLNGctTlJUNlRFVGctc3laREtOQi05X05Lb3VCTlRINnkzc081RFRIUGRQSDhnNkVzbk9vMGVLNzQtakJxVUc2MjFYMEtQMzFoZVd5UTFNUWFkMFVR?oc=5",
+          "publishedAt": "2026-11-24T07:05:00.000Z",
+          "title": "TSMC gains $158 billion in value in one day as Jensen Huang returns as Nvidia CEO"
+        },
+        {
+          "id": "n26",
+          "name": "MarketWatch",
+          "url": "https://www.marketwatch.com/story/nvidias-stock-drops-as-these-major-questions-loom-over-jensen-huangs-return-9096636f?mod=mw_rss_topstories",
+          "publishedAt": "2026-11-24T21:14:00.000Z",
+          "title": "Nvidia&#x2019;s stock drops as these major questions loom over Jensen Huang&#x2019;s return"
+        },
+        {
+          "id": "n27",
+          "name": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1OdXBDM2V4Mm1MN0RIZTZGRG1LdmxuUDNJcHNpamhmZFI5anJLX0JSTmJkbDh4TDdKQXhweUhaeFVHR0V3Ylg0R1FPakp1ZEd4aVlXTEFNOUFwa3VYSHFSaG02dHE0WkVlakxVYlJpRWZvMHpsTmfSAXtBVV95cUxPRlF5Vm1tV0pGTXRYRF9hMVlZZ0phemFNTUZfUTRvaVdTNF82clpMQ1NieGs0MzQ2RGpxdUtHdzhPckhFeTVwNW1PYVlpSlFvMUxJVDB1OFZsNVVVN1ZuQ210SEVWSVJXeW9RVmNxc0NEbk1RdXFGckJXR2M?oc=5",
+          "publishedAt": "2026-11-24T14:09:18.000Z",
+          "title": "Nvidia brought Jensen Huang back. But the investigations aren’t over"
+        },
+        {
+          "id": "n28",
+          "name": "AP News",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQUVQVndZcFVCS0N6M3plQS16cWctMi1ia2s3S0FqdDZoQzZwS3BZX3FZQUF3ZzZMMXdyLVd4WDM3cE9wMGMwd0RZSDJLekF4SUJaZ2VsQ1R3bXV1c0JhZWh6QnBkdERwNUo4VGQybHdGSkRSckZiTFAyMHM1aXlWYVI3TzF4OXR3WTYyZTJTaW9kaC1UTmZYbTRqa3djc2dGb19ZTG0xbw?oc=5",
+          "publishedAt": "2026-11-24T15:40:00.000Z",
+          "title": "Jensen Huang is back, but Nvidia still has to deal with his baggage"
+        },
+        {
+          "id": "n64",
+          "name": "Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUjJVOFZYSk5kbjVGWlFnUFNjQzMwcDFRZkROWkdjYlQ4dllhYjNFS2ZaT0JKUDdxV2h5ZVc0UHhQUGhFSXFUdFFScXR5eEZsMG1aRVBNbm95dldZRWdhQXRFdXNHRkszc3luSWhZcG05dS1PTFJEejIxQ2prazVzdHNwSjJWeDZNM3lKSzR4SHNqYzA4X29tMTFjM0HSAaIBQVVfeXFMT24xTXNMOG9Hc0xRVGVIejZzblEtRXVkNEoyYkhzODVkUlc3MkdQcmtsaWtGRUp1X056ZXVZU1VRazY4YUdKMW9ONm1Ock9MS0ZfcmthdlBrUnpSZm9JeVpVNVlYQUtYU3FIVVQzUEhhdzFiVGZCSV8zcm9YSnBuWkRjLUhkMlNMa091MThydF9iUjI1OTFfcHd0R0NDVTByeFpR?oc=5",
+          "publishedAt": "2026-11-24T15:50:16.000Z",
+          "title": "Nvidia stock cools after Huang’s return-driven surge"
+        }
+      ]
+    },
+    {
+      "title": "Anthropic shares fall below $83 IPO price days after listing",
+      "brief": "Anthropic traded below its $83 IPO price Tuesday, an early low about 27% under its first-day opening trade; Reuters says it is on track to lose nearly $200B in value.",
+      "impact": "The first frontier-lab IPO trading under water makes later AI listings and private rounds harder to price, a direct read-through for fundraising across our AI companies.",
+      "action": "Ask BlueNexus whether any bridge-round investor has asked to reprice since Anthropic fell below its IPO price, and finish our capital call this week.",
+      "sectorId": "ai",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n20",
+        "n29",
+        "n82",
+        "n90",
+        "n92"
+      ],
+      "sources": [
+        {
+          "id": "n20",
+          "name": "Forbes",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbXljM2RQYTNVck00MDJQSENRYWtzM1Q1VE5RRXhhMjJ2dkdxTmN0TzR3QmlLS3FrUjJ1Z0haQnVGVnRINDcwMmp0dzhaWWdrUllLYjY5emlCMGp5VXIxS2pkcHh4Sl9UYTFEbE9LRkJ0WXVKSG5CZlZJVjZxTVotSGdkSzlTOUp6MjlsUHRZcFZsb01MbHB4eFhLMHVqNnpfdXRsVXVn?oc=5",
+          "publishedAt": "2026-11-24T14:06:14.000Z",
+          "title": "Anthropic Stock Falls Below $83 Per Share IPO Price"
+        },
+        {
+          "id": "n29",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/markets/anthropic-slips-below-83-ipo-price-in-premarket-trade",
+          "publishedAt": "2026-11-24T11:30:46.000Z",
+          "title": "Anthropic Slips Below $83 IPO Price in Premarket Trade"
+        },
+        {
+          "id": "n82",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+          "publishedAt": "2026-11-24T18:30:42.000Z",
+          "title": "Anthropic shares fall below IPO price, a worrying sign for AI startups"
+        },
+        {
+          "id": "n90",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMHBNOVY5RDc1NmxUUjNnZkNhLWROQkhUOFZpVmQ0SEI0UG9aSUpTTjhpV3EydTNkdW8xYm1KOWF6OXg2Z3BMaUJCWTE3WnFCM0hCZGNuQ3ZKUklsYUROVWQzdExOamNKVlJLRTgwYWpoYVdOUjlDY0pxTmxZajlvckJ4cHc0TG1hbW1ZUkszaDZ2M2Rvd3RqTWRFaVRENXVWT0pr?oc=5",
+          "publishedAt": "2026-11-24T16:59:06.000Z",
+          "title": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value"
+        },
+        {
+          "id": "n92",
+          "name": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE52N3pxbHMtWVo5dTFpRXlOOVhpd0hOdDFpSG5rODE0eU1hN1JuNzNvWFktTndsOFlrZ3JNS012UjBNUVhHdEVQbUZzMVlQLTNFcUZ4eS1Qdnk0N3hKMEZRbWJ0UXpjX1phX1ZURWlpMNIBdEFVX3lxTE9vUXY4VGJhUjFrckFDVFZsZUt5Sl92U2pIQlFxdmdNY0hMUzRZUDR4YmJBeHFubENiNjROTkZVQ3dpbWNOcTA5TVVlZHJLU2dTRzBRYXhVUUhJeDJMNV85d1RoMF93XzRuTjY0dE5QRHh3SV9G?oc=5",
+          "publishedAt": "2026-11-24T14:33:22.000Z",
+          "title": "Anthropic sinks 8%, falling below $83 IPO price, but analysts are still largely positive"
+        }
+      ],
+      "actionWho": "BlueNexus"
+    },
+    {
+      "title": "Three tankers hit within minutes in the Strait of Hormuz; oil near $89",
+      "brief": "Three tankers were hit within minutes in the Strait of Hormuz while US-Iran talks are deadlocked. Oil traded near $89 on Tuesday.",
+      "impact": "Attacks during stalled talks point to a lasting supply shock, not a one-off spike. That keeps energy-security demand high for nuclear and distributed power, our Atomic Turn call.",
+      "sectorId": "energy",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n160",
+        "n125",
+        "n245",
+        "n246",
+        "n58"
+      ],
+      "sources": [
+        {
+          "id": "n160",
+          "name": "The Maritime Executive",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSmJUcDVLUnFJUDYtTlNnWDZOLUFTLXVnaXd5VFliRUZveGZVNEx3TVlQb1FtUDd4ZTdoY0NtbzE2dzJCbTVOSDUwSTExaW1WR0JiRFQ3XzBaNkp1S3pINHNQNGJiMVNUc1JZcXB3OEtFM1pFVXc1dVNzd3J4NEdIS2Zlbm15VHZvWFJ5cFlQcmZkYzNMZ0E?oc=5",
+          "publishedAt": "2026-11-24T19:42:00.000Z",
+          "title": "Three Tankers Hit Within Minutes in Strait of Hormuz"
+        },
+        {
+          "id": "n125",
+          "name": "Marine News Magazine",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNOGMySUxZTnMtcm9wbzhtcUdnUjBZLXFkNGoxclJKd0xxcWtHUmVYRTl2RG40QWdTeENLdzhoT190WmdlaHVxNnkxY2NCY1czc1ZSYTBVMDRJN1AwdElmbENhSS1fblFqSW92Ykp3UmF2RWNtMUdNUFFyVTdVVm5GQ1ln?oc=5",
+          "publishedAt": "2026-11-24T18:56:16.000Z",
+          "title": "Oil Prices Rise On Hormuz Vessel Attacks"
+        },
+        {
+          "id": "n245",
+          "name": "EnergyNow.com",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPSXFwRjliNjJSakhhNDA1YlQ3S20zRG82UUhOMnhxanFONHdpT09sWlVGb3Q4RmRqbTBzSWg4RVVKb3piREVQUjI1cFphaVpiQi03Y1IyMFRWMmkwOEc2RVN0bF9jajNiYWdHWU84SGcycGwzY2N2czV0NHJhOHlrc3JfSXMtYTQzS3dBLTZhN3FHdw?oc=5",
+          "publishedAt": "2026-11-24T16:16:34.000Z",
+          "title": "Oil Prices Rise After Ship Attacks, US-Iran Talks Deadlock"
+        },
+        {
+          "id": "n246",
+          "name": "Transport Topics",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBDR2d2TGotdnpxSEhyMmp3X2MydzFUcVFxRmIzWENEWTdhYVVfWE5ZSDJSN2trMEhRT1ZLMVFuNW9GN3VZV3ZES3dNWXRGNFU0M1U2ZkZYaDVsVmRJQTVVT2V0ZkhOeTJ1?oc=5",
+          "publishedAt": "2026-11-24T13:19:43.000Z",
+          "title": "Oil prices rise with focus on Iran war diplomacy"
+        },
+        {
+          "id": "n58",
+          "name": "Eurasia Business News",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQM1ljM2NfLXUwSENYazc2cERKNkFvM3FuRkF5aGd3dnRRZFB6d1FnVnZlMlZMem1ScmNWWDV6X2ZuclZCSm92WDAtVlZFLWxMWDItS2NzendFVGQzN3VobEhhU1dZeXRFNjFXWEVRdTJ5c1d0WFpxcUdvcURia1RwSlBxX1NjV29GZ04yT1RNdExOLVJERmZWdXRtSWF4NDhxQk9mOGhTRk9HOHN1Zmd6QktFcVB1N0FhTFplQ21Oal83ODFNYTJKNmtxNEVuNFZwRDVQSnlIYzBBOElrOW5ldFg1aEFhVER2SlVKZ09n?oc=5",
+          "publishedAt": "2026-11-24T21:25:34.000Z",
+          "title": "Stock Market Today, November 24, 2026: Nasdaq Falls as Nvidia and Anthropic Slide, Oil price at $89, Gold Drops to $3,620"
+        }
+      ]
+    },
+    {
+      "title": "Eli Lilly and Novo Nordisk rise about 3% as the Nasdaq falls",
+      "brief": "Lilly opened up 3.02% Tuesday and Novo Nordisk gained about 3.2% while the Nasdaq and S&P 500 fell. Simply Wall St links Lilly's move to a neuroscience deal.",
+      "impact": "Obesity-drug leaders held up while AI chips slid. GLP-1 demand is the mainstream edge of the enhancement debate in our Holy War call, so it is not a niche trade.",
+      "sectorId": "lifesci",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n39",
+        "n48",
+        "n49",
+        "n71",
+        "n69",
+        "n104",
+        "n210"
+      ],
+      "sources": [
+        {
+          "id": "n39",
+          "name": "Quiver Quantitative",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kU0lxLVczQTFzaEhjODdtVF9pa183aGtsbnpxdTg0VzByRmFjRmp6LVFRWHhDNG9ybEdsZ25pVE9aZlRFbllwVDdiMk9sS0xBbEZCTndybzEzTnhLb1loX1NEdXoxZWJIRWlNM2N0by1YZ1NUeHJXb1g0T1lZLXM?oc=5",
+          "publishedAt": "2026-11-24T15:33:00.000Z",
+          "title": "Why Eli Lilly (LLY) Stock Is Up Today"
+        },
+        {
+          "id": "n48",
+          "name": "Benzinga",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYUY2MlVfRGktNERwUkJTZEk5SUFBeTRJeGxNdnNZR3pXTXBlNG0zZFFuU0xqa3JYYUhXYk85dG15VXI4SXdNeHVfOTNlcHVfVDFsRUxjU3NKT0JvLUQ5WjVlLXBqZTJyazQ1ellfQVgyWnFkdE8zMzk3Si14Z1NXdjBWZEVRZFRCYmJDX2ZPa3ZyNkgwb0Z2VjZlYUxzZWM2emtlWXV0UmJDZw?oc=5",
+          "publishedAt": "2026-11-24T17:55:03.000Z",
+          "title": "Eli Lilly Stock Rises Tuesday: What's Happening?"
+        },
+        {
+          "id": "n49",
+          "name": "Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNeHRvdWxtMHdScmVFdWNzU0ZWQW1JbkpBa2NPZW9udDlLc0NZaGNSRlM2S2RtWXNkWWhPeUl5dW83LWZ3N05NWXhPRVZ3dmdoX1RaU19RU2hTWHFOM1Zaal9PWmxEOHQ1RWJzT3FDRldrRWlHTnJNUzZ4dTBLVlpUTU9QWUdVb3dURWUzaGpUZ2ktMjdhaHZ4MGx6LWJ1Rkdi?oc=5",
+          "publishedAt": "2026-11-24T15:17:18.000Z",
+          "title": "Why is Eli Lilly stock rallying today?"
+        },
+        {
+          "id": "n71",
+          "name": "TradingKey",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUEI1LTJ6bVlmN2FTaHZ4VkpOT3hXTmV5Wlc1UU9fNzktX2ZkZTVkVmZZQ2hwUnp6VlpaWE5xZnVYR2p3VEJ4alExZVRfX21xdGIybWJPRXZyRGRaUWUxTnY1OXlReDNzNzdwaTRKelBFRVpfd3N5TzlaU3ZYZlI2cXRHeWxEUmlJVGc?oc=5",
+          "publishedAt": "2026-11-24T14:47:30.000Z",
+          "title": "Eli Lilly and Co Stock (LLY) Opened Up by 3.02% on Nov 24: Key Drivers Unveiled"
+        },
+        {
+          "id": "n69",
+          "name": "Simply Wall St",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNLWg1NFUzWFZQdWl5REdKQkFmWHUwQ29rNHAzbl9HR1ZudXAwU1poX3ZWaVlRNklmNjZPS2x6X1plNXRVTzBnMHJzSTZYNTNPZ2xwVVFxMXhFc1FPdVdMRXU0aldXV1hQdzZXdU41Yy16LWEyblBWb010OVlEbmlFakM2dUxpUDBrbmZ1dnZpcFEyemZtTmF2enBOa2dvaUdvcEhodHA3Tk9GZDBrMHBPZHQ5aldIQThkeWlfWDJQZWJqY2JnbTZHRmItemxmVmE2b2pJN0lsMNIB3AFBVV95cUxNbVVaNmptd0VVSWJ2UERocVNoeTQ1dGpocE9WUVhmV0VYbUNtWkhOR0J6UE5vXzhJNVprWUIzWHBiejRkQkQ5WkNwbUlJVTNUVVd3UnNmNzNDeFczUzFwTjA0RTJjRmZuYVRDX2QxeHh3Vzc5UkwzWHRteTB3TzRCM21RTjhUMW12M1NneG8tV1U4cTI2RUxCLVUwTEt2MmJmUjJBYnVwTzNhVGJxTW5YZC04S1kyS1FFU2ZJVzFZZ05QY00wblFvZ20zZl9zN3dzQUtCeDc5cGkzd3l2?oc=5",
+          "publishedAt": "2026-11-24T21:09:12.000Z",
+          "title": "Eli Lilly (LLY) Stock May Be 22% Undervalued Following Neuroscience Deal"
+        },
+        {
+          "id": "n104",
+          "name": "Traders Union",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSDRBMlJtb3luRlZ6ZWYzVXhseFlrTVFodnNJeXdHX05IT09jWjB4NHc2ejl0bFl3NzQ2VUZoZGZtdUw0RUdZdW1KT2pEaHE1b3o0TnRiZ2NmYmhFVkxNRXRNcy1wRzV5Qm5DMFVqVngzX3JqVHFYckpxdC1RSFBGOVB5bXVESlRPcVlxdzZLT1c?oc=5",
+          "publishedAt": "2026-11-24T15:07:36.000Z",
+          "title": "What's behind Novo Nordisk's latest 3.4% stock surge?"
+        },
+        {
+          "id": "n210",
+          "name": "TradingKey",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY21BeFBCS0JUR05GQXZaYW5xQlQtbHdmRnpBM0ZTSWhoTG9BQ21Id2RhSGtVX1NhSS1rZWs0TmxnV1oyYW80bGFEaDlCOWJZLWxuLUZrdFUzTHdPUGNSdHJJQlJzZDVIMDZIRVBaTlA5ckFXWm8tZHI1LWdiSmluZmhaODM3YXhnRkE?oc=5",
+          "publishedAt": "2026-11-24T18:15:44.000Z",
+          "title": "Novo Nordisk A/S Stock (NVO) Moved Up by 3.17% on Nov 24: What Signal Does It Send?"
+        }
+      ]
+    }
+  ],
+  "frontier": [
+    {
+      "title": "China to fly its station's first international astronaut, from Pakistan",
+      "brief": "China unveiled the Shenzhou-24 crew, with a Pakistani astronaut set to board Tiangong as its first international visitor. It also published its most detailed roadmap for a crewed Moon landing before 2030.",
+      "impact": "A first for Tiangong and a sign China is building its own partner network beside the ISS. The flight is planned, not yet flown, and the Moon roadmap is a government plan.",
+      "sectorId": "space",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n115",
+        "n673",
+        "n676"
+      ],
+      "sources": [
+        {
+          "id": "n115",
+          "name": "Phys.org",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56OVlfMlgzN21oMUJpTVdLUTN1dmx6dFFTS3o0OFVtOGF5enE3RlNLWlFnd1lWNERNYTd4UHdVTzNzc0hLd0d0cmdZdXlXV3A1UHk3TDFsX2tyX0xnbW5ZOFhwVy1HckxuT08zN3JHY3NuTHpNeGc?oc=5",
+          "publishedAt": "2026-11-24T09:54:03.000Z",
+          "title": "China unveils new space mission crew, with a Pakistani astronaut set to board its space station"
+        },
+        {
+          "id": "n673",
+          "name": "NASASpaceflight",
+          "url": "https://www.nasaspaceflight.com/2026/11/shenzhou-24/",
+          "publishedAt": "2026-11-24T16:26:52.000Z",
+          "title": "Tiangong Space Station to welcome first international visitor"
+        },
+        {
+          "id": "n676",
+          "name": "NASASpaceflight",
+          "url": "https://www.nasaspaceflight.com/2026/11/china-roundup-2026-11/",
+          "publishedAt": "2026-11-22T22:31:24.000Z",
+          "title": "China details its path to a crewed Moon landing before 2030"
+        }
+      ]
+    },
+    {
+      "title": "Report: robot builds a structure in space with no human intervention",
+      "brief": "BGR reports a robot built a structure in space autonomously. The coverage we have does not say who ran it, what hardware was used, or whether the result is peer-reviewed.",
+      "impact": "If verified, autonomous assembly is a step toward in-space manufacturing. Treat it as unverified until the operator or a paper is identified.",
+      "sectorId": "space",
+      "confidence": "unconfirmed",
+      "itemIds": [
+        "n241"
+      ],
+      "sources": [
+        {
+          "id": "n241",
+          "name": "BGR",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPczJHb284ZDl4MXdOQnV5WnEtcVMxSEFxS3JxQ0JFZFk2MnBLOWlOUDlZaTc5NHhLX05zOVRMYXBDT1BlcVRVRE93TXAwTkViSDFTdktXU1F4SGVULXp4eDJpVlBBSWZSXzRYazBLSENxRFJiRXJpbFNMUUs4TDVraWxB?oc=5",
+          "publishedAt": "2026-11-22T16:17:00.000Z",
+          "title": "How A Robot Built A Structure In Space Without Human Intervention"
+        }
+      ]
+    }
+  ],
+  "frontierQuiet": "",
+  "meta": {
+    "generatedAt": "2026-11-24T21:32:31.491Z",
+    "date": "2026-11-24",
+    "edition": "daily",
+    "pass": false,
+    "weighted": 2.64,
+    "rounds": 3,
+    "round": 2,
+    "readMinutes": 7.2,
+    "poolSize": 400
+  }
+}
