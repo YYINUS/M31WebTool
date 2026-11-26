@@ -1,0 +1,1136 @@
+{
+  "date": "2026-11-26",
+  "headline": "FCC clears SpaceX to deploy up to 1 million orbital data-center satellites",
+  "bottomLine": "The FCC conditionally approved SpaceX's 1-million-satellite orbital data-center plan; Neuralink said the FDA cleared a pivotal brain-implant trial; Nvidia paused server shipments to four Southeast Asian countries. Hot inflation makes a December Fed hike the base case.",
+  "portfolio": [
+    {
+      "company": "SpaceX (prev. xAI)",
+      "title": "FCC conditionally approves SpaceX's 1 million-satellite Starmind data-center plan",
+      "brief": "The FCC authorized up to 1 million solar-powered Starmind AI-compute satellites, conditional on backup radio links and more safety data for higher orbits, with a 2040 deployment deadline.",
+      "impact": "Regulatory cover for moving AI compute off strained grids, but the conditions and 2040 deadline make this long-dated option value, not near-term revenue; no first-launch date was reported.",
+      "action": "Ask SpaceX investor relations when the first Starmind satellites fly and what the higher-orbit conditions mean for launch cadence, before the Dec 8 share unlock.",
+      "sectorId": "space",
+      "confidence": "confirmed",
+      "topRank": 1,
+      "itemIds": [
+        "n1",
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n6",
+        "n7",
+        "n8",
+        "n9",
+        "n10",
+        "n12",
+        "n14",
+        "n16",
+        "n17",
+        "n21",
+        "n28"
+      ],
+      "sources": [
+        {
+          "id": "n1",
+          "name": "New York Post",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNU0stSXVTOGNwVzlZVW81VHpEcXRZYzZZb2x3SXdfUzFxOTkwN0JpVXJURnVneFpBU0RIem10dU5qS2dHZy1aT0JRZkRCeF9hVkNvWkdaajBablZicGRXbUk3V2NFNUw1dGJOWWtUMF9hWkU4d1R4cE1pN0FVRmx4bU5xdUtvcTZkRzlkbEx1YzdxeDliWjc2RDh5UWtTQ3dmNXdBSEpKQV92VkNvNTdRM1dUaHBxUkRLbG5VOVFPdjl1UWRMSEE?oc=5",
+          "publishedAt": "2026-11-25T22:38:00.000Z",
+          "title": "Elon Musk’s plan for SpaceX to launch 1 million satellites for ‘constellation’ of data centers approved by FCC"
+        },
+        {
+          "id": "n2",
+          "name": "Ars Technica",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUVA4bVlwQUcwTUx4OXZtYzdfSnc2OUdUdEpJWHBGZDI4YUxNajUxUWI2UTliVFlDSDZvcFF5QVNtc1VKNTA5M3U2QVhLdmtCTXQ4QUhmM1RLaW10ZHZXSm11eWtYemxHSEROendsZTJWRjNIZVJUb0ZCMHJQV1hwUXZQQTdGM2JzZUtvQU5YQ3ZfV0FIWm16ODQya0FmdWpp?oc=5",
+          "publishedAt": "2026-11-25T18:22:38.000Z",
+          "title": "The FCC has authorized SpaceX to deploy 1 million satellites"
+        },
+        {
+          "id": "n3",
+          "name": "Gadget Review",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbTdycExfbHRnM0xhcFZxaW4zQmtVZV9Oa0V5ajBoMFN0QXEwcFEtYWh5dndpZzBmMWtrRVFYandfbWZMcmlNeUdEN2J1aXhuMDBHTk9fVXpSNHp5UjVobEdrcklZdXdVbHRHcWcyRnVyZWhVTmJOb1F2WG1LbDY3aEJ0NEduRFJoOXlfNlVB?oc=5",
+          "publishedAt": "2026-11-25T18:47:23.000Z",
+          "title": "The FCC Authorized SpaceX To Deploy a Million Satellites"
+        },
+        {
+          "id": "n4",
+          "name": "Spaceflight Now",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQTVGcmQwYXo0b3pLS1hFRmxuR2RHaXVSOUJycVJtMnNtd1hSdl9MMHJSMWRpaHYwbmhLbzI0WkFRT1NFdTJEd2pIa3pXN3owZ0RYRC1tX09rTGlHTEtvbG1nVlVPbEZZcllRZUlVdEJfVlhjajBKekxHOG1pbzM2VDFhOXVISDNZQTZtYzdIWUx0MVk5eWpLbEQ2Z0ZXOU16d1NPdGVlZDdYNnR6Z0pZd3FYNE9MNmdsdmhrSw?oc=5",
+          "publishedAt": "2026-11-26T01:29:33.000Z",
+          "title": "FCC green lights SpaceX’s plan to launch 1 million ‘Starmind’ data center satellites"
+        },
+        {
+          "id": "n5",
+          "name": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QVElMeVZGcjdmLW43WEF1YjZPd0JMZHNNVVRteXNfOUl6LXpRVTVGYmwyNWNVUjVvNnpzSV9WWGVjQ3lxU2NhMVoxenpRcF84R3UwRVBBYl9PM2FsWVdsck5hWTFlQ1JrWmZKT1JwMzBvTjg20gF6QVVfeXFMTUFXTTNNRUdwdThhelJBLW9uX2YzZUthSnZDYS1Ub3llY0NfLXljRWpPRmdSeFFqbWo2T1BTQS1RT0M2anRiZWNqQVVpMmRoanhWOXFTTWMxOUlwVWxfank5LU5zYkhjYkpXWDAybjlmUHJmVXRJT3I4RHc?oc=5",
+          "publishedAt": "2026-11-25T18:22:59.000Z",
+          "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites"
+        },
+        {
+          "id": "n6",
+          "name": "CNN",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQ0x2cTY1eldxQW5lTHFueTItMEJDQXlWYXJSLWQzWVdKV3Y5UVNSd2dwMUNCcVNtTTZWLVBZSklFcm11X0JtczRyQzJzV0huclBsZzdKQWJTLUxlOEhxU0tlUndoTFlyWkxIVTF4bGxwM1FWbTBEWjlpTk9oZ1RIaGtmdXVUbjFG?oc=5",
+          "publishedAt": "2026-11-26T12:20:55.000Z",
+          "title": "US authorizes SpaceX to deploy 1 million satellites for AI data centers in space"
+        },
+        {
+          "id": "n7",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNVk5uRnprd285MEw5V2prcHR6bXljVGN4cUZuOHA4eHJUZkFzOVFnS1QtYnZaal8yYUYxa0t1cW84WjVzQWpub0czSGxUblh3STB6WnZxcThWZUxNRDk2emliZ0tfTmk5U3YxY3FZRXdEYWNyb2VMTmlkZE5RNWZHOS12OWdjSkpNdzhGU0Z4NWo3VmpSZHNXWGNJZUFpZjl2T2xuUkRKRXBpOTFqVFdFLXFvV0xHd1czWDFKbFU3OWFGU21B?oc=5",
+          "publishedAt": "2026-11-25T20:44:01.000Z",
+          "title": "US authorizes SpaceX to deploy 1 million satellites for data centers in space"
+        },
+        {
+          "id": "n8",
+          "name": "Benton Institute for Broadband & Society",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQkJKSlhsVjJDSEF3QXByZ05wcVh5R3VTTVNTQ2VqaFkxcVRsNWFQTVlWck80ZEdOMFRSMjZhanpGU1RUdThkcmxNQnEzdTdpcmtVQld2TlNNM3loeDk5ZlB1UmU1OWkyUS1SV1BLZmtoTEdnd3RBVWNHbVFzcFREUTktN0RRVW1PZGZUWkEzRHg?oc=5",
+          "publishedAt": "2026-11-25T18:19:16.000Z",
+          "title": "FCC Authorizes 1 Million Satellites for Data Centers in Space"
+        },
+        {
+          "id": "n9",
+          "name": "CircleID",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSEY3VEJiR1hqeVdveXhBUmpqTVFrb2dzVUNfZFBsX3BaalJKUXUxVXdQUzFXY1hweXZOcGNWTlBTWUtXN2hOWGV2cU12QUJ1UTdtdUZOUkJrRklSWFpxUW9HX2hFRXdOREprdWdJV2MtNkk4WS1zNHNjNzZFQ1djXzNuWWdSOExxMWlrRzdVOTUwSDlaX29OeFo4dTRleVhLb3NJ?oc=5",
+          "publishedAt": "2026-11-26T20:21:00.000Z",
+          "title": "FCC Authorizes SpaceX’s Million-Satellite Orbital Data Center Constellation"
+        },
+        {
+          "id": "n10",
+          "name": "www.trendingtopics.eu",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Md1M0ZUdBSHQ1NVhLTi1VV0ExYkdsc1RnOUxhdDhpdmJYemo4TFNyd0Rnb01uTHNYaFM0RjVZbWVsa19VNFpnc0pURmhmWFV4ZTFLRmh0RWxXMUlVVVVhTVdmWGpzSzZsZ3hIOGlldTJiLTUxS002VzFiNA?oc=5",
+          "publishedAt": "2026-11-25T20:50:22.000Z",
+          "title": "FCC Clears SpaceX to Put a Million Data Centers in Orbit"
+        },
+        {
+          "id": "n12",
+          "name": "BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1KMGNuQ0YwUmpnNHZpaThEbUQzVEhfZXB3ZnNpRk9Renc0bkVxQm9CbFNRU3lXTzlfYmlOT0R2aW1Bdkl2YmtsUXpETGs2bnZQNmtlSlMtdnRpamc?oc=5",
+          "publishedAt": "2026-11-26T09:27:44.000Z",
+          "title": "US approves SpaceX plan to send a million data satellites to space"
+        },
+        {
+          "id": "n14",
+          "name": "Decrypt",
+          "url": "https://decrypt.co/383991/elon-musk-spacex-fcc-approval-ai-data-centers-space",
+          "publishedAt": "2026-11-25T18:18:10.000Z",
+          "title": "Elon Musk’s SpaceX Gets FCC Approval to Launch AI Data Centers in Space"
+        },
+        {
+          "id": "n16",
+          "name": "explainx.ai",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObDhoNU02c251X0J5NHJBMHBZM1JCNmY4MVBMUUl2aml3T0N5dFRDZGZ1OWt6ODhQc21ZeHNUZmdvVXB6T2o4SWs3OE9EY3lQM2JabVNTa1FoWHRCcFlMZUtyQkdpbGJjQVByNlFhcEhRdUNMSi13RkNRUUZvRDZfdXhRcS1CMlk3YzZCVHR1UzRCMVJNT2ZWSlFLZ09neTg?oc=5",
+          "publishedAt": "2026-11-25T00:00:00.000Z",
+          "title": "FCC OKs SpaceX Starmind: 1M Orbital AI Satellites"
+        },
+        {
+          "id": "n17",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/infrastructure/fcc-conditionally-approves-spacex-s-million-satellite-ai-plan",
+          "publishedAt": "2026-11-25T17:13:13.000Z",
+          "title": "FCC Conditionally Approves SpaceX's Million-Satellite AI Plan"
+        },
+        {
+          "id": "n21",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOYmllM1hyMFA1Tlh4bjZFRTJBR2NGWVhQNDk3Z0FpUVhLc2s1MW9sbGhNV18tSjktdHRyUW40M2dpVmVmMC1IcGpBRnpBZEs4bU1KRzBIQ3FFMjBPMnY4S2xHQ1ZtTE1jVTk1YU5RMTdhS2dOV1QtaUV5bGxyTUttUG9HR0xDYkc5QjRXeWtWUGN3dkNrTzBPWUxNUnMwV2czWGNPZUxRSFFFcEVrY2RCQXcwN1JvdWk0VEl2emp5bkZRV092aHhV?oc=5",
+          "publishedAt": "2026-11-25T20:02:26.000Z",
+          "title": "SpaceX Stock Rebounds as FCC Approves Starmind Data Center Satellites"
+        },
+        {
+          "id": "n28",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPb3k1WnpqdzVuVC1PaVZXNGg4N2hiclJYUzg2aU9EbU1FbjV0V2MwaXNkekZrYVZEMHBqVHpJeUZyaTM2X1UweHZaeG4yeHd5T3ppNmRMRG8zRVJkcVZxbVJQaU1JYlZMYXZ5Y1R3Mll6WDVDQkhvRGU0WWJNRUJaVWp0OXl0Tms4XzdtRjB4N0wzVl9wTnJaaEdoRWZpdEZXaHlyN2o0YlVlUUt6cGhxMTY1dDZsLXdHdHVNTDhrNW1kTndxUmNMQjBMakg3MXc?oc=5",
+          "publishedAt": "2026-11-25T18:37:57.000Z",
+          "title": "SpaceX stock pares losses following FCC approval for data centers in space"
+        }
+      ]
+    },
+    {
+      "company": "SpaceX (prev. xAI)",
+      "title": "SpaceX shares slide as Tesla merger talks continue; big unlock due Dec 8",
+      "brief": "SPCX fell about 4% on Nov 24 as Tesla merger talks continued, per press reports; up to 797.6 million shares can be sold from Dec 8.",
+      "impact": "Merger talk plus a supply wave leaves SPCX hostage to two unknowns. A Tesla deal would change what we hold and when we can sell, so the decision belongs before Dec 8, not after.",
+      "action": "Ask M31 finance today to confirm whether our planned SpaceX sale was executed, and bring a hold-or-sell recommendation on the Dec 8 unlock to the next partner call.",
+      "sectorId": "space",
+      "confidence": "unconfirmed",
+      "itemIds": [
+        "n108",
+        "n679",
+        "n676",
+        "n675",
+        "n73",
+        "n43"
+      ],
+      "sources": [
+        {
+          "id": "n108",
+          "name": "The Motley Fool",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWjJZNTE5bkpJN013SjlOSGRWVkRaMGVWaS1DM2gzcUVzM3hBV0U3cXRQNDhJYnItUXdSV25MbldRUDhKNVpDY1lSZE5wTEdwMnlnNEg2MU5WcmJNN1JVUHlhVFhjbzhERXRZUEN2UWNvbWJRRDNXeWMyN1p4NkZLRkpYT3NSMUt2Mm44ak5kVkNyX3JPMlcwZGxDTlFxLS1ZSDZ6Qll5MTRva1RIMzFVOUVvNkNBb2tGd3V1WW5yX3l5TlctSGo4RjM4R1ZfajdabTB3dC1jaWNXSGljU3FWYW9jbTZxMEht?oc=5",
+          "publishedAt": "2026-11-24T17:49:05.000Z",
+          "title": "Here's Why SpaceX Stock Slumped Today, And Why it Could Come Under More Pressure as Tesla Merger Talks Continue"
+        },
+        {
+          "id": "n679",
+          "name": "TradingKey",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPM2xNM3ppdzdaVDF4dGVYV1k0eE92MllJM3lmblVvaXlvY0pCU2ZSYzdIZ2ZHbkRhcTA1WkloLTRHc0Y2QUloVFBLd3BaZTFoTTQzQ3FzbkpYSHBONVd5Z00zbUdhOTJpbjdYMmdoMHNtYWRFQ2tsN21UUFdQaW1lV2RtbFFEU0dvZ0JR?oc=5",
+          "publishedAt": "2026-11-24T15:15:37.000Z",
+          "title": "SpaceX Stock (SPCX) Moved Down by 4.03% on Nov 24: A Full Analysis"
+        },
+        {
+          "id": "n676",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSUdIejktbVZhVmswTGh6WTZsOTZtbnh2cTJPcEswaHZyUmktWVJFU3djVXV4NlFSUTlERTJyNHJQVVBaWGxOVUZVdV9hSDRkRHhVeEhjYmhJTGowQzIxWXFpdjBxZlQ2MnZkREhNU1l6THRHS190dWtVYmFnamowS2JNdXNtSkxvdEhKRVBoZ2N5c0lZODdwSnd3MXc3T2l2LXFvVl9WemxGdw?oc=5",
+          "publishedAt": "2026-11-25T20:11:21.000Z",
+          "title": "Is Space Exploration Technologies (SPCX) Cheap As Tesla Merger Talks Raise Valuation Questions?"
+        },
+        {
+          "id": "n675",
+          "name": "Nacionale",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUXl4bUlKWEltRGNXS2d3WHMzaEVFb0x3SWVPQ1RYUTVJemtYTU1Ia3BHajBLMUU2S0ZCS1lUSTZnT3FtSUc1ZUpCdXlLdzJLRHNFRFpmVHNBcWFVd2wzaE1mWVIyOXdrRUhLU0QtbWl1ODd1b3JNM0Y2THNaV283eGJpNHJkQU40cDc4d2RGc3F5THE1a2xrZHhkS2tlejBPMWxCVmQwVUE3bkRFbmRpakw3ZmtzV0lQY2NuaXZsZjc?oc=5",
+          "publishedAt": "2026-11-23T17:11:47.000Z",
+          "title": "When is the next SpaceX stock unlock? Up to 797.6 million SPCX shares can be sold from December 8"
+        },
+        {
+          "id": "n73",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOU2JzUElDUGJyN0MzOC0yV21iYzdfdFhQWmRIaGtWZjM0QkdRY3lzT1BlX1pjUGtZSGE0WFI4Nm9pSHZjM2J2Z2NiVFFsd2VuTEFnMDV1MVFwWVllcUcwYmRkTHVtVjI2Y3hzSEgxN1dJLTd2SUU1UXFlN2VYZWtLYnJLT0hUeWtJeWVQSlhRTUZicnZuQUtKSnBYNHNVRHVDdTZxalhYWS1TQ3Mwa0N3?oc=5",
+          "publishedAt": "2026-11-26T17:46:06.000Z",
+          "title": "Tesla: A SpaceX Merger Could Turn $5,000 Into $10,000"
+        },
+        {
+          "id": "n43",
+          "name": "The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMGl5dzhJZEtScFQxVzh3VVUzM1RpcXhMd1lFd1A4WkpVbGNhNmxQMEt1cDJZbG1mX20yLTk4Rnd4UW9UX244YThfOGptdThRNjhxcklRdnNwOExyellLU3ZKYzdtbXQyN1BSajNqcEFpTjFBalhRV2ZpaF8xejYxcFp3bWQ?oc=5",
+          "publishedAt": "2026-11-23T16:13:33.000Z",
+          "title": "Elon Musk Faces an A.I. Dilemma at SpaceX"
+        }
+      ]
+    },
+    {
+      "company": "Erebor Bank",
+      "title": "Erebor lends $100M+ to Harbinger and passes $1B in loans",
+      "brief": "Erebor and Pinegrove Venture Partners provided over $100M in debt to truck maker Harbinger; the FT reports Erebor has topped $1B in loans, and it lent Forward Industries $50M.",
+      "impact": "Debt to venture-backed hardware is Erebor's wedge, and a $1B loan book shows demand. Harbinger choosing debt over VC equity is a model other startups will copy.",
+      "action": "Make the Erebor intro Circuit requested this week, and ask Erebor which crypto-native borrowers it would lend to.",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n18",
+        "n19",
+        "n40",
+        "n60",
+        "n61",
+        "n62",
+        "n622",
+        "n623",
+        "n624",
+        "n625"
+      ],
+      "sources": [
+        {
+          "id": "n18",
+          "name": "Mezha.net",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNU211WVA2Sm9qTU1IeHZiZFVPYXluUzlmRWdGUVpHRmRLQVVXNkl2RXgxUDdHTDZmZjBWQlczUk10RExZVnYxczZaemQ4dTZRenI1bG15ZU1qU1oydW44V0Y4anE1RTBnMnRuRWk4eWFLRHVidElXLXZuNVFENW9BekQxc09HOVUtUDZv?oc=5",
+          "publishedAt": "2026-11-24T17:45:53.000Z",
+          "title": "Harbinger gets financing from Palmer Luckey’s Erebor Bank"
+        },
+        {
+          "id": "n19",
+          "name": "Orange County Business Journal",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUlhUSDBhN25WdVBjbjRUeXdoODFlRnRYSFpDLW9BNEl0WkVpdzdKbFdkMlZyT0FuXzNFVmFSLUNRSklwUVZOekJRb3kzTWN4anVfZHIwRUVTeFMydkgxOUpyV1hDRC1FSzNNRjZCdFFPNkhTR0R1YV9uTGtaZVFDSzhVNmVnRVJ0cGI4cUUyb1ZmZWswTS1xWmo5Q0VvazJmZkVsaS1NU25EREhCLUlpalVn?oc=5",
+          "publishedAt": "2026-11-24T19:35:22.000Z",
+          "title": "Harbinger Secures Over $100M Financing from Palmer Luckey’s Erebor, Pinegrove"
+        },
+        {
+          "id": "n40",
+          "name": "Tech Funding News",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRFRyaVlmbnlwSzB2QzhWTFFkbHEtRk1GX29CZVVBSVJReVQ2RzlVak1TTXB4SERFVXYxTDk1Wm91YndQQTFRQjFxcjI5MnJ3LTlhcGRBa3NuNjZuUzRhYnhQRWJpTHRlbTREUGZvR0MtNmVHLVNFM3ZjcEJtRXM1S2dLMDFBRXlqd1FzSmd2dHhmR2F2a2hneURXOVVTbHZCMXpOSzNtR1FMZzN5OHowZmhVR2FWbzdnR0ttRg?oc=5",
+          "publishedAt": "2026-11-25T11:23:36.000Z",
+          "title": "Palmer Luckey’s Erebor Bank backs electric truck maker Harbinger with $100M+ in debt financing"
+        },
+        {
+          "id": "n60",
+          "name": "citybiz",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOcF9UckJkbDQxUlRzM2tqNE5nLW9HZm11Z3VZQWFHQ1VWMjk0UHh0alAxcXJxQlVmM1FGRnFDWGZnaXNSa2VOcENkLVZobUdPMkZvTGtaLXpqQjJfRFMyR0dGNUlTRGh3Vi1SV19jd2pzcUJuWVNhN3pzRV9raGJSOVh1SXJ4TTJsV2YxYzlKTmhTbzJqVEVnQ1ZZYl9UQzFuUUtHTzFabmRtcXlWVEk4Y0s1M3FYbEJuazJlbzBWVVJGUGZWXzV0UHRCSENsVWhFTDdRaDhuSVR5bUZs?oc=5",
+          "publishedAt": "2026-11-24T20:30:20.000Z",
+          "title": "Harbinger Secures More Than $100 Million in Debt Financing From Erebor Bank and Pinegrove Venture Partners"
+        },
+        {
+          "id": "n61",
+          "name": "TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcmI2Y2hqYWtIM1ZvOUlmUkRqUVdRekVFNDJ0enJ1TGRwMHlNZFNOb2VqLTQtUDI1QnNuRnZqLUdmYk1hUllocHFvM1lFVXVuZU1tQ3RjaFFrMTc4UXROT1JHUjNZbHBKbnVmRUhVQXBoeVhIS3NsTy1zZUVpTFIycGEwa2FnYWpOU29vYWk4ZE5UR1A2Z05ySWJPMWU2MnRKLXRPemc2TXhWQk1ReTNxWjZaaw?oc=5",
+          "publishedAt": "2026-11-24T17:29:09.000Z",
+          "title": "Electric truck startup Harbinger gets financing boost from Palmer Luckey’s bank"
+        },
+        {
+          "id": "n62",
+          "name": "Orange County Register",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWDlZdzBWNnVYSnk2U2RNMVFJbWExVE1meTBtY1FQR0FXUGN2VmN3ZGRjcjMwZUdFMkFNSVd1Vk5kdFJwdUNPWGZRQ1VwbjlyMkpkNDdUZGVuaWFhRFlCM3l2cFZKX2ZUMEU1VF9GLWZZV3dLV3VpSUZrODRfUzByWnRTMEgwbHBYNWNWZXZRVk54YWVlNm1DSVQ4Y1dhcW1heGFZYjFkQ3NMLVU?oc=5",
+          "publishedAt": "2026-11-24T20:38:15.000Z",
+          "title": "Bank backed by Palmer Luckey invests $100M in Garden Grove’s Harbinger"
+        },
+        {
+          "id": "n622",
+          "name": "Financial Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS005WjE3WE13YkwybXphbVB1Q3lMUWEzdlczVFBuRWVSdWJlb3VmVW1mZzAxNmFTYzdDU3ZSUDloSV8xNHhLN2NaOVhVLUhXS2M5N2ZrR1YtdW5zVDVkRGN6b3ZsTDNzS21YMm9vMVh3TldoQmhGSFlGMlpHa2xYeVZIXzY?oc=5",
+          "publishedAt": "2026-11-23T11:00:08.000Z",
+          "title": "Palmer Luckey’s start-up bank hits $1bn in loans"
+        },
+        {
+          "id": "n623",
+          "name": "New York Post",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd1hNQmpUdnNiZFh0dWNBSHh5S3FqZkhLdE5qZnQtaThzM0tLaGRCYjZabEd0cDdlWFRjdm5PM3ZZVHhxRnhyeXU2Y1M5Wk5aX3Y3el9aX1JzRTJfSFctQ3lxeDBoYVVJTVRxR2tXdGNNckUtTFl6aldPYk1uVWVxdDNpMnM3WjFEVHNfZWNOdzV5SnY5UWxpMUdSVTEtZGhDc1FFTWhRTGNlS3NzVXVFOUVpdXY0VXJKc2hqdkVtWENnV3d2?oc=5",
+          "publishedAt": "2026-11-24T21:14:00.000Z",
+          "title": "Erebor Bank blends startup energy with midwest values — to win $8B assets in under a year"
+        },
+        {
+          "id": "n624",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQU05nRVYzY3NORXo1QnlMX0JzS2Q2V0hERnF1Q1JWOWx5dF9KV0RycDVPcjVZNGxCYVMyNnpBLXpJYjZnb1JyYVpmYU1nUGpoVVR5SnhyZkpzZXVvSzV2VlVNZVE0Rlh6TDRoSDYyM25QckdUNVRHc0tTbDFlQ0laUUlVTEpfOW5LbmFyRENSd1RIRlRObjZDWEFxMnJ0aFNQdDloRUZFTUFqR09UcEZ2b1ZucEh5M052ME5valpHaXZJeEZuVXdTb2ZR?oc=5",
+          "publishedAt": "2026-11-19T22:03:01.000Z",
+          "title": "Forward Industries Secures $50 Million Two-Year Loan From Erebor Bank"
+        },
+        {
+          "id": "n625",
+          "name": "Axios",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPME9DYi1oU3hmZlZncFUyUnRvME1mc21wQ3hjS3VmS2xJM0JBTlZsTWZIY1VCb2Nab0g1R1RZcUVycHpmdTF1eG9NdnRKVEMtdWRkSG9oeDhZRzE0dVBDVERjRWtCb0VxcXVETVJQcTRvQXo5MjNvSGNrOElOQVYxRGY3a3FtaHlnbkNqVHNfd2RjZVk?oc=5",
+          "publishedAt": "2026-11-24T14:04:22.000Z",
+          "title": "Harbinger is moving past VC equity to use debt to grow"
+        }
+      ]
+    },
+    {
+      "company": "Perplexity",
+      "title": "Perplexity caps agent use on Pro plans while Amazon's suit over its agent continues",
+      "brief": "Perplexity added weekly agent-usage limits to paid Pro plans. Amazon is still pressing its suit over the agent before a divided judge, and is reportedly in talks to lift its block on Meta's Muse agent.",
+      "impact": "Metering shows agent compute is costly and now being monetized. A Meta-Amazon deal would give Perplexity a template for retail access; losing in court would shut it out.",
+      "action": "Ask Perplexity's CEO this week whether it is negotiating its own Amazon access deal like Meta's, and what it will do if the court rules against it.",
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "itemIds": [
+        "n637",
+        "n640",
+        "n659",
+        "n634",
+        "n635",
+        "n638",
+        "n641",
+        "n54"
+      ],
+      "sources": [
+        {
+          "id": "n637",
+          "name": "Superpower Daily",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMEFtZElSMEtvVWJPSXdqTVZPdVZYcmwteF9nT0E0OHZpVzR5RFhWNk5RWWs4T2UwOURGMDFMSHBJcHdVTUU1bG93YWhRTXhqMW1rNVVaQWYtMUVldGhhZUpWQVlSU2hBX3kyTHhGSXZTSWJSYmgydmFuaGxZT1BCemdnaDgxSl9CTFdmYUNMd1I4c29JNVVRcjV6cHBqZnBZWVd3OGNoODNRRXBQ?oc=5",
+          "publishedAt": "2026-11-26T09:54:00.000Z",
+          "title": "Perplexity adds weekly AI agent usage to paid Pro plans, with effort limits"
+        },
+        {
+          "id": "n640",
+          "name": "Digg",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBFR3pudXpYYkxJTWV5dGhJSW9Pc3dOb21XNml4ci14UldrZkZNbnJPNnRHVUZoZ0tRa2s4YXIwRm5XQQ?oc=5",
+          "publishedAt": "2026-11-25T23:39:53.000Z",
+          "title": "Perplexity’s Time Machine gives AI research a rewind button"
+        },
+        {
+          "id": "n659",
+          "name": "The Next Web",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1zOXZCT0NOMXhZYWFtSV9rV2dneG5nN2ZBSG92RURFbF9kaWpjN0p6Rk5DWlhfRWs0TmFZM0NpM3dld1dzWkZiLUhpRGxBQnVVTk5sal9WVlJNSm1hMXQxSWFDTm11UmNjeEpVZ2s0TlhRcXpxY0ZHOWJ3?oc=5",
+          "publishedAt": "2026-11-25T20:57:38.000Z",
+          "title": "Perplexity’s Time Machine lets AI agents search the web of the past"
+        },
+        {
+          "id": "n634",
+          "name": "Law360",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSnN6Sk1rUElPS0F4MDNjcE9KX21PSThHQ3A5bUZ2bzhRYTRycnAxWVJUMTYyU0RRamh0NXpHbGJJeThXdzBUdzl4QnRFcHBsYklLZ2lFbVF5NTJrUHJRMS1qSmZSbkVBSE50QzRGQlpySG9LT2M3RFAwd1FseTJaZmw3UFBNWGpkV1ZrZEhNeE90dE5IZGd4TUloS0VSYkXSAVZBVV95cUxNRmljenp2WGM0NkE3QVpNSF91U0s2VnIxMkVvOGdnN0tCVi13ejM3WENTdHRkLW1oQ3BoSUFPQTVXaWNqWF9pNXptMUNmdEFfWU8wMXRlQQ?oc=5",
+          "publishedAt": "2026-11-21T01:12:50.000Z",
+          "title": "Perplexity Fights Uphill To Avoid Amazon Suit Over AI Tool"
+        },
+        {
+          "id": "n635",
+          "name": "Courthouse News",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaGFOTkZLSWQ1dTRKQkpVOVl2Qk05UjVHTGt2MjZGT0ZPam96MUZNdnowWTgxQzFMNEFEeTNtLVl4RU9CNGxBNXdCUGdfRGd4Tm1qdWI4TGNyMS0wSmc4ZkZMSTBxRXo2bFp0Rm1rR2xhZnRiWTN2UzRvWENwQUI4SHVid2ljeUJTelFhWlZMU0tubUhOc3VpWldxMHlCODdHRDR3?oc=5",
+          "publishedAt": "2026-11-21T00:08:45.000Z",
+          "title": "Back in lower court, Amazon wants to continue suit against AI assistant"
+        },
+        {
+          "id": "n638",
+          "name": "Bloomberg Law News",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSDRCbC1SMGx5SkNCbndmLUZJTGJpU0hhOVFETUl0TjFBNktoQWRTcWxZbm8zOUd3SGVPZERfTnNiQVg3N3NQc1I4VC1Sd093U3M4VTQwZE9NYWYyVVJDYjNZR1NEMnlsSTd6MVJmVmtIQTNhUFBWRUlxMTkweGJHMVBjSFhHVE91UzlCdEN5cVBUODdWTFhtLTNmWUFiQQ?oc=5",
+          "publishedAt": "2026-11-20T21:10:00.000Z",
+          "title": "Amazon Meets Divided Judge in Bid to Block Perplexity Agents"
+        },
+        {
+          "id": "n641",
+          "name": "Crypto Briefing",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3eDZHemlQMHlOcC04SnFOYzM1Snl5V3BpSUtEMmVJZjd0aVhvRlVCNExEUTZWbVk3TFFBaHltX1JpWG12REJWLVl1cEhsSkx4TGlxTEVWZHRkVC05Z3Jld3E1Ylg5eTd5bVdNVFdvdjI1LWFSNV9rSm1pTGVPV2M?oc=5",
+          "publishedAt": "2026-11-20T21:57:28.000Z",
+          "title": "Perplexity Computer can now work inside Chrome, Edge, Brave and Arc"
+        },
+        {
+          "id": "n54",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+          "publishedAt": "2026-11-25T14:10:18.000Z",
+          "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse"
+        }
+      ]
+    },
+    {
+      "company": "MetaKeep / Supercritical (RZLV)",
+      "title": "Rezolve Ai raises 2026 revenue guidance to $360M, claims 543% H2 growth",
+      "brief": "Rezolve Ai said H2 growth was 543% and raised 2026 revenue guidance to $360M; its shares have traded below $1.",
+      "impact": "A company claim the market is not buying: the stock stays under $1 despite the raise, so only audited quarterly revenue will move it. No reason to add before then.",
+      "action": "Ask Rezolve this week for the revenue bridge to $360M and a firm date for reissuing our RZLV share certificate.",
+      "sectorId": "web3",
+      "confidence": "company-claim",
+      "itemIds": [
+        "n221",
+        "n632",
+        "n633"
+      ],
+      "sources": [
+        {
+          "id": "n221",
+          "name": "Rezolve Ai",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPMjlRYjUzRlVJeGdJUzU5X0d4Q2s1THFXdUxzWlY3LVJYejhTbnJTbzIyWHFQYmp3NTVJY21Xdm9YZFdWVUdPNk9pUmdBZWFoTHdtR2VZSDJoT2IyQzM2N3lvd3hpZURka1lsNFJiWklsTlhIMllwdnd4eURocjd5a2dFWE51TmtXUTczMDdYazVCR2pKM2VQQlQyYl9lYm1rRkpQS0JhTkZqeFBteDhjaFJSSFBKUmFnMTUzZElVeDFxa2ttc3BrUUFEWnZoVjBKVTFueWpRM3JVMzRHakFXRE1aNHBqZUFxTEhkYklEakpFMWh2ZHc?oc=5",
+          "publishedAt": "2026-11-25T10:27:13.000Z",
+          "title": "Rezolve Ai Delivers 543% H2 Growth; Raises 2026 Revenue Guidance to $360M as Platform Achieves Global Infrastructure Scale"
+        },
+        {
+          "id": "n632",
+          "name": "YouTube",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qc3lNalhQX3p0RG9IS3VvMDBWcjcxNGxuVjBLcEFJcU5JSDY0Qm5FU2VTQy1aaUZ3NHBlNXNiVldxT3k2SmU5cE95SjN6UE1ReVZ4MkFNUlZScjN4?oc=5",
+          "publishedAt": "2026-11-20T21:40:20.000Z",
+          "title": "Rezolve AI (RZLV) Stock Fell Below $1. Can It Hit $360M in 2026 Revenue?"
+        },
+        {
+          "id": "n633",
+          "name": "StocksToTrade",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA2X3QzSUk4ZUxoamIyNFNKTTR0bHpoeE9KWjdoR2tXemRsM2gwc0ZMYXM1ZVV0VFdlWlI3UkFDVW5nRGhSbEJZZWRadEdEcjVmM2U1amlVRFg1M0tudXZsYUVhcDhtTGZrOWdsRW1ERXVMVlJtZ1E?oc=5",
+          "publishedAt": "2026-11-20T19:40:00.000Z",
+          "title": "Rezolve AI Falls 8% Despite Customer Sales Gains"
+        }
+      ]
+    }
+  ],
+  "portfolioQuiet": "",
+  "thesis": [
+    {
+      "thesisId": "spiritual-warfare",
+      "verdict": "confirms",
+      "title": "Trump says he lobbied Nvidia's board to reinstate Huang; S&P flags governance risk",
+      "brief": "Trump told the WSJ he pushed Nvidia directors to bring Huang back, citing the falling stock; they reinstated him with an inquiry open. S&P put Nvidia's AA rating on negative watch.",
+      "impact": "For: a president, by his own account, shaped who runs the leading AI chipmaker, and S&P now prices that key-man risk. Against: it rests on Trump's word; the Pentagon denied a wartime-powers report.",
+      "confidence": "single-source",
+      "itemIds": [
+        "n15",
+        "n197",
+        "n46",
+        "n13",
+        "n200",
+        "n193",
+        "n134",
+        "n20"
+      ],
+      "sources": [
+        {
+          "id": "n15",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/trump-says-he-lobbied-nvidia-board-for-huang-s-return",
+          "publishedAt": "2026-11-25T00:20:09.000Z",
+          "title": "Trump Says He Lobbied Nvidia Board for Huang’s Return"
+        },
+        {
+          "id": "n197",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/technology/post-pentagon-weighed-wartime-law-to-pressure-nvidia",
+          "publishedAt": "2026-11-26T06:10:12.000Z",
+          "title": "Post: Pentagon Weighed Wartime Law to Pressure Nvidia"
+        },
+        {
+          "id": "n46",
+          "name": "myMotherLode.com",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQajBtS1hEdXZGSk9wSW5SRW85M3g4M1UzbU96WUY2d2g5TzAtUkxscFQxS2Z1dkk1a3d6WEN4Wi1fUXJQRVBJWGxTbEY0dThYd2dYcWswZTM4US1Gd2Y2d2RpWXFqeXpmc1pzWFdoTm5GRzgwa1lDZ3pPRkRyMGhKNl9BdTRHQ0tSZFo0M2J0aTMxYV9veTZMMHZWT2NPS2pESGRhcVlXdUkyLVZfYXNqeTREQlMxMlFCNHVTOTRHRmlPVF9aaFplMlJWY2lfaURu0gHQAUFVX3lxTFBqMG1LWER1dkZKT3BJblJFbzkzeDgzVTNtT3pZRjZ3aDlPMC1STGxwVDFLZnV2STVrd3pYQ3haLV9RclBFUElYbFNsRjR1OFh3Z1hxazBlMzhRLUZ3ZjZ3ZGlZcWp5emZzWnNYV2hObkZHODBrWUNnek9GRHIwaEo2X0F1NEdDS1JkWjQzYnRpMzFhX295NkwwdlZPY09LakRIZGFxWVd1STItVl9hc2p5NERCUzEyUUI0dVM5NEdGaU9UX1poWmUyUlZjaV9pRG4?oc=5",
+          "publishedAt": "2026-11-24T21:13:08.000Z",
+          "title": "Nvidia board joins Jensen Huang under scrutiny after reinstating embattled CEO"
+        },
+        {
+          "id": "n13",
+          "name": "NPR",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPX25mOUxzWDkwQ21WZ2o0V1dCM28yVlRXQ2Q2Nk1OeDhuY3pGQ1YxdkNZejh3dXBWemRELW1zd3gzV0lWdFY1R0lSRHJzS29vUmtQMTB6WDQ4ZVFVWnM2OFhVYWJucG05b3RMZ3lTa19OY2ZQRENDa3lxejk4SEhGU1hVU0lkclpoS1BwZWhjdEQ2UEltc3plWXQwSmY0M3J1MzhiWjA0enpPS1E?oc=5",
+          "publishedAt": "2026-11-25T23:01:09.000Z",
+          "title": "How Jensen Huang's return as NVIDIA’s CEO is going over in China"
+        },
+        {
+          "id": "n200",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/markets/s-p-puts-nvidia-s-aa-credit-rating-on-downgrade-watch",
+          "publishedAt": "2026-11-25T18:59:04.000Z",
+          "title": "S&P Puts Nvidia's AA Credit Rating on Downgrade Watch"
+        },
+        {
+          "id": "n193",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+          "publishedAt": "2026-11-25T22:44:32.000Z",
+          "title": "SP considers Nvidia credit downgrade over governance and 'key man' risks"
+        },
+        {
+          "id": "n134",
+          "name": "United News of Bangladesh",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNWURwYWVheWJaMzlSNm95SUhvWFcwUGRKUmJSdVRPQmVtQ2E2czhLWVVWc0FyQTlkbUtmMUNlT0ZVZVptN0xaTmg4MjlKVU9nZm5la2paaldiUmdHVlFUZ0pSQ2huMG1IeEpwd213bVllRjhHSjV5c3FKWDg4aUhMdVRTSFFyMldiNzJsYUJMNER6M05jQ3B0X3g1MFV2RUNjc1c1ZFQ5VUhGZ0NoMXNIMU9sSkdkUzg?oc=5",
+          "publishedAt": "2026-11-25T04:06:22.000Z",
+          "title": "Nvidia board faces scrutiny alongside Huang after reinstating embattled CEO"
+        },
+        {
+          "id": "n20",
+          "name": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5XLUdDX1cxTnFzZl95T2dMX0lKR2VPY0xNZkpQby1qbGR6M0xWYkJNc2pCNGhNZWNvZWQzM2lSazRPcDh2bk1hdnE4QjdTRFhaZUVQVElNQzdNb3NEaEJrdjJyY3ZGeXNPcUx0dVNQcETSAXZBVV95cUxObktpNGV4RWJzSEZJV2thdzUwTTZVaFB4NER2VTJrQlRoQXl4MS1OcU5wdzBtdDJmYVpSYm9zU2R5SS1rTjIxQ3Y1eVJGSU1tMlhPY25OWHVkSi0yVGt6b3lNNjRMSFlZb2tJSUdHSVJtTC01VXJ3?oc=5",
+          "publishedAt": "2026-11-26T02:15:00.000Z",
+          "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO"
+        }
+      ]
+    },
+    {
+      "thesisId": "atomic-turn",
+      "verdict": "confirms",
+      "title": "Oil rebounds on Hormuz incidents as UK briefs industry on £35bn small-reactor plan",
+      "brief": "Oil rose on Strait of Hormuz incidents and renewed Middle East attacks threatening Gulf supply recovery. In the UK, SGE SMR briefed industry on a £35bn plan for 14 reactors across three sites.",
+      "impact": "Repeated chokepoint scares keep the case for nuclear alive, and the UK plan is the state-backed SMR order our call needs. It is still proposed, not contracted.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n174",
+        "n175",
+        "n348",
+        "n94",
+        "n164",
+        "n318",
+        "n319",
+        "n163"
+      ],
+      "sources": [
+        {
+          "id": "n174",
+          "name": "WSJ",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMG9zX0RPUEVtQjFwX3JjTHJlTGZQMHY0OGtiTXRlbE9Kam5MLUdKTlJmdXgyaFZJSWdiWFZtbWVzQXlqTkp1ZzF6d0UwaEg1U09FY2xHbl9hM1FVYWZubGlndHJ4ZzlsMHNDZThVczU0VEpvTFZONGZZdXd6ak5zV1RBRnRQaTk2dU01bFJsYkQzMzAyTVNkcFNCYWxDYkNrNkpLeEpmZWFIWmVTNDZHTUxFTTFYckVpM1NjeQ?oc=5",
+          "publishedAt": "2026-11-26T12:45:00.000Z",
+          "title": "Oil Prices Rise as Traders Weigh Middle East Supply Risks, OPEC+ Meeting"
+        },
+        {
+          "id": "n175",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ1NmZHdfOFowSUtoQzFYU2FCZ2s5dzdDRUh4SDYtU0pHaC1ONzRPd3d0RUJYeVFKdGpFMDNfTDlkQVd3UmhBdndib2JWU1g0RVBrOEE5YllNeDZLZnA3QUYxUTBHVFBYXzdGY1pjWkZfS05Wb3hVS3lHMktIY3MxbkVVcHB6Z0kyRWNWSHl5UWs?oc=5",
+          "publishedAt": "2026-11-26T09:54:45.000Z",
+          "title": "Oil Prices Rise as Renewed Middle East Attacks Threaten Persian Gulf Supply Recovery"
+        },
+        {
+          "id": "n348",
+          "name": "Baird Maritime",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMF9yaHJYdHRRcWppOUxnUzQtUVZpT2dSSWF2V24wclFENEg1anBRMEc3eWRQRFZLSDR0YmdTcUMyUWRhd3JJZDBUVkdmdXBpR1RJclg1OHRUTmpjblhZMUczbENTemVLOUFpRjEtclVzZlNrQjB4VTFFdmRtY05RaTZtQmZrN3NiUkc3VEtZWV9YWkc5MUFFX09VLWF0R3pldnZ6OTF1ZHNWaEhCZlpBMnF3U1Bad9IBwwFBVV95cUxQaUwtM2RpS0FMLXBoNENDZ0gxSXcyWWY1al81Rld3c2ZkUUlxMTdkb0xKLWw4S1Q4SlpHaklWUXpyRnMtWDVsNGh6Z0J2SXdOVjFfRTFzc0VfaC1WZ0VoelZRQl9NZU9aaG1ZZFgxSTVsckdRUmhrXzFaWkNmcTdhVzh4M2tPbkRqUFJCbDZIYWhGYk9CT1hGY001a3RCNlluUFJyLU1PNjA5OU0wOE1SUnU4Skt4eTNWbUxhTXdFaHFaSGc?oc=5",
+          "publishedAt": "2026-11-26T17:54:33.000Z",
+          "title": "Supply fears lift global oil prices after Strait of Hormuz incidents"
+        },
+        {
+          "id": "n94",
+          "name": "Crude Oil Prices Today | OilPrice.com",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdXhQWm1iclNBSEpwX1lUZW0xUEd3bkxwdXROQlFhNElIeUVmU2FtWUZ2T0QwRVVxV3dhR0NxQjFneTZ0WnJzQkxwWDR0NzkzUi1Ccl9FYTMzY3liWDJZUGFSRlJYcEdVUzZaWVhNMmt5N0JqRlFqbk5TZjlGcnFJcE4zTWo4N01kMVlGcU9Ia2hZZm1zaDZyT2NIOGY1MlgyM2ZF0gGoAUFVX3lxTE9VejBUQXZxWFN6LWcxQng1bHhkeVM2cy04QnV0Z1dBR29LWEF4Z0FQbURFbUtrcm5IWHdRTnd4QTNYT3ZUZTV1b1dsSmw4dXVzZ1FfWU0tdTMyY041THAzOTB4NVIzUVUyOVAtVUZ4ZUZaemFnT3UzRVNja3MwYVpkeHZJanMtdFNjMkRHQ2MtU0pRdFc1eDFONjdrMXZLMm1uWFg1MFhoaA?oc=5",
+          "publishedAt": "2026-11-26T12:30:00.000Z",
+          "title": "Oil Prices Rebound as Middle East Supply Fears Return"
+        },
+        {
+          "id": "n164",
+          "name": "Construction Review",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRDh5bktOR3FpQUpXUU1Fak5VZEFLZ3hOajdCc1lYNy1TMlFldDZqeE9md2h0UFdtWF9PVlNVV01DaXVYYkJkYjhkYl81Rm9BRVhQdnBsdmRwRDBiWFRPX0hNaHZ2R3h4WmR4dXVGVzJlV0xWUWdhNGpWQTBCU0ZGcmU2T3ZZOTFiRHJUNU8zdFpSVVBCR19oeXllaldsQjBVNGF3LXZpSWZhSGNWOE9DRDlMNHJHOE91Rms0MXBGX3Utc1dnQk45dUtn?oc=5",
+          "publishedAt": "2026-11-26T13:04:14.000Z",
+          "title": "UK Small Modular Reactors: SGE SMR UK Briefs Industry on £35bn 14-Unit Plan across Three Sites"
+        },
+        {
+          "id": "n318",
+          "name": "New Civil Engineer",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMENWcUJpLWNlN3dyZ2IxOEw1U0U4cnpYVXMtcGlIdEFkT1BjYWdURkdIX1pYX2xGVkhzRTBGT3BzSDVjS0ZuakNWa0hLd1hHSWZTTEN0TFlLYnpSSGdyNU1zNzBtWnhERmxpalJoS3M5RURKVEI0MlQ1WFFTV0FzVGFtR0VSZnhRRWJ2UGxWWHhtVlUzZVBGMmxUREswdGc5Nml1YnU2dTNPc1RfNmEtdzhkMUxjU2dOYWRlWA?oc=5",
+          "publishedAt": "2026-11-26T10:41:56.000Z",
+          "title": "UK industry briefed on proposed £35bn small nuclear reactor programme"
+        },
+        {
+          "id": "n319",
+          "name": "Geomechanics.io",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc0VGWWRxcTVXbTM4LUpEUnJlUjd3OVVFbXhxUFZscXRIY0QyM3dzQmVoakFIS3JMS2VSemNSNUxPM2FsS3NlVm9RM3VlR09paXNfb2VidkduTWxJM3VDNm9MM0t5ZWJLRFIwUHJtNDF4RzRTSFY2TS12R3Z0Ml9nUWY0Um02dDFqTURsZ1l6UmpoclB3WVR6QkRLVHA2TkN0dXF6VUdua0ZoU0NaNnExQThWTQ?oc=5",
+          "publishedAt": "2026-11-26T12:08:08.000Z",
+          "title": "£35bn UK small nuclear reactor programme: civil design notes for engineers"
+        },
+        {
+          "id": "n163",
+          "name": "Crude Oil Prices Today | OilPrice.com",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM05xVE8tWFl5UmR5M2k4VWVINkZXWFVLaVlmb2ExS1dpbW1RRzZwYzFyYnpRYVoxWU5uVEJqSGJSMFo0cDRpQVZwVHNCTGRlRU9HM3psTmFZS3VYVTM3Qms1aWdKVC1pcWg0dEstVm9zcEJrbVdQT2Q2N3VKaHV4ZXgyYnRUWTcwQ2J1ZFREQWNjaU95V3hmVV9XVlFFM2ZSb3VOWklnbEZXMGfSAbABQVVfeXFMT3Fsdzg2V0NjYThpNFg2RmFCcGhCZlJNVHo3ZGlTRmtiY1FtbDlRZlBFTWRXTjRuSEtvbWVRVFhuZmUzOXB1Rng1VHNBOHF2VG5jdU5SQ2hrQVl5Y1JVdXZaRi1Ic1BGM3dCV0QwVkVqRE53aUtQRmtWX190cUlhbm5zazk5RkRnWkx6SFoya1AxZDZxbUNlX3NVQVEtR3Zjb1o5V3l5QlhwajlKaUh5aFc?oc=5",
+          "publishedAt": "2026-11-25T22:00:00.000Z",
+          "title": "Small Modular Reactors Finally Have Real Momentum in the U.S."
+        }
+      ]
+    },
+    {
+      "thesisId": "populist-1873",
+      "verdict": "contradicts",
+      "title": "Bitcoin falls below $58K as ETFs lose $453M in a day and a Fed hike nears",
+      "brief": "Bitcoin fell below $58,000 after stronger US growth and hotter inflation; US spot bitcoin ETFs had $453M of net outflows Wednesday. A December Fed hike was already the market's base case.",
+      "impact": "Our thesis needs money that is too loose; a likely hike into an AI selloff cuts against it, and ETF outflows show buyers are not yet treating tighter policy as debasement.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n190",
+        "n194"
+      ],
+      "sources": [
+        {
+          "id": "n190",
+          "name": "Decrypt",
+          "url": "https://decrypt.co/383967/bitcoin-sinks-inflation-trump-tariffs-ai-selloff",
+          "publishedAt": "2026-11-25T16:52:50.000Z",
+          "title": "Bitcoin Falls Further as Inflation, Trump Tariffs and AI Selloff Rattle Markets"
+        },
+        {
+          "id": "n194",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/markets/bitcoin-falls-1-3-after-us-inflation-and-gdp-reports",
+          "publishedAt": "2026-11-26T16:08:31.000Z",
+          "title": "Bitcoin Falls 1.3% After US Inflation and GDP Reports"
+        }
+      ]
+    }
+  ],
+  "regulation": [
+    {
+      "title": "Nvidia tells partners to halt AI server shipments to four Southeast Asian countries",
+      "brief": "Nvidia told partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia, per the FT; Dell and Supermicro told buyers orders won't ship. A new US rule requires licenses for certain advanced chips.",
+      "impact": "Aims to keep AI chips out of China but strands Southeast Asian data-center builds, the latest export-control shock. Super Protocol's NVIDIA-linked deployments are exposed if licensing widens.",
+      "next": "Licenses decide when shipments resume; no timeline reported",
+      "action": "Ask Super Protocol by Monday whether any NVIDIA-based deployment or partner depends on servers bound for these four countries, and what its fallback is.",
+      "sectorId": "ai",
+      "confidence": "confirmed",
+      "topRank": 3,
+      "itemIds": [
+        "n38",
+        "n39",
+        "n22",
+        "n146",
+        "n83",
+        "n23",
+        "n31",
+        "n48",
+        "n84"
+      ],
+      "sources": [
+        {
+          "id": "n38",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+          "publishedAt": "2026-11-26T20:03:54.000Z",
+          "title": "Nvidia hits pause on chip shipments to Southeast Asia"
+        },
+        {
+          "id": "n39",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/nvidia-tells-partners-to-halt-ai-server-shipments-to-four-countries-ft",
+          "publishedAt": "2026-11-26T06:19:49.000Z",
+          "title": "Nvidia Tells Partners to Halt AI Server Shipments to Four Countries: FT"
+        },
+        {
+          "id": "n22",
+          "name": "NewsCord",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUjEwdnNLWW5YUGNBRUdFcmFrNDQxeUlhTzF1RFRaOEE5NmkzbnVCSUJuOGZZclpCZVJTUXhUQjZkaEs4RnpGYkxiRkRpMEUzaDBaUmVhV1VKaXgwU2NvR1dLS1ExeVZ6TFBTalB3MG8wOWt6MmxUWi1DUThtbmJwTllWQmNKb2lrUUFFVkxuZ3JmWURvUVdUckVWaTZ4LXlGZjdSTEN2YVpscGcteU85THUtY3Nsc2xhYXBnYzFUN1VwWXBNa3VUUWFkcC1YeUM1WkExR0w3X29KaGF3VnBqT2RlUXBkY0wyd0E?oc=5",
+          "publishedAt": "2026-11-26T11:23:49.000Z",
+          "title": "Nvidia Halts AI Server Shipments to Four Southeast Asian Countries Amid New U.S. Export Controls"
+        },
+        {
+          "id": "n146",
+          "name": "Financial Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQbDFtRGxaSmJxdndYb1VMbTBjLWJGOExCdUdULWNlRXF6RG90SDQzQkdYb29GbmI3Q1J5UHp2Yk80N3R1Wkl4UXlfWFdFd0VmQ2FEYUZXdnFpbnR3SndRWkh6dVJYQlY1cHhQMWVkTEpJaV9lbHJteGc1ai0tS0ppYWxuWVI?oc=5",
+          "publishedAt": "2026-11-26T05:00:19.000Z",
+          "title": "Nvidia halts chip shipments to south-east Asia"
+        },
+        {
+          "id": "n83",
+          "name": "KVUE",
+          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxQZDNQQ1lUcG1EWkhfcTI3WmxFWDNiZmJDTUFqemswRzNVZ3c1MlhVODVUdk0xWEVLdDl4QzM4UjdFRm5wRmhxdVU3X3dWX2tKdmRSOUlqUmt2OVUteGFiTTZzbzQ0OFdabld0aFlEdDZNV3RWYzUwdnhHbUxCV0VCbk8wNjRCWHQyNzBBNkFkSXV5R0U0Z1pqMTJEUE96MXVzdTVuRjhRQ2puVDgyWnVsSzN3emtyZFV4dEZ5TVRmdnNWTWh6dHB6ZVF2RUcyZ05KSDlCdlZfNjJMQXNhM2ZpcjJjeTMtUFI2Q29IZDBCYVRvX3dNVERscTg4Wk9SdXVsNm9yUU02OU1qelN6VW1HdmM4cHVKTzdUN2dXM08ybXc4WHYxeUh3LWJEd0c?oc=5",
+          "publishedAt": "2026-11-26T11:46:47.000Z",
+          "title": "Nvidia reportedly stops shipments of AI chips to southeast Asia as US toughens export controls"
+        },
+        {
+          "id": "n23",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOV3dMNG5nSXB6aWtwVVpJSTc5SU5ST0l3MjZkdUtVOGhHalBMaGFBaWVHT1UxM3dLTXd3QlhmaW5iV2dxQ0N6R1F3R3Zwd0p2cjQzajM5NUVuRDhnallFMHpGa1VObVZvb0pfaWRlX3ZuQTF5RVYxOWV1ZzRZQ0IybVlUZWIwM0xOb2RnRWh4MWF1a1BmMzRXNEdSaUl6dw?oc=5",
+          "publishedAt": "2026-11-26T10:59:10.000Z",
+          "title": "Nvidia Reportedly Halts AI Server Shipments to Four Southeast Asian Countries Amid Tighter US Export Controls"
+        },
+        {
+          "id": "n31",
+          "name": "Barron's",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQenZwTC1tbVoyVFBCQVY5MlpGa296SzNNUGpXT195Z19tamNhMGx5RFk0OHhKcEVpa0RGTnFWYjd2UWIwUFZOY295RUhaWkNrMUNET1I5cUUxLW4zejJRUjE2TkNma1ZjcnpucDJFeHNXNkp6S2E4VGFRNzl3WXBWZUVFNG1kcy1k?oc=5",
+          "publishedAt": "2026-11-26T13:59:00.000Z",
+          "title": "Nvidia Halts Server Shipments to Southeast Asia, Says Report. The Stock Can’t Catch a Break."
+        },
+        {
+          "id": "n48",
+          "name": "Forbes",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNT2IzeDRBUHdXNi1LQjBNUEl3S21Va0NyeGN6eFZQZmdHUU5STk5FRXZTSFVhd2tYbTBHNjRfUkNDS29yNDlXYXdYMXZGMVZOZzE1STd1dEdVdk1iM0szN3B4ai1QWkpHTDlnVGZzZzNlQ09acXRCRklnWTgwMGV2Q3MtbWtYbkg0SnV1bjNCMV9tbW5zMUVEUU1IOTBNRHdDZUpGWXZuaG1MLWlSV3p2UkZFQVhoeF94RDY3Yzh6MkdtamtCVGQzamRsQ1VkbTU3X1huQ3NJTQ?oc=5",
+          "publishedAt": "2026-11-26T11:17:43.000Z",
+          "title": "Nvidia Halts Server Shipments To 4 Southeast Asian Countries Amid New U.S. Export Curbs, Report Says"
+        },
+        {
+          "id": "n84",
+          "name": "Coinpaper",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONF85SUh3R2x0TlBfdGZpZDh1c3FQWW1OYjRwUm9mT2pUNzhVaGI0c25NXzlHNklvbHJBQ252Si1fNUV2eWJJTlZsZk1DWkE1YTN2bGgtN2xKazliN1B6a0hVYVpsS0VQb2VWWE0xblN6RTdNeThvVk5PeUhyZHJFMWw1OFQyYjRWTkpaSF9aRjR1ODJRbHRKY2F2ZXhNcVFCaG1IVVBmbFdab213SDctOVJR?oc=5",
+          "publishedAt": "2026-11-26T16:35:20.000Z",
+          "title": "Nvidia, Dell and Supermicro Halt AI Server Shipments Amid New US Chip Export Controls"
+        }
+      ],
+      "actionWho": "Super Protocol"
+    },
+    {
+      "title": "House committee advances Strategic Bitcoin Reserve bill with 20-year lock",
+      "brief": "The bill codifying Trump's Strategic Bitcoin Reserve cleared committee and is eligible for a House vote; Section 5 holds federally acquired bitcoin for 20 years. The 119th Congress adjourns in coming weeks.",
+      "impact": "A statutory reserve would be the clearest sovereign Bitcoin signal yet, but without floor action before adjournment the bill dies. Treat it as a marker, not a catalyst.",
+      "next": "House floor vote needed before the 119th Congress adjourns in coming weeks",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n52",
+        "n99",
+        "n97",
+        "n81",
+        "n140"
+      ],
+      "sources": [
+        {
+          "id": "n52",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778",
+          "publishedAt": "2026-11-26T03:03:01.000Z",
+          "title": "House Committee advances Strategic Bitcoin Reserve bill with narrow path to passage"
+        },
+        {
+          "id": "n99",
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/policy/2026/11/26/strategic-bitcoin-reserve-bill-to-lock-up-u-s-government-held-bitcoin-for-20-years-goes-to-full-house",
+          "publishedAt": "2026-11-26T04:46:01.000Z",
+          "title": "Bill to lock up U.S. government bitcoin for 20 years advances to full House"
+        },
+        {
+          "id": "n97",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/regulation/us-bitcoin-reserve-bill-reaches-house-union-calendar",
+          "publishedAt": "2026-11-25T19:05:10.000Z",
+          "title": "US Bitcoin Reserve Bill Reaches House Union Calendar"
+        },
+        {
+          "id": "n81",
+          "name": "24/7 Wall St.",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNU1hOSGdYNFBUeENLR192YXNXcjBjWGhGWm5yRXVBWEpuSmRfUTlYaE9pZUxQYS1RUng1SnFXMW9naHlwWDF4eGtzbHJNQWl0M0ZFS2RZa0RjWERRZEFUVjNyOEphV0d5ZkZQdktyb3pURFdWbnJ3dVA4dGpldnY2WjBDVjdObFVHdUM3WWFjRldLN0dVUFlqeVJOaE1wMUtVRTdrQVlUVi02SnJNMmoySDlQSWkyN2tOcV9UZnBLdnpsNkt0bDI0R0t4WThQOVU?oc=5",
+          "publishedAt": "2026-11-26T12:46:00.000Z",
+          "title": "The Bitcoin Reserve Bill Heads to the House Floor: How Much Would It Lock Up?"
+        },
+        {
+          "id": "n140",
+          "name": "shattered.io",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSkpLUEVzYUJ3WVM0djFIc1NrS1FGZEt2YzlDUXRYVjlDX2Y1QTNtVTVGV3lQQk1QNEduZURTRGVPN3dqTXdwZEZ0ZlBCNlBvVXFyTDZkNXNQQXZ0M1A2TjBBVkx2cWhGUndNT3JXOUg1WkhHTjhoU0Rsb19HVlROYTl5Y0d4bUk4ZVR6aENNNXdRZw?oc=5",
+          "publishedAt": "2026-11-26T07:17:24.000Z",
+          "title": "Strategic Bitcoin Reserve Bill: 20-Year Lock, 28-21 Vote"
+        }
+      ]
+    },
+    {
+      "title": "Payoneer gets conditional OCC approval for a stablecoin bank",
+      "brief": "The OCC conditionally approved Payoneer's application for a stablecoin bank, per American Banker and others.",
+      "impact": "The OCC is granting stablecoin-bank charters to non-crypto fintechs, a precedent that eases charter risk for Erebor but also adds competitors for the same payments and deposit business.",
+      "next": "Payoneer must meet OCC conditions before opening; no date reported",
+      "action": "Ask Erebor this week what conditions its own charter carries and whether the Payoneer precedent changes its competitive picture.",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n142",
+        "n143",
+        "n144"
+      ],
+      "sources": [
+        {
+          "id": "n142",
+          "name": "The Paypers",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUUpYSkNZOHQzS0FXUXBCQzI5TnFXc0ZaWU01U0xpdGJfN0RJRURXZE10T1lMQ0Y4ZVItR0dpSGlUQTRfT1JtalpTSXVJUmN6WHNkS0N4NzRCZHBsVGJWeFdRd3BURTBnZVBVU2RjbWlXRGw1Q3pTSnB6eFNmb2VmaFFUcjR5VFFmNWhyUXJpMHdvcnZjNEpCbkR1TVF5dmsyRF9LdFQxNVJIUk14NGVhejBWaw?oc=5",
+          "publishedAt": "2026-11-26T17:16:46.000Z",
+          "title": "Payoneer gets OCC conditional approval for stablecoin bank"
+        },
+        {
+          "id": "n143",
+          "name": "American Banker",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRV9PMHlJYzVjYXZUYjNoR2tmcWpFdzZzTGtLcnVXeDZZTk9wZDdIcUdZUzRjazFFWk05ck1HOVlUcThraVVNa2t1R3pZOVVneUxQVEJuVHI2Qmp4ZDJDcHR5Q1ZUem0zYTNJYm82X1g4Q3dBTGZWbDNVWEx4M0ZqQ1RHZUtDZzBBNkJDNUlYNnh5ZWdrMGZFWC1n?oc=5",
+          "publishedAt": "2026-11-25T19:46:16.000Z",
+          "title": "Payoneer gets conditional OCC approval for stablecoin bank"
+        },
+        {
+          "id": "n144",
+          "name": "IBS Intelligence",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSUJRZDUwNkVNbEdqa2k0eW85ajFHS2pUbnUwS2xaWlBTVEprT0hWTXpHQmRfckgzaUMwbGdsUHpndVBOakhkeVFkLWtSc0dLajVKVXpOV0FEVnd5S0R1eHZITFVERGNTSjN0N3h6dHBWWXB3MVZSM0Z1Y0RKM0ZYVzFzQjJyblNPczYtZ21leF8wRGtvbVZCdmpQbldkTVk4TXZF?oc=5",
+          "publishedAt": "2026-11-25T08:04:17.000Z",
+          "title": "Payoneer receives conditional OCC approval for stablecoin bank"
+        }
+      ],
+      "actionWho": "Erebor Bank"
+    },
+    {
+      "title": "Warren, Van Hollen urge SEC to rescind Regulation Crypto and innovation exemption",
+      "brief": "Sens. Warren and Van Hollen sent two letters to SEC Chair Atkins demanding he rescind the innovation exemption and Regulation Crypto, which cover crypto and tokenized securities.",
+      "impact": "Crypto's opening rests on SEC exemptions, not statute, so a change in control could reverse it and institutions may wait for law. That complicates our call that the CLARITY Act unlocks them.",
+      "next": "SEC reply awaited; no date reported",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n53",
+        "n78",
+        "n79",
+        "n80"
+      ],
+      "sources": [
+        {
+          "id": "n53",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/regulation/2026-11-25-warren-van-hollen-lead-push-scrap-sec-regulation-crypto-innovation-exemption-446756",
+          "publishedAt": "2026-11-25T22:20:02.000Z",
+          "title": "Sens. Warren, Van Hollen lead push to scrap SEC’s Regulation Crypto and innovation exemption"
+        },
+        {
+          "id": "n78",
+          "name": "CoinMarketCap",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRmpGZnI2Qm5qdzBFMk13QnlyR1RDWTM3bGkzVlhia3AwUzJiR2NzU0tYM3JDdS1NZjVCX25SNzYwRkFkeklHNElCdkFZUjlya2FLUkh6a2pieGxLT2E2LVVNYmJtb2E1dTdhbmtGQ3Zjcm5kdHRjNzFJNGl1NzRJX0g1T0x0ejRjMmk5elVoWW9FZjh5Y3ZaTjF0T1Y?oc=5",
+          "publishedAt": "2026-11-26T20:05:29.000Z",
+          "title": "Warren, Van Hollen Urge SEC to Scrap Regulation Crypto Assets Proposal"
+        },
+        {
+          "id": "n79",
+          "name": "NewsCord",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOakdLbm9zUVJ5eGl2VGY5ak9ZRkVOMzluUDRtMXdXd3RNclUtWTJEeTBUNGtzWE92aGZDb1dsbzItMGtBSmdaOXN1TUx2Z3p6YUdzOHRZWHdvalZtVTB0Qm5oZkk0aDhuY3Q3R182RE1iZ3BNcmltUW52SnYyYVlQYVRURTNKaTZMWE9ldzJhZjAyUVZ5alU3R3Q2d3pLNmxZU2FXWmJKX3dtQjdJbmdhcF9sQWs5Rk5fS3R3UWlQRG1yQXJFVWN2YjNnRE5wTExUbC1EakRBLWhFUXFLQWx5Q0xDVTFoMVpQVVE?oc=5",
+          "publishedAt": "2026-11-26T05:19:55.000Z",
+          "title": "Warren, Van Hollen Lead Senate Democrats Urging SEC Withdraw Crypto, Tokenized Securities Exemptions"
+        },
+        {
+          "id": "n80",
+          "name": "grafa.com",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOLVJHYjdfQ1lZZGd1T0xEb18zWGk4LVZwaEtzekhJdFB2dXVUcjlmZU14M3NKenBSdXFYWWExVFg0RTBGckRad2pPUkFyMWJXMUlBaW5Wa2RsV0ZRQWgwMlFZWjZjSzBiUEgzXzdhVzRNaUl0d0VjRi1mQWVtRXQtWEI3UzUzVnRFNlFB?oc=5",
+          "publishedAt": "2026-11-26T05:39:26.000Z",
+          "title": "Warren and Van Hollen challenge SEC crypto exemptions"
+        }
+      ]
+    }
+  ],
+  "tech": [
+    {
+      "title": "Neuralink says FDA approved first US pivotal trial of an implantable brain interface",
+      "brief": "Neuralink announced FDA approval of its LINK pivotal study, recruiting US adults with ALS to test digital-device control with the N1 implant, which remains investigational.",
+      "impact": "Pivotal status is the last trial stage before a market filing, with Chinese rivals close behind. The use is medical; the enhancement backlash we flagged arrives only if it extends to healthy users.",
+      "sectorId": "lifesci",
+      "confidence": "company-claim",
+      "topRank": 2,
+      "itemIds": [
+        "n165",
+        "n27",
+        "n37",
+        "n24",
+        "n36",
+        "n35",
+        "n49",
+        "n320"
+      ],
+      "sources": [
+        {
+          "id": "n165",
+          "name": "Neuralink",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWHRPbnJXWmYxWUZSNlBDTElZQlhhLWcxZUVHaVdkU3ZjSGpQVjBxdWNvWUZKV1FRRUh1MkVWLTNYRklyeTRqTjJRLXVnREZiZmlWWTQwMUs4UmUtczJpNV8ycFZ6TFVNOVhuQVNPbE9oRTJLazlxZlBvTTFRRWhRaUZIQ3AyOXVhUFI0MDBuZ3M4c052NFE?oc=5",
+          "publishedAt": "2026-11-25T22:19:31.000Z",
+          "title": "Neuralink Receives FDA Approval to Launch LINK Pivotal Study"
+        },
+        {
+          "id": "n27",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/technology/neuralink-says-fda-approved-pivotal-brain-implant-trial",
+          "publishedAt": "2026-11-25T21:15:03.000Z",
+          "title": "Neuralink Says FDA Approved Pivotal Brain-Implant Trial"
+        },
+        {
+          "id": "n37",
+          "name": "Digital Trends",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQOUctclRKTHUxVEo2UVhXTXlNUGRpNkhmTURtTUhkMlVYRjFmbHVHaWg5eW9TWThCOXAzYkZiOFlaT0dqQU40Nlh4Y1UwODBLaVEtTFRyazZRaGhEWXpLZF91TzRZN0NCVGdWenJ4YjhUSWcwNTlGX3o3a19kWF94cEdmWXVfVEpQR01qNFJHcWFraDNWcFdMZ21VMy1mcWNHZWZYN0dtekxSclNCbGpzMlktM3dCOTMwQW90RUJzTXp3YjBjZXI4YjY0V3RHcjVEVk5CNU5tSQ?oc=5",
+          "publishedAt": "2026-11-26T11:11:35.000Z",
+          "title": "FDA clears Neuralink to start the first pivotal US trial of an implantable brain-computer interface"
+        },
+        {
+          "id": "n24",
+          "name": "2 Minute Medicine",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNbDkxbXkwTnRoYU1lN0hoNThHaTZnZkFIcGRpNm04MUFJd3VBNVNnbUFnek43ZVl3eE5DVm85SnhDekhYZjgxLWpxWUhvclZnQWFLTy1zZzdHTk90VEFRTDVIeTRNSmY0SERWQ296cGE0ZTVXTzQ1YVk5NlEzZ0hybXFfQnh1dWtMRWtnc1h0WnBpX0E3Z1AxNUJyczlKZHZoUEw3RnhFLS1hQ04tTzZkbEc2QXA4V3ZxMUlIT0poNGdLY284MkFDc3BiOVlId0p6SHEzOWwyd0t0NWpNbWc?oc=5",
+          "publishedAt": "2026-11-26T19:41:15.000Z",
+          "title": "FDA approves Neuralink’s LINK Pivotal Study, the first US pivotal trial of an implantable brain-computer interface"
+        },
+        {
+          "id": "n36",
+          "name": "Anadolu Ajansı",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWWFVcXJ6cmF2T1Q4cGtyamRRZHZOTlBDMWZxb2ZLcldvV21aN2JXX1E0OXI3R09Eb2huZTd6UW9CZDZpVXdiZE9lbjg4SmwxYnk5RERzc0F4aUpzTVFDeEVhc2tBN1NoX1VHb3NvUHhQZzNEREpobENNQURPX24xbFFOSzd6QVRHdWFQYlRjQlV5VEkxVWI0OVlPdVVFdmlRaG1XRDBkc0hSdw?oc=5",
+          "publishedAt": "2026-11-26T09:42:42.000Z",
+          "title": "Musk's Neuralink gets FDA approval for pivotal brain implant trial"
+        },
+        {
+          "id": "n35",
+          "name": "BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9mQ3ZkTTlrSkJHY3ZLTGRlUXBxa0ZfT1V4Nm1SVWYtcWFtMF9CeU14dUdXMmRhMDE1dDBzSVBqV25NNFNKMDF2U2dHWTQxdGxjVlRpVllXZmk3YmthN2M3VkIwNUdfemdidElFYngtYS1SSG1lTGc?oc=5",
+          "publishedAt": "2026-11-26T11:25:00.000Z",
+          "title": "Neuralink Wins FDA Clearance for Pivotal Trial, Implantable Brain-Computer Interface Nears Market Filing"
+        },
+        {
+          "id": "n49",
+          "name": "TechRadar",
+          "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPQnFHeDdDRFM0OTBDYS1CZVBldExORnYydlNieTlCbTJFWXJMMWxORVZCNGY5OUtTVklVaGNNdjZRRFFwQzg2djZ4dkpmVXlEMXNBaWdjZEh1R2lhQmw5WUVSUlJ0aDBCSl9jeV9tVzQ2Vkx4MFNJdkthaDJqcTJoLURHR3o2MDRqZmdEd2VidHNxTEY1UkhwZWNTTndsM3UxTGxOaWU2OUlEYlRwaGgzd2JkTTJLOFN2bEdQN2pPSjdMYkk0Y09iejk5NGQ2eVA3SE8xbVhVeGQ5Zzk4aGFJb0R2TlE5SEluRGNjblVSUW1hQWFRODlaVjB3Z2RCOUpGMDlJdWVhTkNlTi1WX3I1VTVyVldhX2t5U1E3dWdMeUUyYnBfblE?oc=5",
+          "publishedAt": "2026-11-26T11:41:53.000Z",
+          "title": "Neuralink's brain-computer interface chip is progressing to an FDA-approved trial, but China is catching up"
+        },
+        {
+          "id": "n320",
+          "name": "South China Morning Post",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPbi1rakViTXZIenZlVk5BRXZoazVTVS1BWHlzOXRVOHk4WmlnRVRxdFlTTDA1UWxpbHpaUTBWQnZZV285WDVmcFFYcFotU0xRT3ppaDhVTVYtMVN0U0xyX0UxX0hDNkU3a2MweTFQcDJ5blloMUhpdWkzSUxsdGVGNjJ0QTUxMGJRNFZRX2ZCUWlYUWo2RXJJMzF3UFNKTkRfNEZBTk45MkVqdHpQRnFHb25yM3Q1WW8tV1NBckczQkpfR1gyeGlyOTBENlNVLTcxdWkxZGtDdTI4aFFMSm1F?oc=5",
+          "publishedAt": "2026-11-26T07:00:11.000Z",
+          "title": "Can China gain an edge in brain-computer interface race? Neuralink raises stakes"
+        }
+      ]
+    },
+    {
+      "title": "CoreWeave banks plan $4.5B Meta-tied loan sale to fund GPUs",
+      "brief": "Bloomberg reports banks plan a $4.5B loan sale tied to Meta, to pay for GPUs at a Georgia data center, with the debt repaid gradually over the loan's life.",
+      "impact": "Debt is funding AI compute at scale even as AI stocks sell off, which squeezes startups competing on raw GPU supply. It supports Gensyn's move away from decentralized compute.",
+      "action": "Ask Gensyn this week how its predictive-intelligence product avoids competing with debt-funded GPU clouds, as input to our re-underwriting.",
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "itemIds": [
+        "n202"
+      ],
+      "sources": [
+        {
+          "id": "n202",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/markets/coreweave-banks-plan-4-5-billion-meta-tied-loan-sale",
+          "publishedAt": "2026-11-25T17:49:55.000Z",
+          "title": "CoreWeave Banks Plan $4.5 Billion Meta-Tied Loan Sale"
+        }
+      ],
+      "actionWho": "Gensyn"
+    }
+  ],
+  "deals": [
+    {
+      "kind": "round",
+      "sectorId": "money",
+      "firm": "Tether",
+      "text": "invested in Argentine fintech Lemon to expand USDT and XAUT use across Latin America; amount not reported.",
+      "itemIds": [
+        "n74",
+        "n75",
+        "n126"
+      ],
+      "sources": [
+        {
+          "id": "n74",
+          "name": "bloomingbit",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5GWVNsX3pCZXdrOHhaT0NNX1pBT2JRc09hbDkzaU1yQXNQUWFldXlCLUw0MU9FVFk0RzRCWjUtOWxWUFd6Smg2a0dhY0l4M2puYnZTaw?oc=5",
+          "publishedAt": "2026-11-25T21:41:28.000Z",
+          "title": "Tether Invests in Argentina’s Lemon to Expand USDT, XAUT Use in Latin America"
+        },
+        {
+          "id": "n75",
+          "name": "Tether.io",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUGlhTDQ3VHpIZS1WT2sxbUgyU3piNzJ3eFB5ejgwcmVtdHIwaEloRFdFZTl0Nkg1QkktNHNmLXVEOHVNSGMyMDQwZTd2TzAwQ2lUalpiQW1BWG1TQVFWZFZURmNxTkZuTTlZOEpvdlJsU0YxX29ZNmRuRkp2X1VuWFYtcnlJZ2dYcElsMzQ2bms1UG9BbmJjYkhfMzB0M1V4Vi1LOFVCNGJqUGozYlZiSzZrZ204eFNVdG53SnpUYUItWW1aakJB?oc=5",
+          "publishedAt": "2026-11-25T13:03:53.000Z",
+          "title": "Tether Invests in Argentine Fintech Company Lemon to Expand Digital Asset Use Cases Across Latin America"
+        },
+        {
+          "id": "n126",
+          "name": "Cryptonews.net",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5GMUtPbk5SOXBIZXZ5dl9VS2EyUGxKTmVnODd5cmtUa3EtVF9ZT3FnNXRkRlRzd3lCak5KWkgyN09fcnBhb2NDOUxWTzhJeG1rYW1wcmRuZHM?oc=5",
+          "publishedAt": "2026-11-25T21:57:00.000Z",
+          "title": "Tether invests in Lemon to expand access to tokenized gold and stablecoins"
+        }
+      ]
+    }
+  ],
+  "macro": [
+    {
+      "title": "Core inflation tops forecasts and growth is revised to 4.3%; Fed hike priced for December",
+      "brief": "US growth was revised up to 4.3% and core PCE inflation topped forecasts ahead of the Fed's Dec. 8–9 meeting, where a hike was already the market's base case.",
+      "impact": "Tighter policy hits the long-duration assets M31 holds, from tokens to listed positions like SPCX and RZLV, and tests the AI capex boom's cheap-money assumption.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n203",
+        "n166",
+        "n218"
+      ],
+      "sources": [
+        {
+          "id": "n203",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/markets/us-growth-revised-to-4-3-ahead-of-fed-rate-decision",
+          "publishedAt": "2026-11-25T14:54:35.000Z",
+          "title": "US Growth Revised to 4.3% Ahead of Fed Rate Decision"
+        },
+        {
+          "id": "n166",
+          "name": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbFd6dlZlV25JVlBjcjRXWWdYUTdqd2ZBeG1WbGI3Z1dGRjhwN0pCWEJteUN2YVBvSHFXbHl2M3VPcS05WU9TTWlQaVpZS3BVTTV1Sk1kVTNDSXQyOWlMLUJOT1ViUnhGUnM0Qkhxc3BGUlFMeUU2aHVBYy1SQTJPNVZDZUJwWkdhLUVUdWZNREdxaHI2R1BROTZlbTliVHZCVFdUWGMzaU02UdIBrwFBVV95cUxPWE1jU1l6LVdTcGhmTWp6aUROSnFNX0tsQVF2Q0FRam85VGs4SS1CNlg3VUpSRF95Y0Z1cnRzdGtGOWM0YWJLUTNhRElWVTNaQzdjVHA3TzYyN25yOTlyMV9qZzhzLTRZNHlDMFF4emdVQU9UbGZnWnktMC1tNTFQUURsN1NxRW05TUhyNW1odXcwbWI0T2xnYXlkdXkyaXNpS0VXMGlVZDVHcGNpamkw?oc=5",
+          "publishedAt": "2026-11-25T14:23:39.000Z",
+          "title": "Fed's preferred gauge of inflation climbs ahead of possible rate hike"
+        },
+        {
+          "id": "n218",
+          "name": "CoinDesk",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/25/fed-s-preferred-inflation-gauge-lands-with-a-december-rate-increase-already-priced-in",
+          "publishedAt": "2026-11-25T12:18:46.000Z",
+          "title": "Fed’s preferred inflation gauge lands with a December rate increase already priced in"
+        }
+      ]
+    },
+    {
+      "title": "Trump proposes new tariffs on China, Europe and other trading partners",
+      "brief": "The Trump administration proposed a new wave of tariffs on China, the EU and other trading partners; China and others have hit back, per AP.",
+      "impact": "Only a proposal, with rates and dates not given in the reports, so treat it as headline risk. Stacked on hot inflation it lowers the odds of Fed easing and weighs on risk assets.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n25",
+        "n26",
+        "n50",
+        "n51",
+        "n177",
+        "n178"
+      ],
+      "sources": [
+        {
+          "id": "n25",
+          "name": "NBC News",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSEhIWkhHU2FmSW5HZm1STUdfNlgzRWF6TXR1Njc2cDZ5SXF0RmVSY2NyS2tIQmJxWHlTZTJxVTg1bmI5YzcxemluVXFFdVZEUW1xUHZuTXhQN2ZaTjVtMzl0bEdwcGFNTFR5aU0wLTY3cDVJbnpXMjVQVWItMUoyOGVQakp1OHpocUlJWmc3ZWxZM1NHUWFiT2NsMXA2TXM?oc=5",
+          "publishedAt": "2026-11-25T13:58:10.000Z",
+          "title": "Trump proposes a new wave of tariffs on China, E.U. and other trade partners"
+        },
+        {
+          "id": "n26",
+          "name": "The Washington Post",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRG9IZXZjbjBEQ2tzam5pT0FPZWNFc2hac3ZURjRUaTJITlQwQmt4RElZVGlnM0luQndHeXdRaGRwTUVVbHVqQlcyZC01OC1adzBLT3JWWlNadmw2N01zR3JZT1VwWG1mVVNaSkNUSWExNTlYRWtCejNRUE1KSXk0TFpjaUt5X0Z4LUFLMzB1c3QtRXNpUVc5UzNMeHY4d2paMjVEVGpveFlpM1BvZWRlZzFR?oc=5",
+          "publishedAt": "2026-11-26T01:24:25.000Z",
+          "title": "Trump proposes new tariffs on China, Europe and other trade partners"
+        },
+        {
+          "id": "n50",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaUdXQjZTRVJvNzVESnNzMlpfZmxhTEgweFZsUHRZRTVLa29xcENmUjJaUUNjWExsaVNTREJqNlNwSFZzNXFuRUFqSlpRam4tZkZHWXEwZXQ5VlhPVFJzcmNnZEw5a3N2ZVBndnpnNzhiN1Y1NkRtU1M5WE05UmRFcGMzUVk0NXYyRTVpM05MOUhISDhmb3BPTERXcmNHWE9zc2dR?oc=5",
+          "publishedAt": "2026-11-26T07:03:00.000Z",
+          "title": "Trump's new tariffs aim to prise global trade from China's grip"
+        },
+        {
+          "id": "n51",
+          "name": "Modern Diplomacy",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQNXJNZDBjLWFnYmNhVTdfTElROVktT0ZZQTlPNTdHcGdURUxWYXRIc3dBWkptY0tMQmxVTkU0djE0R0dLRjdJSkVyT3lRcXp6cEpTRXRGWVh3aXFPTUZtQ2FUbjc5MGd1SmgwV2dvREIyUDNjWU5wYkZWdHdEd1ZqM0dSQmYxOVN4N2I0MDBWZm12dDhjcFRuMmZ4OFNtQ2FkSWZpZGdUWll1QmdXOFRTZWdXS01RdWR4WWhtN2ZNdjF2YlZrRFlWN1Z1dnNSNTJCSmc?oc=5",
+          "publishedAt": "2026-11-26T07:22:55.000Z",
+          "title": "Can Trump’s New Tariffs Weaken China’s Grip on Global Trade?"
+        },
+        {
+          "id": "n177",
+          "name": "NPR",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOREtlV1RacXpWTkdMNzV4SnY0ZEx2ejd0MDRnbng3Sm1pYm9Tb0lSZ3NrbWF0T2JrTEFpWXRvMHRkSXNqR2lUZENfQnFUTkxnSW8yWjBUVjAxYnRBVzAtaENqUl9RdnNXcWZFUzRMLTZ0X3pXS1Z1MTJVUE9aRnVWU1Z1cFRkY1BqRVhWRUZqUHd4VlVzbVRrY095MHJ0X3YyQ2NYSUYxWG1wdDladUxiQlVzbk9ub0xBdFhGZGpoSHNnUi1ZNlE?oc=5",
+          "publishedAt": "2026-11-26T11:43:47.000Z",
+          "title": "Trump administration proposes new tariffs on goods from major U.S. trading partners"
+        },
+        {
+          "id": "n178",
+          "name": "AP News",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVWQ3MnMzTlQ5Y2lUTW9RTzloTmp3MmtycjBUbmZUOTExYWNsVmlXX1JmLVJGYUYyRjNHSGV1b2hzLWhWclNBRDRZb2hyQ2UxSE9tYktjUTBKR2VDU2w1YlZlU0xaZ0JSMlQ1ZzhwMEJpSVk5N05XbHhnNi1ESktvTVNGNlZpMkNjX0dUNHdvLWJ2YTVqeDFv?oc=5",
+          "publishedAt": "2026-11-26T14:13:00.000Z",
+          "title": "China and other US trading partners hit back at Trump’s new tariff plans"
+        }
+      ]
+    }
+  ],
+  "frontier": [
+    {
+      "title": "Engineered molecular glue restores chromosome connections in aging mouse eggs",
+      "brief": "Researchers engineered a protein system that restored normal chromosome connections in aging mouse eggs, per STAT. The result is in mouse eggs only.",
+      "impact": "An early egg-aging result that could one day improve IVF outcomes. It is preclinical, with no human test and no peer-review status stated, so treat it as a lead, not a result.",
+      "sectorId": "lifesci",
+      "confidence": "single-source",
+      "itemIds": [
+        "n483"
+      ],
+      "sources": [
+        {
+          "id": "n483",
+          "name": "STAT",
+          "url": "https://www.statnews.com/2026/11/26/fertility-advance-engineered-protein-stabilizes-chromosomes-in-aging-eggs/?utm_campaign=rss",
+          "publishedAt": "2026-11-26T19:00:00.000Z",
+          "title": "In a fertility advance, engineered molecular glue stabilizes chromosomes in aging eggs"
+        }
+      ]
+    },
+    {
+      "title": "New hypothesis says dark energy may come from known Standard Model physics",
+      "brief": "A hypothesis reported by Phys.org and others says dark energy may emerge from known particle and nuclear physics, with no new physics needed.",
+      "impact": "If it holds, it weakens the case for exotic vacuum-energy explanations. For now it is a theoretical proposal with no test or replication reported.",
+      "sectorId": "frontier",
+      "confidence": "single-source",
+      "itemIds": [
+        "n90",
+        "n91",
+        "n92",
+        "n93",
+        "n230"
+      ],
+      "sources": [
+        {
+          "id": "n90",
+          "name": "Phys.org",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA5alVoYl9fUlVyOG1FTDNlakRuYUs5SUI2WUVjcTI5X2JkUlN3d0dPTVpsVHJsRkp6UjlJNjNXRFFWUW92cXZXNVBteHNqaGZ5cE1MMUhlbWVPM0dlQ0tMdU43aWJmWjZqM2lYY0JZWk9YOUFkRXNv?oc=5",
+          "publishedAt": "2026-11-20T13:20:06.000Z",
+          "title": "Dark energy may originate from known laws of particle physics"
+        },
+        {
+          "id": "n91",
+          "name": "IFLScience",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWszQkFJQ2lSeVZIZzNvZmt6Q0dNMkhiZGV5TXUtdTc4cDN5N2c3ZGV2VkQxaU5CVTVLeldxQ1JZZEpZZWJDbnppWk1wNDNjY0JHVTBIRFVxdG9XOGxlR1M0M2dVeW5PZXlxLWxYcW42c3g5Z2duQW15Zm96bmRUSUtTZ0xRVm11SDdyVmhsbGJSY2tmNUhwQ0V3enpLMXozNDdEa256WTBoNnc5V0R6MHRvMXM5bkZYeXdZM0RPQjg3SnZqdnBj?oc=5",
+          "publishedAt": "2026-11-24T07:00:58.000Z",
+          "title": "Maybe Dark Energy Doesn’t Need New Physics – New Hypothesis Claims It Emerges From Known Particles"
+        },
+        {
+          "id": "n92",
+          "name": "Universe Space Tech",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYXM3VzBzLUlJRFNUc0dEeWFWcjZuRm9ydXhyZGZlWUoxV0JZMXJtY1RQcVNzV2JaZ3BfWUh3ZFEycFI4MVRnazV1Rm9WMWw1cGxrUkh0Q0R5S3UxbjFWUmRHZDdNYW5yckZuaHpKbUdKcTFySjJTalhnZF94RGJ3ZUNWMldmekJJYWZUclVJWTZEa0ZnREVJVg?oc=5",
+          "publishedAt": "2026-11-23T09:52:04.000Z",
+          "title": "Dark energy may stem from the known laws of particle physics"
+        },
+        {
+          "id": "n93",
+          "name": "Bioengineer.org",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS0duYTVWNW40UWF6MVNPeGxfdEJZZ296c3RJTFEyWDFIeHZmTVFZZ2Q5UVhOVTJjeTNxRXpTSTBmTkNqYTRtcWhNZkFPWnJZWTJfMTA1U2R0VlhiZGVycS1ucC1FN0x4X0c3b3F5dF8xR2VxX1VBU0MtQzJmS09RWnFoVzhKbVFXUzdsOFNVeGtYNDBnSVZfdzhIejlRTlM0N2c?oc=5",
+          "publishedAt": "2026-11-20T10:06:23.000Z",
+          "title": "Standard Model Nuclear Physics May Explain Dark Energy and Cosmic Expansion"
+        },
+        {
+          "id": "n230",
+          "name": "Universe Today",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPSlNjTzlUYTRGZGlCcktaSlZuSno0Nm8wQk10bUstR3VtUEJLeGdaM3BaMDN3RHBHNGlPcW5vTWRuTzRHSUpNeEMyd0l4T3ZiNFhDdkltZ1EzbkpJdWNjTGs1YV9zS3pKODdlaUl2T0YtVjdBNE5zVU1zV2pxdm9SM3FnTmlfYlFuNUxIQkE3Rjg?oc=5",
+          "publishedAt": "2026-11-25T02:59:00.000Z",
+          "title": "Maybe Dark Energy Isn't so Inexplicable After All"
+        }
+      ]
+    }
+  ],
+  "frontierQuiet": "",
+  "meta": {
+    "generatedAt": "2026-11-26T20:32:52.128Z",
+    "date": "2026-11-26",
+    "edition": "daily",
+    "pass": false,
+    "weighted": 3.45,
+    "rounds": 3,
+    "round": 3,
+    "readMinutes": 6.9,
+    "poolSize": 400
+  }
+}
