@@ -1,0 +1,524 @@
+{
+  "week_label": "Nov 21 – 27, 2026",
+  "status": "5-minute scan",
+  "coverage_warning": "No critique, rebuttal, failed replication or retraction touching a claim in our remit turned up this week, so this issue shows no outside pushback on any claim.",
+  "cards": [
+    {
+      "id": "casimir",
+      "nav": "CASIMIR",
+      "label": "ACT",
+      "label_detail": "REACH OUT",
+      "meta": "VACUUM PHYSICS · ARXIV PREPRINT · NOV 23",
+      "claim": "Existing precision Casimir setups could search for axion-mediated spin-dependent forces by comparing reversed polarisations of a magnetically compensated source.",
+      "people": "Xiaolin Ma, Volodymyr Takhistov, Hideo Iizuka; report numbers KEK-QUP-2026-0020 and KEK-TH-2887 suggest a KEK affiliation, individual affiliations not in source",
+      "links": [
+        {
+          "label": "arXiv:2611.31378 ↗",
+          "url": "https://arxiv.org/abs/2611.31378"
+        },
+        {
+          "label": "Quanta: ultralight dark-matter searches (lead only) ↗",
+          "url": "https://www.quantamagazine.org/novel-experiments-expand-the-hunt-for-ultralight-dark-matter-20261125/"
+        }
+      ],
+      "stage": 1,
+      "stage_headline": "Stage 1 of 5: an idea, not yet tested.",
+      "stage_note": "This is a proposal with sensitivity projections. No experimental partner or demonstration run yet.",
+      "impact_heading": "IF IT WORKS, HOW BIG A DEAL?",
+      "impact": "MEDIUM",
+      "impact_text": "It would give existing Casimir hardware a new, cleanly falsifiable use. The projected reach on g_p^e g_s^N and g_p^e g_s^e at λ ~ 1–100 µm is described as orders of magnitude beyond existing lab searches.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "The spin force reverses sign under the polarisation flip while Casimir, gravitational and electrostatic backgrounds \"broadly cancel\". No shielding is needed, so large probes can work at micrometre gaps."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "How well the cancellation holds in practice, given patch potentials and imperfect magnetic compensation. No experimental group is attached yet."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "A named Casimir group committing to a demonstration with a pre-specified systematics budget."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "Systematics in a demonstration run that do not reverse with the polarisation flip and exceed the projected signal."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Volodymyr Takhistov",
+          "role": "Co-author; contact point"
+        },
+        {
+          "name": "Xiaolin Ma",
+          "role": "Co-author"
+        },
+        {
+          "name": "Hideo Iizuka",
+          "role": "Co-author"
+        }
+      ],
+      "todo": "Email Takhistov and ask whether an existing Casimir group has signed on.",
+      "rule_label": "Decide",
+      "rule_text": "Scope seed funding only if a named experimental group commits to a demonstration with a pre-specified systematics budget.",
+      "needs_owner": true,
+      "compare_text": "Read alongside Quanta's Nov 25 piece on new ultralight dark-matter searches. This is journalism and a lead only, not a benchmark.",
+      "compare_link": {
+        "label": "Quanta: ultralight dark-matter searches ↗",
+        "url": "https://www.quantamagazine.org/novel-experiments-expand-the-hunt-for-ultralight-dark-matter-20261125/"
+      },
+      "primary_link": {
+        "label": "arXiv:2611.31378 ↗",
+        "url": "https://arxiv.org/abs/2611.31378"
+      }
+    },
+    {
+      "id": "birefringence",
+      "nav": "BIREFRINGENCE",
+      "label": "WATCH",
+      "label_detail": "READ FIRST",
+      "meta": "COSMOLOGY · ARXIV PREPRINT · NOV 23",
+      "claim": "Polarisation angles of radio galaxies at z≈0.5 show a rotation that matches the CMB birefringence hint in sign and size.",
+      "people": "Marcus Brüggen, Jorinde Dreismann, Pranjal Trivedi, Shane P. O'Sullivan, Takuya Akahori, Fumihiro Naokawa, Cameron L. Van Eck, Marco Regis et al.; affiliations not in source",
+      "links": [
+        {
+          "label": "arXiv:2611.31411 ↗",
+          "url": "https://arxiv.org/abs/2611.31411"
+        },
+        {
+          "label": "Joint ACT+Planck β ↗",
+          "url": "https://arxiv.org/html/2608.06480"
+        },
+        {
+          "label": "Earlier radio test, ~3,000 sources ↗",
+          "url": "https://arxiv.org/abs/2610.39449"
+        }
+      ],
+      "stage": 3,
+      "stage_headline": "Stage 3 of 5: tested against a control.",
+      "stage_note": "The fit tests rotation against zero using a population model, on radio data with systematics independent of the CMB. The radio result alone is only ~1.4σ, so this is not yet a replication.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "A rotation in the last ~5 Gyr would point to a late-evolving field such as axion-like dark energy. Axion-like dark matter acting before reionisation predicts β≈0 at these redshifts.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "The study uses 33,298 components of 16,649 POSSUM double radio sources, and a χ₀−ψ≈0° population that halves the variance. Radio only: β = 0.48° ± 0.35° (~1.4σ). Combined with ACT+Planck: 0.282° ± 0.056° (5.0σ). The title's \"confirms\" is too strong: the CMB alone gives 0.277° ± 0.057° (4.8σ), so the radio data are consistent with the CMB, not a confirmation."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "POSSUM's absolute polarisation-angle calibration, which the authors say is needed. Also unknown: whether residual Faraday rotation or source-morphology systematics could produce ~0.5°."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "The full POSSUM survey with absolute angle calibration reaching ≥3σ from radio alone, plus a tomographic split by redshift."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "A calibrated full-survey radio β consistent with 0 at ~0.1° precision. That would rule out late-time rotation, but not rotation before reionisation."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Marcus Brüggen",
+          "role": "Lead author"
+        },
+        {
+          "name": "Toshiya Namikawa",
+          "role": "Radio-galaxy birefringence tomography"
+        }
+      ],
+      "todo": "Read the paper now; no outreach yet.",
+      "rule_label": "Trigger",
+      "rule_text": "Contact only if the POSSUM team publishes an absolute-angle calibration plan or a full-survey β with radio-only σ ≤ 0.15°.",
+      "needs_owner": false,
+      "compare_text": "Joint ACT+Planck β = 0.277° ± 0.057°. The combined 5.0σ result rests almost entirely on this CMB figure.",
+      "compare_link": {
+        "label": "Joint ACT+Planck β ↗",
+        "url": "https://arxiv.org/html/2608.06480"
+      },
+      "primary_link": {
+        "label": "arXiv:2611.31411 ↗",
+        "url": "https://arxiv.org/abs/2611.31411"
+      }
+    },
+    {
+      "id": "backreaction",
+      "nav": "BACKREACTION",
+      "label": "WATCH",
+      "label_detail": "",
+      "meta": "MODIFIED GRAVITY · ARXIV PREPRINT · NOV 23",
+      "claim": "DESI's evolving dark energy can be reinterpreted as the effect of inhomogeneous geometry in ordinary general relativity, with no dark-energy fluid.",
+      "people": "Thomas Buchert; affiliation not in source",
+      "links": [
+        {
+          "label": "arXiv:2611.31041 ↗",
+          "url": "https://arxiv.org/abs/2611.31041"
+        }
+      ],
+      "stage": 2,
+      "stage_headline": "Stage 2 of 5: uses data, but no comparison group.",
+      "stage_note": "The paper uses DESI data to fix the averaged budget. No head-to-head comparison with a dark-energy model was seen.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "HIGH",
+      "impact_text": "It would remove the need for dark energy.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "The total geometric budget that replaces dark energy is \"pinned five times better\" than the split between backreaction and curvature. The author presents this as the backreaction counterpart of DESI's evolving-dark-energy evidence."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Whether the required backreaction size is physically achievable; most N-body/GR studies find it small. The split with curvature is also poorly constrained."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "A formal model comparison against dark-energy fits, and a reproduction of S₈ ≈ 0.77 as well as the distances."
+        },
+        {
+          "heading": "Would prove it wrong",
+          "text": "Relativistic simulations or a curvature measurement showing backreaction far below the needed size."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Thomas Buchert",
+          "role": "Author"
+        }
+      ],
+      "todo": "No action this week.",
+      "rule_label": "Trigger",
+      "rule_text": "Revisit when a model-comparison paper or a relativistic-simulation test appears.",
+      "needs_owner": false,
+      "compare_text": "HSC-Y3 shear finds S₈ ≈ 0.77 and says the dynamical-dark-energy signal is driven mainly by distances. Any dark-energy-free explanation must match both.",
+      "compare_link": {
+        "label": "arXiv:2611.34650 ↗",
+        "url": "https://arxiv.org/abs/2611.34650"
+      },
+      "primary_link": {
+        "label": "arXiv:2611.31041 ↗",
+        "url": "https://arxiv.org/abs/2611.31041"
+      }
+    },
+    {
+      "id": "dreammeg",
+      "nav": "DREAM MEG",
+      "label": "PENDING",
+      "label_detail": "TITLE ONLY",
+      "meta": "CONSCIOUSNESS SCIENCE · PSYARXIV PREPRINT · NOV 23",
+      "claim": "A registered report uses MEG to study the neural basis of consciousness during evening naps.",
+      "people": "Authors not seen; affiliation not in source",
+      "links": [
+        {
+          "label": "PsyArXiv zgw6x ↗",
+          "url": "https://osf.io/preprints/psyarxiv/zgw6x"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Not rated yet: we only saw an abstract stub.",
+      "stage_note": "Authors and results are not seen. As a registered report, it could reach stage 3 with preregistration if results are included.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "",
+      "impact_text": "Not rated: headline results not yet seen.",
+      "details": [
+        {
+          "heading": "What we know",
+          "text": "Title and stub only: \"The Neural Basis of Consciousness During Evening Naps Measured by MEG: A Registered Report\"."
+        },
+        {
+          "heading": "Still unknown",
+          "text": "Whether this is the protocol stage or the results stage; authors, sample and findings."
+        }
+      ],
+      "follow": [],
+      "todo": "Check whether the preprint is the protocol stage or the results stage.",
+      "rule_label": "Trigger",
+      "rule_text": "Open a full card if results are included.",
+      "needs_owner": false,
+      "compare_text": "The earlier \"Dream Catcher\" blinded analysis did not find EEG spectral markers of dreaming.",
+      "compare_link": {
+        "label": "Dream Catcher study ↗",
+        "url": "https://www.researchgate.net/publication/342971563"
+      },
+      "primary_link": {
+        "label": "PsyArXiv: The Neural Basis of Consciousness During Evening Naps Measured by MEG ↗",
+        "url": "https://osf.io/preprints/psyarxiv/zgw6x"
+      }
+    },
+    {
+      "id": "seance",
+      "nav": "SÉANCES",
+      "label": "PENDING",
+      "label_detail": "TITLE ONLY",
+      "meta": "PARAPSYCHOLOGY · PSYARXIV PREPRINT · NOV 23",
+      "claim": "A study describes the phenomenology of non-ordinary experiences, such as sensed presence and hearing voices, during Spiritualist séances.",
+      "people": "Authors not seen; affiliation not in source",
+      "links": [
+        {
+          "label": "PsyArXiv 6tqw8 ↗",
+          "url": "https://osf.io/preprints/psyarxiv/6tqw8"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Not rated yet: we only saw an abstract stub.",
+      "stage_note": "Authors, sample and methods are not seen. It appears to be about phenomenology, not a psi test.",
+      "impact_heading": "IF TRUE, HOW BIG A DEAL?",
+      "impact": "",
+      "impact_text": "Not rated: headline results not yet seen.",
+      "details": [
+        {
+          "heading": "What we know",
+          "text": "The stub covers experiences such as sensed presence and hearing voices."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "It is unlikely to warrant a full card, because it reads as a description of experiences rather than a test of anomalous claims."
+        }
+      ],
+      "follow": [],
+      "todo": "Skim once the abstract can be read.",
+      "rule_label": "",
+      "rule_text": "",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "PsyArXiv: The Phenomenology of Non-Ordinary Experiences during Spiritualist Séances ↗",
+        "url": "https://osf.io/preprints/psyarxiv/6tqw8"
+      }
+    },
+    {
+      "id": "uapradar",
+      "nav": "UAP RADAR",
+      "label": "CONTEXT",
+      "label_detail": "",
+      "meta": "UAP · GOVERNMENT RELEASE · NOV 20",
+      "claim": "A civil air-surveillance radar recorded 8 unresolved detections over 84 s at an estimated 55,000–70,000 ft over North America in 2023.",
+      "people": "DoD PURSUE release 8, file DOW-UAP-D165; covered by EarthSky on Nov 22",
+      "links": [
+        {
+          "label": "PURSUE release 8 ↗",
+          "url": "https://www.war.gov/UFO/?releaseDate=Release+08&release=08"
+        },
+        {
+          "label": "EarthSky coverage ↗",
+          "url": "https://earthsky.org/human-world/pentagon-uap-files-part-8-radar-track-analysis/"
+        }
+      ],
+      "stage": 2,
+      "stage_headline": "Stage 2 of 5: uses data, but no comparison group.",
+      "stage_note": "This is sensor data with official analysis, but there is no comparison case. Released one day before the window.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "It is one of the few release items with sensor data and official analysis. However, the analysis itself cannot show that the detections are a single object.",
+      "details": [
+        {
+          "heading": "What the release shows",
+          "text": "If one object made all 8 detections, it moved at about 1,650 mph (~Mach 2.5) and changed bearing by ~39°. The analysis says the 12-second sweep interval cannot establish one object or a continuous track."
+        },
+        {
+          "heading": "Would make it more convincing",
+          "text": "Raw radar returns, data from other sensors at the same time, and a check of false-track rates for that radar."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "Release 8 has 43 files (40 documents, 3 videos), mostly a mix of old and new material."
+        }
+      ],
+      "follow": [],
+      "todo": "None this week.",
+      "rule_label": "Trigger",
+      "rule_text": "Revisit only if a release includes multi-sensor raw data.",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "DoD PURSUE: Release 8 ↗",
+        "url": "https://www.war.gov/UFO/?releaseDate=Release+08&release=08"
+      }
+    },
+    {
+      "id": "coldfusion",
+      "nav": "COLD FUSION",
+      "label": "CONTEXT",
+      "label_detail": "DO",
+      "meta": "LENR · ESSAY · NOV 26",
+      "claim": "Huw Price argues that recent work shows many 1989 critics of cold fusion were wrong, in a reply to George Musser's Quanta coverage.",
+      "people": "Huw Price, 3 Quarks Daily; affiliation not in source",
+      "links": [
+        {
+          "label": "3 Quarks Daily essay ↗",
+          "url": "https://3quarksdaily.com/3quarksdaily/2026/11/cold-fusion-what-musser-misses.html"
+        },
+        {
+          "label": "Quanta: Musser on cold fusion ↗",
+          "url": "https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/"
+        },
+        {
+          "label": "Nature Communications 2026 ↗",
+          "url": "https://www.nature.com/articles/s41467-026-74421-1"
+        }
+      ],
+      "stage": 0,
+      "stage_headline": "Commentary, not data.",
+      "stage_note": "This is an essay replying to journalism. It makes no new experimental claim.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "It frames the current LENR debate. The gap between enhanced cross-sections and measurable excess heat is the key benchmark for any LENR proposal.",
+      "details": [
+        {
+          "heading": "What he says",
+          "text": "Many 1989 critics were wrong. He also cites Metzler et al., who note that far more than a 10¹⁸ enhancement would be needed for measurable excess heat."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "This is pushback on journalism, not on a scientific claim. No LENR primary research appeared this week."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Huw Price",
+          "role": "Essayist"
+        },
+        {
+          "name": "George Musser",
+          "role": "Quanta cold-fusion coverage"
+        }
+      ],
+      "todo": "Read for framing only.",
+      "rule_label": "",
+      "rule_text": "",
+      "needs_owner": true,
+      "compare_text": "Nature Communications (2026) reports materials-dependent enhancement of low-energy fusion in solids. It says such fusion rates are not presently relevant for energy production.",
+      "compare_link": {
+        "label": "Enhanced nuclear fusion in the sub-keV energy regime ↗",
+        "url": "https://www.nature.com/articles/s41467-026-74421-1"
+      },
+      "primary_link": {
+        "label": "3QD: Cold fusion: what Musser misses ↗",
+        "url": "https://3quarksdaily.com/3quarksdaily/2026/11/cold-fusion-what-musser-misses.html"
+      }
+    },
+    {
+      "id": "vlass",
+      "nav": "VLASS SETI",
+      "label": "BENCHMARK",
+      "label_detail": "",
+      "meta": "TECHNOSIGNATURES · ARXIV PREPRINT · NOV 24",
+      "claim": "There is no convincing broadband 2–4 GHz technosignature from 210,191 Gaia DR3 main-sequence stars within 100 pc across all VLASS epochs (2017–2026).",
+      "people": "Steve Croft (Oxford University / UC Berkeley / SETI Institute)",
+      "links": [
+        {
+          "label": "arXiv:2611.31943 ↗",
+          "url": "https://arxiv.org/abs/2611.31943"
+        }
+      ],
+      "stage": 3,
+      "stage_headline": "Stage 3 of 5: tested against a control.",
+      "stage_note": "Detections are compared against the expected rate of chance coincidences.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "It sets a new population-wide limit on wideband transmitters. The median per-star limit on steady emission is L_ν < 4.0×10⁸ W Hz⁻¹.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "In the Epoch-1 catalogue there were 51 high-reliability positional matches against 1.5 expected by chance. Each is judged plausibly noise, a background source or stellar emission, and none warrants priority follow-up."
+        },
+        {
+          "heading": "Check when reading",
+          "text": "How \"51 vs 1.5\" fits with the statement that counted detections are \"no more numerous than chance\". Presumably most matches are ordinary stellar radio emission, but this is unconfirmed. The faintest late-M and substellar objects are excluded."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "This is a limit, not a claim. Any future wideband candidate must exceed it."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Steve Croft",
+          "role": "Author"
+        }
+      ],
+      "todo": "Store as a benchmark limit for any wideband-signal claim.",
+      "rule_label": "",
+      "rule_text": "",
+      "needs_owner": false,
+      "compare_text": "",
+      "compare_link": {
+        "label": "",
+        "url": ""
+      },
+      "primary_link": {
+        "label": "arXiv:2611.31943 ↗",
+        "url": "https://arxiv.org/abs/2611.31943"
+      }
+    },
+    {
+      "id": "hscshear",
+      "nav": "HSC SHEAR",
+      "label": "BENCHMARK",
+      "label_detail": "",
+      "meta": "COSMOLOGY · ARXIV PREPRINT · NOV 25",
+      "claim": "HSC-Y3 cosmic shear finds a constant w consistent with a cosmological constant, a 2.4σ preference for dynamical dark energy, and S₈ ≈ 0.77.",
+      "people": "Shreya Mukherjee, Surhud More; affiliations not in source",
+      "links": [
+        {
+          "label": "arXiv:2611.34650 ↗",
+          "url": "https://arxiv.org/abs/2611.34650"
+        }
+      ],
+      "stage": 3,
+      "stage_headline": "Stage 3 of 5: tested against a control.",
+      "stage_note": "This is a model comparison on independent lensing data. To be submitted to PRD.",
+      "impact_heading": "WHY IT MATTERS",
+      "impact": "",
+      "impact_text": "Any dark-energy-free or modified-gravity explanation, such as backreaction or running-vacuum models, must reproduce S₈ ≈ 0.77 as well as the distances.",
+      "details": [
+        {
+          "heading": "What the work shows",
+          "text": "Constant-w model: w = −0.936 (+0.074/−0.067). Time-varying model: w₀ = −0.832, w_a = −1.23, a 2.4σ preference for dynamical dark energy. S₈ ≈ 0.77 in both models."
+        },
+        {
+          "heading": "Keep in mind",
+          "text": "The authors say the dynamical signal is \"driven primarily by the geometric distance ladders\", not by structure growth."
+        }
+      ],
+      "follow": [
+        {
+          "name": "Shreya Mukherjee",
+          "role": "Author"
+        },
+        {
+          "name": "Surhud More",
+          "role": "Author"
+        }
+      ],
+      "todo": "Store as a benchmark for dark-energy alternatives.",
+      "rule_label": "",
+      "rule_text": "",
+      "needs_owner": false,
+      "compare_text": "Use this as the check on Buchert's backreaction reinterpretation of DESI.",
+      "compare_link": {
+        "label": "arXiv:2611.31041 ↗",
+        "url": "https://arxiv.org/abs/2611.31041"
+      },
+      "primary_link": {
+        "label": "arXiv:2611.34650 ↗",
+        "url": "https://arxiv.org/abs/2611.34650"
+      }
+    }
+  ],
+  "left_out": "Left out: all four physics.gen-ph papers (formal theory, or a stage-1 running-vacuum exercise covered by the HSC and backreaction cards), mainstream arXiv matches that hit only on keywords, the biotechnospheres essay, four out-of-remit Retraction Watch posts, and PsyArXiv papers outside remit, including Dörner's motivation-theory \"PSI\" agent.",
+  "searched_note": "We searched arXiv (rate-limited partway, so some abstracts were checked via search copies), PsyArXiv/OSF, JSE, Journal of Parapsychology, PLOS ONE/RSOS, Bial, PubPeer, Retraction Watch, ARPA-E, DARPA MARRS, NTRS, Galileo Project, Breakthrough Listen and the DoD UAP releases. Nothing new turned up for psi experiments, MOND galaxy or wide-binary tests, LENR primary research, Galileo Project or Breakthrough Listen, and no critiques or failed replications touched any claim in our remit.",
+  "start": "2026-11-21",
+  "end": "2026-11-27",
+  "generated": "2026-11-27",
+  "generated_at": "2026-11-27T22:12:47+00:00"
+}
