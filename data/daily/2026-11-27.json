@@ -1,0 +1,1224 @@
+{
+  "date": "2026-11-27",
+  "headline": "FCC clears SpaceX to launch 1 million orbital data-center satellites",
+  "bottomLine": "The FCC approved SpaceX's plan for up to 1 million orbital AI data-center satellites, with up to 797.6M SPCX shares unlocking Dec. 8; Erebor passed $1B in loans. Nvidia reportedly paused server shipments to four Southeast Asian countries, and the US is set to raise tariffs, per the WSJ.",
+  "portfolio": [
+    {
+      "company": "SpaceX (prev. xAI)",
+      "title": "FCC authorizes SpaceX to deploy up to 1 million 'Starmind' AI satellites",
+      "brief": "The FCC authorized up to 1 million 'Starmind' AI data-center satellites, to be deployed by 2040. Scientists told PBS they are skeptical the system can be built.",
+      "impact": "A license is not hardware, but the approval turns orbital compute from pitch into permitted plan and strengthens the long-run SpaceX story. Near term, the Dec. 8 unlock sets the stock's tone more than Starmind.",
+      "action": "Ask the partner covering SpaceX for a one-page hold-or-sell view that weighs Starmind against the Dec. 8 unlock; circulate it before the next partner call.",
+      "sectorId": "space",
+      "confidence": "confirmed",
+      "topRank": 1,
+      "itemIds": [
+        "n1",
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n13",
+        "n14",
+        "n16",
+        "n19",
+        "n20",
+        "n21",
+        "n33"
+      ],
+      "sources": [
+        {
+          "id": "n1",
+          "name": "Ars Technica",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQUVA4bVlwQUcwTUx4OXZtYzdfSnc2OUdUdEpJWHBGZDI4YUxNajUxUWI2UTliVFlDSDZvcFF5QVNtc1VKNTA5M3U2QVhLdmtCTXQ4QUhmM1RLaW10ZHZXSm11eWtYemxHSEROendsZTJWRjNIZVJUb0ZCMHJQV1hwUXZQQTdGM2JzZUtvQU5YQ3ZfV0FIWm16ODQya0FmdWpp?oc=5",
+          "publishedAt": "2026-11-25T18:22:38.000Z",
+          "title": "The FCC has authorized SpaceX to deploy 1 million satellites"
+        },
+        {
+          "id": "n2",
+          "name": "CNBC",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5QVElMeVZGcjdmLW43WEF1YjZPd0JMZHNNVVRteXNfOUl6LXpRVTVGYmwyNWNVUjVvNnpzSV9WWGVjQ3lxU2NhMVoxenpRcF84R3UwRVBBYl9PM2FsWVdsck5hWTFlQ1JrWmZKT1JwMzBvTjg20gF6QVVfeXFMTUFXTTNNRUdwdThhelJBLW9uX2YzZUthSnZDYS1Ub3llY0NfLXljRWpPRmdSeFFqbWo2T1BTQS1RT0M2anRiZWNqQVVpMmRoanhWOXFTTWMxOUlwVWxfank5LU5zYkhjYkpXWDAybjlmUHJmVXRJT3I4RHc?oc=5",
+          "publishedAt": "2026-11-25T18:22:59.000Z",
+          "title": "SpaceX wins FCC approval to deploy 1 million orbital data center satellites"
+        },
+        {
+          "id": "n3",
+          "name": "www.trendingtopics.eu",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9Md1M0ZUdBSHQ1NVhLTi1VV0ExYkdsc1RnOUxhdDhpdmJYemo4TFNyd0Rnb01uTHNYaFM0RjVZbWVsa19VNFpnc0pURmhmWFV4ZTFLRmh0RWxXMUlVVVVhTVdmWGpzSzZsZ3hIOGlldTJiLTUxS002VzFiNA?oc=5",
+          "publishedAt": "2026-11-25T20:50:22.000Z",
+          "title": "FCC Clears SpaceX to Put a Million Data Centers in Orbit"
+        },
+        {
+          "id": "n4",
+          "name": "Spaceflight Now",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOQTVGcmQwYXo0b3pLS1hFRmxuR2RHaXVSOUJycVJtMnNtd1hSdl9MMHJSMWRpaHYwbmhLbzI0WkFRT1NFdTJEd2pIa3pXN3owZ0RYRC1tX09rTGlHTEtvbG1nVlVPbEZZcllRZUlVdEJfVlhjajBKekxHOG1pbzM2VDFhOXVISDNZQTZtYzdIWUx0MVk5eWpLbEQ2Z0ZXOU16d1NPdGVlZDdYNnR6Z0pZd3FYNE9MNmdsdmhrSw?oc=5",
+          "publishedAt": "2026-11-26T01:29:33.000Z",
+          "title": "FCC green lights SpaceX’s plan to launch 1 million ‘Starmind’ data center satellites"
+        },
+        {
+          "id": "n5",
+          "name": "CNN",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQ0x2cTY1eldxQW5lTHFueTItMEJDQXlWYXJSLWQzWVdKV3Y5UVNSd2dwMUNCcVNtTTZWLVBZSklFcm11X0JtczRyQzJzV0huclBsZzdKQWJTLUxlOEhxU0tlUndoTFlyWkxIVTF4bGxwM1FWbTBEWjlpTk9oZ1RIaGtmdXVUbjFG?oc=5",
+          "publishedAt": "2026-11-26T12:20:55.000Z",
+          "title": "US authorizes SpaceX to deploy 1 million satellites for AI data centers in space"
+        },
+        {
+          "id": "n13",
+          "name": "PBS",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTHhFVk1odlI3Y0VSYlFtSXR4dTktQXhGYW1NeFZDNUhDN0ZwY1BrNHY4dTV6aVZMVjM2Q3A2SWgwam14MzhpUncxd3pyYXljTGE3YUdhRkQzTm1zUEM2RnVsLVpsVFFCQnJZTW9sSnJqWVR3c3diRlk2LThxVmlYYmFmaXZ0NDNZNHdNaWdDTWh1RExzYlhkNXl1RkZXaERaSzFGb1NyMWc1MXVBOF9uTDZhMmNlTlBMVm9oakJrTk5WS0VEYmMwMWxkZmxMZm8?oc=5",
+          "publishedAt": "2026-11-26T20:16:59.000Z",
+          "title": "FCC says SpaceX can deploy 1 million satellites for data centers in space. Scientists are skeptical"
+        },
+        {
+          "id": "n14",
+          "name": "NASASpaceflight",
+          "url": "https://www.nasaspaceflight.com/2026/11/fcc-authorizes-spacex-1-million-starmind-2040/",
+          "publishedAt": "2026-11-26T22:40:55.000Z",
+          "title": "FCC authorizes SpaceX to deploy up to 1 million Starmind AI satellites by 2040"
+        },
+        {
+          "id": "n16",
+          "name": "Earthjustice",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWmNrSDRMQzhUUXdHek1HRkFicXN4Um8wRlFsM2JQRVVDZERjV08yY1Q4R2dNVVBsR2g4QWhidUU2aTl1THNTYm9Qc1FRU0xzZTVtcjVYZGhyNnh2UTNPQTJ6cGdQS3NoSnN0ZTlKd3ZSUDFpbTV1VXUtSXQ1LVpqZ3pQM0RYLUxXZWg4WGJDM0N5OUtKS0ZQRDl3Zkl2Nm9aWVA2cUJJNGpsM21kZkE?oc=5",
+          "publishedAt": "2026-11-25T22:55:45.000Z",
+          "title": "FCC Approves SpaceX Request to Launch One Million Data Centers into Space"
+        },
+        {
+          "id": "n19",
+          "name": "CircleID",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSEY3VEJiR1hqeVdveXhBUmpqTVFrb2dzVUNfZFBsX3BaalJKUXUxVXdQUzFXY1hweXZOcGNWTlBTWUtXN2hOWGV2cU12QUJ1UTdtdUZOUkJrRklSWFpxUW9HX2hFRXdOREprdWdJV2MtNkk4WS1zNHNjNzZFQ1djXzNuWWdSOExxMWlrRzdVOTUwSDlaX29OeFo4dTRleVhLb3NJ?oc=5",
+          "publishedAt": "2026-11-26T20:21:00.000Z",
+          "title": "FCC Authorizes SpaceX’s Million-Satellite Orbital Data Center Constellation"
+        },
+        {
+          "id": "n20",
+          "name": "Via Satellite",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPXzlZWkEyY3BqOXZ1eklyUlkwbVYzOXBudGlxNFluYmI3a3h0cElOd2RNa0s0X2xnU1J6X1FreGQ0OHdfNVl4WTBCUXZBZDVHNDBxSVdSYzZxNnI4TS04UnNoVXlWQ1l6RWJmc2d1UDgxWTNkdk0zTUZLbE5Ja3Y0SVhiMElkQ2xxZ3k4anFaR2FSLTh5RGUxWWNEbDR0Mnp5NERmTW8yYTVxMVpQZVZyTjc3aWV4M3BURjNVT3plUTUzLS1TY0VFMHR3?oc=5",
+          "publishedAt": "2026-11-25T20:39:03.000Z",
+          "title": "FCC Approves SpaceX’s 1-Million Satellite Orbital Data Center Constellation"
+        },
+        {
+          "id": "n21",
+          "name": "BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1KMGNuQ0YwUmpnNHZpaThEbUQzVEhfZXB3ZnNpRk9Renc0bkVxQm9CbFNRU3lXTzlfYmlOT0R2aW1Bdkl2YmtsUXpETGs2bnZQNmtlSlMtdnRpamc?oc=5",
+          "publishedAt": "2026-11-26T09:27:44.000Z",
+          "title": "US approves SpaceX plan to send a million data satellites to space"
+        },
+        {
+          "id": "n33",
+          "name": "SatellitePro ME",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUTZwNk1vak1wRmlMVE1HRTM1YjV5T29hWjJ5ZDk3TWczaGh5STU3STFNRXdmOUdoM05wSVFGWDVFM214QmI3c0d3RmVBUWJyVlJHcUlsQzAxeTNNbW82d3dNWXVBSWFpaTAzZ3RPZHR1MnpJNWlISmcyZlR0S2pCanR3MmNaT1hRNFZ2Qnpjb3ZHaktoeEhv?oc=5",
+          "publishedAt": "2026-11-27T04:01:14.000Z",
+          "title": "FCC clears SpaceX’s Starmind project to deploy 1m satellites"
+        }
+      ]
+    },
+    {
+      "company": "SpaceX (prev. xAI)",
+      "title": "SpaceX, Tesla fall on merger worry; up to 797.6M SPCX shares unlock Dec. 8",
+      "brief": "Tesla and SpaceX stocks sank Nov. 25 as merger concerns mounted (Yahoo Finance); up to 797.6M SPCX shares can be sold from Dec. 8 (Nacionale). Virginia and Oregon sued SpaceX over Grok images on Nov. 23.",
+      "impact": "Heavy share supply, merger uncertainty and state suits over Grok converge before Dec. 8, a weak setup for the stock. Any merger terms would matter more to holders than Starmind.",
+      "action": "Confirm with the fund's finance lead whether the first 20% sale was executed, and set the decision on further sales before the Dec. 8 unlock.",
+      "sectorId": "space",
+      "confidence": "single-source",
+      "itemIds": [
+        "n606",
+        "n605",
+        "n123",
+        "n604",
+        "n48",
+        "n49",
+        "n50",
+        "n76"
+      ],
+      "sources": [
+        {
+          "id": "n606",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPX21TU1QzV0o3SXVFSl83OWhvMVZzN2IxRFc1dzdBbGZDSEZYY2ZMTlBBaV9mVlF4dGVKTUU2eE4wN0xHajRtZ3EtNnA1RWNoWDlCZkE1NndHVTZlZzlHMEdObE5aYWxBRkNtajAwU25rbXVXZWY0OWRJb09iaG1xd0VvdnlkTm0ycjdmbWZVUUFRQUVBYW9wTXNiejAwdGtfNXE2dU1XN0MyS0l5WHVhQzlmZGYwZGc2?oc=5",
+          "publishedAt": "2026-11-25T15:41:59.000Z",
+          "title": "Tesla and SpaceX stocks sink as merger concerns mount"
+        },
+        {
+          "id": "n605",
+          "name": "Nacionale",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUXl4bUlKWEltRGNXS2d3WHMzaEVFb0x3SWVPQ1RYUTVJemtYTU1Ia3BHajBLMUU2S0ZCS1lUSTZnT3FtSUc1ZUpCdXlLdzJLRHNFRFpmVHNBcWFVd2wzaE1mWVIyOXdrRUhLU0QtbWl1ODd1b3JNM0Y2THNaV283eGJpNHJkQU40cDc4d2RGc3F5THE1a2xrZHhkS2tlejBPMWxCVmQwVUE3bkRFbmRpakw3ZmtzV0lQY2NuaXZsZjc?oc=5",
+          "publishedAt": "2026-11-23T17:11:47.000Z",
+          "title": "When is the next SpaceX stock unlock? Up to 797.6 million SPCX shares can be sold from December 8"
+        },
+        {
+          "id": "n123",
+          "name": "The Motley Fool",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNjJvNXFhaHRBaEhwRFNpemhjdnJ1MWFyZmRtNWsyb1dNb2FJT0s4M2phNXFmeXFqd0hjcGt5MDdqVzRrQzhIZjBUanBBcHJrdTJsczg5SHY5ckFPaWRCeHJrSndwel9ZaWVpY3VGMGVfQ3hWWXo2MzlvV09QaVlrSFFPdTJDdkRiRFhRQVd1WnIwYWhIcGE4VA?oc=5",
+          "publishedAt": "2026-11-22T22:01:02.000Z",
+          "title": "Should You Buy Tesla or SpaceX Stock Before Their Potential Merger?"
+        },
+        {
+          "id": "n604",
+          "name": "Benzinga",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQXF4ZWVwQzZSVG0xTmtaRG1MOE42RWYyOHZoV01zOGN0Vm5UT25XblNTQ0RNTEd6MUw0cHNQblVIZGthWVZVWUFxRnBSZHVzX0lfV2JlYkVpWWtrR0pYYTlDUXRNQkczMllJTU10dVh3bXlRclY1OWd6aVB3RUpaQ0RKZWROMmdzdUNDRzl1dW0tQk5qRHdFZ19QUmxwS2lpYzFqT1lyYw?oc=5",
+          "publishedAt": "2026-11-25T15:17:31.000Z",
+          "title": "SpaceX Shares Drop Wednesday: What's Going On?"
+        },
+        {
+          "id": "n48",
+          "name": "FOX 5 DC",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVGk3NDRPMmxIaWZHcEttQktCVVRSYkV6bmhKMVJfTDMxcXZmOUxvTkk5azN3Yl93MGtjQjZZSDkxQjZOVDh5TWpPVFhWVF9LQ21DYm83a0M1YlFvdkNiekVjYkYxSHByZGFKWWl1dVBvWFh3X0x4TFRpV2lHR0xTRHRqNmItVXlfYV9uRjhlbEZ0QXJtSXlJVFhORQ?oc=5",
+          "publishedAt": "2026-11-23T21:22:17.000Z",
+          "title": "Virginia sues SpaceX, X and xAI over explicit, child exploitation deepfakes made by Grok"
+        },
+        {
+          "id": "n49",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxObnVxU21QWWFOSHYzcW1sajgxS25DUndFTGd6dTh6UzdyaFR5U0QtMWlROWIxZ01IcU0wNG5FLXRaMWZoS1o0dHhEUUFiaDItWFVIbE01S1pTbDZxYVZGN1hMaHlNYXBZck84N3JPaW1xcW5VMHdNeFBHSWZmRVN6MzlHZjdEcl8wTkVERGhBU3M0dVBXSHBFUHNpM1pCc1Q0MV9HTWlveVJSV1hiSEFaWjJDMEI0b2p2bzBIZEdrampIVFlVWEE?oc=5",
+          "publishedAt": "2026-11-23T20:28:29.000Z",
+          "title": "Virginia, Oregon sue Musk's SpaceX over Grok AI's creation of child sexual abuse images"
+        },
+        {
+          "id": "n50",
+          "name": "Virginia Mercury",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWDR4S2hhczdMMmgxREZTY1dzUXZhZmJjS1BHY3NhYWNQa3hpV0JIT2paRk5QdV9ZSzBhOTVLX0hLMU1CMHR5Z0UxYVZndldZUmhYTWdSS1JmTDBRV2lLNndJb29kWGU0ZWxJZ18zQ2JJWEJuUkNWU2JNQTRBZklJQ19EODBFODZFZ3NTWkYtdUVSdmZiclN4X2FiM1BjeGJ3UGduMmNqb0ZlVktFcER1aXN2dmE?oc=5",
+          "publishedAt": "2026-11-23T17:33:31.000Z",
+          "title": "Virginia sues SpaceX, Grok for AI-generated, nonconsensual sexualized images"
+        },
+        {
+          "id": "n76",
+          "name": "WIRED",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE10aEd4SHJ6SGl5Ymd0SG0xVFFtbHpnWUxMNUMtRDQzekxMOUNyYUVncFhYYkFsZUVjYkRQV1F0dVQ0Q3U0VjEyM3VqQWhoNmNmMV9XVHNpazAxMFcxSjROVmxnczNkb0dwSmtxQU52OTdJYmtY?oc=5",
+          "publishedAt": "2026-11-23T11:00:00.000Z",
+          "title": "States Sue SpaceX Over Grok Deepfakes"
+        }
+      ]
+    },
+    {
+      "company": "Erebor Bank",
+      "title": "Erebor and Pinegrove give Harbinger $100M+ in debt; Erebor tops $1B in loans",
+      "brief": "Harbinger, the electric-truck maker, got over $100M in debt financing from Erebor Bank and Pinegrove Venture Partners. Erebor separately passed $1B in loans, with about $7B in deposits (FT, Dealroom).",
+      "impact": "Loans are still a small slice of deposits, so Erebor's earnings hinge on how fast it can lend to hard-tech builders like Harbinger, and on credit quality. Startups shifting from equity to debt is the tailwind.",
+      "action": "Ask Erebor's CEO how it underwrites venture-backed borrowers like Harbinger and where credit losses would show first; make Circuit's intro request on the same call this week.",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n15",
+        "n22",
+        "n26",
+        "n40",
+        "n68",
+        "n69",
+        "n545",
+        "n544",
+        "n546",
+        "n547",
+        "n543"
+      ],
+      "sources": [
+        {
+          "id": "n15",
+          "name": "Orange County Business Journal",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUlhUSDBhN25WdVBjbjRUeXdoODFlRnRYSFpDLW9BNEl0WkVpdzdKbFdkMlZyT0FuXzNFVmFSLUNRSklwUVZOekJRb3kzTWN4anVfZHIwRUVTeFMydkgxOUpyV1hDRC1FSzNNRjZCdFFPNkhTR0R1YV9uTGtaZVFDSzhVNmVnRVJ0cGI4cUUyb1ZmZWswTS1xWmo5Q0VvazJmZkVsaS1NU25EREhCLUlpalVn?oc=5",
+          "publishedAt": "2026-11-24T19:35:22.000Z",
+          "title": "Harbinger Secures Over $100M Financing from Palmer Luckey’s Erebor, Pinegrove"
+        },
+        {
+          "id": "n22",
+          "name": "Mezha.net",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNU211WVA2Sm9qTU1IeHZiZFVPYXluUzlmRWdGUVpHRmRLQVVXNkl2RXgxUDdHTDZmZjBWQlczUk10RExZVnYxczZaemQ4dTZRenI1bG15ZU1qU1oydW44V0Y4anE1RTBnMnRuRWk4eWFLRHVidElXLXZuNVFENW9BekQxc09HOVUtUDZv?oc=5",
+          "publishedAt": "2026-11-24T17:45:53.000Z",
+          "title": "Harbinger gets financing from Palmer Luckey’s Erebor Bank"
+        },
+        {
+          "id": "n26",
+          "name": "Tech Funding News",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRFRyaVlmbnlwSzB2QzhWTFFkbHEtRk1GX29CZVVBSVJReVQ2RzlVak1TTXB4SERFVXYxTDk1Wm91YndQQTFRQjFxcjI5MnJ3LTlhcGRBa3NuNjZuUzRhYnhQRWJpTHRlbTREUGZvR0MtNmVHLVNFM3ZjcEJtRXM1S2dLMDFBRXlqd1FzSmd2dHhmR2F2a2hneURXOVVTbHZCMXpOSzNtR1FMZzN5OHowZmhVR2FWbzdnR0ttRg?oc=5",
+          "publishedAt": "2026-11-25T11:23:36.000Z",
+          "title": "Palmer Luckey’s Erebor Bank backs electric truck maker Harbinger with $100M+ in debt financing"
+        },
+        {
+          "id": "n40",
+          "name": "Webull",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE12eF8taDYtd0hzeFNfRnBkdXRRUWlwaFU2T3BWX2I2N0FjVmdrOUVUZS10eXdLb1ZKeWp4X0lzZk16X1ItWTU0WUtrMV9WQzJtOWRtMEZGMVM?oc=5",
+          "publishedAt": "2026-11-24T08:00:00.000Z",
+          "title": "Harbinger Secures More Than $100 Million in Debt Financing from Erebor Bank and Pinegrove Venture Partners to Support Production Ramp and Future Growth"
+        },
+        {
+          "id": "n68",
+          "name": "TechCrunch",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcmI2Y2hqYWtIM1ZvOUlmUkRqUVdRekVFNDJ0enJ1TGRwMHlNZFNOb2VqLTQtUDI1QnNuRnZqLUdmYk1hUllocHFvM1lFVXVuZU1tQ3RjaFFrMTc4UXROT1JHUjNZbHBKbnVmRUhVQXBoeVhIS3NsTy1zZUVpTFIycGEwa2FnYWpOU29vYWk4ZE5UR1A2Z05ySWJPMWU2MnRKLXRPemc2TXhWQk1ReTNxWjZaaw?oc=5",
+          "publishedAt": "2026-11-24T17:29:09.000Z",
+          "title": "Electric truck startup Harbinger gets financing boost from Palmer Luckey’s bank"
+        },
+        {
+          "id": "n69",
+          "name": "Orange County Register",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWDlZdzBWNnVYSnk2U2RNMVFJbWExVE1meTBtY1FQR0FXUGN2VmN3ZGRjcjMwZUdFMkFNSVd1Vk5kdFJwdUNPWGZRQ1VwbjlyMkpkNDdUZGVuaWFhRFlCM3l2cFZKX2ZUMEU1VF9GLWZZV3dLV3VpSUZrODRfUzByWnRTMEgwbHBYNWNWZXZRVk54YWVlNm1DSVQ4Y1dhcW1heGFZYjFkQ3NMLVU?oc=5",
+          "publishedAt": "2026-11-24T20:38:15.000Z",
+          "title": "Bank backed by Palmer Luckey invests $100M in Garden Grove’s Harbinger"
+        },
+        {
+          "id": "n545",
+          "name": "Axios",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPME9DYi1oU3hmZlZncFUyUnRvME1mc21wQ3hjS3VmS2xJM0JBTlZsTWZIY1VCb2Nab0g1R1RZcUVycHpmdTF1eG9NdnRKVEMtdWRkSG9oeDhZRzE0dVBDVERjRWtCb0VxcXVETVJQcTRvQXo5MjNvSGNrOElOQVYxRGY3a3FtaHlnbkNqVHNfd2RjZVk?oc=5",
+          "publishedAt": "2026-11-24T14:04:22.000Z",
+          "title": "Harbinger is moving past VC equity to use debt to grow"
+        },
+        {
+          "id": "n544",
+          "name": "Financial Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS005WjE3WE13YkwybXphbVB1Q3lMUWEzdlczVFBuRWVSdWJlb3VmVW1mZzAxNmFTYzdDU3ZSUDloSV8xNHhLN2NaOVhVLUhXS2M5N2ZrR1YtdW5zVDVkRGN6b3ZsTDNzS21YMm9vMVh3TldoQmhGSFlGMlpHa2xYeVZIXzY?oc=5",
+          "publishedAt": "2026-11-23T11:00:08.000Z",
+          "title": "Palmer Luckey’s start-up bank hits $1bn in loans"
+        },
+        {
+          "id": "n546",
+          "name": "Traders Union",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQ3E5TEhaNmhuZUZ2TC1HdV93ZmVfd09wUkl0MFBjWUJWR2JOZ3FPamlucFh1emhyMk5veHJBYmUzZ2FPdEE2YW9FcUZqSzI3MmJra3FNMUNuTTVOdWp6blVBRHQteEwtLWFsMmgyZVA5X2hBZEVSLXZsSm9wbkNYRzROajhOZWR5am1qTg?oc=5",
+          "publishedAt": "2026-11-23T11:56:28.000Z",
+          "title": "Erebor tops $1bn in loans as tech-focused bank expands under U.S. charter"
+        },
+        {
+          "id": "n547",
+          "name": "Dealroom",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZVFhcm8yT2VISl8wQUZWelJFeDZyM3BlcHZrbEpnaGkxeVllM3dyXzVQQVROTFlBUmx3NXJYdHplTEZ4NHpUald0N3RKMHhZdUtyb3MzZnY2Snh6YU83N1ZjT3V3T0RMMlRuR24wMDU3RkxSSktFTjJLb3RPWDloODRqWU5aWlI2dTJoX3h0OTFoNlhjZmc?oc=5",
+          "publishedAt": "2026-11-24T10:37:52.000Z",
+          "title": "Palmer Luckey's Erebor tops $1B in loans, holds $7B deposits"
+        },
+        {
+          "id": "n543",
+          "name": "New York Post",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd1hNQmpUdnNiZFh0dWNBSHh5S3FqZkhLdE5qZnQtaThzM0tLaGRCYjZabEd0cDdlWFRjdm5PM3ZZVHhxRnhyeXU2Y1M5Wk5aX3Y3el9aX1JzRTJfSFctQ3lxeDBoYVVJTVRxR2tXdGNNckUtTFl6aldPYk1uVWVxdDNpMnM3WjFEVHNfZWNOdzV5SnY5UWxpMUdSVTEtZGhDc1FFTWhRTGNlS3NzVXVFOUVpdXY0VXJKc2hqdkVtWENnV3d2?oc=5",
+          "publishedAt": "2026-11-24T21:14:00.000Z",
+          "title": "Erebor Bank blends startup energy with midwest values — to win $8B assets in under a year"
+        }
+      ]
+    },
+    {
+      "company": "Anduril",
+      "title": "Air Force: F-22 pilot flew Anduril's YFQ-44A Fury drone in airborne test",
+      "brief": "The Air Force said an F-22 pilot directed Anduril's YFQ-44A Fury through flight maneuvers and simulated combat tasks. Raytheon won the Navy's SLCM-N nuclear missile deal, with Anduril, Divergent and Williams listed.",
+      "impact": "Directing a Fury from an F-22 is the crewed-uncrewed teaming the Air Force's drone-wingman program is built around, strengthening the case for production orders. The SLCM-N role is a supplier slot, not a prime.",
+      "action": "Ask Anduril's CFO whether the Fury test and the SLCM-N slot pull forward production awards or its unannounced next raise; get an answer before year-end.",
+      "sectorId": "defense",
+      "confidence": "single-source",
+      "itemIds": [
+        "n534",
+        "n538",
+        "n536"
+      ],
+      "sources": [
+        {
+          "id": "n534",
+          "name": "Defence Industry Europe",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPelRLWmtqa25Xekdja0E2a1J2WGl2ZzVQTkZSWDNCaFF4VUZWcHlNYy1aNGZRZ1lWbFpKUGhjLTFSazBGVmhTVzdsVk5SMVBvTlRfTFBrd3hPdDlPeEhyWWdPdjQ4bmNiOWIyNVVxUklHY2hqSDFzZVppeGpuMjRLVlRqZzVyYnJPMzRBeGdNZFpyckZtdFR3TVNrYURJbHdoV3EtQVdnTFhseW5FRDBHbVV0NFppbl81ZEhaVXdidmVTdEJCLWtTc0hnQlVWdEJjUThHYm9EZVlUZ1N0cVFjeEdZV2hJbTFfOElFaE13?oc=5",
+          "publishedAt": "2026-11-24T08:00:00.000Z",
+          "title": "U.S. Air Force says F-22 pilot directed Anduril YFQ-44A Fury through flight maneuvers and simulated combat tasks in airborne test"
+        },
+        {
+          "id": "n538",
+          "name": "The SOFX Report",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWDAxTURoZF9uQ0JYTng5eXNBTjVvV1VBSEhhbWk5bEhCTlhKcEtUS2d0UnRqQl9fcWRjZExGbmJMM3BaZThIc3dWb2oxdTNfWkMxTXZQRUxSb2Z6QnAwWTZvYmFzSlhIVjBxTDNFRC1lcjFBQ01kWms3ZkZHU21EWlVSemxBdmVBT01vNFdRVGpEaW9VVmNBZE1JTGJfUHVQd25KZjZ3?oc=5",
+          "publishedAt": "2026-11-26T03:53:20.000Z",
+          "title": "Raytheon Wins US Navy SLCM-N Nuclear Missile Deal With Anduril, Divergent, Williams"
+        },
+        {
+          "id": "n536",
+          "name": "sUAS News",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRklxNVFrS2Z5Qlh4WjU0RU1PNnY4dUNnUlV5QWVlVDNMWVRFcDFYRGVtTG1Xa0Z1NHZLTEVaMjFYZjE5dDNaSVc0b3M3QWFxenl6RHNielBGcF90bk01TVpOakUtOFcwRlY2dlkyN3l0QlhSNFdJZEZzUUxlVkw0WUZuVVJzdWdYeVR3VFViYXU3eEVEMXFyT2RTSDVjZDVTRnc?oc=5",
+          "publishedAt": "2026-11-25T23:06:00.000Z",
+          "title": "Seasats Expands Quickfish Strike Capabilities with Anduril’s Altius"
+        }
+      ]
+    },
+    {
+      "company": "Perplexity",
+      "title": "Judge divided on Amazon's bid to block Perplexity agents (Nov. 20 hearing)",
+      "brief": "At a Nov. 20 hearing a judge appeared divided on Amazon's bid to block Perplexity's agents from its site (Bloomberg Law, Law360). Perplexity also launched Time Machine, which lets agents search the web's past, on Nov. 25.",
+      "impact": "An injunction would be the first major test of whether agents can shop retailers without consent, central to Perplexity's agentic push. Amazon's talks with Meta over Muse suggest access can be licensed instead.",
+      "action": "Ask Perplexity's counsel for the ruling timeline and whether a licensing deal like Meta's Muse talks is on the table; ask for the NVIDIA-round confirmation on the same call.",
+      "sectorId": "ai",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n554",
+        "n560",
+        "n552",
+        "n553",
+        "n572",
+        "n128"
+      ],
+      "sources": [
+        {
+          "id": "n554",
+          "name": "Courthouse News",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaGFOTkZLSWQ1dTRKQkpVOVl2Qk05UjVHTGt2MjZGT0ZPam96MUZNdnowWTgxQzFMNEFEeTNtLVl4RU9CNGxBNXdCUGdfRGd4Tm1qdWI4TGNyMS0wSmc4ZkZMSTBxRXo2bFp0Rm1rR2xhZnRiWTN2UzRvWENwQUI4SHVid2ljeUJTelFhWlZMU0tubUhOc3VpWldxMHlCODdHRDR3?oc=5",
+          "publishedAt": "2026-11-21T00:08:45.000Z",
+          "title": "Back in lower court, Amazon wants to continue suit against AI assistant"
+        },
+        {
+          "id": "n560",
+          "name": "Bloomberg Law News",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSDRCbC1SMGx5SkNCbndmLUZJTGJpU0hhOVFETUl0TjFBNktoQWRTcWxZbm8zOUd3SGVPZERfTnNiQVg3N3NQc1I4VC1Sd093U3M4VTQwZE9NYWYyVVJDYjNZR1NEMnlsSTd6MVJmVmtIQTNhUFBWRUlxMTkweGJHMVBjSFhHVE91UzlCdEN5cVBUODdWTFhtLTNmWUFiQQ?oc=5",
+          "publishedAt": "2026-11-20T21:10:00.000Z",
+          "title": "Amazon Meets Divided Judge in Bid to Block Perplexity Agents"
+        },
+        {
+          "id": "n552",
+          "name": "Law360",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSnN6Sk1rUElPS0F4MDNjcE9KX21PSThHQ3A5bUZ2bzhRYTRycnAxWVJUMTYyU0RRamh0NXpHbGJJeThXdzBUdzl4QnRFcHBsYklLZ2lFbVF5NTJrUHJRMS1qSmZSbkVBSE50QzRGQlpySG9LT2M3RFAwd1FseTJaZmw3UFBNWGpkV1ZrZEhNeE90dE5IZGd4TUloS0VSYkXSAVZBVV95cUxNRmljenp2WGM0NkE3QVpNSF91U0s2VnIxMkVvOGdnN0tCVi13ejM3WENTdHRkLW1oQ3BoSUFPQTVXaWNqWF9pNXptMUNmdEFfWU8wMXRlQQ?oc=5",
+          "publishedAt": "2026-11-21T01:12:50.000Z",
+          "title": "Perplexity Fights Uphill To Avoid Amazon Suit Over AI Tool"
+        },
+        {
+          "id": "n553",
+          "name": "Digg",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBFR3pudXpYYkxJTWV5dGhJSW9Pc3dOb21XNml4ci14UldrZkZNbnJPNnRHVUZoZ0tRa2s4YXIwRm5XQQ?oc=5",
+          "publishedAt": "2026-11-25T23:39:53.000Z",
+          "title": "Perplexity’s Time Machine gives AI research a rewind button"
+        },
+        {
+          "id": "n572",
+          "name": "The Next Web",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1zOXZCT0NOMXhZYWFtSV9rV2dneG5nN2ZBSG92RURFbF9kaWpjN0p6Rk5DWlhfRWs0TmFZM0NpM3dld1dzWkZiLUhpRGxBQnVVTk5sal9WVlJNSm1hMXQxSWFDTm11UmNjeEpVZ2s0TlhRcXpxY0ZHOWJ3?oc=5",
+          "publishedAt": "2026-11-25T20:57:38.000Z",
+          "title": "Perplexity’s Time Machine lets AI agents search the web of the past"
+        },
+        {
+          "id": "n128",
+          "name": "BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9aYU5RU0hoeG0tSEp6azRXT2M0d2NhVjdZTTdWb1lTVDNwMXZ4VV9kdVZ1MFpPaGRKNWJZa2xqbTJsa1YyaE1rQ0k1RWtabV9lT2FtTUVyTU1SUzJ6R1VXUFM1UHItbmJkdWg5aGRYNU9zQTZvUnc?oc=5",
+          "publishedAt": "2026-11-26T23:25:00.000Z",
+          "title": "Amazon, Meta Resume Talks on AI Shopping Agent Muse Two Months After Blocking It; Ads and Search Are the Sticking Points"
+        }
+      ]
+    },
+    {
+      "company": "MetaKeep / Supercritical (RZLV)",
+      "title": "Rezolve AI raises 2026 revenue guidance to $360M; shares trade below $1",
+      "brief": "Rezolve AI said H2 revenue grew 543% and raised 2026 guidance to $360M (company release). The stock has fallen below $1, down about 92% by Simply Wall St's count.",
+      "impact": "A 92% fall despite a $360M target shows investors do not believe the guidance; only verifiable customer revenue changes that. If the next report shows none, M31 should review selling.",
+      "action": "Ask Rezolve IR for the MetaKeep share-certificate reissue date and the audited revenue behind the $360M target; if neither is firm this week, put an exit review on the partner agenda.",
+      "sectorId": "web3",
+      "confidence": "company-claim",
+      "itemIds": [
+        "n199",
+        "n203",
+        "n551",
+        "n202",
+        "n201"
+      ],
+      "sources": [
+        {
+          "id": "n199",
+          "name": "Rezolve Ai",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPMjlRYjUzRlVJeGdJUzU5X0d4Q2s1THFXdUxzWlY3LVJYejhTbnJTbzIyWHFQYmp3NTVJY21Xdm9YZFdWVUdPNk9pUmdBZWFoTHdtR2VZSDJoT2IyQzM2N3lvd3hpZURka1lsNFJiWklsTlhIMllwdnd4eURocjd5a2dFWE51TmtXUTczMDdYazVCR2pKM2VQQlQyYl9lYm1rRkpQS0JhTkZqeFBteDhjaFJSSFBKUmFnMTUzZElVeDFxa2ttc3BrUUFEWnZoVjBKVTFueWpRM3JVMzRHakFXRE1aNHBqZUFxTEhkYklEakpFMWh2ZHc?oc=5",
+          "publishedAt": "2026-11-25T10:27:13.000Z",
+          "title": "Rezolve Ai Delivers 543% H2 Growth; Raises 2026 Revenue Guidance to $360M as Platform Achieves Global Infrastructure Scale"
+        },
+        {
+          "id": "n203",
+          "name": "YouTube",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qc3lNalhQX3p0RG9IS3VvMDBWcjcxNGxuVjBLcEFJcU5JSDY0Qm5FU2VTQy1aaUZ3NHBlNXNiVldxT3k2SmU5cE95SjN6UE1ReVZ4MkFNUlZScjN4?oc=5",
+          "publishedAt": "2026-11-20T21:40:20.000Z",
+          "title": "Rezolve AI (RZLV) Stock Fell Below $1. Can It Hit $360M in 2026 Revenue?"
+        },
+        {
+          "id": "n551",
+          "name": "Simply Wall St",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMF8yRC1hM0lSX2ZTZnlVX3dCbm0zSzFwcFMzV1NuSzJtOWxrbjFvLU96WDFtVzlwcWdieEJpQjhFSXhDVUx0SDdYMkVLV1BVaGdNMi0yNV9QMV9QX3QyTTd5U3pkVlNzYm9ycGR0UG5JRURkTXZNd2tZTHlwWkYzRUVBU0xnSlJweU9EVDNwZS1TQ291QUZYekhYcUVvUTZmc0d6YjdsRHlkb1dKN3dkZDc4cXVEZ9IBuwFBVV95cUxNUnVHdGtkelZxX0lzdEpFZWlwTWJrYUtyMGtMMWxsVktLV1pFXzl6MGtBRWlGdE5LVG1yRE04ZUJSOGtKZWI2eFBFOFUwd1ZlakdOeE9kVjlHb0V4dC11bTRZUThtY0xGVjZwa2VSdEVwSkhlaFpqY25fSkFFY2Y1LVNDbE5pZjdzTlBVVjVfYTN2alBSSVdRYm1fOThoVnFVUWdvYkJrN2NvRWVJWl9iVUFLNUxTTVpMaXVr?oc=5",
+          "publishedAt": "2026-11-21T09:09:40.000Z",
+          "title": "Is Rezolve AI (RZLV) Reasonable After A 92% Slide?"
+        },
+        {
+          "id": "n202",
+          "name": "GlobeNewswire",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNR0JKaVRZaF9JQ3NLR0VIZGlvbG5GRjBNemFJV1hGQXpiMV91NGZvaWZ1TjhpM0w0blA5YXpLaU1idF9aM2pqWHk4UEp2RFo2V1ZqeUw3a2FxVnVBaG8xMGFROEo3bHpPSUNkOU94cDlpVFdDUm8tdzVJRnZuZFByUE1sc0FkR0k0NkgwRVpvMXBpbWlCdEN5TGt0bzRwWHFybUtTQ1VJS1NDMUJtcHZlRF9Lbm4zdkppc3luMzZZSUVablR6QjdUMWpTV1ZiUloxZW84M2NsU08xdTdSQlpIS0J1QURJdw?oc=5",
+          "publishedAt": "2026-11-24T13:00:00.000Z",
+          "title": "Rezolve Ai Customer Dubarry Delivers 18% More Online Revenue From 4% Less Traffic"
+        },
+        {
+          "id": "n201",
+          "name": "Investing.com",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUnFGRW9oNVRRdldrWFhrX1ZjaTlsQi1uallJYlByNmtVY1lIa1E3cE9vblRYbFMyTnNuak9adEVhY1ZLZFFPM25jSWc3WDdMQUk1cUFhb1ZkUVdIRkJZQWRzbUFmS2QtY0hLTEhwOEZ0VlJKUVZjZlJzcjBGVXJrVmFXcVI3QV9kdm83QkRHSVRZLWpmUHlxQjQ3YmxmdkktSmo2Z3dJbEFiQmdLMlUwNU9wVkU?oc=5",
+          "publishedAt": "2026-11-23T14:04:07.000Z",
+          "title": "Rezolve Ai reports 185% search volume increase at Flowtech"
+        }
+      ]
+    }
+  ],
+  "portfolioQuiet": "",
+  "thesis": [
+    {
+      "thesisId": "spiritual-warfare",
+      "verdict": "confirms",
+      "title": "Blackwell racks found in Shanghai; Trump says US could still take Nvidia stake",
+      "brief": "Bloomberg reported a GB300 rack and a GB200 server at a Shanghai data center; loan records don't show how they got there. Trump said the US could still take a stake in Nvidia (Decrypt).",
+      "impact": "Our thesis predicts sudden executive action over markets; a government equity stake in the chip leader would be exactly that. Leakage makes tighter controls more likely and raises the premium on sovereign compute.",
+      "confidence": "single-source",
+      "itemIds": [
+        "n110",
+        "n174",
+        "n293",
+        "n111",
+        "n158"
+      ],
+      "sources": [
+        {
+          "id": "n110",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/nvidia-blackwell-chips-found-in-shanghai-bloomberg-says",
+          "publishedAt": "2026-11-27T14:52:21.000Z",
+          "title": "Nvidia Blackwell Chips Found in Shanghai, Bloomberg Says"
+        },
+        {
+          "id": "n174",
+          "name": "Decrypt",
+          "url": "https://decrypt.co/384153/nvidias-blackwell-chips-turn-up-in-china-as-trump-floats-government-stake",
+          "publishedAt": "2026-11-27T17:09:30.000Z",
+          "title": "Nvidia's Blackwell Chips Turn Up in China as Trump Floats Government Stake"
+        },
+        {
+          "id": "n293",
+          "name": "Chosunbiz",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaHRNbjZKMVZkWXBqYUc5cVVKUW4zRVU1aW1hcmlRYlUxY0dyMS1zMHZRc3YwS1lqVmsxV1ozNm5UZFhmZnlJMjQ4THhqQWFJN0pUdHBUY1Rxc3U0S3VqN1dBRVNQcXMybzk3Q0sycEVWZTJzR1FUWFFLbTlvS2lSa29QM0xBVHBF0gGcAUFVX3lxTE8tT3FmWFBIVzZwc0NzM3BHZXp2TkFBc1ItdEs4bW9zcGExV0EtcEJ4LTZ0c2hZeklsbHhBd3N2LW5oTUF5NXl5bEY4b3ZTTHNUUTR6S0tMRnMtVWlTR3Z2QlFVTE1sa3d6S01xeGRQRUd2SVdHWS1HTi1QRE4xWUV6N3RBSlFWS1NsZVZYY2pMeFh2TGstNE9VYlFhcQ?oc=5",
+          "publishedAt": "2026-11-27T17:11:00.000Z",
+          "title": "Nvidia's export-controlled Blackwell chips found at Chinese data centers"
+        },
+        {
+          "id": "n111",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/nvidia-sells-top-ai-chips-to-chinese-owned-us-firms-cbs",
+          "publishedAt": "2026-11-26T06:17:03.000Z",
+          "title": "Nvidia Sells Top AI Chips to Chinese-Owned US Firms: CBS"
+        },
+        {
+          "id": "n158",
+          "name": "New York Post",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQc1NqSGpiN2IzRzMtNnFlTHg0QVg1Nkw2UjRvUVlGY29oMnV0enQ1ZndsNElEa2ExT2lfSWVhMlpBMjlvb3FxQTFRU0NHTVRiem9IYTJkazNSY3FIRGwtb1VhVVlzSTJZbmxpOFhVZXhwUXBxT0pCaGRuckFyTEhJdXVNd3laczhTWS1XeXk2VWpiRVhIaTJCLVI0cmFuc3YtQW85T0lJRDM5TFlXOTZERGEwY3ktUQ?oc=5",
+          "publishedAt": "2026-11-26T20:41:00.000Z",
+          "title": "California companies owned by Chinese firms are scooping up Nvidia’s most advanced AI chips: report"
+        }
+      ]
+    },
+    {
+      "thesisId": "populist-1873",
+      "verdict": "mixed",
+      "title": "Bitcoin falls below $59K as MSTR hits 52-week low; reserve bill faces long odds",
+      "brief": "JPMorgan said Strategy's premium to its bitcoin holdings hit a record low, a 'capitulation' signal. A House committee advanced a Strategic Bitcoin Reserve bill, but Congress adjourns within weeks.",
+      "impact": "Bitcoin is the weak leg of our debasement call: price, treasury-company demand and the US reserve bill all point down, even though Strategy kept buying. AI stocks rallying fits the loose-money leg.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n105",
+        "n136",
+        "n28",
+        "n29",
+        "n171",
+        "n342",
+        "n137"
+      ],
+      "sources": [
+        {
+          "id": "n105",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/markets/2026-11-26-jpmorgan-bitcoin-capitulation-strategy-low-nav-multiple-447007",
+          "publishedAt": "2026-11-26T16:18:24.000Z",
+          "title": "JPMorgan says bitcoin ‘capitulation’ signaled by Strategy’s record-low NAV multiple"
+        },
+        {
+          "id": "n136",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tTm53ODQ2MlhQVmpHWjBzYmVVYkU1Q3RNMHFSSEYzNFFOQThHUFV3SzZiTkVOaHlBNEpBc1pNbnBlSl8xV245TnNpSTNLenV2a2ppbDNYa3BqWGJMVDQzTVZPbEtTY0V5bGdYdldB?oc=5",
+          "publishedAt": "2026-11-26T16:26:07.000Z",
+          "title": "JPMorgan: Strategy’s Bitcoin Holdings Premium Hits Record Low"
+        },
+        {
+          "id": "n28",
+          "name": "Benzinga",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSkJFbXo1ZVBHN1J1bHBHMXdqZUFqczllVkwyVktWZUtMOWpmSzJJNW9KY0YyUGZSTzRHS1lpMzF6aUtTNmtNc1lJdDVRMUlKOVpmNC15cW9jNFUzZndLZVRSaTc3Z2FEUTA3ZldwZk9aRlIyY3hsazdDV1AwLW5vWi1BN2tkTkhPMDRySU54ZEFMSWhGNURxRGdLYXFNNm1hWFluOUJDd1M0a2h4T2M4MExBMmI?oc=5",
+          "publishedAt": "2026-11-27T09:07:41.000Z",
+          "title": "JPMorgan Reportedly Spots Bitcoin ‘Capitulation’ Signal in Michael Saylor’s Strategy as MSTR Stock Hits 52-Week Low"
+        },
+        {
+          "id": "n29",
+          "name": "Rolling Out",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5hWWNHNm9uMEkzZlNqLWs2V2tpLW9pQjlCcUFNQmlOalFUcndqZENSWFpTUmNMb3lRLVEyX2pRSmxSdlpMZlFNNU1fRE5JRUR3eDZmc3ZEY2FVYlJCU0k2Ul9CTTZKY3QzVHI3dURqcEhibXJ5VWFxSw?oc=5",
+          "publishedAt": "2026-11-27T16:20:29.000Z",
+          "title": "MSTR stock hits a 52-week low: What is going on at Strategy?"
+        },
+        {
+          "id": "n171",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/regulation/2026-11-25-house-committee-advances-strategic-bitcoin-reserve-bill-446778",
+          "publishedAt": "2026-11-26T03:03:01.000Z",
+          "title": "House Committee advances Strategic Bitcoin Reserve bill with narrow path to passage"
+        },
+        {
+          "id": "n342",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLTNLdXFKQkprN1Vvd2g2VHcyRlZNOFk5NXh0WW1tWko4OGY4dHZhMExTWDBTQzVkMHY5Y0dBa0tVNmtaclBRd0ZnQXNNZkJIYzZEc1FabWsteTZPZmVuQ1VRWVU3bVhDRk5SZnlTTmdCeVdnQVF6X2lWV21SZEFsX3lGN1ZSb0hPWTZ1MVZTQ3dpalpQaVdndDEtMDdkSUhGOEJWdkhpRlRnUWtmTXk4eTJMNnFPclhTbVlvYmx6bnVhTnhaRE0wdm00TQ?oc=5",
+          "publishedAt": "2026-11-27T16:48:51.000Z",
+          "title": "Bitcoin price drops below $59K as Anthropic joins tech stock rebound"
+        },
+        {
+          "id": "n137",
+          "name": "The Motley Fool",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxONzhSRkMyQW1GajRESi1DM2tJSmF1V0pBOTVqMnF4Q2FCNVB1RlA1eVhNc3c4dkNlRWIwTlZxM1A1dzRodzBJcDJvc1pJWmpTTmhkMHNNUkZid1M2SjFCOENvdWZMcWl1ODhWVjVlenlyNG9yWHVrSk92ZkNHNExWOHJYQUUxTy1IbXQyLVhRSEtnbUZiSER4ZFV2YklZSjV4b3pZR2J0bDd0Q1A2VWk0dDNtbk5fdGRZWHdta0dtRWJsZTFQVjA2Q3BXQ1VPaFFZTW9VOUFEaUlma0VlRUxnQTFvTTE?oc=5",
+          "publishedAt": "2026-11-27T13:43:12.000Z",
+          "title": "Strategy Just Bought Bitcoin for the 4th Straight Week. So Why Aren't Crypto Investors Bullish on MSTR Stock?"
+        }
+      ]
+    },
+    {
+      "thesisId": "market-regime",
+      "verdict": "confirms",
+      "title": "Tether buys Bitdeer stock as bitcoin needs USDT growth; Pump.fun fees fall 35%",
+      "brief": "Tether paid about $10M for 3.72M Bitdeer shares near the stock's low, taking its holding to about 41.4M shares (~17.9%). CryptoQuant says bitcoin needs USDT supply growth to recover; Pump.fun fees fell 35%.",
+      "impact": "Even a recovery case depends on one issuer's balance sheet and USDT growth, not organic buyers, which fits a market where liquidity never returned. Falling memecoin fees add support; regulation remains the trigger.",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n6",
+        "n7",
+        "n9",
+        "n10",
+        "n11",
+        "n12",
+        "n17",
+        "n18",
+        "n23",
+        "n346",
+        "n178"
+      ],
+      "sources": [
+        {
+          "id": "n6",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZWNnSmpITldZT1ByU3dMdW1rRXJ0TW1VMUlNb25Pd1N1QUE0aElZR1VjWVU4R3ZLMkhyTkd0ZHJWSnpuc3M3cllpZHg4a0kyVVFmYkU0TEtNV3RGWVBVbS1vY19FajlMTTlUeEpMR0dBeE1Eb2pEaTlPYlB0aFNOTzRxczUtNUliazlqV29WcWQ4dWRfcGpMQw?oc=5",
+          "publishedAt": "2026-11-27T15:06:00.000Z",
+          "title": "Tether Buys $10 Million Worth of Bitdeer Stock"
+        },
+        {
+          "id": "n7",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/business/2026-11-27-tether-buys-10-million-of-bitdeer-shares-as-stock-hovers-near-all-time-low-447554",
+          "publishedAt": "2026-11-27T15:00:21.000Z",
+          "title": "Tether buys $10 million of Bitdeer shares as stock hovers near all-time low"
+        },
+        {
+          "id": "n9",
+          "name": "Crypto News",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1KVWhXQWt5SkxhZGlabUhuRTBWWldMcmRqRzVaRW9fcmQtOU8tM2l3M3VOR3JlaXlpalFRZ09McHBWa1dFcXJIZDJuUU82N2ZscUtqUjNrTWVVQXFhcEEtdHV4bkZfX09CaVZ6dXln?oc=5",
+          "publishedAt": "2026-11-27T13:30:00.000Z",
+          "title": "Tether buys $10 million in Bitdeer shares, bringing its holdings to 41.4 million"
+        },
+        {
+          "id": "n10",
+          "name": "PrimeXBT",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPME01MnJoY0tXNFQwTUtIdEdEbTZZWHNaSXVYb0ZnWEZpNnE1WUpabmJ1a3dFd3VNbVpDZnpfbXl2SDN5TFRUOWk0OVBpVG5YdjVvU2VpbDZ4OGVZRnZ1NnpYVklvcHZhQUlzS254QlNwRmwwVk83MFJnRVhJcmIxbENTcnBlTVhNaFdnY1ZEWVZ2UzJqT0dZaWNYVQ?oc=5",
+          "publishedAt": "2026-11-27T14:02:10.000Z",
+          "title": "Tether buys $10 million of Bitdeer shares, but its stake falls to 17.9%"
+        },
+        {
+          "id": "n11",
+          "name": "bloomingbit",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5uM085MnE5ZUlkVXowTk5mREcyakF6NEF4Q1FMMjY2SUNndEZuUTRLOERESjZXM1Nya1BhZmdVWnhkSzAydFVVQmh3SmZ3aHBIMlZ6Ng?oc=5",
+          "publishedAt": "2026-11-27T16:41:05.000Z",
+          "title": "Tether Buys Additional $10 Million of Bitdeer Shares, Lifting Stake to 17.9%"
+        },
+        {
+          "id": "n12",
+          "name": "TheEnergyMag",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE10ekttUkxadlplMS1mUmhkejBiQ1ZVMF8wdXY2WDRDZlMyZm54Q3NhS1UzY2dZR0R3SXo4QS1EN3paXzAxTDdLVWNzYm9UQVMwWTEwTmxkaUc0T3lwSmxkRHNkR2pYN3BHZThNMzJVcVl4eWhVSUhhdVhkeUc?oc=5",
+          "publishedAt": "2026-11-27T12:20:57.000Z",
+          "title": "Tether Buys $10 Million of Bitdeer Shares During Selloff"
+        },
+        {
+          "id": "n17",
+          "name": "CoinMarketCap",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5VOS11eFFld19aZ2tPc25vT05fZ1NvRG54c0Zza2Jfa0ZXd2RCN1JWcGQxTEcyMGNTRmZhZGhVbk5Lb3FSdDFCRXotOF9YT1VRQXdrQUVEUmNhMXVkQjA4Wk1yYVhIYXVMMVBMMlJ6cmw5WG9OeVlMOUxnQ2U?oc=5",
+          "publishedAt": "2026-11-27T18:19:35.000Z",
+          "title": "Tether Buys About $10M of Bitdeer Shares, Lifting Stake to 41.4M Shares"
+        },
+        {
+          "id": "n18",
+          "name": "KuCoin",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZ2p5RkZac2tlSXFYN0NFYVJIb3FGbzZoRU1JSVdiVXN4M0o4LWpUTVdQS19BdGdZOUoyNi15MVBuYkVnODJxU0FzbGdCTFEwaDZaVFdTSllKRUVrVUJPVDJpU1NxQXM0SkExZklPLUdBaFIzTDhRWFAtU0xJZzlTY1UzRjVUZURJWHh5LTdxOGM?oc=5",
+          "publishedAt": "2026-11-27T18:44:27.000Z",
+          "title": "Tether Buys $10M of Bitdeer Shares, Stake Rises to 17.9%"
+        },
+        {
+          "id": "n23",
+          "name": "BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41N0NWN0hNMjJSNGdxZ1ZGLTR1ZmZYcUlMcVg1bVlnbEtLTjU1VFljaVJvY01KQ0VNdFVjTy1DMklaN1dHamstMEdydjRFaTd6d3ZGcFc5UnFmbjA1bFNjazRjRklSVXZ5aVRFSHJGcEVjRFp0akE?oc=5",
+          "publishedAt": "2026-11-27T18:55:00.000Z",
+          "title": "Tether Adds $10 Million in Bitdeer Stock as Miner's Shares Sit Near 52-Week Low"
+        },
+        {
+          "id": "n346",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/markets/2026-11-27-cryptoquant-bitcoin-price-recovery-usdt-supply-growth-447560",
+          "publishedAt": "2026-11-27T18:13:45.000Z",
+          "title": "CryptoQuant says bitcoin price recovery needs USDT supply growth"
+        },
+        {
+          "id": "n178",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/news/defi/pump-fun-launchpad-fees-fall-35-as-trading-volume-drops",
+          "publishedAt": "2026-11-27T17:33:48.000Z",
+          "title": "Pump.fun Launchpad Fees Fall 35% as Trading Volume Drops"
+        }
+      ]
+    }
+  ],
+  "regulation": [
+    {
+      "title": "Nvidia pauses AI server shipments to four Southeast Asian countries (FT)",
+      "brief": "Nvidia told partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia, and Dell and Supermicro told buyers orders won't ship (FT). A new US rule requires licenses for certain advanced chips.",
+      "impact": "Enforcement is moving from China to the transshipment hubs, tightening GPU supply in Asia and raising costs for anyone renting capacity there. Portfolio AI firms with Asian hardware or customers are exposed.",
+      "next": "Rule in effect; Jensen Huang testifies to Congress Dec. 1 and Dec. 3.",
+      "action": "Ask Super Protocol whether the license rule delays any NVIDIA-linked deployment or Asian customer hardware; get an answer before Huang testifies Dec. 1.",
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "topRank": 2,
+      "itemIds": [
+        "n64",
+        "n94",
+        "n95",
+        "n98",
+        "n372",
+        "n79"
+      ],
+      "sources": [
+        {
+          "id": "n64",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/nvidia-tells-partners-to-halt-ai-server-shipments-to-four-countries-ft",
+          "publishedAt": "2026-11-26T06:19:49.000Z",
+          "title": "Nvidia Tells Partners to Halt AI Server Shipments to Four Countries: FT"
+        },
+        {
+          "id": "n94",
+          "name": "TNGlobal",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVXZnd0U5U3JjNDI5eFZCeFpWcU9UMWlGMUhrSmphMnpqaVJzb0E0bzJ2aVJIRkdWUlZ5RVlvU0xhWl90Q3FTQldIZGRaUHpvZk5YeFp2N0pWQndFY253a3FGV1dVb2J6Szk0ZHhXc2NmQjBlWXlPWnlXTGZOWWJ6Y3NWQTYtanlPWnVRUWRjZ1RVMm5CQzE1R0Itcy0xZzhvXzJkSy1EWGhUN21qSTBZYVVMTXEteE85REZDWkVFYkZaaW9wcnVGUUwtYnJsTFBMZ1RLZA?oc=5",
+          "publishedAt": "2026-11-27T12:59:29.000Z",
+          "title": "Nvidia said to halt server shipments to four SE Asian countries amid tighter US export controls: report"
+        },
+        {
+          "id": "n95",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOV3dMNG5nSXB6aWtwVVpJSTc5SU5ST0l3MjZkdUtVOGhHalBMaGFBaWVHT1UxM3dLTXd3QlhmaW5iV2dxQ0N6R1F3R3Zwd0p2cjQzajM5NUVuRDhnallFMHpGa1VObVZvb0pfaWRlX3ZuQTF5RVYxOWV1ZzRZQ0IybVlUZWIwM0xOb2RnRWh4MWF1a1BmMzRXNEdSaUl6dw?oc=5",
+          "publishedAt": "2026-11-26T10:59:10.000Z",
+          "title": "Nvidia Reportedly Halts AI Server Shipments to Four Southeast Asian Countries Amid Tighter US Export Controls"
+        },
+        {
+          "id": "n98",
+          "name": "Forbes",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNT2IzeDRBUHdXNi1LQjBNUEl3S21Va0NyeGN6eFZQZmdHUU5STk5FRXZTSFVhd2tYbTBHNjRfUkNDS29yNDlXYXdYMXZGMVZOZzE1STd1dEdVdk1iM0szN3B4ai1QWkpHTDlnVGZzZzNlQ09acXRCRklnWTgwMGV2Q3MtbWtYbkg0SnV1bjNCMV9tbW5zMUVEUU1IOTBNRHdDZUpGWXZuaG1MLWlSV3p2UkZFQVhoeF94RDY3Yzh6MkdtamtCVGQzamRsQ1VkbTU3X1huQ3NJTQ?oc=5",
+          "publishedAt": "2026-11-26T11:17:43.000Z",
+          "title": "Nvidia Halts Server Shipments To 4 Southeast Asian Countries Amid New U.S. Export Curbs, Report Says"
+        },
+        {
+          "id": "n372",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+          "publishedAt": "2026-11-26T20:03:54.000Z",
+          "title": "Nvidia hits pause on chip shipments to Southeast Asia"
+        },
+        {
+          "id": "n79",
+          "name": "The Motley Fool",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOLXRieWlpNzJqdWQ3RVRNQk5WUXBUSUY5WE5oNHdRNXNCekJFc1pWcEViZE95RFRzbDFKWTdDc29VbXNRTTBobDVGQnFnOXg0NFVLRzQ4NUVTeHFmT2NNRkM2WjFVYmxvQTg1UnpRU0R4OGNjbGZIUVpTT2R2VU5DdzFyb1RUYkY4VTBXM0NaTmpGM2h4OUMwVkZiRVFWaS12eEhLUGRrQVVkVDcyODl4ZlQ5dElBRDd6U3ROa2hzS3ZJNm9semJQZkk5ajBsUGVGbnhKajR6ZE1xdUtZ?oc=5",
+          "publishedAt": "2026-11-27T19:28:09.000Z",
+          "title": "Should You Buy Nvidia Stock Before CEO Jensen Huang Testifies in Front of Congress on Dec. 1 and Dec. 3?"
+        }
+      ],
+      "actionWho": "Super Protocol"
+    },
+    {
+      "title": "Senate Democrats urge SEC to scrap Regulation Crypto and tokenized-stock exemption",
+      "brief": "Sens. Warren and Van Hollen sent two letters to SEC Chair Atkins demanding he rescind the innovation exemption and the Regulation Crypto proposal.",
+      "impact": "The SEC exemption is the fast route to tokenized stocks and wider token access. Democratic pressure raises the risk it is narrowed or reversed, a setback to the institutional-buying path we expect.",
+      "next": "No SEC response reported; Congress faces a Dec. 11 shutdown deadline.",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n62",
+        "n91",
+        "n142",
+        "n143",
+        "n144",
+        "n287"
+      ],
+      "sources": [
+        {
+          "id": "n62",
+          "name": "The Block",
+          "url": "https://www.theblock.co/news/regulation/2026-11-25-warren-van-hollen-lead-push-scrap-sec-regulation-crypto-innovation-exemption-446756",
+          "publishedAt": "2026-11-25T22:20:02.000Z",
+          "title": "Sens. Warren, Van Hollen lead push to scrap SEC’s Regulation Crypto and innovation exemption"
+        },
+        {
+          "id": "n91",
+          "name": "CoinMarketCap",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRmpGZnI2Qm5qdzBFMk13QnlyR1RDWTM3bGkzVlhia3AwUzJiR2NzU0tYM3JDdS1NZjVCX25SNzYwRkFkeklHNElCdkFZUjlya2FLUkh6a2pieGxLT2E2LVVNYmJtb2E1dTdhbmtGQ3Zjcm5kdHRjNzFJNGl1NzRJX0g1T0x0ejRjMmk5elVoWW9FZjh5Y3ZaTjF0T1Y?oc=5",
+          "publishedAt": "2026-11-26T21:28:42.000Z",
+          "title": "Warren, Van Hollen Urge SEC to Scrap Regulation Crypto Assets Proposal"
+        },
+        {
+          "id": "n142",
+          "name": "HedgeCo.Net",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQREROSVl4UlRtUWpBTmN5cHFxMXFaMmwwLXZod0hxbGRnUE1COW9rTUtNaVNXWHRvMzh6T2wwVFlDZkNDc0tSQXZFei14T3ZUMGZ4OEFsdENHQXRVZ0NXdnlPSEZRR08yNlo2dGliN1ZlMTFMQ0EtZWdHTDZQZzU5bUlid3JHX1piNVhoNG5ucFZKOWtWcXNCeTFrUEpQczg5VVh1Y1VQYVBKRURuZzZ5RkpOaHBGX0pqbVNrNHB5ZDFUSkNqUkM3Rm1yU2JPNFU0Y3ZLeGJvRlRSU2k2a3FWLWxfeEQxejFhOFNPMDZiNlZySDR0TVZzcU51VzVQRk1J?oc=5",
+          "publishedAt": "2026-11-27T12:42:43.000Z",
+          "title": "Senate Banking Democrats Urge SEC Chair Atkins to Withdraw Regulation Crypto Assets and the Innovation Exemption for Tokenized Stocks"
+        },
+        {
+          "id": "n143",
+          "name": "Yahoo Finance Singapore",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdE9sTjZBdl9jUWZQR2ZsbEx5d2ZKV0MwSGtKSmZVVTk3SDdxX0psMTljNk0xRWZjeHh3U2RWaFdva3NkeUIxTUkzS2drVjQ0dThpMF84TUxlSzZmQXhQajVJbXBMUzNMRmFPVVAwYjROQU9kRkJVNW5qRWktbm1OckZRT1kzUQ?oc=5",
+          "publishedAt": "2026-11-26T21:00:00.000Z",
+          "title": "Sen. Warren challenges SEC’s push to ease crypto rules"
+        },
+        {
+          "id": "n144",
+          "name": "NewsCord",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOakdLbm9zUVJ5eGl2VGY5ak9ZRkVOMzluUDRtMXdXd3RNclUtWTJEeTBUNGtzWE92aGZDb1dsbzItMGtBSmdaOXN1TUx2Z3p6YUdzOHRZWHdvalZtVTB0Qm5oZkk0aDhuY3Q3R182RE1iZ3BNcmltUW52SnYyYVlQYVRURTNKaTZMWE9ldzJhZjAyUVZ5alU3R3Q2d3pLNmxZU2FXWmJKX3dtQjdJbmdhcF9sQWs5Rk5fS3R3UWlQRG1yQXJFVWN2YjNnRE5wTExUbC1EakRBLWhFUXFLQWx5Q0xDVTFoMVpQVVE?oc=5",
+          "publishedAt": "2026-11-26T05:19:55.000Z",
+          "title": "Warren, Van Hollen Lead Senate Democrats Urging SEC Withdraw Crypto, Tokenized Securities Exemptions"
+        },
+        {
+          "id": "n287",
+          "name": "La Voce di New York",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTGRmWG1zOEl4cGlHTVZBY2dsNndTNERUeElYWnl0NkI0VTJaekZRLTFac2xrb3ZaM2lzS1pvWG5iMjdMSzVqNlpaQS1pQVd0WTlUdFp1UmxWZm16QlBxNmVNdmxWVEM5Q0k2UzA0SHlzUFU3LTdzaWE3bXcwSThiUGc4Q2JVSFZsb1R2TEpkQnRKLXVNNVVrRDd4eEFqUWFMVUUtVVdlVnZNWjExNFo5TjlvM3pJNkVrbWlIN1FR?oc=5",
+          "publishedAt": "2026-11-27T17:57:56.000Z",
+          "title": "Congress Races to Avert Government Shutdown as December 11 Deadline Looms"
+        }
+      ]
+    },
+    {
+      "title": "FDA approves first US pivotal trial of an implantable brain-computer interface",
+      "brief": "The FDA approved Neuralink's LINK pivotal study, recruiting US adults with ALS to control digital devices. Enrollment, endpoints and sites are undisclosed; the N1 implant remains investigational.",
+      "impact": "A pivotal trial moves brain implants toward a market filing, but the ALS-only design points to a restorative label first; enhancement uses are far off. It is the first US test of how regulators treat implants.",
+      "next": "Recruitment under way; sites, endpoints and enrollment not disclosed.",
+      "sectorId": "lifesci",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n58",
+        "n65",
+        "n99",
+        "n100",
+        "n101",
+        "n152"
+      ],
+      "sources": [
+        {
+          "id": "n58",
+          "name": "2 Minute Medicine",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNbDkxbXkwTnRoYU1lN0hoNThHaTZnZkFIcGRpNm04MUFJd3VBNVNnbUFnek43ZVl3eE5DVm85SnhDekhYZjgxLWpxWUhvclZnQWFLTy1zZzdHTk90VEFRTDVIeTRNSmY0SERWQ296cGE0ZTVXTzQ1YVk5NlEzZ0hybXFfQnh1dWtMRWtnc1h0WnBpX0E3Z1AxNUJyczlKZHZoUEw3RnhFLS1hQ04tTzZkbEc2QXA4V3ZxMUlIT0poNGdLY284MkFDc3BiOVlId0p6SHEzOWwyd0t0NWpNbWc?oc=5",
+          "publishedAt": "2026-11-26T19:51:24.000Z",
+          "title": "FDA approves Neuralink’s LINK Pivotal Study, the first US pivotal trial of an implantable brain-computer interface"
+        },
+        {
+          "id": "n65",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/technology/neuralink-says-fda-approved-pivotal-brain-implant-trial",
+          "publishedAt": "2026-11-25T21:15:03.000Z",
+          "title": "Neuralink Says FDA Approved Pivotal Brain-Implant Trial"
+        },
+        {
+          "id": "n99",
+          "name": "Neuralink",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWHRPbnJXWmYxWUZSNlBDTElZQlhhLWcxZUVHaVdkU3ZjSGpQVjBxdWNvWUZKV1FRRUh1MkVWLTNYRklyeTRqTjJRLXVnREZiZmlWWTQwMUs4UmUtczJpNV8ycFZ6TFVNOVhuQVNPbE9oRTJLazlxZlBvTTFRRWhRaUZIQ3AyOXVhUFI0MDBuZ3M4c052NFE?oc=5",
+          "publishedAt": "2026-11-25T22:19:31.000Z",
+          "title": "Neuralink Receives FDA Approval to Launch LINK Pivotal Study"
+        },
+        {
+          "id": "n100",
+          "name": "BigGo Finance",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9mQ3ZkTTlrSkJHY3ZLTGRlUXBxa0ZfT1V4Nm1SVWYtcWFtMF9CeU14dUdXMmRhMDE1dDBzSVBqV25NNFNKMDF2U2dHWTQxdGxjVlRpVllXZmk3YmthN2M3VkIwNUdfemdidElFYngtYS1SSG1lTGc?oc=5",
+          "publishedAt": "2026-11-26T11:25:00.000Z",
+          "title": "Neuralink Wins FDA Clearance for Pivotal Trial, Implantable Brain-Computer Interface Nears Market Filing"
+        },
+        {
+          "id": "n101",
+          "name": "Al Arabiya English",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPa1lObW0tWEl0Zk4tWWFaRjhEb3Z4TmNfeWN6VU45eDdST2VibjUwaXFyTktUZFF2QThnc2V4eS1jUFVkaFpwcnNJZ2czWU5iWTVIZnpDei1MMG9SMnAtdS12SFMxX1ZhUGVTakhrekNjV1FFWnptQzF0bjlHOHVkLVJYbTlOdzlDRzZuQnpwSEFEMEJMNlVYUVpaM2NLa19GY3RlWXctRkt2NW4tS2pESFFsRDRkRUczQWt2N3dNM0ptMWt5aUpsNEtUclpXNmg3ZmfSAdcBQVVfeXFMTTRCM2ROZkVLRkxhYkphY0g4WWlBOUpxcEhmbVpYLUZZOElENlNLYU43OHp1ZVczUzI1NUo0anEtbEk3ZVZZN3BLdHJTbFFJMXhBWktMSmZTS0RDVXAtc0U4RmRIcXBqMC1Ha0JmYlBNRTRMb3BTeGlRbDNhNU9HNDU3Q0taOGtKMXo5dVpodGdFRzZIY1ROa2FNY0l4RFhKYlpDNnM1bVJNbG9HTklwQUdTRFNNbmZsVEpUQ2cxUXU1MEZlZ2xjYVFVTHdjRnFRMFd0MVY4UHM?oc=5",
+          "publishedAt": "2026-11-26T08:39:00.000Z",
+          "title": "Elon Musk’s Neuralink gets FDA approval for study on brain-computer interface"
+        },
+        {
+          "id": "n152",
+          "name": "Tech Times",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQeWNoM3BCbGMxLUpWaDBUcWhqdTYwd28zZDExaDhMbkN1SGdMcEVXOUlRMTZPZlRTQm5GZFgyUGV4VDdOSzVjU1oyb1VlaWt6REFZaGJDc0h0Nk9KQ3BNOXY4QjRMdDQ0ZVN5UFJTb0xfeHRYRzgxcEM3ODFFdHc4Z3ZoSDJvaXZPbldILVI3MTlpTDktbHFwVVJDNW1CZ182QlRwZC1pTUZVN1RyUGpkdGg0c3Qydjk1MHRqQ1AtMDRPX05TNG82cVpEekU1c2RWanAzUG9fUmU1UE5tVlYw?oc=5",
+          "publishedAt": "2026-11-27T06:20:43.000Z",
+          "title": "Neuralink FDA Approval: ALS-Only Pivotal Trial Leaves Enrollment, Endpoints, Sites Undisclosed"
+        }
+      ]
+    },
+    {
+      "title": "MoonPay and Highnote apply for US national bank charters",
+      "brief": "MoonPay and Highnote each filed for a US national bank charter; Highnote's application is for 'Highnote Bank'.",
+      "impact": "More fintech and crypto firms are chasing the charter route Erebor already holds, so its edge will narrow as rivals compete for deposits and payments. Erebor must show scale and credit quality fast.",
+      "next": "No decision dates disclosed; regulator review pending.",
+      "sectorId": "money",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n148",
+        "n149",
+        "n150",
+        "n151"
+      ],
+      "sources": [
+        {
+          "id": "n148",
+          "name": "Finextra Research",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd2RSV1JKYjRrNzl6bk9CdDNTT1RDTlA0Zml1TWVDNHNLZ3hMSzZmd1RXVkdWWDJ6dnBmRXU3SVhxNUNGVFpXLTJSRkEteDdzd203Z201Y1luOHhBaWRDWENTd3c1YzlpM28yRGQxNnJJQjlEOEFYWjBLeGdQMDBnTHdDR1JZTzNtVlpYQlNEM1dMRXZOQXp4OEFMaw?oc=5",
+          "publishedAt": "2026-11-27T00:01:00.000Z",
+          "title": "MoonPay and Highnote file for national bank charters"
+        },
+        {
+          "id": "n149",
+          "name": "FinTech Futures",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd0Z3NkdnVEgwVVM4R0tZbEc1Nld3RkQwMDNTYnByV1lIaXdQSDZTVllvU0M5V2xJVG1TbDdjaE9RTkZJdTR3T0dPSDlGZ2M3cnpoVmdaRndEX3UxX2hHOVNIZXlsQlFkZUE2TldXeUdmak1ydUsxY0RpLUdtX2pfcEMwdGNSbko5SVRQTkFmVDQteXl2M3ZlVWFnaWttTmFVZmtrcXRSbFBJdWtS?oc=5",
+          "publishedAt": "2026-11-26T11:26:53.000Z",
+          "title": "MoonPay applies for US national bank charter"
+        },
+        {
+          "id": "n150",
+          "name": "The Paypers",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0hkVE12b2tZM0NrVzVsVTUxQ0RXNXlmUHg0NVRVaVRpRl9DZzZVVjdFNXZTWmQ3MUZDejJpdVh1aDZuRnU0UEVOekpxYjJSTzhJOUcwNnlfSnNIa1R2T2h5eU1uUVVfX3hPLTNzYV9BcFBxZVVNRzNMZEFlTDBfY29wQVZlV2dMbXIxejZZc05TOUtjR3lOLVpoa3I?oc=5",
+          "publishedAt": "2026-11-27T16:30:19.000Z",
+          "title": "Highnote applies for US national bank charter"
+        },
+        {
+          "id": "n151",
+          "name": "FinTech Futures",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQUJIbUNKblVFQ0kyUzc3aUNxYlEyaXNFZmVHMmE3SDF4U2ZPdTVhQllEUkR4TlFTZ2VKWTlfb3J2ZEstWGktVUo5VS1iNy1jcnB3aTVqMzBXSEJvc1dtTTdTNVpuME91blBRUXl5YjZmZnRhSklIMGFoZDVWMjA5OWRoYjYzdm1OTGtNSjdhYTF3NnptS2tKVlJyNExPQVRXa24wdGo3NHdXTWpTWGV0eHNjZVBOZ2M?oc=5",
+          "publishedAt": "2026-11-26T07:00:53.000Z",
+          "title": "Highnote files national bank charter application for Highnote Bank"
+        }
+      ]
+    }
+  ],
+  "tech": [
+    {
+      "title": "Air Force Cloud One breached; Microsoft warns of AI-driven outages",
+      "brief": "Hackers breached Air Force Cloud One (payroll, munitions tracking, air-defense radar data); Cyber Command is assessing damage, Reuters reports. Microsoft's president warned of ongoing outages from AI security threats.",
+      "impact": "AI-era attacks are reaching core military and commercial infrastructure, which fits our espionage watch-list and favors hardened, confidential-compute and sovereign-cloud vendors over general-purpose clouds.",
+      "sectorId": "defense",
+      "confidence": "single-source",
+      "topRank": 3,
+      "itemIds": [
+        "n102",
+        "n59",
+        "n60",
+        "n67",
+        "n106",
+        "n221",
+        "n224",
+        "n27"
+      ],
+      "sources": [
+        {
+          "id": "n102",
+          "name": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnhWb2oyc2Qta3k0bUhwbGZTcWZMREZ0VU41eVNZWDJZTDlBcmMxZzFrLXlmVGJpUHBRbVdBRlNoQU9lWUlIcVpMcXQwWWpyYVJ2eDJQa1ZvNFU5MUFHLWdpQW1BVloyUW5lTUlVSlFpLXJwVHNLMl9fQnBFTTNnemY4Q0JiUkN3SXFndG1pX1l1TmdySFJDOHJlWC1fMnE3cjlaVFB5M1hWbU0?oc=5",
+          "publishedAt": "2026-11-27T20:00:10.000Z",
+          "title": "EXCLUSIVE Hackers breach US Air Force flagship Cloud One computing platform"
+        },
+        {
+          "id": "n59",
+          "name": "Forbes",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOT1VvRzQ4cW82T3dZMU0wV2RxZXh1WS05Q3dMTzA0N01jdmdsT1BjX3RGWFB3TlJKdW9XMVFTbHM5azNoNDhiZEduejhWUEpDZUxVNFMtUUJ5RUM0cmRqMTA2Z2UyMG9fVmRSWG0xRzkyT04wb3ZJMEtIbEY2Mmt1M0RHRWdUQ3o5UnZac0hTY0x0MUNhVUhQWXFRZC1oaFE?oc=5",
+          "publishedAt": "2026-11-27T15:05:13.000Z",
+          "title": "Air Force’s Cloud One Platform Hacked, Report Says"
+        },
+        {
+          "id": "n60",
+          "name": "Military.com",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNEhKWUQzcTJkbFlYQkZmYmswTk9JeWxHRGdFRjhVVjJKcVBOSnpyU2pnVkpwb3FtV2FvM2w2UGp1MmZMYTZ0MllBQ0oxLXoxRTVsQnZ4MDNaNENKemNjdi1xTkdfd1JBczl0WkpsNU13SlVMdXh2NnZSMk5ObG9QYUpkWmhhbm85Q00w?oc=5",
+          "publishedAt": "2026-11-27T18:28:40.000Z",
+          "title": "Hackers Breached Air Force Cloud One, System Behind Payroll, Munition Tracking and Air Defense Radar: Report"
+        },
+        {
+          "id": "n67",
+          "name": "Defense News",
+          "url": "https://www.defensenews.com/pentagon/2026/11/27/hackers-breach-us-air-force-flagship-cloud-one-computing-platform/",
+          "publishedAt": "2026-11-27T14:23:36.000Z",
+          "title": "Hackers breach US Air Force flagship Cloud One computing platform"
+        },
+        {
+          "id": "n106",
+          "name": "Decrypt",
+          "url": "https://decrypt.co/384174/us-air-force-hack-cloud-system-air-defense-munitions-data",
+          "publishedAt": "2026-11-27T17:43:29.000Z",
+          "title": "Hackers Hit US Air Force Cloud System Running Air-Defense and Munitions Data"
+        },
+        {
+          "id": "n221",
+          "name": "SC Media",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPLVR1d3NXc1ZyTGhITGdJOUpHcG14aGlQR0VfNlFsS3hLYnA3TmtpeHpuU1dZY2p0VVFyc2MtZ1ltUlRQelVtVUpfMnJWSDBnMk5QWldiNnI1dTVMZ2g0V3lRMENNY1dlNE01Q2VjZE9jSHQ0NzJhdGltRmFWajYwdVdFS0h6TzZMUjFkX0x3a09vZ2JKZ2g4NTFYdm9hWnR1UXRtSnp4UHp1QQ?oc=5",
+          "publishedAt": "2026-11-27T19:29:20.000Z",
+          "title": "Microsoft president warns of ongoing tech outages due to AI security threats"
+        },
+        {
+          "id": "n224",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQeUFYRVZ6X21ZNW1UWmFlTUxyYjgzLWlQeUlBN19OUVo0ZldoSnNfWGstWTlCdFBlaFVFS19TcHlIa3IyTk5BQlVCbzlqUGFtM051UGV3WnE3MmVSLXdmd0RPZF8yX3dYMFo4NUxTakp6WmI2TVhueGh6MHNtSnFWS29pLVpPTG9FNE5wQzQtVHhBcjVCb3FMTzlJSWh6ei1qZzNqTTAzMHdaSlhHckpQa2daWEVFLU5wYXNfd0NUck03bl82eDhrUnlhYw?oc=5",
+          "publishedAt": "2026-11-27T18:23:20.000Z",
+          "title": "Microsoft Stocks Rise 0.26% as Code Red Targets One-Hour Outage Recovery"
+        },
+        {
+          "id": "n27",
+          "name": "Yahoo! Finance Canada",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uOUNhWEIyM0RRVERRZVRjUWx6dFJ2N2tGYXBpVWl2RVI3MjM2b3kzVmtabzNDRjdGMGw2Z2hJSTB0S2Q5YWRWT1dab25WVERnZlE?oc=5",
+          "publishedAt": "2026-11-26T17:15:04.000Z",
+          "title": "Microsoft Corporation (MSFT) Stock Price, News, Quote & History"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI tests private inference with confidential computing for select customers",
+      "brief": "OpenAI is testing an API preview of private inference with select customers, promising confidential computing and verifiable controls. NEAR AI's founder says checking the computing environment is only part of trust.",
+      "impact": "The biggest lab adopting the confidential-compute pitch validates Super Protocol's category but puts a giant on its turf. Its edge must be verifiability and openness, not the technology itself.",
+      "action": "Ask Super Protocol how it positions against OpenAI's offer and which NVIDIA, Google or IBM deployments it can name as proof; get this before term-sheet signing.",
+      "sectorId": "ai",
+      "confidence": "single-source",
+      "itemIds": [
+        "n187"
+      ],
+      "sources": [
+        {
+          "id": "n187",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/openai-tests-private-inference-with-select-customers",
+          "publishedAt": "2026-11-25T21:42:02.000Z",
+          "title": "OpenAI Tests Private Inference With Select Customers"
+        }
+      ],
+      "actionWho": "Super Protocol"
+    }
+  ],
+  "deals": [
+    {
+      "kind": "round",
+      "sectorId": "ai",
+      "firm": "a16z",
+      "text": "led AI agent startup Linq's $90M Series B at a $1B valuation.",
+      "itemIds": [
+        "n1136"
+      ],
+      "sources": [
+        {
+          "id": "n1136",
+          "name": "Beinsure",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeG9YS2tYY3llc01ZWTc5MXRIbUZkTHhOZmZpR08yVmtsckZhLVJJTFBOWFRwekVrV1dOWTY5ZnVxQVB3VFVBVl9CZTZaY0FYMEtfamtPaGwxcXNUZTVRekNydG9fbTlLSmp2RmFBVHRSWXNPWWhrMkpBSmN0QnBvNkVnanl6UWs?oc=5",
+          "publishedAt": "2026-11-27T18:04:20.000Z",
+          "title": "Andreessen Horowitz (a16z) leads AI agent startup Linq’s $90 mn Series B at $1 bn valuation"
+        }
+      ]
+    }
+  ],
+  "macro": [
+    {
+      "title": "US set to raise tariffs on China, EU and others as AI stocks rally",
+      "brief": "The WSJ reports the US is set to raise tariffs on China, the EU and others. Indexes were headed for big weekly gains as AI stocks rallied, with Anthropic back above its $83 IPO price.",
+      "impact": "New tariffs add inflation pressure just as an AI-led rally leans on easy money, complicating rate cuts and lifting hardware costs for portfolio names. Anthropic above its IPO price shows the AI listing window is open.",
+      "confidence": "single-source",
+      "itemIds": [
+        "n343",
+        "n164",
+        "n35",
+        "n80",
+        "n81",
+        "n124",
+        "n219"
+      ],
+      "sources": [
+        {
+          "id": "n343",
+          "name": "WSJ",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNHNFWGIyeFl0TVd2ZnBtNHdUWFlsQlI3YWM2akphOUVMS1dXVElaazBic2FsVkt5ci1tUk81b0VWM3BRYXdCamY3QktKNEYwOVlLMTR0T2xORjgzNWU2NDFPb1VfQjZSd1JwN3hlTkVYU1Y1V0VkZzJHekVGRXZidHJ0Ukw2MWsxZGFVd2VRcmdab3dP?oc=5",
+          "publishedAt": "2026-11-27T16:49:56.000Z",
+          "title": "U.S. Set to Raise Tariffs on China, EU and Others"
+        },
+        {
+          "id": "n164",
+          "name": "Yahoo Finance",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb250QWJXR3B6cVo3bVFSNFpjVzF1TUxMRmdLVUtZWG5YSk5ZaHMyZS1seG9zWWExR1VKRFNoTjlCZ3ZWTnJGNGgxT0lZdXhJT3o4OEh3TnhVd3NRcXlwRFk2OGNKRktxbHY0VkhyM2JQNnBpUEtrUWhhQmJuZVJ1QmZBdjIxU0JKZlFLTG5uSlp0MjUzVDlKUXZSWnlHQQ?oc=5",
+          "publishedAt": "2026-11-27T14:04:50.000Z",
+          "title": "Stock Market Today: Major Indexes Surge, on Track for Big Weekly Gains as AI Stocks Rally; Anthropic Jumps 8%"
+        },
+        {
+          "id": "n35",
+          "name": "Eurasia Business News",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZlFPQTdJTG9qYU12VVZucXgzekdCcm1zTzhNOEVQODkyTWotcHZNcldDazB1X0Z1UDgyczNDbi1SakNOYi1aRDEyNXhPSEdMVHhaVzJpaXdpcUVHRUt1SU5yZjRQTkZhUWRXMzBTVVBHU2FFRHBscXBBX0ZYY2oxeXZxU0FGSjIxSGNYeDlLVGh0aThPMFdzVDdGWk5fOHRXaFdXdTJLMkQ2cVc3YVoyTlJnSGlOZWgxNk1jUElWaUxyOXcwZ0laV1BiTQ?oc=5",
+          "publishedAt": "2026-11-27T16:28:14.000Z",
+          "title": "U.S. Stock Market Today, November 27, 2026: Tech Rebounds in Shortened Black Friday Session"
+        },
+        {
+          "id": "n80",
+          "name": "Forbes",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeW4tTWszM09YN2pmTl9ib2RndDFBODJEV0x6d2xOaGZCUW1mc09MR1RjWTZTUHdRNDBPUjJpTGFrQlRiU210bHZMRW9acVBlVnY0Qi1YbmxhMnJqeDlRVEIyNVdoRFppVjhvSXduV1puSjBTa1ZGOVBseVNEY0hQN0tXa181Y2tXV3ExUHNCcGZLdzI2T2owZUx5cTc?oc=5",
+          "publishedAt": "2026-11-27T18:44:57.000Z",
+          "title": "Anthropic Jumps 11% As Tech Stocks Rebound"
+        },
+        {
+          "id": "n81",
+          "name": "Investor's Business Daily",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQclYxel8yMTAzRC1hZkxuOTllbXk0bS15RlBqWjBDTnBxc0ZmbkJfNlA1QlJYS3I3SWdIRURTWlFkNlI5aGh5ZnVmT2VIdDl2Q2JuQURUeGZLVXpKcFVxRTE0QTJleGUyWWhScm1ha2N0TXNaaEJmaFVvZWtiQnlGWmJURnM2RG5tMjNR?oc=5",
+          "publishedAt": "2026-11-27T17:49:00.000Z",
+          "title": "Anthropic Jumps Back Above Its IPO Price As AI Stocks Rebound"
+        },
+        {
+          "id": "n124",
+          "name": "24/7 Wall St.",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOYkpEeFIxeTNkMFdGVDFQaEg3NWFmN3FBWVpSS0F1dzdwbFUzNnNMWHBNUnJld2NScENBbnJDSTFaRU5lcnVRRW9KNEpnMm5jdVJaQnZobGs3amhmTV81VkxERFRSRmVXeDNfbDN3bk5kME5rZjExWG8ydGZXY0RDUVFQODlIN2c4dkhVZ2RWU1NwaDQwX3J3Q3c1cDY1VThDX1paX2dCZk4zSUlyWURxODBWVTR4aTcwcnlqZ2szM0VwQnVaWUZfblMtUkoxQ011NjdPUmEyaTU1RG1ZbUhnX2hTOVB6bnZw?oc=5",
+          "publishedAt": "2026-11-27T15:02:00.000Z",
+          "title": "Anthropic Gains 4%, Climbs Back Above $83 IPO Price as Cathie Wood Keeps Buying; SpaceX Rises 3%, Nebius Advances 2%"
+        },
+        {
+          "id": "n219",
+          "name": "Bloomberg",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSGVqenZQM2JzRHFPVmVDWElvMUlUTXdHVFVlT2VOYWc3ZU5KM0czVlBfUGhNNWU0ekFjYU13YWdRS243RE10VEVHYW9DRzdmUmF4MndvQ2dnUmVxY1ZJZER0WnpZay12cUJqTE0tRUlGSlluYkgwem1wTG51d1FrdHF5SWtqa2F3MkNOaFN1Z0RrejFJOXdSLTFGZnJWTDk0emw4dlN0bVlRalJ0elIxdzAxUm9Idw?oc=5",
+          "publishedAt": "2026-11-27T18:28:35.000Z",
+          "title": "Anthropic Shares Jump After Volatile First Week Since IPO"
+        }
+      ]
+    },
+    {
+      "title": "Iran says tanker hit a mine near Hormuz; oil rebounds after three weeks of falls",
+      "brief": "Iran's Revolutionary Guards said a tanker exploded after hitting a naval mine while trying to transit the strait. Oil rebounded after three weeks of declines (WSJ).",
+      "impact": "Oil had fallen for three weeks, so markets were pricing out the Hormuz crisis; a mine strike says transit is still unsafe. That keeps a risk premium in oil and supports the shift to nuclear and distributed power.",
+      "sectorId": "energy",
+      "confidence": "single-source",
+      "itemIds": [
+        "n103",
+        "n104",
+        "n165",
+        "n166",
+        "n337",
+        "n338"
+      ],
+      "sources": [
+        {
+          "id": "n103",
+          "name": "Anadolu Ajansı",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOdUVPUTlEQ05fLVA1MTNqa2tOejlucTkwaWZjZGxjWm9taWNneG12aFhKLXJqeEQ4QkdSWTYwcTBSX1VhcmlYclBkZXVOZnI3UFh1QThLeHJMbTBfU01Ia2FnTnRJb1NBcjg2c0pPeXRpNG1vejBUd2JoTGU2U2xTakp3UV9weHEzQy00RFZKS0M2bmUtMlpTWWUyWjF5NG1jZFloeUVnMEJrNWk1TVg4OXgydTYxLUFRZjBF?oc=5",
+          "publishedAt": "2026-11-27T11:39:59.000Z",
+          "title": "Iran says oil tanker explodes after hitting naval mine in Strait of Hormuz"
+        },
+        {
+          "id": "n104",
+          "name": "ASHARQ AL-AWSAT English",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNzNrQmNWcWpUMXpxZFdwcTBjUmFXQkVHWFdpYVhxT1ZSZkFFb0ctanlJQ0tEdWYwemtsbEZoZ2w1VHg4WS15V0NRTkl4dVI1VWQyVmVOdEl6RE4xZ29iZTMxUG42RmNHOWROUWNlakN5WEI2WTN6SXZjdS1WT21aZjdIeUhZQm82eWtyMGMyenR0QTdFYlJz?oc=5",
+          "publishedAt": "2026-11-27T17:37:30.000Z",
+          "title": "Iran Guards Say Tanker Hits Mine Near Strait of Hormuz"
+        },
+        {
+          "id": "n165",
+          "name": "The Jerusalem Post",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5lS203UndXM2Rmd3YtM0NoSjMwQTljUWJwc3JDcmNKRGRSRVJCNnNoaldHcTNRZ1dteC0tY3ZJNXd1ZVMtSjNURnZHUjBMdkt6cnhfMUhwbk1kd1o3MmVGWmF1UEZUWTNGOGc?oc=5",
+          "publishedAt": "2026-11-27T17:13:20.000Z",
+          "title": "Oil tanker hits naval mine while attempting to transit Strait of Hormuz, IRGC says - report"
+        },
+        {
+          "id": "n166",
+          "name": "NewsCord",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSk9NTlFNdnZKaTNNMG1Za3QxelVZVzdINElXWm1NLXFaT1I3b2w1eGhLOUYyUTA4Qy1BN2ZZM1RTQWJWSmdDRlY0OG9IeURFeElLUlhQYWlJd3ljbEg0SHpEUzlMXzdLbWF6bEJvWVVLbE5BLXVjWXFOeGFPRy1kNUMzVDZzaTdjUWhyWFhkR0RhZjFVVXRjLVB3dzkzNlUyR3BqTWcyYWVocXBNYW82TmJRQk1Tb195UzBhR2NSU0Y5Q1haUTRTbjYwODZ2WW5PcWxaY2FKQmwwYnpsUGgwMGpGWUV3VVQyb1E?oc=5",
+          "publishedAt": "2026-11-27T17:28:04.000Z",
+          "title": "Iran’s Revolutionary Guards Say Tanker Exploded After Hitting Mine Near Strait of Hormuz: 16 outlets compared"
+        },
+        {
+          "id": "n337",
+          "name": "WSJ",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMkpRNmtac0F4dkZ2QTRqVEhSc2piS0Vpd1JNaHVScnZZYmRfdzBEbWZXOUFjb0dhR29XZURYZnRUcTVkQW41Y3pOT1plS0ZDOU5NTm1Qel9OUWRMNU53Y2ZoUjBWU045YUczZFRfZGswa0UtY2hVMVJMS2g0b29qUmw3YjN4VHF0aGVTYjVZdl94WjcwdXkxZ3diaVNXSWZwcE9tM2V3b3JLcTRTU0o0aw?oc=5",
+          "publishedAt": "2026-11-27T17:28:58.000Z",
+          "title": "Oil Prices Rebound as Shipping Risks Persist"
+        },
+        {
+          "id": "n338",
+          "name": "Atalayar",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNWGd6dGFzdW9YZ3prWHk3ZFh2a2pBTUpvU055N1pkLVFob29GWTBsT19ON01KcGd3cjRiYTYySTBVRktfOEZvUXBDc24yZlc0Ulhfd3kwVjY3d3ZHNEd4QUc2S3JiQXFRd0x0RkhYUHdwZUV2SVh6cjBLazNiWFBwQVNlUmoxVF9xN2cxSUd3bGc3enJIakl0REk5M1JsUzlmYXA3bVhVaTBMaktaVWxTaWpOeFp6VWhyVXhoaW9SZlV6bGRSTUFlbUIybzRsaDh0dXI2WC1UWVhHXzE0VWFORUE2aVc?oc=5",
+          "publishedAt": "2026-11-27T18:32:41.000Z",
+          "title": "The reasons behind the rebound in oil prices following three weeks of falls"
+        }
+      ]
+    },
+    {
+      "title": "Poland signs five-year, $300M Palantir deal for military AI software",
+      "brief": "Poland will adopt Palantir's Maven Smart System under a five-year deal worth about $300M; NATO bought a version for Allied Command Operations in 2025. Palantir shares had their best week in four months.",
+      "impact": "Allied governments are paying for AI battlefield software at scale, widening the European market for Anduril, though Palantir already holds the software-layer incumbency.",
+      "sectorId": "defense",
+      "confidence": "confirmed",
+      "itemIds": [
+        "n24",
+        "n25",
+        "n30",
+        "n31",
+        "n55",
+        "n88",
+        "n138"
+      ],
+      "sources": [
+        {
+          "id": "n24",
+          "name": "Bloomberg",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNHNjNXhjcl81Z3N5aTFkZV9HcXgtcEZkclJXUXRoNE0tSFNEWjJ6TXFEVnFWWExOTDExUURUajlPUmxGN2dNeWlYVnBRcFVTSE0wYUxzWlg5S040alZSZ3dqOXlETDR0dG96VDljQndPWGNEXzUtS1Q2SHgzRklwbXEwN2dSQm9mY1NoYldyVWgxUTUyYlpfSno3YzN4T0RhWkFvR29yU1dsQjVUTWRrNw?oc=5",
+          "publishedAt": "2026-11-27T15:58:11.000Z",
+          "title": "Poland Signs $300 Million Palantir Deal to Use AI for Defense"
+        },
+        {
+          "id": "n25",
+          "name": "The Defiant",
+          "url": "https://thedefiant.io/frontier/ai/poland-signs-palantir-deal-for-military-ai-software",
+          "publishedAt": "2026-11-27T11:57:39.000Z",
+          "title": "Poland Signs Palantir Deal for Military AI Software"
+        },
+        {
+          "id": "n30",
+          "name": "tovima.com",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNEJpR2tqUDE5Z2ZSRkpOd1cySVBaZk94a2FwWEFGWWV1OHcyMU1vRV9WbXJpNDctUFR4S1BqWnhOS1F2ZVg5QTdnbm9sczEycFZuckdGRmowZUlQOTR3a3ZWdUVOUUc3UllIc3hfeS14N3Jnc3dmQ2hHanJSdnlUdjZuRWNfNjg0T1BJMXV3?oc=5",
+          "publishedAt": "2026-11-27T20:06:28.000Z",
+          "title": "Poland Signs $300 Million Military AI Deal With Palantir"
+        },
+        {
+          "id": "n31",
+          "name": "Seeking Alpha",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQX3VYeVhvbEVFY1loWUZYQkczd0JEMEVOQ210UGZlanQ0ZHBoVlNMdkVDMURseGdiZGVLQndPTGwzU1ktVldkTEhpLW11OG85RHhHVDlySnZuNVhVdjFtcDF4VkMycC05SUd2UFhZWnR3MzU0TEVsSHhDcW8zUXZLcEwzS2tiaUtOXzZyYmRzWFpLTXhQTmZoRUxWS0ttTzA?oc=5",
+          "publishedAt": "2026-11-27T14:06:57.000Z",
+          "title": "Palantir rises as company signs 5-year, $300M deal with Poland (PLTR:NASDAQ)"
+        },
+        {
+          "id": "n55",
+          "name": "Mezha.net",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOURvMWJ2cUFMV0hBRkpMZkJUQlRmN21ob0RTSjlSM1NqYmRUNmJKbG5fWHZORnZrOGxYREtSa01rR0RxaC1CN0NIeUZfMzB2ang0THdmVGI5a21TemxfcHFDQUp2LV9kTy1QZzNpbWFFaVd2SVVQS0lpcDAyNTBtSDdxd1Npb0s3?oc=5",
+          "publishedAt": "2026-11-27T14:51:23.000Z",
+          "title": "Poland signs five-year Palantir AI deal worth around $300 million"
+        },
+        {
+          "id": "n88",
+          "name": "TradingView",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNaVlKZXRPOFpVd2RYR2FQMXNsRmlzWEhoNXdWcXM4S3k4WmU1WjVYWklXU0RRcFBHZENnd2taM2dEZGxmOXBram5DdzMzM2xPS1BQbmNucm8tcXR2ZlVBRzNyNnY1T0hHRG1MVnFaaFg5WS1KQzdCczF4R2FlRFJYakh0NG5oRXhmQ3VGT0hiRDAtSzltMUN3UlBuSkxwQXdicXo0cUdvWnNOZGM5b3FiNHRROV9TWDZxVXNEV1lXWFFLTllTNlkycWVrZ004R0tGUGZ6aGVveXFXWnZZSEdabGNiYU03Zw?oc=5",
+          "publishedAt": "2026-11-27T18:41:36.000Z",
+          "title": "PLTR Stock Sees Best Week In 4 Months: Palantir Bags Reported $300M Defense Deal With Poland"
+        },
+        {
+          "id": "n138",
+          "name": "Benzinga",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNZi1qa1NFdkRuSHZvb0NKWjlPVVVudWVRRlJ5SkJfV2tndUZac1NaYWhBTkV2cWF2cHNYN0pNbHQ4NUFOcEhweHdGd2xxcy02M1lOT1pueFJDcVZfZUtTMmpKUElvaS04RUU3T05xc2RIZFNkT2p6aFVRclRjUUNsbm4xN3NwWmFoaEZHTnpXcnZPWDZJZWtHSUlIZmxfeFFNS2txRnNJSmhEM1hMZUlaWVk5b2JvbURjVE9aNkF2VTU4bjNJdkdV?oc=5",
+          "publishedAt": "2026-11-27T14:26:03.000Z",
+          "title": "Palantir Stock Pops as a Fresh $300 Million Catalyst from Poland Emerges"
+        }
+      ]
+    }
+  ],
+  "frontier": [],
+  "frontierQuiet": "No first-of-a-kind or replicated results this week; only a dark-energy hypothesis paper, Euclid's first comet find and an unreplicated lab method for turning PVC into lubricant.",
+  "meta": {
+    "generatedAt": "2026-11-27T20:19:51.520Z",
+    "date": "2026-11-27",
+    "edition": "daily",
+    "pass": false,
+    "weighted": 3,
+    "rounds": 3,
+    "round": 2,
+    "readMinutes": 7.7,
+    "poolSize": 400
+  }
+}
